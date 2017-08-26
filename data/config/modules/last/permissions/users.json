@@ -1,0 +1,233 @@
+{
+  "eddd148a-2e89-45f3-bc33-071ffac51198": {
+    "name": "xxxGenaxxx",
+    "groups": {
+      "vip": true,
+      "player": true,
+      "holder": true,
+      "moderator": true
+    },
+    "permissions": {},
+    "options": {
+      "last_warp.max":2
+    }
+  },
+  "59b3e6ed-82f7-4cd8-9344-7e91d8fdf5c3": {
+    "name": "zzz_SOFI_zzz",
+    "groups": {
+      "player": true,
+      "vip": true
+    },
+    "permissions": {},
+    "options": {}
+  },
+  "9325b0a2-2d22-4d84-9842-58e833196107": {
+    "name": "Slimson",
+    "groups": {
+      "vip": true,
+      "player": true,
+      "holder": true
+    },
+    "permissions": {},
+    "options": {}
+  },
+  "e5db92f9-1821-48a8-a4c8-2278db941fad": {
+    "name": "sulik666",
+    "groups": {
+      "vip": true,
+      "player": true,
+      "holder": true
+    },
+    "permissions": {
+      "skills.*": true
+    },
+    "options": {}
+  },
+  "65419976-13af-4de7-9554-299b2e597e6a": {
+    "name": "libbar",
+    "groups": {
+      "moderator": true,
+      "vip": true,
+      "player": true,
+      "holder": true
+    },
+    "permissions": {
+      "last_test.use": true
+    },
+    "options": {
+      "last_chat.group": { "icon":"☬\u00a70.", "color": "darkgreen" }
+    }
+  },
+  "2f8a6ef2-e971-4b9a-90b9-f54db65dc4b7": {
+    "name": "Serrgy",
+    "groups": {
+      "vip": true,
+      "player": true
+    },
+    "permissions": {},
+    "options": {}
+  },
+  "3325a983-1653-4632-8336-3d4e3241d6b9": {
+    "name": "Dinamic21",
+    "groups": {
+      "vip": true,
+      "player": true
+    },
+    "permissions": {},
+    "options": {}
+  },
+  "b8771b8b-e401-4003-b839-cb533ce94e1c": {
+    "name": "XDeNzl",
+    "groups": {
+      "vip": true,
+      "player": true,
+      "holder": true
+    },
+    "permissions": {},
+    "options": {}
+  },
+  "40efc7e9-1bd9-485f-b062-44c6cdc30476": {
+    "name": "el_mecanico",
+    "groups": {
+      "vip": true,
+      "player": true
+    },
+    "permissions": {},
+    "options": {}
+  },
+  "d5022e2e-a4d2-48db-8896-692f3f6a42a6": {
+    "name": "KomacloS",
+    "groups": {
+      "vip": true,
+      "player": true
+    },
+    "permissions": {},
+    "options": {}
+  },
+  "6f2d5cf3-f319-4cf1-92a8-df3c90b27586": {
+    "name": "MrGray",
+    "groups": {
+      "vip": true,
+      "player": true,
+      "holder": true,
+      "лентяивымогатели": true
+    },
+    "permissions": {
+      "last_warp.warp":true,
+      "last_teleport.cost": 1
+    },
+    "options": {
+    }
+  },
+  "505ef96e-5a4d-4f0b-b193-3117c3799a13": {
+    "name": "ZZzhakonya",
+    "groups": {
+      "admin": true,
+      "vip": true,
+      "player": true,
+      "holder": true,
+      "лентяивымогатели": true
+    },
+    "permissions": {},
+    "options": {}
+  },
+  "a51f9023-6b93-4266-927f-08bcb4a772c9": {
+    "name": "emexajt",
+    "groups": {
+      "vip": true,
+      "player": true,
+      "holder": true,
+      "лентяивымогатели": true
+    },
+    "permissions": {},
+    "options": {
+      "last_farm.max":4
+    }
+  },
+  "fb2532ca-e24c-4baa-9ab9-284ef30216d0": {
+    "name": "Fufl1k",
+    "groups": {
+      "vip": true,
+      "player": true,
+      "holder": true,
+      "лентяивымогатели": true
+    },
+    "permissions": {},
+    "options": {
+      "last_farm.max":2
+    }
+  },
+  "d6c01d31-01a7-40ad-bf5d-86864df3542d": {
+    "name": "CoolFun5",
+    "groups": {
+      "player": true,
+      "holder": true
+    },
+    "permissions": {},
+    "options": {}
+  },
+  "85bf7e4e-e321-4839-b3ee-def203984faf": {
+    "name": "Oboltus",
+    "groups": {
+      //"holder": true,
+      "vip": true,
+      "player": true
+      //"лентяивымогатели": true
+    },
+    "permissions": {},
+    "options": {
+      "last_farm.max":4,
+      "last_warp.max":4,
+      "last_teleport.cost": 1
+    }
+  },
+  "4894b515-9c3e-42f7-be17-06a7067720bc": {
+    "name": "Andsoon",
+    "groups": {
+      "vip": true,
+      "player": true,
+      "holder": true,
+      "лентяивымогатели": true
+    },
+    "permissions": {},
+    "options": {}
+  },
+  "b4fe1b16-1335-496e-be85-61e9e796f1e8": {
+    "name": "SchokkER",
+    "groups": {
+      "vip": true,
+      "player": true,
+      "holder": true,
+      "лентяивымогатели": false
+    },
+    "permissions": {},
+    "options": {}
+  },
+  "dff08f73-6469-46fa-b323-e409a1986786": {
+    "name": "DarkDaiver",
+    "groups": {
+      "vip": true,
+      "player": true,
+      "holder": true,
+      "лентяивымогатели": false
+    },
+    "permissions": {},
+    "options": {}
+  },
+  "37ddefbb-f14f-424e-8dee-908b522dc7fb": {
+    "name": "lastuniverse",
+    "groups": {
+      "admin": true
+    },
+    "permissions": {
+      "*": true
+    },
+    "options": {
+      "last_chat.group": { "icon":"Ⓖ", "color": "darkgray" },
+      //"last_chat.group": { "icon":"☬\u00a70.", "color": "darkgreen" },
+      "last_mobterror.count": 100,
+      "last_farm.max": 100,
+      "last_warp.max": 20
+    }
+  }
+}

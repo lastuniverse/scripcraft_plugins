@@ -1,0 +1,686 @@
+{
+  "byName": {
+    "XDeNzl": "b8771b8b-e401-4003-b839-cb533ce94e1c",
+    "libbar": "65419976-13af-4de7-9554-299b2e597e6a",
+    "sulik666": "e5db92f9-1821-48a8-a4c8-2278db941fad",
+    "ZZzhakonya": "505ef96e-5a4d-4f0b-b193-3117c3799a13",
+    "xxxGenaxxx": "eddd148a-2e89-45f3-bc33-071ffac51198",
+    "MrGray": "6f2d5cf3-f319-4cf1-92a8-df3c90b27586",
+    "Andsoon": "4894b515-9c3e-42f7-be17-06a7067720bc",
+    "lastuniverse": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+    "emexajt": "a51f9023-6b93-4266-927f-08bcb4a772c9",
+    "CoolFun5": "d6c01d31-01a7-40ad-bf5d-86864df3542d",
+    "Oboltus": "85bf7e4e-e321-4839-b3ee-def203984faf",
+    "SchokkER": "b4fe1b16-1335-496e-be85-61e9e796f1e8",
+    "el_mecanico": "40efc7e9-1bd9-485f-b062-44c6cdc30476",
+    "Dinamic21": "3325a983-1653-4632-8336-3d4e3241d6b9",
+    "Slimson": "9325b0a2-2d22-4d84-9842-58e833196107",
+    "DarkDaiver": "dff08f73-6469-46fa-b323-e409a1986786",
+    "Fufl1k": "fb2532ca-e24c-4baa-9ab9-284ef30216d0"
+  },
+  "byUUID": {
+    "b8771b8b-e401-4003-b839-cb533ce94e1c": {
+      "name": "XDeNzl",
+      "coins": 51370,
+      "isFly": true,
+      "isGod": false,
+      "last_farm": {},
+      "last_chestshop": {
+        "shop": {},
+        "hyper": {},
+        "store": {}
+      },
+      "containers": {
+        "skills": {},
+        "effects": {}
+      }
+    },
+    "65419976-13af-4de7-9554-299b2e597e6a": {
+      "name": "libbar",
+      "coins": 68293,
+      "isFly": false,
+      "isGod": false,
+      "last_farm": {
+        "lib": {
+          "type": "PIG_ZOMBIE",
+          "hp": 1,
+          "name": "lib",
+          "spawn": {
+            "world": "world",
+            "x": 723.5,
+            "y": 73.5,
+            "z": 5207.5,
+            "yaw": -178,
+            "pitch": 0
+          },
+          "UIID": "65419976-13af-4de7-9554-299b2e597e6a",
+          "owner": "libbar",
+          "isSleep": false,
+          "isStarted": false,
+          "EID": "972"
+        }
+      },
+      "last_chestshop": {
+        "shop": {},
+        "hyper": {},
+        "store": {}
+      },
+      "containers": {
+        "skills": {},
+        "effects": {}
+      },
+      "last_chat": {
+        "ver": "v.0.1",
+        "select": "near",
+        "mute": {}
+      }
+    },
+    "e5db92f9-1821-48a8-a4c8-2278db941fad": {
+      "name": "sulik666",
+      "coins": 2097925,
+      "isFly": true,
+      "isGod": true,
+      "last_farm": {},
+      "last_chestshop": {
+        "shop": {},
+        "hyper": {},
+        "store": {}
+      },
+      "containers": {
+        "skills": {
+          "growl": {
+            "enabled": true,
+            "level": 1000,
+            "usedCount": 0
+          }
+        },
+        "effects": {}
+      },
+      "last_chat": {
+        "ver": "v.0.1",
+        "select": "near",
+        "mute": {}
+      }
+    },
+    "505ef96e-5a4d-4f0b-b193-3117c3799a13": {
+      "name": "ZZzhakonya",
+      "coins": 530271,
+      "isFly": true,
+      "isGod": true,
+      "last_farm": {},
+      "last_chestshop": {
+        "shop": {},
+        "hyper": {},
+        "store": {}
+      },
+      "last_chat": {
+        "ver": "v.0.1",
+        "select": "near",
+        "mute": {}
+      },
+      "containers": {
+        "skills": {},
+        "effects": {}
+      }
+    },
+    "eddd148a-2e89-45f3-bc33-071ffac51198": {
+      "name": "xxxGenaxxx",
+      "coins": 46093,
+      "isFly": true,
+      "isGod": true,
+      "last_farm": {
+        "xxxGenaxxx": {
+          "type": "BLAZE",
+          "hp": 1,
+          "name": "xxxGenaxxx",
+          "spawn": {
+            "world": "world",
+            "x": 5904.5,
+            "y": 64.5,
+            "z": -93.5,
+            "yaw": -268,
+            "pitch": 0
+          },
+          "UIID": "eddd148a-2e89-45f3-bc33-071ffac51198",
+          "owner": "xxxGenaxxx",
+          "isStarted": false,
+          "EID": "4050",
+          "isSleep": false
+        }
+      },
+      "last_chestshop": {
+        "shop": {},
+        "hyper": {},
+        "store": {}
+      },
+      "containers": {
+        "skills": {},
+        "effects": {}
+      },
+      "last_chat": {
+        "ver": "v.0.1",
+        "select": "near",
+        "mute": {},
+        "isMute": 0
+      }
+    },
+    "6f2d5cf3-f319-4cf1-92a8-df3c90b27586": {
+      "name": "MrGray",
+      "coins": 3843396,
+      "isFly": false,
+      "isGod": true,
+      "last_farm": {
+        "farm": {
+          "type": "WITCH",
+          "hp": 1,
+          "name": "farm",
+          "spawn": {
+            "world": "world",
+            "x": 7241.5,
+            "y": 67.5,
+            "z": -1980.5,
+            "yaw": 272,
+            "pitch": 0
+          },
+          "UIID": "6f2d5cf3-f319-4cf1-92a8-df3c90b27586",
+          "owner": "MrGray",
+          "isSleep": true,
+          "isStarted": true,
+          "EID": "108143"
+        }
+      },
+      "last_chestshop": {
+        "shop": {},
+        "hyper": {},
+        "store": {}
+      },
+      "containers": {
+        "skills": {},
+        "effects": {}
+      },
+      "last_chat": {
+        "ver": "v.0.1",
+        "select": "near",
+        "mute": {}
+      }
+    },
+    "4894b515-9c3e-42f7-be17-06a7067720bc": {
+      "name": "Andsoon",
+      "coins": 41849,
+      "isFly": true,
+      "isGod": true,
+      "last_farm": {},
+      "last_chestshop": {
+        "shop": {},
+        "hyper": {},
+        "store": {}
+      }
+    },
+    "37ddefbb-f14f-424e-8dee-908b522dc7fb": {
+      "name": "lastuniverse",
+      "coins": 85660,
+      "isFly": true,
+      "isGod": false,
+      "last_farm": {
+        "last_01": {
+          "type": "ZOMBIE",
+          "hp": 1,
+          "name": "last_01",
+          "spawn": {
+            "world": "world",
+            "x": 820.5,
+            "y": 30.5,
+            "z": 1252.5,
+            "yaw": -90,
+            "pitch": 0
+          },
+          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+          "owner": "lastuniverse",
+          "isStarted": false,
+          "EID": "75858",
+          "isSleep": false
+        },
+        "last_04": {
+          "type": "WITCH",
+          "hp": 1,
+          "name": "last_04",
+          "spawn": {
+            "world": "world",
+            "x": 827.5,
+            "y": 30.5,
+            "z": 1252.5,
+            "yaw": -275,
+            "pitch": 0
+          },
+          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+          "owner": "lastuniverse",
+          "isStarted": false,
+          "EID": "1103460",
+          "isSleep": false
+        },
+        "last_05": {
+          "type": "PIG",
+          "hp": 1,
+          "name": "last_05",
+          "spawn": {
+            "world": "world",
+            "x": 820.5,
+            "y": 30.5,
+            "z": 1250.5,
+            "yaw": -90,
+            "pitch": 0
+          },
+          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+          "owner": "lastuniverse",
+          "isStarted": false,
+          "EID": "15932",
+          "isSleep": false
+        },
+        "last_02": {
+          "type": "RABBIT",
+          "hp": 1,
+          "name": "last_02",
+          "spawn": {
+            "world": "world",
+            "x": 820.5,
+            "y": 30.5,
+            "z": 1250.5,
+            "yaw": -90,
+            "pitch": 0
+          },
+          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+          "owner": "lastuniverse",
+          "isSleep": false,
+          "isStarted": false,
+          "EID": "16098"
+        },
+        "last_03": {
+          "type": "BLAZE",
+          "hp": 1,
+          "name": "last_03",
+          "spawn": {
+            "world": "world",
+            "x": 827.5,
+            "y": 30.5,
+            "z": 1250.5,
+            "yaw": 91,
+            "pitch": 0
+          },
+          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+          "owner": "lastuniverse",
+          "isSleep": false,
+          "isStarted": false,
+          "EID": "15465"
+        },
+        "last_06": {
+          "type": "SKELETON",
+          "hp": 1,
+          "name": "last_06",
+          "spawn": {
+            "world": "world",
+            "x": 827.5,
+            "y": 30.5,
+            "z": 1250.5,
+            "yaw": 92,
+            "pitch": 0
+          },
+          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+          "owner": "lastuniverse",
+          "isSleep": false,
+          "isStarted": false,
+          "EID": "1103200"
+        },
+        "present": {
+          "type": "PIG",
+          "hp": 1,
+          "name": "present",
+          "spawn": {
+            "world": "world",
+            "x": -1505.5,
+            "y": 65.5,
+            "z": -129.5,
+            "yaw": 182,
+            "pitch": 0
+          },
+          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+          "owner": "lastuniverse",
+          "isSleep": false,
+          "isStarted": false,
+          "EID": "1015203"
+        },
+        "spawn_01": {
+          "type": "PIG",
+          "hp": 1,
+          "name": "spawn_01",
+          "spawn": {
+            "world": "world",
+            "x": 34.5,
+            "y": 29.5,
+            "z": -18.5,
+            "yaw": 180,
+            "pitch": 0
+          },
+          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+          "owner": "lastuniverse",
+          "isSleep": false,
+          "isStarted": false,
+          "EID": "2555"
+        },
+        "spawn_02": {
+          "type": "ZOMBIE",
+          "hp": 1,
+          "name": "spawn_02",
+          "spawn": {
+            "world": "world",
+            "x": 32.5,
+            "y": 28.5,
+            "z": -18.5,
+            "yaw": 177,
+            "pitch": 0
+          },
+          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+          "owner": "lastuniverse",
+          "isSleep": false,
+          "isStarted": false,
+          "EID": "7073"
+        },
+        "spawn_03": {
+          "type": "SKELETON",
+          "hp": 1,
+          "name": "spawn_03",
+          "spawn": {
+            "world": "world",
+            "x": 30.5,
+            "y": 28.5,
+            "z": -18.5,
+            "yaw": 181,
+            "pitch": 0
+          },
+          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+          "owner": "lastuniverse",
+          "isSleep": false,
+          "isStarted": false,
+          "EID": "8278"
+        },
+        "spawn_04": {
+          "type": "RABBIT",
+          "hp": 1,
+          "name": "spawn_04",
+          "spawn": {
+            "world": "world",
+            "x": 28.5,
+            "y": 28.5,
+            "z": -18.5,
+            "yaw": 181,
+            "pitch": 0
+          },
+          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+          "owner": "lastuniverse",
+          "isSleep": false,
+          "isStarted": false,
+          "EID": "1110"
+        }
+      },
+      "last_chestshop": {
+        "shop": {},
+        "hyper": {},
+        "store": {}
+      },
+      "containers": {
+        "skills": {
+          "growl": {
+            "enabled": true,
+            "level": 99,
+            "usedCount": 0,
+            "paused": 1496282829358
+          },
+          "bandag": {
+            "enabled": true,
+            "level": 99,
+            "usedCount": 0,
+            "paused": 1496282846389
+          }
+        },
+        "effects": {}
+      },
+      "last_chat": {
+        "ver": "v.0.1",
+        "select": "near",
+        "mute": {},
+        "isMute": 0
+      }
+    },
+    "a51f9023-6b93-4266-927f-08bcb4a772c9": {
+      "name": "emexajt",
+      "coins": 12726,
+      "last_farm": {},
+      "last_chestshop": {
+        "shop": {},
+        "hyper": {},
+        "store": {}
+      },
+      "isFly": true,
+      "isGod": false,
+      "containers": {
+        "skills": {},
+        "effects": {}
+      },
+      "last_chat": {
+        "ver": "v.0.1",
+        "select": "near",
+        "mute": {}
+      }
+    },
+    "d6c01d31-01a7-40ad-bf5d-86864df3542d": {
+      "name": "CoolFun5",
+      "coins": 31200,
+      "last_farm": {},
+      "last_chestshop": {
+        "shop": {},
+        "hyper": {},
+        "store": {}
+      },
+      "isFly": false,
+      "isGod": false
+    },
+    "85bf7e4e-e321-4839-b3ee-def203984faf": {
+      "name": "Oboltus",
+      "coins": 11840,
+      "last_farm": {
+        "georg": {
+          "type": "WITCH",
+          "hp": 1,
+          "name": "georg",
+          "spawn": {
+            "world": "world",
+            "x": 7796.5,
+            "y": 66.5,
+            "z": -7041.5,
+            "yaw": -181,
+            "pitch": 0
+          },
+          "UIID": "85bf7e4e-e321-4839-b3ee-def203984faf",
+          "owner": "Oboltus",
+          "isSleep": false,
+          "isStarted": false,
+          "EID": "58883"
+        },
+        "georg1": {
+          "type": "PIG",
+          "hp": 1,
+          "name": "georg1",
+          "spawn": {
+            "world": "world",
+            "x": 7796.5,
+            "y": 66.5,
+            "z": -7041.5,
+            "yaw": -181,
+            "pitch": 0
+          },
+          "UIID": "85bf7e4e-e321-4839-b3ee-def203984faf",
+          "owner": "Oboltus",
+          "isSleep": false,
+          "isStarted": false,
+          "EID": "55364"
+        },
+        "maloy1": {
+          "type": "PIG",
+          "hp": 1,
+          "name": "maloy1",
+          "spawn": {
+            "world": "world",
+            "x": 6084.5,
+            "y": 66.5,
+            "z": -6324.5,
+            "yaw": -181,
+            "pitch": 0
+          },
+          "UIID": "85bf7e4e-e321-4839-b3ee-def203984faf",
+          "owner": "Oboltus",
+          "isSleep": false,
+          "isStarted": false,
+          "EID": "109577"
+        },
+        "maloy": {
+          "type": "WITCH",
+          "hp": 1,
+          "name": "maloy",
+          "spawn": {
+            "world": "world",
+            "x": 6084.5,
+            "y": 66.5,
+            "z": -6324.5,
+            "yaw": -181,
+            "pitch": 0
+          },
+          "UIID": "85bf7e4e-e321-4839-b3ee-def203984faf",
+          "owner": "Oboltus",
+          "isSleep": false,
+          "isStarted": false,
+          "EID": "286593"
+        }
+      },
+      "last_chestshop": {
+        "shop": {},
+        "hyper": {},
+        "store": {}
+      },
+      "isFly": false,
+      "isGod": false,
+      "containers": {
+        "skills": {},
+        "effects": {}
+      },
+      "last_chat": {
+        "ver": "v.0.1",
+        "select": "near",
+        "mute": {}
+      }
+    },
+    "b4fe1b16-1335-496e-be85-61e9e796f1e8": {
+      "name": "SchokkER",
+      "coins": 10000,
+      "last_chestshop": {
+        "shop": {},
+        "hyper": {},
+        "store": {}
+      },
+      "last_farm": {},
+      "isFly": false,
+      "isGod": true,
+      "containers": {
+        "skills": {},
+        "effects": {}
+      }
+    },
+    "40efc7e9-1bd9-485f-b062-44c6cdc30476": {
+      "name": "el_mecanico",
+      "coins": 30010,
+      "last_chestshop": {
+        "shop": {},
+        "hyper": {},
+        "store": {}
+      },
+      "last_farm": {},
+      "isFly": true,
+      "isGod": true,
+      "containers": {
+        "skills": {},
+        "effects": {}
+      }
+    },
+    "3325a983-1653-4632-8336-3d4e3241d6b9": {
+      "name": "Dinamic21",
+      "coins": 30000,
+      "last_chestshop": {
+        "shop": {},
+        "hyper": {},
+        "store": {}
+      },
+      "last_farm": {},
+      "isFly": false,
+      "isGod": false,
+      "containers": {
+        "skills": {},
+        "effects": {}
+      }
+    },
+    "9325b0a2-2d22-4d84-9842-58e833196107": {
+      "name": "Slimson",
+      "coins": 10000,
+      "last_chestshop": {
+        "shop": {},
+        "hyper": {},
+        "store": {}
+      },
+      "last_farm": {},
+      "isFly": false,
+      "isGod": false,
+      "containers": {
+        "skills": {},
+        "effects": {}
+      },
+      "last_chat": {
+        "select": "all",
+        "mute": {}
+      }
+    },
+    "dff08f73-6469-46fa-b323-e409a1986786": {
+      "name": "DarkDaiver",
+      "coins": 504,
+      "last_chestshop": {
+        "shop": {},
+        "hyper": {},
+        "store": {}
+      },
+      "last_farm": {},
+      "last_chat": {
+        "ver": "v.0.1",
+        "select": "near",
+        "mute": {}
+      },
+      "containers": {
+        "skills": {},
+        "effects": {}
+      },
+      "isFly": true,
+      "isGod": true
+    },
+    "fb2532ca-e24c-4baa-9ab9-284ef30216d0": {
+      "name": "Fufl1k",
+      "coins": 3742393,
+      "last_farm": {},
+      "last_chat": {
+        "ver": "v.0.1",
+        "select": "near",
+        "mute": {}
+      },
+      "containers": {
+        "skills": {},
+        "effects": {}
+      },
+      "isFly": true,
+      "isGod": true
+    }
+  }
+}

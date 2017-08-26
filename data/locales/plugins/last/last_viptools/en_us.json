@@ -1,0 +1,15 @@
+{
+    "msg": {
+		"fly_on": "Flight mode enabled.",
+		"fly_off": "The flight mode is disabled.",
+		"fly_deny": "You do not have permission to fly.",
+		"fly_restrict": "Flights are not allowed on this server.",
+		"god_on": "The immortality mode is on.",
+		"god_off": "The immortality mode is disabled.",
+		"god_deny": "You do not have permission to use immortality.",
+		"dod_restrict": "Immortal is prohibited on this server.",
+		"slap_deny": "You do not have permission to use the / slap command.",
+		"slap_restrict": "This command is forbidden on the server.",
+		"slap": "You kicked your ass well."
+    }
+}

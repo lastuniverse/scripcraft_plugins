@@ -1,0 +1,133 @@
+{
+  "guest": {
+    "isEnable": true,
+    "default": true,
+    "priotity": 0,
+    "permissions": {
+      "last_expchange.use":true,
+      //"last_warp.warp": false,
+      "last_farm.use":true,
+    },
+    "options": {
+      "last_chat.group": { "icon":"Ⓖ", "color": "darkgray" },
+      "last_warp.max":0,
+      "last_farm.max":0,
+      //"last_farm.mobs": {"RABBIT":200,"PIG":200,"BLAZE":1000,"WITCH":512,"CREEPER":537,"SKELETON":685,"ZOMBIE":550,"PIG_ZOMBIE":687,"ENDERMAN":403,"CAVE_SPIDER":373,"GUARDIAN":300, "IRON_GOLEM":2000, "SQUID":200,"WITHER_SKELETON":20000 },
+      "last_farm.mobs": {"RABBIT":100,"PIG":100,"BLAZE":500,"WITCH":256,"CREEPER":256,"SKELETON":340,"ZOMBIE":256,"PIG_ZOMBIE":340,"ENDERMAN":200,"CAVE_SPIDER":190,"GUARDIAN":200, "IRON_GOLEM":1000, "SQUID":200,"WITHER_SKELETON":15000 },
+      "last_teleport.cost": 300,
+      "last_mobterror.max": 10,
+      "last_mobterror.q": 50,
+      "last_mobterror.offset": 200,
+      "last_mobterror.time": 45,
+      "last_mobterror.mobs": {
+        "world": ["EVOKER","SPIDER","CAVE_SPIDER", "ZOMBIE", "SKELETON", "CREEPER", "WITCH","VEX","GUARDIAN","ELDER_GUARDIAN"],
+        "world_nether": ["SKELETON", "WITHER_SKELETON", "PIG_ZOMBIE", "VEX", "BLAZE" ],
+        "world_the_end": [ "VEX", "ENDERMAN", "SHULKER"]
+      }
+    }
+  },
+  "restricted": {
+    "isEnable": true,
+    "priotity": 10,
+    "permissions": {
+    },
+    "options": {
+      "last_chat.group": { "icon":"Ⓡ", "color": "black" },
+      "last_warp.max":0,
+      "last_farm.max":0
+    }
+  },
+  "holder": {
+    "isEnable": true,
+    "priotity": 21,
+    "permissions": {
+      "last_farm.set":true,
+      "last_farm.use":true
+    },
+    "options": {
+      "last_chat.group": { "icon":"Ⓗ", "color": "yellow" },
+      "last_farm.max":1
+    }
+  },
+  "player": {
+    "isEnable": true,
+    "priotity": 20,
+    "permissions": {
+      "last_viptools.slap": true,
+      //"last_spawn.spawn": true,
+      "last_spawn.sign.use": true,
+      "last_spawn.sign.place": true,
+      //"last_warp.warp": true,
+      "last_warp.sign.use": true,
+      "last_warp.sign.place": true,
+      //"last_warp.manage": true,
+      "last_warp.access": true,
+      "skills.use": true,
+
+    },
+    "options": {
+      "last_chat.group": { "icon":"Ⓟ", "color": "gray" }
+    }
+  },
+  "vip": {
+    "isEnable": true,
+    "priotity": 30,
+    "permissions": {
+      "last_viptools.fly": true,
+      "last_viptools.god": true,
+      "last_warp.manage": true
+    },
+    "options": {
+      "last_chat.group": { "icon":"Ⓥ", "color": "purple" },
+      "last_warp.max":1
+    }
+  },
+  "moderator": {
+    "isEnable": true,
+    "priotity": 40,
+    "permissions": {
+      "last_chat.admin": true
+    },
+    "options": {
+      "last_chat.mute.maxtime": 15,
+      "last_chat.group": { "icon":"Ⓜ", "color": "darkred" }
+    }
+  },
+  "admin": {
+    "isEnable": true,
+    "priotity": 50,
+    "permissions": {
+      "last_chat.admin": true
+    },
+    "options": {
+      "last_chat.mute.maxtime": 60,
+      "last_chat.group": { "icon":"Ⓐ", "color": "gold" },
+      "last_farm.max":1,
+      "last_warp.max":10
+    }
+  },
+  "лентяивымогатели": {
+    "isEnable": true,
+    "priotity": 40,
+    "permissions": {
+      "last_warp.warp": true,
+      "last_spawn.spawn": true
+      //"*": true
+    },
+    "options": {
+      "last_chat.group": { "icon":"Ⓛ", "color": "white" },
+      "last_warp.max":1,
+      "last_teleport.cost": 1,
+      "last_mobterror.max": 1,
+      "last_mobterror.q": 50,
+      "last_mobterror.offset": 200,
+      "last_mobterror.time": 1000,
+      "last_mobterror.mobs": {
+        "world": [],
+        "world_nether": [],
+        "world_the_end": []
+      }
+    }
+  }
+}
+

@@ -1,0 +1,362 @@
+{
+  "warps": {
+    "relax": {
+      "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+      "owner": "lastuniverse",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": 537.075654366459,
+        "y": 65,
+        "z": 1921.8680233584128,
+        "yaw": -31.41748046875,
+        "pitch": 10.949904441833496
+      }
+    },
+    "bla-bla": {
+      "UUID": "65419976-13af-4de7-9554-299b2e597e6a",
+      "owner": "libbar",
+      "public": true,
+      "loc": {
+        "world": "world_nether",
+        "x": -408.7445351994873,
+        "y": 62,
+        "z": 670.4039788593956,
+        "yaw": -246.38870239257812,
+        "pitch": 21.955703735351562
+      }
+    },
+    "village": {
+      "UUID": "65419976-13af-4de7-9554-299b2e597e6a",
+      "owner": "libbar",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": 664.4917593576658,
+        "y": 71.5,
+        "z": 5161.9178130279715,
+        "yaw": 178.99468994140625,
+        "pitch": 29.100021362304688
+      }
+    },
+    "stronghold": {
+      "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+      "owner": "lastuniverse",
+      "public": false,
+      "loc": {
+        "world": "world",
+        "x": 460.6400361877338,
+        "y": 26.22339120605183,
+        "z": 1582.300000011921,
+        "yaw": 1.724578857421875,
+        "pitch": 27.450029373168945
+      }
+    },
+    "a_city": {
+      "UUID": "4894b515-9c3e-42f7-be17-06a7067720bc",
+      "owner": "Andsoon",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": 7.991400523156935,
+        "y": 66,
+        "z": -3000.0283905299702,
+        "yaw": -276.27734375,
+        "pitch": 90
+      }
+    },
+    "starik_zzzhakonya": {
+      "UUID": "505ef96e-5a4d-4f0b-b193-3117c3799a13",
+      "owner": "ZZzhakonya",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": -1507.2810245024345,
+        "y": 72.5,
+        "z": -139.48341521128714,
+        "yaw": 88.6175537109375,
+        "pitch": 7.500019073486328
+      }
+    },
+    "xd": {
+      "UUID": "b8771b8b-e401-4003-b839-cb533ce94e1c",
+      "owner": "XDeNzl",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": -5015.720574444551,
+        "y": 64,
+        "z": -2438.4609636246046,
+        "yaw": 96.714599609375,
+        "pitch": 16.199989318847656
+      }
+    },
+    "1000isle": {
+      "UUID": "e5db92f9-1821-48a8-a4c8-2278db941fad",
+      "owner": "sulik666",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": 1900.103420325309,
+        "y": 65,
+        "z": 2556.5931518121974,
+        "yaw": -335.696533203125,
+        "pitch": 20.849987030029297
+      }
+    },
+    "downtown": {
+      "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+      "owner": "lastuniverse",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": 821.2522368525723,
+        "y": 28,
+        "z": 1304.8595223598618,
+        "yaw": -1.14886474609375,
+        "pitch": -2.5500142574310303
+      }
+    },
+    "gray": {
+      "UUID": "6f2d5cf3-f319-4cf1-92a8-df3c90b27586",
+      "owner": "MrGray",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": 7255.8354729188595,
+        "y": 69.9375,
+        "z": -1905.6943882016599,
+        "yaw": 246.23876953125,
+        "pitch": -0.30000752210617065
+      }
+    },
+    "grig": {
+      "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+      "owner": "lastuniverse",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": 6482.080495652304,
+        "y": 80,
+        "z": -167.55990011571973,
+        "yaw": 46.574188232421875,
+        "pitch": 21.449874877929688
+      }
+    },
+    "emexajt": {
+      "UUID": "a51f9023-6b93-4266-927f-08bcb4a772c9",
+      "owner": "emexajt",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": -4894.291554043289,
+        "y": 65,
+        "z": -2027.9251387373492,
+        "yaw": -357.01953125,
+        "pitch": 11.70042896270752
+      }
+    },
+    "maloy": {
+      "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+      "owner": "lastuniverse",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": 6100.5133811166515,
+        "y": 65,
+        "z": -6299.472082258482,
+        "yaw": -177.00027465820312,
+        "pitch": -3.0000030994415283
+      }
+    },
+    "farm": {
+      "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+      "owner": "lastuniverse",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": 824.015862897186,
+        "y": 29,
+        "z": 1251.8995093609126,
+        "yaw": 1.2511471509933472,
+        "pitch": 1.9499751329421997
+      }
+    },
+    "fly": {
+      "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+      "owner": "lastuniverse",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": -192.51272729216353,
+        "y": 152,
+        "z": -130.5315063659967,
+        "yaw": -88.75223541259766,
+        "pitch": -36.59993362426758
+      }
+    },
+    "spawn": {
+      "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+      "owner": "lastuniverse",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": 50.812379316146604,
+        "y": 27,
+        "z": -30.10011370071516,
+        "yaw": 314.8482666015625,
+        "pitch": -14.699978828430176
+      }
+    },
+    "arena": {
+      "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+      "owner": "lastuniverse",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": 31.49916519344876,
+        "y": 2,
+        "z": -49.48109924359107,
+        "yaw": 314.8359375,
+        "pitch": -7.200046539306641
+      }
+    },
+    "diablo": {
+      "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+      "owner": "lastuniverse",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": -1055.6214434699232,
+        "y": 70,
+        "z": 471.75533740896145,
+        "yaw": 90.4471206665039,
+        "pitch": -4.500007152557373
+      }
+    },
+    "darkdaiver": {
+      "UUID": "dff08f73-6469-46fa-b323-e409a1986786",
+      "owner": "DarkDaiver",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": -4417.307416605134,
+        "y": 65,
+        "z": -2572.029208026691,
+        "yaw": -12.5732421875,
+        "pitch": 25.488000869750977
+      }
+    },
+    "xxxgenaxx": {
+      "UUID": "eddd148a-2e89-45f3-bc33-071ffac51198",
+      "owner": "xxxGenaxxx",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": 5934.516421577219,
+        "y": 68,
+        "z": -117.43909283859266,
+        "yaw": 272.070556640625,
+        "pitch": 89.09999084472656
+      }
+    },
+    "farmgena": {
+      "UUID": "eddd148a-2e89-45f3-bc33-071ffac51198",
+      "owner": "xxxGenaxxx",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": 6585.171261574447,
+        "y": 61,
+        "z": -495.6164625234573,
+        "yaw": -283.85308837890625,
+        "pitch": 66.44996643066406
+      }
+    },
+    "lonely_island": {
+      "UUID": "85bf7e4e-e321-4839-b3ee-def203984faf",
+      "owner": "Oboltus",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": 7812.509311675338,
+        "y": 65,
+        "z": -7016.496006335117,
+        "yaw": -87.901611328125,
+        "pitch": 3.149998903274536
+      }
+    },
+    "ghost-town": {
+      "UUID": "85bf7e4e-e321-4839-b3ee-def203984faf",
+      "owner": "Oboltus",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": 7816.506386151356,
+        "y": 25,
+        "z": -6994.471659317736,
+        "yaw": -84.45183563232422,
+        "pitch": -0.4499870836734772
+      }
+    },
+    "hak_bot": {
+      "UUID": "85bf7e4e-e321-4839-b3ee-def203984faf",
+      "owner": "Oboltus",
+      "public": true,
+      "loc": {
+        "world": "world",
+        "x": 6100.445504782151,
+        "y": 44,
+        "z": -6321.314278529448,
+        "yaw": -177.6007080078125,
+        "pitch": 24.750003814697266
+      }
+    }
+  },
+  "players": {
+    "eddd148a-2e89-45f3-bc33-071ffac51198": {
+      "name": "xxxGenaxxx",
+      "count": 2
+    },
+    "4894b515-9c3e-42f7-be17-06a7067720bc": {
+      "name": "Andsoon",
+      "count": 1
+    },
+    "65419976-13af-4de7-9554-299b2e597e6a": {
+      "name": "libbar",
+      "count": 2
+    },
+    "37ddefbb-f14f-424e-8dee-908b522dc7fb": {
+      "name": "lastuniverse",
+      "count": 10
+    },
+    "505ef96e-5a4d-4f0b-b193-3117c3799a13": {
+      "name": "ZZzhakonya",
+      "count": 1
+    },
+    "b8771b8b-e401-4003-b839-cb533ce94e1c": {
+      "name": "XDeNzl",
+      "count": 1
+    },
+    "e5db92f9-1821-48a8-a4c8-2278db941fad": {
+      "name": "sulik666",
+      "count": 1
+    },
+    "6f2d5cf3-f319-4cf1-92a8-df3c90b27586": {
+      "name": "MrGray",
+      "count": 1
+    },
+    "a51f9023-6b93-4266-927f-08bcb4a772c9": {
+      "name": "emexajt",
+      "count": 1
+    },
+    "dff08f73-6469-46fa-b323-e409a1986786": {
+      "name": "DarkDaiver",
+      "count": 1
+    },
+    "85bf7e4e-e321-4839-b3ee-def203984faf": {
+      "name": "Oboltus",
+      "count": 3
+    }
+  }
+}

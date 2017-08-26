@@ -1,0 +1,8 @@
+{
+    "locale": "ru_ru",
+    "enable": true,
+    "password": {
+    	"sumbols": "0123456789",
+    	"length": 5
+    }
+}

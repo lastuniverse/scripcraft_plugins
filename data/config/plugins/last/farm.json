@@ -1,0 +1,11 @@
+{
+    "locale": "ru_ru",
+    "enable": true
+    // "options":{
+	   //  "max": 16,
+	   //  "q": 50,
+	   //  "offset": 150,
+	   //  "count": 1000,
+	   //  "mobs": ["VEX", "EVOKER", "BLAZE", "SPIDER", "CAVE_SPIDER", "ZOMBIE", "SKELETON", "CREEPER", "WITCH", "WITHER_SKELETON"]
+    // }
+}

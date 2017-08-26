@@ -1,0 +1,22 @@
+{
+    "locale": "ru_ru",
+    "enable": true,
+    "mute": {
+        "max": 60
+    },
+    "colors":{
+    	"name": "gray",
+    	"message": "white",
+    	"none": "black",
+    	"group": "darkgray"
+    },
+    "icons":{
+    	"none": "✖"
+    },
+    "chats": {
+        "admin": { "prefix":"@", "icon_color": "gold", "groups": { "admin": true, "moderator": true } },
+        "trade": { "prefix":"$", "icon_color": "darkred", "cost": 30 },
+        "near": { "prefix":"~", "text_color": "white", "distance": 20000 },
+        "far": { "prefix":"!", "text_color": "darkgray", "cost": 1 }
+    }
+}

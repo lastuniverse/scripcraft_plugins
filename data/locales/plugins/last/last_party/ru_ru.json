@@ -1,0 +1,28 @@
+{
+    "msg": {
+        "party":"Вы состоите в пати: ${name} - ${description}\nЕе лидер: ${owner}\nЕе члены: ${players}",
+        "party_info":"Инормация о пати: ${name} - ${description}\nЕе лидер: ${owner}\nЕе члены: ${players}",
+        "no_party":"Вы не состоите в пати",
+        "party_is_epsent":"Пати с названием ${name} не существует.",
+        "party_member": "Вы являетесь членом этих пати:\n",
+        "party_leader": "Вы являетесь лидером этих пати:\n",
+        "party_opened": "Эти пати ведут набор в свои ряды:\n"
+    },
+    "help":[
+		"/party help : эта справка\n",
+		"/party create {name} {max} {description} : создать пати с названием {name}. {max} - максимальное количество игроков. {description} - описание пати\n",
+		"/party remove {name} : распустить пати с названием {name}\n",
+		"/party protect {name} : закрыть паролем вход в пати с названием {name}\n",
+		"/party public {name} : разрешить всем игрокам вход в пати с названием {name}\n",
+		"/party leader {name} {player} : назначить игрока {player} новым лидером пати с названием {name}\n",
+		"/party invite {name} {player} : пригласить игрока {player} в пати с названием {name}\n",
+		"/party kick {name} {player} : прогнать игрока {player} из пати с названием {name}\n",
+		"/party accept {name} [password] : принять приглашение вступить в пати с названием {name}. Если пати закрытая - Вам понадобится пароль [password]\n",
+		"/party leave {name} : покинуть пати с названием {name}\n",
+		"/party info : показать информацию о пати членом которой вы являетесь\n",
+        "/party info {name} : показать информацию о пати с названием {name}\n",
+		"/party list : показать все пати в открытые для вступления\n",
+        "@{...} : написать сообщение {...} членам пати.\n"
+    ]
+}
+

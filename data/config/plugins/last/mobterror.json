@@ -1,0 +1,32 @@
+{
+    "locale": "ru_ru",
+    "enable": true,
+    "max": 10,
+    "q": 50,
+    "offset": 200,
+    "time": 45,
+	"mobs": {
+		"world": ["EVOKER","VINDICATOR","HUSK","SPIDER","CAVE_SPIDER", "ZOMBIE", "SKELETON", "CREEPER", "WITCH","VEX","GUARDIAN","ELDER_GUARDIAN"],
+		"world_nether": ["SKELETON", "WITHER_SKELETON", "PIG_ZOMBIE", "VEX", "BLAZE" ],
+		"world_the_end": [ "VEX", "ENDERMAN", "SHULKER"]
+	},
+	"options": {
+		"SHULKER": {"type": "ground", "light": 15},
+		"ENDERMAN": {"type": "ground", "light": 15},
+		"EVOKER": {"type": "ground", "light": 3},
+		"VINDICATOR": {"type": "ground", "light": 4},
+		"SPIDER": {"type": "ground", "light": 5},
+		"CAVE_SPIDER": {"type": "ground", "light": 5},
+		"HUSK": {"type": "ground", "light": 5},
+		"ZOMBIE": {"type": "ground", "light": 6},
+		"SKELETON": {"type": "ground", "light": 6},
+		"CREEPER": {"type": "ground", "light": 4},
+		"WITCH": {"type": "ground", "light": 5},
+		"WITHER_SKELETON": {"type": "ground", "light": 3},
+		"PIG_ZOMBIE": {"type": "ground", "light": 4},
+		"VEX": {"type": "air", "light": 4},
+		"BLAZE": {"type": "air", "light": 5},
+		"GUARDIAN": {"type": "water", "light": 15},
+		"ELDER_GUARDIAN": {"type": "water", "light": 15}
+	}
+}

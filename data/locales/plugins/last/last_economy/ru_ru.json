@@ -1,0 +1,18 @@
+{
+    "msg": {
+    	"deny": "вам не разрешено использовать эту команду."
+    },
+	"help": [
+		"/economy help : эта справка\n",
+		"/economy money: узнать свой баланс\n",
+		"/economy money {playername}: узнать баланс игрока с ником {playername} (только если игрок в онлайне)\n",
+		"/economy pay {playername} {money} : : передать игроку {playername} Жакониев {money} (только если игрок в онлайне)\n",
+		"/economy give {playername} {money} : подарить игроку {playername} Жакониев {money} (только если игрок в онлайне, доступна только главному админу)\n",
+		"/economy top {10|15|20} : посмотреть 10, 15 или 20 богатеев на сервере\n",
+		"/money : то же самое что и /economy money\n",
+		"/money {playername}: то же самое что и /economy money {playername}\n",
+		"/pay {playername} {money} : то же самое что и /economy pay {playername} {money}\n",
+		"/top {10|15|20} : то же самое что и /economy top {10|15|20}\n"	
+	]
+}
+
