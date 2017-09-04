@@ -53,7 +53,7 @@ function cmd_pisec(params, sender){
 	// inv.addItem(item);
 	var data = {
 		display:{
-			Name:"LegsOfGOD"},
+			Name:"PickaxeOfGOD"},
 			// Прочность-10лвл Острота-10лвл Урон_нежити-10лвл Бич_членистоногих-10лвл Отбрасывание-10лвл Поджог-10лвл Мародерство-10лвл
 			ench:[
 				{id:0,lvl:100},	// Защита
@@ -66,16 +66,16 @@ function cmd_pisec(params, sender){
 				{id:7,lvl:100},	// Шипы
 				{id:34,lvl:100},	// Прочность
 				// Оружие
-//				{id:16,lvl:10},	// Острота
-//				{id:17,lvl:10},	// Урон нежити
-//				{id:18,lvl:10},	// Бич членистоногих
-//				{id:19,lvl:10},	// Отбрасывание
-//				{id:20,lvl:10},	// Поджог
-//				{id:21,lvl:10},	// Мародерство
+				{id:16,lvl:10},	// Острота
+				{id:17,lvl:10},	// Урон нежити
+				{id:18,lvl:10},	// Бич членистоногих
+				{id:19,lvl:10},	// Отбрасывание
+				{id:20,lvl:10},	// Поджог
+				{id:21,lvl:10},	// Мародерство
 				// Инструменты
-//				{id:32,lvl:10},	// Эффективность
+				{id:32,lvl:10},	// Эффективность
 //				{id:33,lvl:10},	// Шелковое касание
-//				{id:35,lvl:3},		// Удача
+				{id:35,lvl:10},		// Удача
 				// Лук
 //				{id:48,lvl:10},	// Сила
 //				{id:49,lvl:10},	// Отбрасывание
@@ -92,7 +92,7 @@ function cmd_pisec(params, sender){
 		};
 	var str = JSON.stringify(data).replace(/\"/g,"");
 	// var cmd = "give "+player.name+" minecraft:DIAMOND_SWORD 1 0 "+str;
-	var cmd = "give "+player.name+" minecraft:DIAMOND_BOOTS 1 0 "+str;
+	var cmd = "give "+player.name+" minecraft:diamond_pickaxe 1 0 "+str;
 	// leather_boots
 	console.log("!!! CMD: "+cmd);
 	slash(cmd);
@@ -147,22 +147,12 @@ completer.addPlayerCommand('pisec',cmd_pisec,undefined,"last_test.use");
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 var bukkit2minecraft = {};
 var minecraft2bukkit = {};
 
 function cmd_mygive(params, sender){
 	//var cost = require('last/cost');
+
 	var key_list = scload("./scriptcraft/data/config/modules/last/cost/key_list.json");
 	for( var key in key_list){
 		var result = key.match(/(.*?):(\d+)/);
@@ -184,8 +174,10 @@ function cmd_mygive(params, sender){
 	  	minecraft2bukkit[""+mat.name] = ""+material_key;
 	  	inv.removeItem(item);
 	}
-	//scsave(bukkit2minecraft,"./scriptcraft/data/config/modules/last/cost/bukkit2minecraft.json");
-	//scsave(minecraft2bukkit,"./scriptcraft/data/config/modules/last/cost/minecraft2bukkit.json");
+
+
+	// scsave(bukkit2minecraft,"./scriptcraft/data/config/modules/last/cost/bukkit2minecraft.json");
+	// scsave(minecraft2bukkit,"./scriptcraft/data/config/modules/last/cost/minecraft2bukkit.json");
 }
 
 completer.addPlayerCommand('mygive',cmd_mygive);
@@ -198,76 +190,243 @@ completer.addPlayerCommand('mygive',cmd_mygive);
 
 
 
+// var Material = Packages.org.bukkit.Material;
+// var ItemStack = Packages.org.bukkit.inventory.ItemStack;
+// var book = new ItemStack(Material.WRITTEN_BOOK, 1);
+
+
+
+// var BukkitObjectInputStream = org.bukkit.util.io.BukkitObjectInputStream;
+// var BukkitObjectOutputStream = org.bukkit.util.io.BukkitObjectOutputStream;
+// var ByteArrayInputStream = java.io.ByteArrayInputStream;
+// var ByteArrayOutputStream = java.io.ByteArrayOutputStream;
+// var Base64Coder = org.yaml.snakeyaml.external.biz.base64Coder.Base64Coder;
+
+// function cmd_serialize(params, sender){
+// 	var player = utils.player(sender);
+// 	var inv = player.getInventory();
+// 	var item = inv.getItemInMainHand();
+// 	var outputStream = new ByteArrayOutputStream();
+//     var bos = new BukkitObjectOutputStream(outputStream);
+//     bos.writeObject(item);
+// 	var encoded = Base64Coder.encodeLines(outputStream.toByteArray());
+// 	console.log("item serialize: "+encoded);
+
+// }
 
 
 
 
+// var Gson = com.google.gson.Gson;
+// var gson = new Gson();
+//var CraftItemStack = org.bukkit.craftbukkit.v1_12_R1.inventory.CraftItemStack;
+//var CraftItemStack = org.bukkit.craftbukkit.inventory.CraftItemStack;
 
-function cmd_gson(params, sender){
-	var test = server.pluginManager.getPlugin('PermissionsEx');
+// function cmd_serialize(params, sender){
+// 	var player = utils.player(sender);
+// 	var inv = player.getInventory();
+// 	var itemstack = inv.getItemInMainHand();
+// 	//var nmsStack = itemstack.clone().getTag();
+// 	//var data = CraftItemStack.asNMSCopy(itemstack).save(nmsStack);
+// 	//var nmsStack = CraftItemStack.asNMSCopy(itemstack.clone());
+// 	var str = itemstack.toString();
+// 	//var json = gson.toJson(itemstack.clone());
+//  	console.log("item serialize: "+str );
 
-  	// var inv = sender.getInventory();
-  	// var itemstack = inv.getItemInMainHand();
-  	// var nbti = test(itemstack);
-  	// var keys = nbti.getKeys();
-  	// console.log("NBT: "+ JSON.stringify(keys) );
-  	
- 	console.log("!!!! "+typeof test);
+// }
 
-  	console.log("+++++++++++++++++++++++++++++++++++++++++++++++++");
-  	nbt_parse(test,"");
-  // 	console.log("+++++++++++++++++++++++++++++++++++++++++++++++++");
-  // 	nbt_parse(global,"global");
-  // 	console.log("+++++++++++++++++++++++++++++++++++++++++++++++++");
-  // 	nbt_parse(this,"this");
+
+//var CraftItemStack = org.bukkit.craftbukkit.inventory.CraftItemStack;
+var CraftItemStack = org.bukkit.craftbukkit.v1_12_R1.inventory.CraftItemStack;
+//var NBTTagCompound = org.bukkit.minecraft.server.v1_12_R1.NBTTagCompound;
+
+function cmd_serialize(params, sender){
+	var player = utils.player(sender);
+	var inv = player.getInventory();
+	var itemstack = inv.getItemInMainHand();
+	var nmsStack = CraftItemStack.asNMSCopy(itemstack);
+	if( !nmsStack.hasTag() ){
+		var json = nmsStack.toString();
+	 	console.log("01 item serialize: "+json );
+		return;
+	}
+	
+	var nbtin = (nmsStack.hasTag()) ? nmsStack.getTag() : new NBTTagCompound();
+	nmsStack.save(nbtin);
+	var json = nbtin.toString();
+ 	console.log("02 item serialize: "+json );
+
 }
 
-var test_repit = {};
 
-function nbt_parse(point, path){
-	console.log("NBT: " + path );
 
-	if( test_repit[point] )
-  			return;
-  	test_repit[point]=true;
+var point_stack = completer.addPlayerCommand('stack',cmd_serialize);
+point_stack.addComplete("serialize",cmd_serialize,undefined);
 
-	if( typeof point === "object" ){
-	  	try{
-			Object.getOwnPropertyNames(point)
-			.filter(
-				function (name) { 
-					//if( typeof global[name] !== 'function' && name != "global"){
-						nbt_parse(point[name], path + "." + name );
-					//}
-				}
-			);
-			for(var name in point){
-				//if( typeof global[name] !== 'function' && name != "global"){
-					nbt_parse(point[name], path + "." + name );
-				//}
-			}
-		}catch(err){
 
-		}
-	}else if( typeof point === "function" ){
-	  	try{
-			for(var name in point){
-				//if( typeof global[name] !== 'function' && name != "global"){
-					nbt_parse(point[name], path + "." + name );
-				//}
-			}
+// CraftItemStack craft = (CraftItemStack) stack;
+// NBTTagCompound nbtin = new NBTTagCompound();
+// CraftItemStack.asNMSCopy(craft).save(nbtin);
+// String json = nbtin.toString();
+// NBTTagCompound nbtout = MojangsonParser.parse(json);
+// stack = CraftItemStack.asBukkitCopy(new net.minecraft.server.v1_12_R1.ItemStack(nbtout));
 
-		}catch(err){
 
-		}
+
+
+
+
+// In this example, you will learn how to register commands:
+// /description help
+// /description set {username} {you description}
+// /description set {username} {email}
+// /description delete {username}
+// /description list 
+
+// where:
+// {username} - the name of the online or offline player (online players are auto-complete by TAB)
+// {you description} - any text
+
+// We connect the module of registration and autocompletion of commands
+var  completer = require('last/completer');
+
+// Create/load a data warehouse for description
+var store = persist('description', {} );
+
+// Create an array with commands and their descriptions
+var help_messages = [
+"/description help - this help\n",
+"/description set {username} {you description} - remember for the player {username} description {you description}\n",
+"/description set {username} {email} - remember for the player {username} the email address {email}\n",
+"/description delete {username} - remove player description {username}\n",
+"/description list - Show the list of players and their descriptions\n"
+];
+
+//  We register the command `/description` without the handler
+var point = completer.addPlayerCommand( 'description' );
+
+//  We register the command `/description help` and its handler as a command for the client chat
+point.addComplete('help', cmd_help );
+
+//  We register the command `/description help` and its handler as a command for the client chat
+point.addComplete('list', cmd_list );
+
+
+// Register the command `/description set {username}` without the handler.
+// Note that the third argument passed to the function, userlist_to_autocomlete.
+// It returns an associative array whose keys will be added to the autocomplete list for the `/description set` command
+// It's not rational to display all online and offline players as an auto-completion of the `/description set` command.
+// But we do this to demonstrate the capabilities of the module `last/completer`.
+// The `@ any` tag is matched with any input after the `/description` command, adding the already entered characters to the list of auto-completions.
+// In our case, it will be matched against the entered user names, including the users offline.
+var point_set = point.addComplete('set', undefined, userlist_to_autocomlete )
+					 .addComplete('@any');
+
+
+	// Register the command `/description set {username} {email}` and set the handler for it.
+	point_set.addComplete('@re/(\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*)/', cmd_set_email);
+
+	// Register the command `/description set {username} {description}` and set the handler for it.
+	point_set.addComplete('@any', cmd_set_description);
+
+
+
+// Register the command `/description delete {username}`.
+// We could register the processors of the `/description delete {username}` command in the same way as for the `/description set {username} ...` command.
+// But to demonstrate the possibilities, I did it this way:
+var point_delete = point.addComplete('delete');
+
+	// the tag `@user` will add all users online to the `/description delete` list of auto-completions.
+	// when processing the entered text, the `@user` tag will be matched to the names of the users online.
+	point_delete.addComplete('@user',cmd_delete); 
+	// To be able to specify nicknames of offline players after the `/description delete` command, use the `@any` tag.
+	// Pay attention to the fact that nicknames of offline players will not be autocomplete.
+	// And also to the fact that the `@any` tag is matched with any input.
+	// So we use it last in the chain of autocomplete for the command `/description delete`.
+	point_delete.addComplete('@any',cmd_delete);
+
+
+
+
+// handler function for the `/description` and `/description help` commands
+// in `params[0]` is a `description`
+// in `params[1]` is a `help`
+function cmd_help(params, sender){
+	echo(sender, help_messages);
+}
+
+// handler function for the `/description list` command
+// in `params[0]` is a `description`
+// in `params[1]` is a `list`
+function cmd_list(params, sender){
+	var description_msg = ["Список пользователей для которых есть description:"];
+	for(var name in store ){
+		str = name + " - ";
+		if( store[name].email )
+			str += "<"+store[name].email+"> ";
+		if( store[name].info )
+			str += store[name].info;
+		str+="\n";
+		description_msg.push(str);
 	}
 
+	echo(sender, description_msg);
+}
+
+// handler function for the `/description set {username} {email}` commands
+// in `params[0]` is a `description`
+// in `params[1]` is a `{set}`
+// in `params[2]` is a `{username}`
+// in `params[3]` is a `{email}`
+function cmd_set_email(params, sender){
+	var name = params[2];
+	var email = params[3];
+	if( !store[name] )
+		store[name] = {};
+	store[name].email = email;
+	echo(sender, "адрес электронной почты <"+email+"> успешно внесен в описание пользователя "+name);
+}
+
+// handler function for the `/description set {username} {you description}` commands
+// in `params[0]` is a `description`
+// in `params[1]` is a `{set}`
+// in `params[2]` is a `{username}`
+// in `params[3]` is a `{you description}`
+function cmd_set_description(params, sender){
+	params.shift();
+	params.shift();
+	var name = params.shift();
+	var info = params.join(" ");
+	if( !store[name] )
+		store[name] = {};
+	store[name].info = info;
+	echo(sender, "информация успешно внесена в описание пользователя "+name);
+}
+
+// handler function for the `/description delete {username}` commands
+// in `params[0]` is a `description`
+// in `params[1]` is a `delete`
+// in `params[2]` is a `username`
+function cmd_delete(params, sender){
+	var name = params[2];
+	if( store[name] ){
+		delete store[name];
+		echo(sender, "описание для пользователя "+name+" успешно удалено");
+	}else{
+		echo(sender, "отсутствует описание для пользователя "+name);	
+	}
+	
+}
+
+// function returns an associative array whose keys are nicknames of all users registered on the server
+function userlist_to_autocomlete(sender,patern){
+	var result = {};
+	var users = org.bukkit.Bukkit.getOfflinePlayers();
+	for(var user in users){
+		var name = users[user].name;
+		result[name] = true;
+	}
+	return result;
 }
 
 
-
-
-
-
-
-completer.addPlayerCommand('gson',cmd_gson);

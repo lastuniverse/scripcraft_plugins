@@ -69,6 +69,11 @@
     "minecraft:sand": 0.5,
     "minecraft:gravel": 0.5
   },
+  "minecraft:concrete": {
+    "minecraft:dye": 0.25,
+    "minecraft:sand": 1,
+    "minecraft:gravel": 1
+  },  
   "minecraft:stained_glass": {
     "minecraft:glass": 1,
     "minecraft:dye": 0.125
@@ -88,6 +93,9 @@
   "minecraft:bone_block": {
     "minecraft:dye": 9
   },
+  "minecraft:bone": {
+    "minecraft:dye": 3
+  },  
   "minecraft:book": {
     "minecraft:reeds": 3,
     "minecraft:rabbit_hide": 4
@@ -478,11 +486,16 @@
     "minecraft:blaze_powder": 4,
     "minecraft:slime_ball": 4
   },
-  "minecraft:map": {
+  "minecraft:filled_map": {
+    "minecraft:reeds": 72,
+    "minecraft:iron_nugget": 324,
+    "minecraft:redstone": 9
+  },
+  "minecraft:filled_map": {
     "minecraft:reeds": 8,
     "minecraft:iron_nugget": 36,
     "minecraft:redstone": 1
-  },
+  },  
   "minecraft:melon_block": {
     "minecraft:melon": 9
   },
@@ -669,6 +682,12 @@
     "minecraft:flint": 0.125,
     "minecraft:feather": 0.125
   },
+  "minecraft:tipped_arrow": {
+    "minecraft:glowstone_dust": 2,
+    "minecraft:log": 0.015625,
+    "minecraft:flint": 0.125,
+    "minecraft:feather": 0.125
+  },  
   "minecraft:stick": {
     "minecraft:log": 0.125
   },
@@ -770,5 +789,11 @@
     "minecraft:rabbit_hide": 4,
     "minecraft:dye": 1,
     "minecraft:feather": 1
-  }
+  },
+  "minecraft:writen_book": {
+    "minecraft:reeds": 30,
+    "minecraft:rabbit_hide": 40,
+    "minecraft:dye": 10,
+    "minecraft:feather": 10
+  }  
 }

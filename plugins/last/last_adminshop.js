@@ -139,7 +139,7 @@ function correctShop(sign, shop){
   var item = shop.itemstack;
   var price = economy.getPrice(item, amount);
   if( !price )
-    return console.log("товара нет в базе");
+    return console.log("1 товара нет в базе "+item.type);
 
   shop.price = price;
   
@@ -356,7 +356,7 @@ function cmd_shop_set(params, sender){
   var amount = economy.toInt(params[2])||1;
   var price = economy.getPrice(item,amount);
   if( !price )
-    return locale.warn(sender, "товара нет в базе");
+    return locale.warn(sender, "2 товара нет в базе "+item.type);
 
   // получаем координаты таблички
   var loc = utils.locationToJSON( sign.getLocation() );

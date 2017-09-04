@@ -1,3 +1,6 @@
+console.log("EXIT of cost.js");
+return;
+
 var list = scload("./scriptcraft/data/config/modules/last/cost/list.json");
 var key_list = scload("./scriptcraft/data/config/modules/last/cost/key_list.json");
 var data_list = {};

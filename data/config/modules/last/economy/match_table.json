@@ -1,417 +1,1663 @@
 {
-  "STONE": "STONE",
-  "GRASS": "GRASS",
-  "DIRT": "DIRT",
-  "COBBLESTONE": "COBBLESTONE",
-  "WOOD": "WOOD",
-  "SAPLING": "SAPLING",
-  "BEDROCK": "BEDROCK",
-  "SAND": "SAND",
-  "GRAVEL": "GRAVEL",
-  "GOLD_ORE": "GOLD_ORE",
-  "IRON_ORE": "IRON_ORE",
-  "COAL_ORE": "COAL_ORE",
-  "LOG": "LOG",
-  "LEAVES": "LEAVES",
-  "SPONGE": "SPONGE",
-  "GLASS": "GLASS",
-  "LAPIS_ORE": "LAPIS_ORE",
-  "LAPIS_BLOCK": "LAPIS_BLOCK",
-  "DISPENSER": "DISPENSER",
-  "SANDSTONE": "SANDSTONE",
-  "NOTE_BLOCK": "NOTE_BLOCK",
-  "POWERED_RAIL": "POWERED_RAIL",
-  "DETECTOR_RAIL": "DETECTOR_RAIL",
-  "PISTON_STICKY_BASE": "PISTON_STICKY_BASE",
-  "WEB": "WEB",
-  "LONG_GRASS": "GRASS",
-  "DEAD_BUSH": "GRASS",
-  "PISTON_BASE": "PISTON_BASE",
-  "WOOL": "WOOL",
-  "YELLOW_FLOWER": "YELLOW_FLOWER",
-  "RED_ROSE": "RED_ROSE",
-  "BROWN_MUSHROOM": "BROWN_MUSHROOM",
-  "RED_MUSHROOM": "RED_MUSHROOM",
-  "GOLD_BLOCK": "GOLD_BLOCK",
-  "IRON_BLOCK": "IRON_BLOCK",
-  "STEP": "STEP",
-  "BRICK": "BRICK",
-  "TNT": "TNT",
-  "BOOKSHELF": "BOOKSHELF",
-  "MOSSY_COBBLESTONE": "MOSSY_COBBLESTONE",
-  "OBSIDIAN": "OBSIDIAN",
-  "TORCH": "TORCH",
-  "MOB_SPAWNER": "MOB_SPAWNER",
-  "WOOD_STAIRS": "WOOD_STAIRS",
-  "CHEST": "CHEST",
-  "DIAMOND_ORE": "DIAMOND_ORE",
-  "DIAMOND_BLOCK": "DIAMOND_BLOCK",
-  "WORKBENCH": "WORKBENCH",
-  "FURNACE": "FURNACE",
-  "WOODEN_DOOR": "WOOD_DOOR",
-  "LADDER": "LADDER",
-  "RAILS": "RAILS",
-  "COBBLESTONE_STAIRS": "COBBLESTONE_STAIRS",
-  "LEVER": "LEVER",
-  "STONE_PLATE": "STONE_PLATE",
-  "IRON_DOOR_BLOCK": "IRON_DOOR",
-  "WOOD_PLATE": "WOOD_PLATE",
-  "REDSTONE_ORE": "REDSTONE_ORE",
-  "STONE_BUTTON": "STONE_BUTTON",
-  "SNOW": "SNOW",
-  "ICE": "ICE",
-  "SNOW_BLOCK": "SNOW_BLOCK",
-  "CACTUS": "CACTUS",
-  "CLAY": "CLAY",
-  "JUKEBOX": "JUKEBOX",
-  "FENCE": "FENCE",
-  "PUMPKIN": "PUMPKIN",
-  "NETHERRACK": "NETHERRACK",
-  "SOUL_SAND": "SOUL_SAND",
-  "GLOWSTONE": "GLOWSTONE",
-  "JACK_O_LANTERN": "JACK_O_LANTERN",
-  "STAINED_GLASS": "STAINED_GLASS",
-  "TRAP_DOOR": "TRAP_DOOR",
-  "MONSTER_EGGS": "STONE",
-  "SMOOTH_BRICK": "SMOOTH_BRICK",
-  "HUGE_MUSHROOM_1": "HUGE_MUSHROOM_1",
-  "HUGE_MUSHROOM_2": "HUGE_MUSHROOM_2",
-  "IRON_FENCE": "IRON_FENCE",
-  "THIN_GLASS": "THIN_GLASS",
-  "MELON_BLOCK": "MELON_BLOCK",
-  "VINE": "VINE",
-  "FENCE_GATE": "FENCE_GATE",
-  "BRICK_STAIRS": "BRICK_STAIRS",
-  "SMOOTH_STAIRS": "SMOOTH_STAIRS",
-  "MYCEL": "MYCEL",
-  "WATER_LILY": "WATER_LILY",
-  "NETHER_BRICK": "NETHER_BRICK",
-  "NETHER_FENCE": "NETHER_FENCE",
-  "NETHER_BRICK_STAIRS": "NETHER_BRICK_STAIRS",
-  "ENCHANTMENT_TABLE": "ENCHANTMENT_TABLE",
-  "ENDER_PORTAL_FRAME": "ENDER_PORTAL_FRAME",
-  "ENDER_STONE": "ENDER_STONE",
-  "DRAGON_EGG": "DRAGON_EGG",
-  "WOOD_STEP": "WOOD_STEP",
-  "SANDSTONE_STAIRS": "SANDSTONE_STAIRS",
-  "EMERALD_ORE": "EMERALD_ORE",
-  "ENDER_CHEST": "ENDER_CHEST",
-  "TRIPWIRE_HOOK": "TRIPWIRE_HOOK",
-  "EMERALD_BLOCK": "EMERALD_BLOCK",
-  "SPRUCE_WOOD_STAIRS": "WOOD_STAIRS",
-  "BIRCH_WOOD_STAIRS": "WOOD_STAIRS",
-  "JUNGLE_WOOD_STAIRS": "WOOD_STAIRS",
-  "COMMAND": "COMMAND",
-  "BEACON": "BEACON",
-  "COBBLE_WALL": "COBBLE_WALL",
-  "WOOD_BUTTON": "WOOD_BUTTON",
-  "ANVIL": "ANVIL",
-  "TRAPPED_CHEST": "TRAPPED_CHEST",
-  "GOLD_PLATE": "GOLD_PLATE",
-  "IRON_PLATE": "IRON_PLATE",
-  "DAYLIGHT_DETECTOR": "DAYLIGHT_DETECTOR",
-  "REDSTONE_BLOCK": "REDSTONE_BLOCK",
-  "QUARTZ_ORE": "QUARTZ_ORE",
-  "HOPPER": "HOPPER",
-  "QUARTZ_BLOCK": "QUARTZ_BLOCK",
-  "QUARTZ_STAIRS": "QUARTZ_STAIRS",
-  "ACTIVATOR_RAIL": "ACTIVATOR_RAIL",
-  "DROPPER": "DROPPER",
-  "STAINED_CLAY": "STAINED_CLAY",
-  "STAINED_GLASS_PANE": "STAINED_GLASS_PANE",
-  "LEAVES_2": "LEAVES",
-  "LOG_2": "LOG",
-  "ACACIA_STAIRS": "WOOD_STAIRS",
-  "DARK_OAK_STAIRS": "WOOD_STAIRS",
-  "SLIME_BLOCK": "SLIME_BLOCK",
-  "BARRIER": "BARRIER",
-  "IRON_TRAPDOOR": "IRON_TRAPDOOR",
-  "PRISMARINE": "PRISMARINE",
-  "SEA_LANTERN": "SEA_LANTERN",
-  "HAY_BLOCK": "HAY_BLOCK",
-  "CARPET": "CARPET",
-  "HARD_CLAY": "HARD_CLAY",
-  "COAL_BLOCK": "COAL_BLOCK",
-  "PACKED_ICE": "PACKED_ICE",
-  "RED_SANDSTONE": "RED_SANDSTONE",
-  "RED_SANDSTONE_STAIRS": "RED_SANDSTONE_STAIRS",
-  "STONE_SLAB2": "STEP",
-  "SPRUCE_FENCE_GATE": "FENCE_GATE",
-  "BIRCH_FENCE_GATE": "FENCE_GATE",
-  "JUNGLE_FENCE_GATE": "FENCE_GATE",
-  "DARK_OAK_FENCE_GATE": "FENCE_GATE",
-  "ACACIA_FENCE_GATE": "FENCE_GATE",
-  "SPRUCE_FENCE": "FENCE",
-  "BIRCH_FENCE": "FENCE",
-  "JUNGLE_FENCE": "FENCE",
-  "DARK_OAK_FENCE": "FENCE",
-  "ACACIA_FENCE": "FENCE",
-  "SPRUCE_DOOR": "WOOD_DOOR",
-  "BIRCH_DOOR": "WOOD_DOOR",
-  "JUNGLE_DOOR": "WOOD_DOOR",
-  "ACACIA_DOOR": "WOOD_DOOR",
-  "DARK_OAK_DOOR": "WOOD_DOOR",
-  "END_ROD": "END_ROD",
-  "CHORUS_PLANT": "CHORUS_PLANT",
-  "CHORUS_FLOWER": "CHORUS_FLOWER",
-  "PURPUR_BLOCK": "PURPUR_BLOCK",
-  "PURPUR_PILLAR": "PURPUR_PILLAR",
-  "PURPUR_STAIRS": "PURPUR_STAIRS",
-  "PURPUR_SLAB": "PURPUR_SLAB",
-  "END_BRICKS": "END_BRICKS",
-  "GRASS_PATH": "GRASS_PATH",
-  "COMMAND_REPEATING": "COMMAND_REPEATING",
-  "COMMAND_CHAIN": "COMMAND_CHAIN",
-  "MAGMA": "MAGMA",
-  "NETHER_WART_BLOCK": "NETHER_WART_BLOCK",
-  "RED_NETHER_BRICK": "RED_NETHER_BRICK",
-  "BONE_BLOCK": "BONE_BLOCK",
-  "STRUCTURE_VOID": "STRUCTURE_VOID",
-  "OBSERVER": "OBSERVER",
-  "WHITE_SHULKER_BOX": "SHULKER_BOX",
-  "ORANGE_SHULKER_BOX": "SHULKER_BOX",
-  "MAGENTA_SHULKER_BOX": "SHULKER_BOX",
-  "LIGHT_BLUE_SHULKER_BOX": "SHULKER_BOX",
-  "YELLOW_SHULKER_BOX": "SHULKER_BOX",
-  "LIME_SHULKER_BOX": "SHULKER_BOX",
-  "PINK_SHULKER_BOX": "SHULKER_BOX",
-  "GRAY_SHULKER_BOX": "SHULKER_BOX",
-  "SILVER_SHULKER_BOX": "SHULKER_BOX",
-  "CYAN_SHULKER_BOX": "SHULKER_BOX",
-  "PURPLE_SHULKER_BOX": "SHULKER_BOX",
-  "BLUE_SHULKER_BOX": "SHULKER_BOX",
-  "BROWN_SHULKER_BOX": "SHULKER_BOX",
-  "GREEN_SHULKER_BOX": "SHULKER_BOX",
-  "RED_SHULKER_BOX": "SHULKER_BOX",
-  "BLACK_SHULKER_BOX": "SHULKER_BOX",
-  "STRUCTURE_BLOCK": "STRUCTURE_BLOCK",
-  "IRON_SPADE": "IRON_SPADE",
-  "IRON_PICKAXE": "IRON_PICKAXE",
-  "IRON_AXE": "IRON_AXE",
-  "FLINT_AND_STEEL": "FLINT_AND_STEEL",
-  "APPLE": "APPLE",
-  "BOW": "BOW",
-  "ARROW": "ARROW",
-  "COAL": "COAL",
-  "DIAMOND": "DIAMOND",
-  "IRON_INGOT": "IRON_INGOT",
-  "GOLD_INGOT": "GOLD_INGOT",
-  "IRON_SWORD": "IRON_SWORD",
-  "WOOD_SWORD": "WOOD_SWORD",
-  "WOOD_SPADE": "WOOD_SPADE",
-  "WOOD_PICKAXE": "WOOD_PICKAXE",
-  "WOOD_AXE": "WOOD_AXE",
-  "STONE_SWORD": "STONE_SWORD",
-  "STONE_SPADE": "STONE_SPADE",
-  "STONE_PICKAXE": "STONE_PICKAXE",
-  "STONE_AXE": "STONE_AXE",
-  "DIAMOND_SWORD": "DIAMOND_SWORD",
-  "DIAMOND_SPADE": "DIAMOND_SPADE",
-  "DIAMOND_PICKAXE": "DIAMOND_PICKAXE",
-  "DIAMOND_AXE": "DIAMOND_AXE",
-  "STICK": "STICK",
-  "BOWL": "BOWL",
-  "MUSHROOM_SOUP": "MUSHROOM_SOUP",
-  "GOLD_SWORD": "GOLD_SWORD",
-  "GOLD_SPADE": "GOLD_SPADE",
-  "GOLD_PICKAXE": "GOLD_PICKAXE",
-  "GOLD_AXE": "GOLD_AXE",
-  "STRING": "STRING",
-  "FEATHER": "FEATHER",
-  "SULPHUR": "SULPHUR",
-  "WOOD_HOE": "WOOD_HOE",
-  "STONE_HOE": "STONE_HOE",
-  "IRON_HOE": "IRON_HOE",
-  "DIAMOND_HOE": "DIAMOND_HOE",
-  "GOLD_HOE": "GOLD_HOE",
-  "SEEDS": "SEEDS",
-  "WHEAT": "WHEAT",
-  "BREAD": "BREAD",
-  "LEATHER_HELMET": "LEATHER_HELMET",
-  "LEATHER_CHESTPLATE": "LEATHER_CHESTPLATE",
-  "LEATHER_LEGGINGS": "LEATHER_LEGGINGS",
-  "LEATHER_BOOTS": "LEATHER_BOOTS",
-  "CHAINMAIL_HELMET": "CHAINMAIL_HELMET",
-  "CHAINMAIL_CHESTPLATE": "CHAINMAIL_CHESTPLATE",
-  "CHAINMAIL_LEGGINGS": "CHAINMAIL_LEGGINGS",
-  "CHAINMAIL_BOOTS": "CHAINMAIL_BOOTS",
-  "IRON_HELMET": "IRON_HELMET",
-  "IRON_CHESTPLATE": "IRON_CHESTPLATE",
-  "IRON_LEGGINGS": "IRON_LEGGINGS",
-  "IRON_BOOTS": "IRON_BOOTS",
-  "DIAMOND_HELMET": "DIAMOND_HELMET",
-  "DIAMOND_CHESTPLATE": "DIAMOND_CHESTPLATE",
-  "DIAMOND_LEGGINGS": "DIAMOND_LEGGINGS",
-  "DIAMOND_BOOTS": "DIAMOND_BOOTS",
-  "GOLD_HELMET": "GOLD_HELMET",
-  "GOLD_CHESTPLATE": "GOLD_CHESTPLATE",
-  "GOLD_LEGGINGS": "GOLD_LEGGINGS",
-  "GOLD_BOOTS": "GOLD_BOOTS",
-  "FLINT": "FLINT",
-  "PORK": "PORK",
-  "GRILLED_PORK": "GRILLED_PORK",
-  "PAINTING": "PAINTING",
-  "GOLDEN_APPLE": "GOLDEN_APPLE",
-  "SIGN": "SIGN",
-  "WOOD_DOOR": "WOOD_DOOR",
-  "BUCKET": "BUCKET",
-  "WATER_BUCKET": "WATER_BUCKET",
-  "LAVA_BUCKET": "LAVA_BUCKET",
-  "MINECART": "MINECART",
-  "SADDLE": "SADDLE",
-  "IRON_DOOR": "IRON_DOOR",
-  "REDSTONE": "REDSTONE",
-  "SNOW_BALL": "SNOW_BALL",
-  "SNOW": "SNOW_BALL",
-  "BOAT": "BOAT",
-  "LEATHER": "LEATHER",
-  "MILK_BUCKET": "MILK_BUCKET",
-  "CLAY_BRICK": "CLAY_BRICK",
-  "CLAY_BALL": "CLAY_BALL",
-  "SUGAR_CANE": "SUGAR_CANE",
-  "PAPER": "PAPER",
-  "BOOK": "BOOK",
-  "SLIME_BALL": "SLIME_BALL",
-  "STORAGE_MINECART": "STORAGE_MINECART",
-  "POWERED_MINECART": "POWERED_MINECART",
-  "EGG": "EGG",
-  "COMPASS": "COMPASS",
-  "FISHING_ROD": "FISHING_ROD",
-  "WATCH": "WATCH",
-  "GLOWSTONE_DUST": "GLOWSTONE_DUST",
-  "RAW_FISH": "RAW_FISH",
-  "COOKED_FISH": "COOKED_FISH",
-  "INK_SACK": "INK_SACK",
-  "BONE": "BONE",
-  "SUGAR": "SUGAR",
-  "CAKE": "CAKE",
-  "BED": "BED",
-  "DIODE": "DIODE",
-  "COOKIE": "COOKIE",
-  "MAP": "MAP",
-  "SHEARS": "SHEARS",
-  "MELON": "MELON",
-  "PUMPKIN_SEEDS": "PUMPKIN_SEEDS",
-  "MELON_SEEDS": "MELON_SEEDS",
-  "RAW_BEEF": "RAW_BEEF",
-  "COOKED_BEEF": "COOKED_BEEF",
-  "RAW_CHICKEN": "RAW_CHICKEN",
-  "COOKED_CHICKEN": "COOKED_CHICKEN",
-  "ROTTEN_FLESH": "ROTTEN_FLESH",
-  "ENDER_PEARL": "ENDER_PEARL",
-  "BLAZE_ROD": "BLAZE_ROD",
-  "GHAST_TEAR": "GHAST_TEAR",
-  "GOLD_NUGGET": "GOLD_NUGGET",
-  "NETHER_STALK": "NETHER_STALK",
-  "POTION": "POTION",
-  "GLASS_BOTTLE": "GLASS_BOTTLE",
-  "SPIDER_EYE": "SPIDER_EYE",
-  "FERMENTED_SPIDER_EYE": "FERMENTED_SPIDER_EYE",
-  "BLAZE_POWDER": "BLAZE_POWDER",
-  "MAGMA_CREAM": "MAGMA_CREAM",
-  "BREWING_STAND_ITEM": "BREWING_STAND_ITEM",
-  "CAULDRON_ITEM": "CAULDRON_ITEM",
-  "EYE_OF_ENDER": "EYE_OF_ENDER",
-  "SPECKLED_MELON": "SPECKLED_MELON",
-  "MONSTER_EGG": "MONSTER_EGG",
-  "EXP_BOTTLE": "EXP_BOTTLE",
-  "FIREBALL": "FIREBALL",
-  "BOOK_AND_QUILL": "BOOK_AND_QUILL",
-  "WRITTEN_BOOK": "WRITTEN_BOOK",
-  "EMERALD": "EMERALD",
-  "ITEM_FRAME": "ITEM_FRAME",
-  "FLOWER_POT_ITEM": "FLOWER_POT_ITEM",
-  "CARROT_ITEM": "CARROT_ITEM",
-  "POTATO_ITEM": "POTATO_ITEM",
-  "BAKED_POTATO": "BAKED_POTATO",
-  "POISONOUS_POTATO": "POISONOUS_POTATO",
-  "EMPTY_MAP": "EMPTY_MAP",
-  "GOLDEN_CARROT": "GOLDEN_CARROT",
-  "SKULL_ITEM": "SKULL_ITEM",
-  "CARROT_STICK": "CARROT_STICK",
-  "NETHER_STAR": "NETHER_STAR",
-  "PUMPKIN_PIE": "PUMPKIN_PIE",
-  "FIREWORK": "FIREWORK",
-  "FIREWORK_CHARGE": "FIREWORK_CHARGE",
-  "ENCHANTED_BOOK": "BOOK",
-  "REDSTONE_COMPARATOR": "REDSTONE_COMPARATOR",
-  "NETHER_BRICK_ITEM": "NETHER_BRICK_ITEM",
-  "QUARTZ": "QUARTZ",
-  "EXPLOSIVE_MINECART": "EXPLOSIVE_MINECART",
-  "HOPPER_MINECART": "HOPPER_MINECART",
-  "PRISMARINE_SHARD": "PRISMARINE_SHARD",
-  "PRISMARINE_CRYSTALS": "PRISMARINE_CRYSTALS",
-  "RABBIT": "RABBIT",
-  "COOKED_RABBIT": "COOKED_RABBIT",
-  "RABBIT_STEW": "RABBIT_STEW",
-  "RABBIT_FOOT": "RABBIT_FOOT",
-  "RABBIT_HIDE": "RABBIT_HIDE",
-  "ARMOR_STAND": "ARMOR_STAND",
-  "IRON_BARDING": "IRON_BARDING",
-  "GOLD_BARDING": "GOLD_BARDING",
-  "DIAMOND_BARDING": "DIAMOND_BARDING",
-  "LEASH": "LEASH",
-  "NAME_TAG": "NAME_TAG",
-  "COMMAND_MINECART": "COMMAND_MINECART",
-  "MUTTON": "MUTTON",
-  "COOKED_MUTTON": "COOKED_MUTTON",
-  "BANNER": "BANNER",
-  "END_CRYSTAL": "END_CRYSTAL",
-  "SPRUCE_DOOR_ITEM": "WOOD_DOOR",
-  "BIRCH_DOOR_ITEM": "WOOD_DOOR",
-  "JUNGLE_DOOR_ITEM": "WOOD_DOOR",
-  "ACACIA_DOOR_ITEM": "WOOD_DOOR",
-  "DARK_OAK_DOOR_ITEM": "WOOD_DOOR",
-  "CHORUS_FRUIT": "CHORUS_FRUIT",
-  "CHORUS_FRUIT_POPPED": "CHORUS_FRUIT_POPPED",
-  "BEETROOT": "BEETROOT",
-  "BEETROOT_SEEDS": "BEETROOT_SEEDS",
-  "BEETROOT_SOUP": "BEETROOT_SOUP",
-  "DRAGONS_BREATH": "DRAGONS_BREATH",
-  "SPLASH_POTION": "SPLASH_POTION",
-  "SPECTRAL_ARROW": "SPECTRAL_ARROW",
-  "TIPPED_ARROW": "TIPPED_ARROW",
-  "LINGERING_POTION": "LINGERING_POTION",
-  "SHIELD": "SHIELD",
-  "ELYTRA": "ELYTRA",
-  "BOAT_SPRUCE": "BOAT",
-  "BOAT_BIRCH": "BOAT",
-  "BOAT_JUNGLE": "BOAT",
-  "BOAT_ACACIA": "BOAT",
-  "BOAT_DARK_OAK": "BOAT",
-  "TOTEM": "TOTEM",
-  "SHULKER_SHELL": "SHULKER_SHELL",
-  "IRON_NUGGET": "IRON_NUGGET",
-  "GOLD_RECORD": "RECORD",
-  "GREEN_RECORD": "RECORD",
-  "RECORD_3": "RECORD",
-  "RECORD_4": "RECORD",
-  "RECORD_5": "RECORD",
-  "RECORD_6": "RECORD",
-  "RECORD_7": "RECORD",
-  "RECORD_8": "RECORD",
-  "RECORD_9": "RECORD",
-  "RECORD_10": "RECORD",
-  "RECORD_11": "RECORD",
-  "RECORD_12": "RECORD",
-  "REDSTONE_LAMP_OFF": "REDSTONE_LAMP_OFF",
-  "REDSTONE_TORCH_ON": "REDSTONE_TORCH_ON",
-  "CONCRETE": "CONCRETE",
-  "CONCRETE_POWDER": "CONCRETE_POWDER",
-  "WHITE_GLAZED_TERRACOTTA": "GLAZED_TERRACOTTA",
-  "ORANGE_GLAZED_TERRACOTTA": "GLAZED_TERRACOTTA",
-  "MAGENTA_GLAZED_TERRACOTTA": "GLAZED_TERRACOTTA",
-  "LIGHT_BLUE_GLAZED_TERRACOTTA": "GLAZED_TERRACOTTA",
-  "YELLOW_GLAZED_TERRACOTTA": "GLAZED_TERRACOTTA",
-  "LIME_GLAZED_TERRACOTTA": "GLAZED_TERRACOTTA",
-  "PINK_GLAZED_TERRACOTTA": "GLAZED_TERRACOTTA",
-  "GRAY_GLAZED_TERRACOTTA": "GLAZED_TERRACOTTA",
-  "SILVER_GLAZED_TERRACOTTA": "GLAZED_TERRACOTTA",
-  "CYAN_GLAZED_TERRACOTTA": "GLAZED_TERRACOTTA",
-  "PURPLE_GLAZED_TERRACOTTA": "GLAZED_TERRACOTTA",
-  "BLUE_GLAZED_TERRACOTTA": "GLAZED_TERRACOTTA",
-  "BROWN_GLAZED_TERRACOTTA": "GLAZED_TERRACOTTA",
-  "GREEN_GLAZED_TERRACOTTA": "GLAZED_TERRACOTTA",
-  "RED_GLAZED_TERRACOTTA": "GLAZED_TERRACOTTA",
-  "BLACK_GLAZED_TERRACOTTA": "GLAZED_TERRACOTTA"
+  "STONE": {
+    "unit_name": "STONE",
+    "minecraft_name": "minecraft:stone"
+  },
+  "GRASS": {
+    "unit_name": "GRASS",
+    "minecraft_name": "minecraft:grass"
+  },
+  "DIRT": {
+    "unit_name": "DIRT",
+    "minecraft_name": "minecraft:dirt"
+  },
+  "COBBLESTONE": {
+    "unit_name": "COBBLESTONE",
+    "minecraft_name": "minecraft:cobblestone"
+  },
+  "WOOD": {
+    "unit_name": "WOOD",
+    "minecraft_name": "minecraft:planks"
+  },
+  "SAPLING": {
+    "unit_name": "SAPLING",
+    "minecraft_name": "minecraft:sapling"
+  },
+  "BEDROCK": {
+    "unit_name": "BEDROCK",
+    "minecraft_name": "minecraft:bedrock"
+  },
+  "SAND": {
+    "unit_name": "SAND",
+    "minecraft_name": "minecraft:sand"
+  },
+  "GRAVEL": {
+    "unit_name": "GRAVEL",
+    "minecraft_name": "minecraft:gravel"
+  },
+  "GOLD_ORE": {
+    "unit_name": "GOLD_ORE",
+    "minecraft_name": "minecraft:gold_ore"
+  },
+  "IRON_ORE": {
+    "unit_name": "IRON_ORE",
+    "minecraft_name": "minecraft:iron_ore"
+  },
+  "COAL_ORE": {
+    "unit_name": "COAL_ORE",
+    "minecraft_name": "minecraft:coal_ore"
+  },
+  "LOG": {
+    "unit_name": "LOG",
+    "minecraft_name": "minecraft:log"
+  },
+  "LEAVES": {
+    "unit_name": "LEAVES",
+    "minecraft_name": "minecraft:leaves"
+  },
+  "SPONGE": {
+    "unit_name": "SPONGE",
+    "minecraft_name": "minecraft:sponge"
+  },
+  "GLASS": {
+    "unit_name": "GLASS",
+    "minecraft_name": "minecraft:glass"
+  },
+  "LAPIS_ORE": {
+    "unit_name": "LAPIS_ORE",
+    "minecraft_name": "minecraft:lapis_ore"
+  },
+  "LAPIS_BLOCK": {
+    "unit_name": "LAPIS_BLOCK",
+    "minecraft_name": "minecraft:lapis_block"
+  },
+  "DISPENSER": {
+    "unit_name": "DISPENSER",
+    "minecraft_name": "minecraft:dispenser"
+  },
+  "SANDSTONE": {
+    "unit_name": "SANDSTONE",
+    "minecraft_name": "minecraft:sandstone"
+  },
+  "NOTE_BLOCK": {
+    "unit_name": "NOTE_BLOCK",
+    "minecraft_name": "minecraft:noteblock"
+  },
+  "POWERED_RAIL": {
+    "unit_name": "POWERED_RAIL",
+    "minecraft_name": "minecraft:golden_rail"
+  },
+  "DETECTOR_RAIL": {
+    "unit_name": "DETECTOR_RAIL",
+    "minecraft_name": "minecraft:detector_rail"
+  },
+  "PISTON_STICKY_BASE": {
+    "unit_name": "PISTON_STICKY_BASE",
+    "minecraft_name": "minecraft:sticky_piston"
+  },
+  "WEB": {
+    "unit_name": "WEB",
+    "minecraft_name": "minecraft:web"
+  },
+  "LONG_GRASS": {
+    "unit_name": "DEAD_BUSH",
+    "minecraft_name": "minecraft:deadbush"
+  },
+  "DEAD_BUSH": {
+    "unit_name": "DEAD_BUSH",
+    "minecraft_name": "minecraft:deadbush"
+  },
+  "PISTON_BASE": {
+    "unit_name": "PISTON_BASE",
+    "minecraft_name": "minecraft:piston"
+  },
+  "WOOL": {
+    "unit_name": "WOOL",
+    "minecraft_name": "minecraft:wool"
+  },
+  "YELLOW_FLOWER": {
+    "unit_name": "YELLOW_FLOWER",
+    "minecraft_name": "minecraft:yellow_flower"
+  },
+  "RED_ROSE": {
+    "unit_name": "RED_ROSE",
+    "minecraft_name": "minecraft:red_flower"
+  },
+  "BROWN_MUSHROOM": {
+    "unit_name": "BROWN_MUSHROOM",
+    "minecraft_name": "minecraft:brown_mushroom"
+  },
+  "RED_MUSHROOM": {
+    "unit_name": "RED_MUSHROOM",
+    "minecraft_name": "minecraft:red_mushroom"
+  },
+  "GOLD_BLOCK": {
+    "unit_name": "GOLD_BLOCK",
+    "minecraft_name": "minecraft:gold_block"
+  },
+  "IRON_BLOCK": {
+    "unit_name": "IRON_BLOCK",
+    "minecraft_name": "minecraft:iron_block"
+  },
+  "STEP": {
+    "unit_name": "STEP",
+    "minecraft_name": "minecraft:stone_slab"
+  },
+  "BRICK": {
+    "unit_name": "BRICK",
+    "minecraft_name": "minecraft:brick_block"
+  },
+  "TNT": {
+    "unit_name": "TNT",
+    "minecraft_name": "minecraft:tnt"
+  },
+  "BOOKSHELF": {
+    "unit_name": "BOOKSHELF",
+    "minecraft_name": "minecraft:bookshelf"
+  },
+  "MOSSY_COBBLESTONE": {
+    "unit_name": "MOSSY_COBBLESTONE",
+    "minecraft_name": "minecraft:mossy_cobblestone"
+  },
+  "OBSIDIAN": {
+    "unit_name": "OBSIDIAN",
+    "minecraft_name": "minecraft:obsidian"
+  },
+  "TORCH": {
+    "unit_name": "TORCH",
+    "minecraft_name": "minecraft:torch"
+  },
+  "MOB_SPAWNER": {
+    "unit_name": "MOB_SPAWNER",
+    "minecraft_name": "minecraft:mob_spawner"
+  },
+  "WOOD_STAIRS": {
+    "unit_name": "WOOD_STAIRS",
+    "minecraft_name": "minecraft:wooden_stairs"
+  },
+  "CHEST": {
+    "unit_name": "CHEST",
+    "minecraft_name": "minecraft:chest"
+  },
+  "DIAMOND_ORE": {
+    "unit_name": "DIAMOND_ORE",
+    "minecraft_name": "minecraft:diamond_ore"
+  },
+  "DIAMOND_BLOCK": {
+    "unit_name": "DIAMOND_BLOCK",
+    "minecraft_name": "minecraft:diamond_block"
+  },
+  "WORKBENCH": {
+    "unit_name": "WORKBENCH",
+    "minecraft_name": "minecraft:crafting_table"
+  },
+  "FURNACE": {
+    "unit_name": "FURNACE",
+    "minecraft_name": "minecraft:furnace"
+  },
+  "WOODEN_DOOR": {
+    "unit_name": "WOOD_DOOR",
+    "minecraft_name": "minecraft:wooden_door"
+  },
+  "LADDER": {
+    "unit_name": "LADDER",
+    "minecraft_name": "minecraft:ladder"
+  },
+  "RAILS": {
+    "unit_name": "RAILS",
+    "minecraft_name": "minecraft:rail"
+  },
+  "COBBLESTONE_STAIRS": {
+    "unit_name": "COBBLESTONE_STAIRS",
+    "minecraft_name": "minecraft:stone_stairs"
+  },
+  "LEVER": {
+    "unit_name": "LEVER",
+    "minecraft_name": "minecraft:lever"
+  },
+  "STONE_PLATE": {
+    "unit_name": "STONE_PLATE",
+    "minecraft_name": "minecraft:stone_pressure_plate"
+  },
+  "IRON_DOOR_BLOCK": {
+    "unit_name": "IRON_DOOR",
+    "minecraft_name": "minecraft:iron_door"
+  },
+  "WOOD_PLATE": {
+    "unit_name": "WOOD_PLATE",
+    "minecraft_name": "minecraft:wooden_pressure_plate"
+  },
+  "REDSTONE_ORE": {
+    "unit_name": "REDSTONE_ORE",
+    "minecraft_name": "minecraft:redstone_ore"
+  },
+  "STONE_BUTTON": {
+    "unit_name": "STONE_BUTTON",
+    "minecraft_name": "minecraft:stone_button"
+  },
+  "ICE": {
+    "unit_name": "ICE",
+    "minecraft_name": "minecraft:ice"
+  },
+  "SNOW_BLOCK": {
+    "unit_name": "SNOW_BLOCK",
+    "minecraft_name": "minecraft:snow"
+  },
+  "CACTUS": {
+    "unit_name": "CACTUS",
+    "minecraft_name": "minecraft:cactus"
+  },
+  "CLAY": {
+    "unit_name": "CLAY",
+    "minecraft_name": "minecraft:clay"
+  },
+  "JUKEBOX": {
+    "unit_name": "JUKEBOX",
+    "minecraft_name": "minecraft:jukebox"
+  },
+  "FENCE": {
+    "unit_name": "FENCE",
+    "minecraft_name": "minecraft:wooden_fence"
+  },
+  "PUMPKIN": {
+    "unit_name": "PUMPKIN",
+    "minecraft_name": "minecraft:pumpkin"
+  },
+  "NETHERRACK": {
+    "unit_name": "NETHERRACK",
+    "minecraft_name": "minecraft:netherrack"
+  },
+  "SOUL_SAND": {
+    "unit_name": "SOUL_SAND",
+    "minecraft_name": "minecraft:soul_sand"
+  },
+  "GLOWSTONE": {
+    "unit_name": "GLOWSTONE",
+    "minecraft_name": "minecraft:glowstone"
+  },
+  "JACK_O_LANTERN": {
+    "unit_name": "JACK_O_LANTERN",
+    "minecraft_name": "minecraft:lit_pumpkin"
+  },
+  "STAINED_GLASS": {
+    "unit_name": "STAINED_GLASS",
+    "minecraft_name": "minecraft:stained_glass"
+  },
+  "TRAP_DOOR": {
+    "unit_name": "TRAP_DOOR",
+    "minecraft_name": "minecraft:trapdoor"
+  },
+  "MONSTER_EGGS": {
+    "unit_name": "STONE",
+    "minecraft_name": "minecraft:stone"
+  },
+  "SMOOTH_BRICK": {
+    "unit_name": "SMOOTH_BRICK",
+    "minecraft_name": "minecraft:stonebrick"
+  },
+  "HUGE_MUSHROOM_1": {
+    "unit_name": "HUGE_MUSHROOM_1",
+    "minecraft_name": "minecraft:brown_mushroom_block"
+  },
+  "HUGE_MUSHROOM_2": {
+    "unit_name": "HUGE_MUSHROOM_2",
+    "minecraft_name": "minecraft:red_mushroom_block"
+  },
+  "IRON_FENCE": {
+    "unit_name": "IRON_FENCE",
+    "minecraft_name": "minecraft:iron_bars"
+  },
+  "THIN_GLASS": {
+    "unit_name": "THIN_GLASS",
+    "minecraft_name": "minecraft:glass_pane"
+  },
+  "MELON_BLOCK": {
+    "unit_name": "MELON_BLOCK",
+    "minecraft_name": "minecraft:melon_block"
+  },
+  "VINE": {
+    "unit_name": "VINE",
+    "minecraft_name": "minecraft:vine"
+  },
+  "FENCE_GATE": {
+    "unit_name": "FENCE_GATE",
+    "minecraft_name": "minecraft:wooden_fence_gate"
+  },
+  "BRICK_STAIRS": {
+    "unit_name": "BRICK_STAIRS",
+    "minecraft_name": "minecraft:brick_stairs"
+  },
+  "SMOOTH_STAIRS": {
+    "unit_name": "SMOOTH_STAIRS",
+    "minecraft_name": "minecraft:stone_brick_stairs"
+  },
+  "MYCEL": {
+    "unit_name": "MYCEL",
+    "minecraft_name": "minecraft:mycelium"
+  },
+  "WATER_LILY": {
+    "unit_name": "WATER_LILY",
+    "minecraft_name": "minecraft:waterlily"
+  },
+  "NETHER_BRICK": {
+    "unit_name": "NETHER_BRICK",
+    "minecraft_name": "minecraft:nether_brick"
+  },
+  "NETHER_FENCE": {
+    "unit_name": "NETHER_FENCE",
+    "minecraft_name": "minecraft:nether_brick_fence"
+  },
+  "NETHER_BRICK_STAIRS": {
+    "unit_name": "NETHER_BRICK_STAIRS",
+    "minecraft_name": "minecraft:nether_brick_stairs"
+  },
+  "ENCHANTMENT_TABLE": {
+    "unit_name": "ENCHANTMENT_TABLE",
+    "minecraft_name": "minecraft:enchanting_table"
+  },
+  "ENDER_PORTAL_FRAME": {
+    "unit_name": "ENDER_PORTAL_FRAME",
+    "minecraft_name": "minecraft:end_portal_frame"
+  },
+  "ENDER_STONE": {
+    "unit_name": "ENDER_STONE",
+    "minecraft_name": "minecraft:end_stone"
+  },
+  "DRAGON_EGG": {
+    "unit_name": "DRAGON_EGG",
+    "minecraft_name": "minecraft:dragon_egg"
+  },
+  "WOOD_STEP": {
+    "unit_name": "WOOD_STEP",
+    "minecraft_name": "minecraft:wooden_slab"
+  },
+  "SANDSTONE_STAIRS": {
+    "unit_name": "SANDSTONE_STAIRS",
+    "minecraft_name": "minecraft:sandstone_stairs"
+  },
+  "EMERALD_ORE": {
+    "unit_name": "EMERALD_ORE",
+    "minecraft_name": "minecraft:emerald_ore"
+  },
+  "ENDER_CHEST": {
+    "unit_name": "ENDER_CHEST",
+    "minecraft_name": "minecraft:ender_chest"
+  },
+  "TRIPWIRE_HOOK": {
+    "unit_name": "TRIPWIRE_HOOK",
+    "minecraft_name": "minecraft:tripwire_hook"
+  },
+  "EMERALD_BLOCK": {
+    "unit_name": "EMERALD_BLOCK",
+    "minecraft_name": "minecraft:emerald_block"
+  },
+  "SPRUCE_WOOD_STAIRS": {
+    "unit_name": "WOOD_STAIRS",
+    "minecraft_name": "minecraft:wooden_stairs"
+  },
+  "BIRCH_WOOD_STAIRS": {
+    "unit_name": "WOOD_STAIRS",
+    "minecraft_name": "minecraft:wooden_stairs"
+  },
+  "JUNGLE_WOOD_STAIRS": {
+    "unit_name": "WOOD_STAIRS",
+    "minecraft_name": "minecraft:wooden_stairs"
+  },
+  "COMMAND": {
+    "unit_name": "COMMAND",
+    "minecraft_name": "minecraft:command_block"
+  },
+  "BEACON": {
+    "unit_name": "BEACON",
+    "minecraft_name": "minecraft:beacon"
+  },
+  "COBBLE_WALL": {
+    "unit_name": "COBBLE_WALL",
+    "minecraft_name": "minecraft:cobblestone_wall"
+  },
+  "WOOD_BUTTON": {
+    "unit_name": "WOOD_BUTTON",
+    "minecraft_name": "minecraft:wooden_button"
+  },
+  "ANVIL": {
+    "unit_name": "ANVIL",
+    "minecraft_name": "minecraft:anvil"
+  },
+  "TRAPPED_CHEST": {
+    "unit_name": "TRAPPED_CHEST",
+    "minecraft_name": "minecraft:trapped_chest"
+  },
+  "GOLD_PLATE": {
+    "unit_name": "GOLD_PLATE",
+    "minecraft_name": "minecraft:light_weighted_pressure_plate"
+  },
+  "IRON_PLATE": {
+    "unit_name": "IRON_PLATE",
+    "minecraft_name": "minecraft:heavy_weighted_pressure_plate"
+  },
+  "DAYLIGHT_DETECTOR": {
+    "unit_name": "DAYLIGHT_DETECTOR",
+    "minecraft_name": "minecraft:daylight_detector"
+  },
+  "REDSTONE_BLOCK": {
+    "unit_name": "REDSTONE_BLOCK",
+    "minecraft_name": "minecraft:redstone_block"
+  },
+  "QUARTZ_ORE": {
+    "unit_name": "QUARTZ_ORE",
+    "minecraft_name": "minecraft:quartz_ore"
+  },
+  "HOPPER": {
+    "unit_name": "HOPPER",
+    "minecraft_name": "minecraft:hopper"
+  },
+  "QUARTZ_BLOCK": {
+    "unit_name": "QUARTZ_BLOCK",
+    "minecraft_name": "minecraft:quartz_block"
+  },
+  "QUARTZ_STAIRS": {
+    "unit_name": "QUARTZ_STAIRS",
+    "minecraft_name": "minecraft:quartz_stairs"
+  },
+  "ACTIVATOR_RAIL": {
+    "unit_name": "ACTIVATOR_RAIL",
+    "minecraft_name": "minecraft:activator_rail"
+  },
+  "DROPPER": {
+    "unit_name": "DROPPER",
+    "minecraft_name": "minecraft:dropper"
+  },
+  "STAINED_CLAY": {
+    "unit_name": "STAINED_CLAY",
+    "minecraft_name": "minecraft:stained_hardened_clay"
+  },
+  "STAINED_GLASS_PANE": {
+    "unit_name": "STAINED_GLASS_PANE",
+    "minecraft_name": "minecraft:stained_glass_pane"
+  },
+  "LEAVES_2": {
+    "unit_name": "LEAVES",
+    "minecraft_name": "minecraft:leaves"
+  },
+  "LOG_2": {
+    "unit_name": "LOG",
+    "minecraft_name": "minecraft:log"
+  },
+  "ACACIA_STAIRS": {
+    "unit_name": "WOOD_STAIRS",
+    "minecraft_name": "minecraft:wooden_stairs"
+  },
+  "DARK_OAK_STAIRS": {
+    "unit_name": "WOOD_STAIRS",
+    "minecraft_name": "minecraft:wooden_stairs"
+  },
+  "SLIME_BLOCK": {
+    "unit_name": "SLIME_BLOCK",
+    "minecraft_name": "minecraft:slime"
+  },
+  "BARRIER": {
+    "unit_name": "BARRIER",
+    "minecraft_name": "minecraft:barrier"
+  },
+  "IRON_TRAPDOOR": {
+    "unit_name": "IRON_TRAPDOOR",
+    "minecraft_name": "minecraft:iron_trapdoor"
+  },
+  "PRISMARINE": {
+    "unit_name": "PRISMARINE",
+    "minecraft_name": "minecraft:prismarine"
+  },
+  "SEA_LANTERN": {
+    "unit_name": "SEA_LANTERN",
+    "minecraft_name": "minecraft:sea_lantern"
+  },
+  "HAY_BLOCK": {
+    "unit_name": "HAY_BLOCK",
+    "minecraft_name": "minecraft:hay_block"
+  },
+  "CARPET": {
+    "unit_name": "CARPET",
+    "minecraft_name": "minecraft:carpet"
+  },
+  "HARD_CLAY": {
+    "unit_name": "HARD_CLAY",
+    "minecraft_name": "minecraft:hardened_clay"
+  },
+  "COAL_BLOCK": {
+    "unit_name": "COAL_BLOCK",
+    "minecraft_name": "minecraft:coal_block"
+  },
+  "PACKED_ICE": {
+    "unit_name": "PACKED_ICE",
+    "minecraft_name": "minecraft:packed_ice"
+  },
+  "RED_SANDSTONE": {
+    "unit_name": "RED_SANDSTONE",
+    "minecraft_name": "minecraft:red_sandstone"
+  },
+  "RED_SANDSTONE_STAIRS": {
+    "unit_name": "RED_SANDSTONE_STAIRS",
+    "minecraft_name": "minecraft:red_sandstone_stairs"
+  },
+  "STONE_SLAB2": {
+    "unit_name": "STEP",
+    "minecraft_name": "minecraft:stone_slab"
+  },
+  "SPRUCE_FENCE_GATE": {
+    "unit_name": "FENCE_GATE",
+    "minecraft_name": "minecraft:wooden_fence_gate"
+  },
+  "BIRCH_FENCE_GATE": {
+    "unit_name": "FENCE_GATE",
+    "minecraft_name": "minecraft:wooden_fence_gate"
+  },
+  "JUNGLE_FENCE_GATE": {
+    "unit_name": "FENCE_GATE",
+    "minecraft_name": "minecraft:wooden_fence_gate"
+  },
+  "DARK_OAK_FENCE_GATE": {
+    "unit_name": "FENCE_GATE",
+    "minecraft_name": "minecraft:wooden_fence_gate"
+  },
+  "ACACIA_FENCE_GATE": {
+    "unit_name": "FENCE_GATE",
+    "minecraft_name": "minecraft:wooden_fence_gate"
+  },
+  "SPRUCE_FENCE": {
+    "unit_name": "FENCE",
+    "minecraft_name": "minecraft:wooden_fence"
+  },
+  "BIRCH_FENCE": {
+    "unit_name": "FENCE",
+    "minecraft_name": "minecraft:wooden_fence"
+  },
+  "JUNGLE_FENCE": {
+    "unit_name": "FENCE",
+    "minecraft_name": "minecraft:wooden_fence"
+  },
+  "DARK_OAK_FENCE": {
+    "unit_name": "FENCE",
+    "minecraft_name": "minecraft:wooden_fence"
+  },
+  "ACACIA_FENCE": {
+    "unit_name": "FENCE",
+    "minecraft_name": "minecraft:wooden_fence"
+  },
+  "SPRUCE_DOOR": {
+    "unit_name": "WOOD_DOOR",
+    "minecraft_name": "minecraft:wooden_door"
+  },
+  "BIRCH_DOOR": {
+    "unit_name": "WOOD_DOOR",
+    "minecraft_name": "minecraft:wooden_door"
+  },
+  "JUNGLE_DOOR": {
+    "unit_name": "WOOD_DOOR",
+    "minecraft_name": "minecraft:wooden_door"
+  },
+  "ACACIA_DOOR": {
+    "unit_name": "WOOD_DOOR",
+    "minecraft_name": "minecraft:wooden_door"
+  },
+  "DARK_OAK_DOOR": {
+    "unit_name": "WOOD_DOOR",
+    "minecraft_name": "minecraft:wooden_door"
+  },
+  "END_ROD": {
+    "unit_name": "END_ROD",
+    "minecraft_name": "minecraft:end_rod"
+  },
+  "CHORUS_PLANT": {
+    "unit_name": "CHORUS_PLANT",
+    "minecraft_name": "minecraft:chorus_plant"
+  },
+  "CHORUS_FLOWER": {
+    "unit_name": "CHORUS_FLOWER",
+    "minecraft_name": "minecraft:chorus_flower"
+  },
+  "PURPUR_BLOCK": {
+    "unit_name": "PURPUR_BLOCK",
+    "minecraft_name": "minecraft:purpur_block"
+  },
+  "PURPUR_PILLAR": {
+    "unit_name": "PURPUR_PILLAR",
+    "minecraft_name": "minecraft:purpur_pillar"
+  },
+  "PURPUR_STAIRS": {
+    "unit_name": "PURPUR_STAIRS",
+    "minecraft_name": "minecraft:purpur_stairs"
+  },
+  "PURPUR_SLAB": {
+    "unit_name": "PURPUR_SLAB",
+    "minecraft_name": "minecraft:purpur_slab"
+  },
+  "END_BRICKS": {
+    "unit_name": "END_BRICKS",
+    "minecraft_name": "minecraft:end_bricks"
+  },
+  "GRASS_PATH": {
+    "unit_name": "GRASS_PATH",
+    "minecraft_name": "minecraft:grass_path"
+  },
+  "COMMAND_REPEATING": {
+    "unit_name": "COMMAND_REPEATING",
+    "minecraft_name": "minecraft:repeating_command_block"
+  },
+  "COMMAND_CHAIN": {
+    "unit_name": "COMMAND_CHAIN",
+    "minecraft_name": "minecraft:chain_command_block"
+  },
+  "MAGMA": {
+    "unit_name": "MAGMA",
+    "minecraft_name": "minecraft:magma"
+  },
+  "NETHER_WART_BLOCK": {
+    "unit_name": "NETHER_WART_BLOCK",
+    "minecraft_name": "minecraft:nether_wart_block"
+  },
+  "RED_NETHER_BRICK": {
+    "unit_name": "RED_NETHER_BRICK",
+    "minecraft_name": "minecraft:red_nether_brick"
+  },
+  "BONE_BLOCK": {
+    "unit_name": "BONE_BLOCK",
+    "minecraft_name": "minecraft:bone_block"
+  },
+  "BONE": {
+    "unit_name": "BONE",
+    "minecraft_name": "minecraft:bone_bone"
+  },
+
+  "STRUCTURE_VOID": {
+    "unit_name": "STRUCTURE_VOID",
+    "minecraft_name": "minecraft:structure_void"
+  },
+  "OBSERVER": {
+    "unit_name": "OBSERVER",
+    "minecraft_name": "minecraft:observer"
+  },
+  "WHITE_SHULKER_BOX": {
+    "unit_name": "PURPLE_SHULKER_BOX",
+    "minecraft_name": "minecraft:purple_shulker_box"
+  },
+  "ORANGE_SHULKER_BOX": {
+    "unit_name": "PURPLE_SHULKER_BOX",
+    "minecraft_name": "minecraft:purple_shulker_box"
+  },
+  "MAGENTA_SHULKER_BOX": {
+    "unit_name": "PURPLE_SHULKER_BOX",
+    "minecraft_name": "minecraft:purple_shulker_box"
+  },
+  "LIGHT_BLUE_SHULKER_BOX": {
+    "unit_name": "PURPLE_SHULKER_BOX",
+    "minecraft_name": "minecraft:purple_shulker_box"
+  },
+  "YELLOW_SHULKER_BOX": {
+    "unit_name": "PURPLE_SHULKER_BOX",
+    "minecraft_name": "minecraft:purple_shulker_box"
+  },
+  "LIME_SHULKER_BOX": {
+    "unit_name": "PURPLE_SHULKER_BOX",
+    "minecraft_name": "minecraft:purple_shulker_box"
+  },
+  "PINK_SHULKER_BOX": {
+    "unit_name": "PURPLE_SHULKER_BOX",
+    "minecraft_name": "minecraft:purple_shulker_box"
+  },
+  "GRAY_SHULKER_BOX": {
+    "unit_name": "PURPLE_SHULKER_BOX",
+    "minecraft_name": "minecraft:purple_shulker_box"
+  },
+  "SILVER_SHULKER_BOX": {
+    "unit_name": "PURPLE_SHULKER_BOX",
+    "minecraft_name": "minecraft:purple_shulker_box"
+  },
+  "CYAN_SHULKER_BOX": {
+    "unit_name": "PURPLE_SHULKER_BOX",
+    "minecraft_name": "minecraft:purple_shulker_box"
+  },
+  "PURPLE_SHULKER_BOX": {
+    "unit_name": "PURPLE_SHULKER_BOX",
+    "minecraft_name": "minecraft:purple_shulker_box"
+  },
+  "BLUE_SHULKER_BOX": {
+    "unit_name": "PURPLE_SHULKER_BOX",
+    "minecraft_name": "minecraft:purple_shulker_box"
+  },
+  "BROWN_SHULKER_BOX": {
+    "unit_name": "PURPLE_SHULKER_BOX",
+    "minecraft_name": "minecraft:purple_shulker_box"
+  },
+  "GREEN_SHULKER_BOX": {
+    "unit_name": "PURPLE_SHULKER_BOX",
+    "minecraft_name": "minecraft:purple_shulker_box"
+  },
+  "RED_SHULKER_BOX": {
+    "unit_name": "PURPLE_SHULKER_BOX",
+    "minecraft_name": "minecraft:purple_shulker_box"
+  },
+  "BLACK_SHULKER_BOX": {
+    "unit_name": "PURPLE_SHULKER_BOX",
+    "minecraft_name": "minecraft:purple_shulker_box"
+  },
+  "STRUCTURE_BLOCK": {
+    "unit_name": "STRUCTURE_BLOCK",
+    "minecraft_name": "minecraft:structure_block"
+  },
+  "IRON_SPADE": {
+    "unit_name": "IRON_SPADE",
+    "minecraft_name": "minecraft:iron_shovel"
+  },
+  "IRON_PICKAXE": {
+    "unit_name": "IRON_PICKAXE",
+    "minecraft_name": "minecraft:iron_pickaxe"
+  },
+  "IRON_AXE": {
+    "unit_name": "IRON_AXE",
+    "minecraft_name": "minecraft:iron_axe"
+  },
+  "FLINT_AND_STEEL": {
+    "unit_name": "FLINT_AND_STEEL",
+    "minecraft_name": "minecraft:flint_and_steel"
+  },
+  "APPLE": {
+    "unit_name": "APPLE",
+    "minecraft_name": "minecraft:apple"
+  },
+  "BOW": {
+    "unit_name": "BOW",
+    "minecraft_name": "minecraft:bow"
+  },
+  "ARROW": {
+    "unit_name": "ARROW",
+    "minecraft_name": "minecraft:arrow"
+  },
+  "COAL": {
+    "unit_name": "COAL",
+    "minecraft_name": "minecraft:coal"
+  },
+  "DIAMOND": {
+    "unit_name": "DIAMOND",
+    "minecraft_name": "minecraft:diamond"
+  },
+  "IRON_INGOT": {
+    "unit_name": "IRON_INGOT",
+    "minecraft_name": "minecraft:iron_ingot"
+  },
+  "GOLD_INGOT": {
+    "unit_name": "GOLD_INGOT",
+    "minecraft_name": "minecraft:gold_ingot"
+  },
+  "IRON_SWORD": {
+    "unit_name": "IRON_SWORD",
+    "minecraft_name": "minecraft:iron_sword"
+  },
+  "WOOD_SWORD": {
+    "unit_name": "WOOD_SWORD",
+    "minecraft_name": "minecraft:wooden_sword"
+  },
+  "WOOD_SPADE": {
+    "unit_name": "WOOD_SPADE",
+    "minecraft_name": "minecraft:wooden_shovel"
+  },
+  "WOOD_PICKAXE": {
+    "unit_name": "WOOD_PICKAXE",
+    "minecraft_name": "minecraft:wooden_pickaxe"
+  },
+  "WOOD_AXE": {
+    "unit_name": "WOOD_AXE",
+    "minecraft_name": "minecraft:wooden_axe"
+  },
+  "STONE_SWORD": {
+    "unit_name": "STONE_SWORD",
+    "minecraft_name": "minecraft:stone_sword"
+  },
+  "STONE_SPADE": {
+    "unit_name": "STONE_SPADE",
+    "minecraft_name": "minecraft:stone_shovel"
+  },
+  "STONE_PICKAXE": {
+    "unit_name": "STONE_PICKAXE",
+    "minecraft_name": "minecraft:stone_pickaxe"
+  },
+  "STONE_AXE": {
+    "unit_name": "STONE_AXE",
+    "minecraft_name": "minecraft:stone_axe"
+  },
+  "DIAMOND_SWORD": {
+    "unit_name": "DIAMOND_SWORD",
+    "minecraft_name": "minecraft:diamond_sword"
+  },
+  "DIAMOND_SPADE": {
+    "unit_name": "DIAMOND_SPADE",
+    "minecraft_name": "minecraft:diamond_shovel"
+  },
+  "DIAMOND_PICKAXE": {
+    "unit_name": "DIAMOND_PICKAXE",
+    "minecraft_name": "minecraft:diamond_pickaxe"
+  },
+  "DIAMOND_AXE": {
+    "unit_name": "DIAMOND_AXE",
+    "minecraft_name": "minecraft:diamond_axe"
+  },
+  "STICK": {
+    "unit_name": "STICK",
+    "minecraft_name": "minecraft:stick"
+  },
+  "BOWL": {
+    "unit_name": "BOWL",
+    "minecraft_name": "minecraft:bowl"
+  },
+  "MUSHROOM_SOUP": {
+    "unit_name": "MUSHROOM_SOUP",
+    "minecraft_name": "minecraft:mushroom_stew"
+  },
+  "GOLD_SWORD": {
+    "unit_name": "GOLD_SWORD",
+    "minecraft_name": "minecraft:golden_sword"
+  },
+  "GOLD_SPADE": {
+    "unit_name": "GOLD_SPADE",
+    "minecraft_name": "minecraft:golden_shovel"
+  },
+  "GOLD_PICKAXE": {
+    "unit_name": "GOLD_PICKAXE",
+    "minecraft_name": "minecraft:golden_pickaxe"
+  },
+  "GOLD_AXE": {
+    "unit_name": "GOLD_AXE",
+    "minecraft_name": "minecraft:golden_axe"
+  },
+  "STRING": {
+    "unit_name": "STRING",
+    "minecraft_name": "minecraft:string"
+  },
+  "FEATHER": {
+    "unit_name": "FEATHER",
+    "minecraft_name": "minecraft:feather"
+  },
+  "SULPHUR": {
+    "unit_name": "SULPHUR",
+    "minecraft_name": "minecraft:gunpowder"
+  },
+  "WOOD_HOE": {
+    "unit_name": "WOOD_HOE",
+    "minecraft_name": "minecraft:wooden_hoe"
+  },
+  "STONE_HOE": {
+    "unit_name": "STONE_HOE",
+    "minecraft_name": "minecraft:stone_hoe"
+  },
+  "IRON_HOE": {
+    "unit_name": "IRON_HOE",
+    "minecraft_name": "minecraft:iron_hoe"
+  },
+  "DIAMOND_HOE": {
+    "unit_name": "DIAMOND_HOE",
+    "minecraft_name": "minecraft:diamond_hoe"
+  },
+  "GOLD_HOE": {
+    "unit_name": "GOLD_HOE",
+    "minecraft_name": "minecraft:golden_hoe"
+  },
+  "SEEDS": {
+    "unit_name": "SEEDS",
+    "minecraft_name": "minecraft:seeds"
+  },
+  "WHEAT": {
+    "unit_name": "WHEAT",
+    "minecraft_name": "minecraft:wheat"
+  },
+  "BREAD": {
+    "unit_name": "BREAD",
+    "minecraft_name": "minecraft:bread"
+  },
+  "LEATHER_HELMET": {
+    "unit_name": "LEATHER_HELMET",
+    "minecraft_name": "minecraft:leather_helmet"
+  },
+  "LEATHER_CHESTPLATE": {
+    "unit_name": "LEATHER_CHESTPLATE",
+    "minecraft_name": "minecraft:leather_chestplate"
+  },
+  "LEATHER_LEGGINGS": {
+    "unit_name": "LEATHER_LEGGINGS",
+    "minecraft_name": "minecraft:leather_leggings"
+  },
+  "LEATHER_BOOTS": {
+    "unit_name": "LEATHER_BOOTS",
+    "minecraft_name": "minecraft:leather_boots"
+  },
+  "CHAINMAIL_HELMET": {
+    "unit_name": "CHAINMAIL_HELMET",
+    "minecraft_name": "minecraft:chainmail_helmet"
+  },
+  "CHAINMAIL_CHESTPLATE": {
+    "unit_name": "CHAINMAIL_CHESTPLATE",
+    "minecraft_name": "minecraft:chainmail_chestplate"
+  },
+  "CHAINMAIL_LEGGINGS": {
+    "unit_name": "CHAINMAIL_LEGGINGS",
+    "minecraft_name": "minecraft:chainmail_leggings"
+  },
+  "CHAINMAIL_BOOTS": {
+    "unit_name": "CHAINMAIL_BOOTS",
+    "minecraft_name": "minecraft:chainmail_boots"
+  },
+  "IRON_HELMET": {
+    "unit_name": "IRON_HELMET",
+    "minecraft_name": "minecraft:iron_helmet"
+  },
+  "IRON_CHESTPLATE": {
+    "unit_name": "IRON_CHESTPLATE",
+    "minecraft_name": "minecraft:iron_chestplate"
+  },
+  "IRON_LEGGINGS": {
+    "unit_name": "IRON_LEGGINGS",
+    "minecraft_name": "minecraft:iron_leggings"
+  },
+  "IRON_BOOTS": {
+    "unit_name": "IRON_BOOTS",
+    "minecraft_name": "minecraft:iron_boots"
+  },
+  "DIAMOND_HELMET": {
+    "unit_name": "DIAMOND_HELMET",
+    "minecraft_name": "minecraft:diamond_helmet"
+  },
+  "DIAMOND_CHESTPLATE": {
+    "unit_name": "DIAMOND_CHESTPLATE",
+    "minecraft_name": "minecraft:diamond_chestplate"
+  },
+  "DIAMOND_LEGGINGS": {
+    "unit_name": "DIAMOND_LEGGINGS",
+    "minecraft_name": "minecraft:diamond_leggings"
+  },
+  "DIAMOND_BOOTS": {
+    "unit_name": "DIAMOND_BOOTS",
+    "minecraft_name": "minecraft:diamond_boots"
+  },
+  "GOLD_HELMET": {
+    "unit_name": "GOLD_HELMET",
+    "minecraft_name": "minecraft:golden_helmet"
+  },
+  "GOLD_CHESTPLATE": {
+    "unit_name": "GOLD_CHESTPLATE",
+    "minecraft_name": "minecraft:golden_chestplate"
+  },
+  "GOLD_LEGGINGS": {
+    "unit_name": "GOLD_LEGGINGS",
+    "minecraft_name": "minecraft:golden_leggings"
+  },
+  "GOLD_BOOTS": {
+    "unit_name": "GOLD_BOOTS",
+    "minecraft_name": "minecraft:golden_boots"
+  },
+  "FLINT": {
+    "unit_name": "FLINT",
+    "minecraft_name": "minecraft:flint"
+  },
+  "PORK": {
+    "unit_name": "PORK",
+    "minecraft_name": "minecraft:porkchop"
+  },
+  "GRILLED_PORK": {
+    "unit_name": "GRILLED_PORK",
+    "minecraft_name": "minecraft:cooked_porkchop"
+  },
+  "PAINTING": {
+    "unit_name": "PAINTING",
+    "minecraft_name": "minecraft:painting"
+  },
+  "GOLDEN_APPLE": {
+    "unit_name": "GOLDEN_APPLE",
+    "minecraft_name": "minecraft:golden_apple"
+  },
+  "SIGN": {
+    "unit_name": "SIGN",
+    "minecraft_name": "minecraft:sign"
+  },
+  "WOOD_DOOR": {
+    "unit_name": "WOOD_DOOR",
+    "minecraft_name": "minecraft:wooden_door"
+  },
+  "BUCKET": {
+    "unit_name": "BUCKET",
+    "minecraft_name": "minecraft:bucket"
+  },
+  "WATER_BUCKET": {
+    "unit_name": "WATER_BUCKET",
+    "minecraft_name": "minecraft:water_bucket"
+  },
+  "LAVA_BUCKET": {
+    "unit_name": "LAVA_BUCKET",
+    "minecraft_name": "minecraft:lava_bucket"
+  },
+  "MINECART": {
+    "unit_name": "MINECART",
+    "minecraft_name": "minecraft:minecart"
+  },
+  "SADDLE": {
+    "unit_name": "SADDLE",
+    "minecraft_name": "minecraft:saddle"
+  },
+  "IRON_DOOR": {
+    "unit_name": "IRON_DOOR",
+    "minecraft_name": "minecraft:iron_door"
+  },
+  "REDSTONE": {
+    "unit_name": "REDSTONE",
+    "minecraft_name": "minecraft:redstone"
+  },
+  "SNOW_BALL": {
+    "unit_name": "SNOW_BALL",
+    "minecraft_name": "minecraft:snowball"
+  },
+  "SNOW": {
+    "unit_name": "SNOW_BALL",
+    "minecraft_name": "minecraft:snowball"
+  },
+  "BOAT": {
+    "unit_name": "BOAT",
+    "minecraft_name": "minecraft:boat"
+  },
+  "LEATHER": {
+    "unit_name": "LEATHER",
+    "minecraft_name": "minecraft:leather"
+  },
+  "MILK_BUCKET": {
+    "unit_name": "MILK_BUCKET",
+    "minecraft_name": "minecraft:milk_bucket"
+  },
+  "CLAY_BRICK": {
+    "unit_name": "CLAY_BRICK",
+    "minecraft_name": "minecraft:brick"
+  },
+  "CLAY_BALL": {
+    "unit_name": "CLAY_BALL",
+    "minecraft_name": "minecraft:clay_ball"
+  },
+  "SUGAR_CANE": {
+    "unit_name": "SUGAR_CANE",
+    "minecraft_name": "minecraft:reeds"
+  },
+  "PAPER": {
+    "unit_name": "PAPER",
+    "minecraft_name": "minecraft:paper"
+  },
+  "BOOK": {
+    "unit_name": "BOOK",
+    "minecraft_name": "minecraft:book"
+  },
+  "SLIME_BALL": {
+    "unit_name": "SLIME_BALL",
+    "minecraft_name": "minecraft:slime_ball"
+  },
+  "STORAGE_MINECART": {
+    "unit_name": "STORAGE_MINECART",
+    "minecraft_name": "minecraft:chest_minecart"
+  },
+  "POWERED_MINECART": {
+    "unit_name": "POWERED_MINECART",
+    "minecraft_name": "minecraft:furnace_minecart"
+  },
+  "EGG": {
+    "unit_name": "EGG",
+    "minecraft_name": "minecraft:egg"
+  },
+  "COMPASS": {
+    "unit_name": "COMPASS",
+    "minecraft_name": "minecraft:compass"
+  },
+  "FISHING_ROD": {
+    "unit_name": "FISHING_ROD",
+    "minecraft_name": "minecraft:fishing_rod"
+  },
+  "WATCH": {
+    "unit_name": "WATCH",
+    "minecraft_name": "minecraft:clock"
+  },
+  "GLOWSTONE_DUST": {
+    "unit_name": "GLOWSTONE_DUST",
+    "minecraft_name": "minecraft:glowstone_dust"
+  },
+  "RAW_FISH": {
+    "unit_name": "RAW_FISH",
+    "minecraft_name": "minecraft:fish"
+  },
+  "COOKED_FISH": {
+    "unit_name": "COOKED_FISH",
+    "minecraft_name": "minecraft:cooked_fish"
+  },
+  "INK_SACK": {
+    "unit_name": "INK_SACK",
+    "minecraft_name": "minecraft:dye"
+  },
+  "BONE": {
+    "unit_name": "BONE",
+    "minecraft_name": "minecraft:bone"
+  },
+  "SUGAR": {
+    "unit_name": "SUGAR",
+    "minecraft_name": "minecraft:sugar"
+  },
+  "CAKE": {
+    "unit_name": "CAKE",
+    "minecraft_name": "minecraft:cake"
+  },
+  "BED": {
+    "unit_name": "BED",
+    "minecraft_name": "minecraft:bed"
+  },
+  "DIODE": {
+    "unit_name": "DIODE",
+    "minecraft_name": "minecraft:repeater"
+  },
+  "COOKIE": {
+    "unit_name": "COOKIE",
+    "minecraft_name": "minecraft:cookie"
+  },
+  "MAP": {
+    "unit_name": "MAP",
+    "minecraft_name": "minecraft:filled_map"
+  },
+  "SHEARS": {
+    "unit_name": "SHEARS",
+    "minecraft_name": "minecraft:shears"
+  },
+  "MELON": {
+    "unit_name": "MELON",
+    "minecraft_name": "minecraft:melon"
+  },
+  "PUMPKIN_SEEDS": {
+    "unit_name": "PUMPKIN_SEEDS",
+    "minecraft_name": "minecraft:pumpkin_seeds"
+  },
+  "MELON_SEEDS": {
+    "unit_name": "MELON_SEEDS",
+    "minecraft_name": "minecraft:melon_seeds"
+  },
+  "RAW_BEEF": {
+    "unit_name": "RAW_BEEF",
+    "minecraft_name": "minecraft:beef"
+  },
+  "COOKED_BEEF": {
+    "unit_name": "COOKED_BEEF",
+    "minecraft_name": "minecraft:cooked_beef"
+  },
+  "RAW_CHICKEN": {
+    "unit_name": "RAW_CHICKEN",
+    "minecraft_name": "minecraft:chicken"
+  },
+  "COOKED_CHICKEN": {
+    "unit_name": "COOKED_CHICKEN",
+    "minecraft_name": "minecraft:cooked_chicken"
+  },
+  "ROTTEN_FLESH": {
+    "unit_name": "ROTTEN_FLESH",
+    "minecraft_name": "minecraft:rotten_flesh"
+  },
+  "ENDER_PEARL": {
+    "unit_name": "ENDER_PEARL",
+    "minecraft_name": "minecraft:ender_pearl"
+  },
+  "BLAZE_ROD": {
+    "unit_name": "BLAZE_ROD",
+    "minecraft_name": "minecraft:blaze_rod"
+  },
+  "GHAST_TEAR": {
+    "unit_name": "GHAST_TEAR",
+    "minecraft_name": "minecraft:ghast_tear"
+  },
+  "GOLD_NUGGET": {
+    "unit_name": "GOLD_NUGGET",
+    "minecraft_name": "minecraft:gold_nugget"
+  },
+  "NETHER_STALK": {
+    "unit_name": "NETHER_STALK",
+    "minecraft_name": "minecraft:nether_wart"
+  },
+  "POTION": {
+    "unit_name": "POTION",
+    "minecraft_name": "minecraft:potion"
+  },
+  "GLASS_BOTTLE": {
+    "unit_name": "GLASS_BOTTLE",
+    "minecraft_name": "minecraft:glass_bottle"
+  },
+  "SPIDER_EYE": {
+    "unit_name": "SPIDER_EYE",
+    "minecraft_name": "minecraft:spider_eye"
+  },
+  "FERMENTED_SPIDER_EYE": {
+    "unit_name": "FERMENTED_SPIDER_EYE",
+    "minecraft_name": "minecraft:fermented_spider_eye"
+  },
+  "BLAZE_POWDER": {
+    "unit_name": "BLAZE_POWDER",
+    "minecraft_name": "minecraft:blaze_powder"
+  },
+  "MAGMA_CREAM": {
+    "unit_name": "MAGMA_CREAM",
+    "minecraft_name": "minecraft:magma_cream"
+  },
+  "BREWING_STAND_ITEM": {
+    "unit_name": "BREWING_STAND_ITEM",
+    "minecraft_name": "minecraft:brewing_stand"
+  },
+  "CAULDRON_ITEM": {
+    "unit_name": "CAULDRON_ITEM",
+    "minecraft_name": "minecraft:cauldron"
+  },
+  "EYE_OF_ENDER": {
+    "unit_name": "EYE_OF_ENDER",
+    "minecraft_name": "minecraft:ender_eye"
+  },
+  "SPECKLED_MELON": {
+    "unit_name": "SPECKLED_MELON",
+    "minecraft_name": "minecraft:speckled_melon"
+  },
+  "MONSTER_EGG": {
+    "unit_name": "MONSTER_EGG",
+    "minecraft_name": "minecraft:spawn_egg"
+  },
+  "EXP_BOTTLE": {
+    "unit_name": "EXP_BOTTLE",
+    "minecraft_name": "minecraft:experience_bottle"
+  },
+  "FIREBALL": {
+    "unit_name": "FIREBALL",
+    "minecraft_name": "minecraft:fire_charge"
+  },
+  "BOOK_AND_QUILL": {
+    "unit_name": "BOOK_AND_QUILL",
+    "minecraft_name": "minecraft:writable_book"
+  },
+  "WRITTEN_BOOK": {
+    "unit_name": "WRITTEN_BOOK",
+    "minecraft_name": "minecraft:"
+  },
+  "EMERALD": {
+    "unit_name": "EMERALD",
+    "minecraft_name": "minecraft:emerald"
+  },
+  "ITEM_FRAME": {
+    "unit_name": "ITEM_FRAME",
+    "minecraft_name": "minecraft:item_frame"
+  },
+  "FLOWER_POT_ITEM": {
+    "unit_name": "FLOWER_POT_ITEM",
+    "minecraft_name": "minecraft:flower_pot"
+  },
+  "CARROT_ITEM": {
+    "unit_name": "CARROT_ITEM",
+    "minecraft_name": "minecraft:carrot"
+  },
+  "POTATO_ITEM": {
+    "unit_name": "POTATO_ITEM",
+    "minecraft_name": "minecraft:potato"
+  },
+  "BAKED_POTATO": {
+    "unit_name": "BAKED_POTATO",
+    "minecraft_name": "minecraft:baked_potato"
+  },
+  "POISONOUS_POTATO": {
+    "unit_name": "POISONOUS_POTATO",
+    "minecraft_name": "minecraft:poisonous_potato"
+  },
+  "EMPTY_MAP": {
+    "unit_name": "EMPTY_MAP",
+    "minecraft_name": "minecraft:map"
+  },
+  "GOLDEN_CARROT": {
+    "unit_name": "GOLDEN_CARROT",
+    "minecraft_name": "minecraft:golden_carrot"
+  },
+  "SKULL_ITEM": {
+    "unit_name": "SKULL_ITEM",
+    "minecraft_name": "minecraft:skull"
+  },
+  "CARROT_STICK": {
+    "unit_name": "CARROT_STICK",
+    "minecraft_name": "minecraft:carrot_on_a_stick"
+  },
+  "NETHER_STAR": {
+    "unit_name": "NETHER_STAR",
+    "minecraft_name": "minecraft:nether_star"
+  },
+  "PUMPKIN_PIE": {
+    "unit_name": "PUMPKIN_PIE",
+    "minecraft_name": "minecraft:pumpkin_pie"
+  },
+  "FIREWORK": {
+    "unit_name": "FIREWORK",
+    "minecraft_name": "minecraft:fireworks"
+  },
+  "FIREWORK_CHARGE": {
+    "unit_name": "FIREWORK_CHARGE",
+    "minecraft_name": "minecraft:firework_charge"
+  },
+  "ENCHANTED_BOOK": {
+    "unit_name": "BOOK",
+    "minecraft_name": "minecraft:book"
+  },
+  "REDSTONE_COMPARATOR": {
+    "unit_name": "REDSTONE_COMPARATOR",
+    "minecraft_name": "minecraft:comparator"
+  },
+  "NETHER_BRICK_ITEM": {
+    "unit_name": "NETHER_BRICK_ITEM",
+    "minecraft_name": "minecraft:netherbrick"
+  },
+  "QUARTZ": {
+    "unit_name": "QUARTZ",
+    "minecraft_name": "minecraft:quartz"
+  },
+  "EXPLOSIVE_MINECART": {
+    "unit_name": "EXPLOSIVE_MINECART",
+    "minecraft_name": "minecraft:tnt_minecart"
+  },
+  "HOPPER_MINECART": {
+    "unit_name": "HOPPER_MINECART",
+    "minecraft_name": "minecraft:hopper_minecart"
+  },
+  "PRISMARINE_SHARD": {
+    "unit_name": "PRISMARINE_SHARD",
+    "minecraft_name": "minecraft:prismarine_shard"
+  },
+  "PRISMARINE_CRYSTALS": {
+    "unit_name": "PRISMARINE_CRYSTALS",
+    "minecraft_name": "minecraft:prismarine_crystals"
+  },
+  "RABBIT": {
+    "unit_name": "RABBIT",
+    "minecraft_name": "minecraft:rabbit"
+  },
+  "COOKED_RABBIT": {
+    "unit_name": "COOKED_RABBIT",
+    "minecraft_name": "minecraft:cooked_rabbit"
+  },
+  "RABBIT_STEW": {
+    "unit_name": "RABBIT_STEW",
+    "minecraft_name": "minecraft:rabbit_stew"
+  },
+  "RABBIT_FOOT": {
+    "unit_name": "RABBIT_FOOT",
+    "minecraft_name": "minecraft:rabbit_foot"
+  },
+  "RABBIT_HIDE": {
+    "unit_name": "RABBIT_HIDE",
+    "minecraft_name": "minecraft:rabbit_hide"
+  },
+  "ARMOR_STAND": {
+    "unit_name": "ARMOR_STAND",
+    "minecraft_name": "minecraft:armor_stand"
+  },
+  "IRON_BARDING": {
+    "unit_name": "IRON_BARDING",
+    "minecraft_name": "minecraft:iron_horse_armor"
+  },
+  "GOLD_BARDING": {
+    "unit_name": "GOLD_BARDING",
+    "minecraft_name": "minecraft:gold_horse_armor"
+  },
+  "DIAMOND_BARDING": {
+    "unit_name": "DIAMOND_BARDING",
+    "minecraft_name": "minecraft:diamond_horse_armor"
+  },
+  "LEASH": {
+    "unit_name": "LEASH",
+    "minecraft_name": "minecraft:lead"
+  },
+  "NAME_TAG": {
+    "unit_name": "NAME_TAG",
+    "minecraft_name": "minecraft:name_tag"
+  },
+  "COMMAND_MINECART": {
+    "unit_name": "COMMAND_MINECART",
+    "minecraft_name": "minecraft:command_block_minecart"
+  },
+  "MUTTON": {
+    "unit_name": "MUTTON",
+    "minecraft_name": "minecraft:mutton"
+  },
+  "COOKED_MUTTON": {
+    "unit_name": "COOKED_MUTTON",
+    "minecraft_name": "minecraft:cooked_mutton"
+  },
+  "BANNER": {
+    "unit_name": "BANNER",
+    "minecraft_name": "minecraft:banner"
+  },
+  "END_CRYSTAL": {
+    "unit_name": "END_CRYSTAL",
+    "minecraft_name": "minecraft:end_crystal"
+  },
+  "SPRUCE_DOOR_ITEM": {
+    "unit_name": "WOOD_DOOR",
+    "minecraft_name": "minecraft:wooden_door"
+  },
+  "BIRCH_DOOR_ITEM": {
+    "unit_name": "WOOD_DOOR",
+    "minecraft_name": "minecraft:wooden_door"
+  },
+  "JUNGLE_DOOR_ITEM": {
+    "unit_name": "WOOD_DOOR",
+    "minecraft_name": "minecraft:wooden_door"
+  },
+  "ACACIA_DOOR_ITEM": {
+    "unit_name": "WOOD_DOOR",
+    "minecraft_name": "minecraft:wooden_door"
+  },
+  "DARK_OAK_DOOR_ITEM": {
+    "unit_name": "WOOD_DOOR",
+    "minecraft_name": "minecraft:wooden_door"
+  },
+  "CHORUS_FRUIT": {
+    "unit_name": "CHORUS_FRUIT",
+    "minecraft_name": "minecraft:chorus_fruit"
+  },
+  "CHORUS_FRUIT_POPPED": {
+    "unit_name": "CHORUS_FRUIT_POPPED",
+    "minecraft_name": "minecraft:chorus_fruit_popped"
+  },
+  "BEETROOT": {
+    "unit_name": "BEETROOT",
+    "minecraft_name": "minecraft:beetroot"
+  },
+  "BEETROOT_SEEDS": {
+    "unit_name": "BEETROOT_SEEDS",
+    "minecraft_name": "minecraft:beetroot_seeds"
+  },
+  "BEETROOT_SOUP": {
+    "unit_name": "BEETROOT_SOUP",
+    "minecraft_name": "minecraft:beetroot_soup"
+  },
+  "DRAGONS_BREATH": {
+    "unit_name": "DRAGONS_BREATH",
+    "minecraft_name": "minecraft:dragon_breath"
+  },
+  "SPLASH_POTION": {
+    "unit_name": "SPLASH_POTION",
+    "minecraft_name": "minecraft:splash_potion"
+  },
+  "SPECTRAL_ARROW": {
+    "unit_name": "SPECTRAL_ARROW",
+    "minecraft_name": "minecraft:spectral_arrow"
+  },
+  "TIPPED_ARROW": {
+    "unit_name": "TIPPED_ARROW",
+    "minecraft_name": "minecraft:tipped_arrow"
+  },
+  "LINGERING_POTION": {
+    "unit_name": "LINGERING_POTION",
+    "minecraft_name": "minecraft:lingering_potion"
+  },
+  "SHIELD": {
+    "unit_name": "SHIELD",
+    "minecraft_name": "minecraft:shield"
+  },
+  "ELYTRA": {
+    "unit_name": "ELYTRA",
+    "minecraft_name": "minecraft:elytra"
+  },
+  "BOAT_SPRUCE": {
+    "unit_name": "BOAT",
+    "minecraft_name": "minecraft:boat"
+  },
+  "BOAT_BIRCH": {
+    "unit_name": "BOAT",
+    "minecraft_name": "minecraft:boat"
+  },
+  "BOAT_JUNGLE": {
+    "unit_name": "BOAT",
+    "minecraft_name": "minecraft:boat"
+  },
+  "BOAT_ACACIA": {
+    "unit_name": "BOAT",
+    "minecraft_name": "minecraft:boat"
+  },
+  "BOAT_DARK_OAK": {
+    "unit_name": "BOAT",
+    "minecraft_name": "minecraft:boat"
+  },
+  "TOTEM": {
+    "unit_name": "TOTEM",
+    "minecraft_name": "minecraft:totem_of_undying"
+  },
+  "SHULKER_SHELL": {
+    "unit_name": "SHULKER_SHELL",
+    "minecraft_name": "minecraft:shulker_shell"
+  },
+  "IRON_NUGGET": {
+    "unit_name": "IRON_NUGGET",
+    "minecraft_name": "minecraft:iron_nugget"
+  },
+  "GOLD_RECORD": {
+    "unit_name": "RECORD",
+    "minecraft_name": "minecraft:record"
+  },
+  "GREEN_RECORD": {
+    "unit_name": "RECORD",
+    "minecraft_name": "minecraft:record"
+  },
+  "RECORD_3": {
+    "unit_name": "RECORD",
+    "minecraft_name": "minecraft:record"
+  },
+  "RECORD_4": {
+    "unit_name": "RECORD",
+    "minecraft_name": "minecraft:record"
+  },
+  "RECORD_5": {
+    "unit_name": "RECORD",
+    "minecraft_name": "minecraft:record"
+  },
+  "RECORD_6": {
+    "unit_name": "RECORD",
+    "minecraft_name": "minecraft:record"
+  },
+  "RECORD_7": {
+    "unit_name": "RECORD",
+    "minecraft_name": "minecraft:record"
+  },
+  "RECORD_8": {
+    "unit_name": "RECORD",
+    "minecraft_name": "minecraft:record"
+  },
+  "RECORD_9": {
+    "unit_name": "RECORD",
+    "minecraft_name": "minecraft:record"
+  },
+  "RECORD_10": {
+    "unit_name": "RECORD",
+    "minecraft_name": "minecraft:record"
+  },
+  "RECORD_11": {
+    "unit_name": "RECORD",
+    "minecraft_name": "minecraft:record"
+  },
+  "RECORD_12": {
+    "unit_name": "RECORD",
+    "minecraft_name": "minecraft:record"
+  },
+  "REDSTONE_LAMP_OFF": {
+    "unit_name": "REDSTONE_LAMP_OFF",
+    "minecraft_name": "minecraft:redstone_lamp"
+  },
+  "REDSTONE_TORCH_ON": {
+    "unit_name": "REDSTONE_TORCH_ON",
+    "minecraft_name": "minecraft:redstone_torch"
+  },
+  "CONCRETE": {
+    "unit_name": "CONCRETE",
+    "minecraft_name": "minecraft:concrete"
+  },
+  "CONCRETE_POWDER": {
+    "unit_name": "CONCRETE_POWDER",
+    "minecraft_name": "minecraft:concrete_powder"
+  },
+  "WHITE_GLAZED_TERRACOTTA": {
+    "unit_name": "GLAZED_TERRACOTTA",
+    "minecraft_name": "minecraft:glazed_terracotta"
+  },
+  "ORANGE_GLAZED_TERRACOTTA": {
+    "unit_name": "GLAZED_TERRACOTTA",
+    "minecraft_name": "minecraft:glazed_terracotta"
+  },
+  "MAGENTA_GLAZED_TERRACOTTA": {
+    "unit_name": "GLAZED_TERRACOTTA",
+    "minecraft_name": "minecraft:glazed_terracotta"
+  },
+  "LIGHT_BLUE_GLAZED_TERRACOTTA": {
+    "unit_name": "GLAZED_TERRACOTTA",
+    "minecraft_name": "minecraft:glazed_terracotta"
+  },
+  "YELLOW_GLAZED_TERRACOTTA": {
+    "unit_name": "GLAZED_TERRACOTTA",
+    "minecraft_name": "minecraft:glazed_terracotta"
+  },
+  "LIME_GLAZED_TERRACOTTA": {
+    "unit_name": "GLAZED_TERRACOTTA",
+    "minecraft_name": "minecraft:glazed_terracotta"
+  },
+  "PINK_GLAZED_TERRACOTTA": {
+    "unit_name": "GLAZED_TERRACOTTA",
+    "minecraft_name": "minecraft:glazed_terracotta"
+  },
+  "GRAY_GLAZED_TERRACOTTA": {
+    "unit_name": "GLAZED_TERRACOTTA",
+    "minecraft_name": "minecraft:glazed_terracotta"
+  },
+  "SILVER_GLAZED_TERRACOTTA": {
+    "unit_name": "GLAZED_TERRACOTTA",
+    "minecraft_name": "minecraft:glazed_terracotta"
+  },
+  "CYAN_GLAZED_TERRACOTTA": {
+    "unit_name": "GLAZED_TERRACOTTA",
+    "minecraft_name": "minecraft:glazed_terracotta"
+  },
+  "PURPLE_GLAZED_TERRACOTTA": {
+    "unit_name": "GLAZED_TERRACOTTA",
+    "minecraft_name": "minecraft:glazed_terracotta"
+  },
+  "BLUE_GLAZED_TERRACOTTA": {
+    "unit_name": "GLAZED_TERRACOTTA",
+    "minecraft_name": "minecraft:glazed_terracotta"
+  },
+  "BROWN_GLAZED_TERRACOTTA": {
+    "unit_name": "GLAZED_TERRACOTTA",
+    "minecraft_name": "minecraft:glazed_terracotta"
+  },
+  "GREEN_GLAZED_TERRACOTTA": {
+    "unit_name": "GLAZED_TERRACOTTA",
+    "minecraft_name": "minecraft:glazed_terracotta"
+  },
+  "RED_GLAZED_TERRACOTTA": {
+    "unit_name": "GLAZED_TERRACOTTA",
+    "minecraft_name": "minecraft:glazed_terracotta"
+  },
+  "BLACK_GLAZED_TERRACOTTA": {
+    "unit_name": "GLAZED_TERRACOTTA",
+    "minecraft_name": "minecraft:glazed_terracotta"
+  }
 }

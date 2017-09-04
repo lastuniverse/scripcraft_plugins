@@ -841,11 +841,11 @@ function sell(data){
 
   var isSuccess = economy.addMoney(data.owner_name,0-data.price.buy);
   if(!isSuccess)
-    echo( data.player, 'sell 01');
+    return  echo( data.player, 'sell 01');
 
   isSuccess = economy.addMoney(data.player,data.price.buy);
   if(!isSuccess)
-    echo( data.player, 'sell 02');
+    return  echo( data.player, 'sell 02');
 
   //var item = inventory.itemStackFromJSON(data.shop_store.itemstack,data.price.amount);
   // var amount = itemstack.getAmount();

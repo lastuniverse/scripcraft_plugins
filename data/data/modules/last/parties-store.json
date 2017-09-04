@@ -37,12 +37,6 @@
           "UUID": "eddd148a-2e89-45f3-bc33-071ffac51198",
           "kills": 0,
           "score": 0
-        },
-        "lastuniverse": {
-          "name": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "kills": 0,
-          "score": 0
         }
       }
     },
@@ -63,6 +57,29 @@
         "ZZzhakonya": {
           "name": "ZZzhakonya",
           "UUID": "505ef96e-5a4d-4f0b-b193-3117c3799a13",
+          "kills": 0,
+          "score": 0
+        }
+      }
+    },
+    "danj": {
+      "owner": "lastuniverse",
+      "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+      "status": "opened",
+      "name": "danj",
+      "description": "тестовая пати для дена",
+      "maxplayers": "2",
+      "password": "90823",
+      "players": {
+        "lastuniverse": {
+          "name": "lastuniverse",
+          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+          "kills": 0,
+          "score": 0
+        },
+        "XDeNzl": {
+          "name": "XDeNzl",
+          "UUID": "b8771b8b-e401-4003-b839-cb533ce94e1c",
           "kills": 0,
           "score": 0
         }

@@ -27,6 +27,6 @@
 		"VEX": {"type": "air", "light": 4},
 		"BLAZE": {"type": "air", "light": 5},
 		"GUARDIAN": {"type": "water", "light": 15},
-		"ELDER_GUARDIAN": {"type": "water", "light": 15}
+		"ELDER_GUARDIAN": {"type": "water", "light": 12}
 	}
 }

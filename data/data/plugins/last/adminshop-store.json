@@ -4,13 +4,13 @@
     "itemstack": {
       "type": "STAINED_CLAY",
       "damage": 4,
-      "amount": 1
+      "amount": 16
     },
     "material": "STAINED_CLAY:4",
     "price": {
       "amount": 16,
-      "buy": 11354,
-      "sell": 45417
+      "buy": 1230,
+      "sell": 4920
     },
     "loc": {
       "world": "world",
@@ -31,8 +31,8 @@
     "material": "STAINED_CLAY:1",
     "price": {
       "amount": 16,
-      "buy": 11354,
-      "sell": 45417
+      "buy": 1230,
+      "sell": 4920
     },
     "loc": {
       "world": "world",
@@ -53,8 +53,8 @@
     "material": "STAINED_CLAY:6",
     "price": {
       "amount": 16,
-      "buy": 11354,
-      "sell": 45417
+      "buy": 1230,
+      "sell": 4920
     },
     "loc": {
       "world": "world",
@@ -70,13 +70,13 @@
     "itemstack": {
       "type": "STAINED_CLAY",
       "damage": 3,
-      "amount": 1
+      "amount": 16
     },
     "material": "STAINED_CLAY:3",
     "price": {
       "amount": 16,
-      "buy": 11354,
-      "sell": 45417
+      "buy": 1230,
+      "sell": 4920
     },
     "loc": {
       "world": "world",
@@ -97,8 +97,8 @@
     "material": "STAINED_CLAY:11",
     "price": {
       "amount": 16,
-      "buy": 11354,
-      "sell": 45417
+      "buy": 1230,
+      "sell": 4920
     },
     "loc": {
       "world": "world",
@@ -119,8 +119,8 @@
     "material": "STAINED_CLAY:2",
     "price": {
       "amount": 16,
-      "buy": 11354,
-      "sell": 45417
+      "buy": 1230,
+      "sell": 4920
     },
     "loc": {
       "world": "world",
@@ -136,13 +136,13 @@
     "itemstack": {
       "type": "STAINED_CLAY",
       "damage": 5,
-      "amount": 1
+      "amount": 16
     },
     "material": "STAINED_CLAY:5",
     "price": {
       "amount": 16,
-      "buy": 11354,
-      "sell": 45417
+      "buy": 1230,
+      "sell": 4920
     },
     "loc": {
       "world": "world",
@@ -163,8 +163,8 @@
     "material": "STAINED_CLAY:13",
     "price": {
       "amount": 16,
-      "buy": 11354,
-      "sell": 45417
+      "buy": 1230,
+      "sell": 4920
     },
     "loc": {
       "world": "world",
@@ -180,13 +180,13 @@
     "itemstack": {
       "type": "STAINED_CLAY",
       "damage": 9,
-      "amount": 1
+      "amount": 16
     },
     "material": "STAINED_CLAY:9",
     "price": {
       "amount": 16,
-      "buy": 11354,
-      "sell": 45417
+      "buy": 1230,
+      "sell": 4920
     },
     "loc": {
       "world": "world",
@@ -207,8 +207,8 @@
     "material": "STAINED_CLAY",
     "price": {
       "amount": 16,
-      "buy": 11354,
-      "sell": 45417
+      "buy": 1230,
+      "sell": 4920
     },
     "loc": {
       "world": "world",
@@ -224,13 +224,13 @@
     "itemstack": {
       "type": "STAINED_CLAY",
       "damage": 8,
-      "amount": 1
+      "amount": 16
     },
     "material": "STAINED_CLAY:8",
     "price": {
       "amount": 16,
-      "buy": 11354,
-      "sell": 45417
+      "buy": 1230,
+      "sell": 4920
     },
     "loc": {
       "world": "world",
@@ -251,8 +251,8 @@
     "material": "STAINED_CLAY:7",
     "price": {
       "amount": 16,
-      "buy": 11354,
-      "sell": 45417
+      "buy": 1230,
+      "sell": 4920
     },
     "loc": {
       "world": "world",
@@ -273,8 +273,8 @@
     "material": "HARD_CLAY",
     "price": {
       "amount": 16,
-      "buy": 9312,
-      "sell": 37248
+      "buy": 1200,
+      "sell": 4800
     },
     "loc": {
       "world": "world",
@@ -295,8 +295,8 @@
     "material": "CLAY",
     "price": {
       "amount": 16,
-      "buy": 7680,
-      "sell": 30720
+      "buy": 6400,
+      "sell": 25600
     },
     "loc": {
       "world": "world",
@@ -317,8 +317,8 @@
     "material": "STAINED_CLAY:14",
     "price": {
       "amount": 16,
-      "buy": 11354,
-      "sell": 45417
+      "buy": 1230,
+      "sell": 4920
     },
     "loc": {
       "world": "world",
@@ -339,8 +339,8 @@
     "material": "STAINED_CLAY:10",
     "price": {
       "amount": 16,
-      "buy": 11354,
-      "sell": 45417
+      "buy": 1230,
+      "sell": 4920
     },
     "loc": {
       "world": "world",
@@ -361,8 +361,8 @@
     "material": "STAINED_CLAY:12",
     "price": {
       "amount": 16,
-      "buy": 11354,
-      "sell": 45417
+      "buy": 1230,
+      "sell": 4920
     },
     "loc": {
       "world": "world",
@@ -383,8 +383,8 @@
     "material": "STAINED_CLAY:15",
     "price": {
       "amount": 16,
-      "buy": 11354,
-      "sell": 45417
+      "buy": 1230,
+      "sell": 4920
     },
     "loc": {
       "world": "world",
@@ -422,13 +422,13 @@
     "itemstack": {
       "type": "WOOL",
       "damage": 14,
-      "amount": 1
+      "amount": 16
     },
     "material": "WOOL:14",
     "price": {
       "amount": 16,
-      "buy": 576,
-      "sell": 2304
+      "buy": 1840,
+      "sell": 7360
     },
     "loc": {
       "world": "world",
@@ -444,13 +444,13 @@
     "itemstack": {
       "type": "WOOL",
       "damage": 3,
-      "amount": 1
+      "amount": 16
     },
     "material": "WOOL:3",
     "price": {
       "amount": 16,
-      "buy": 576,
-      "sell": 2304
+      "buy": 1840,
+      "sell": 7360
     },
     "loc": {
       "world": "world",
@@ -466,13 +466,13 @@
     "itemstack": {
       "type": "WOOL",
       "damage": 1,
-      "amount": 1
+      "amount": 16
     },
     "material": "WOOL:1",
     "price": {
       "amount": 16,
-      "buy": 576,
-      "sell": 2304
+      "buy": 1840,
+      "sell": 7360
     },
     "loc": {
       "world": "world",
@@ -487,14 +487,14 @@
     "type": "adminshop",
     "itemstack": {
       "type": "WOOL",
-      "amount": 1,
+      "amount": 16,
       "damage": 0
     },
     "material": "WOOL",
     "price": {
       "amount": 16,
-      "buy": 576,
-      "sell": 2304
+      "buy": 1840,
+      "sell": 7360
     },
     "loc": {
       "world": "world",
@@ -515,8 +515,8 @@
     "material": "STAINED_GLASS_PANE:14",
     "price": {
       "amount": 16,
-      "buy": 314,
-      "sell": 1257
+      "buy": 173,
+      "sell": 693
     },
     "loc": {
       "world": "world",
@@ -532,13 +532,13 @@
     "itemstack": {
       "type": "STAINED_GLASS_PANE",
       "damage": 3,
-      "amount": 1
+      "amount": 16
     },
     "material": "STAINED_GLASS_PANE:3",
     "price": {
       "amount": 16,
-      "buy": 314,
-      "sell": 1257
+      "buy": 173,
+      "sell": 693
     },
     "loc": {
       "world": "world",
@@ -559,8 +559,8 @@
     "material": "STAINED_GLASS_PANE:1",
     "price": {
       "amount": 16,
-      "buy": 314,
-      "sell": 1257
+      "buy": 173,
+      "sell": 693
     },
     "loc": {
       "world": "world",
@@ -581,8 +581,8 @@
     "material": "STAINED_GLASS_PANE",
     "price": {
       "amount": 16,
-      "buy": 314,
-      "sell": 1257
+      "buy": 173,
+      "sell": 693
     },
     "loc": {
       "world": "world",
@@ -603,8 +603,8 @@
     "material": "STAINED_GLASS:14",
     "price": {
       "amount": 16,
-      "buy": 698,
-      "sell": 2793
+      "buy": 462,
+      "sell": 1848
     },
     "loc": {
       "world": "world",
@@ -620,13 +620,13 @@
     "itemstack": {
       "type": "WOOL",
       "damage": 6,
-      "amount": 1
+      "amount": 16
     },
     "material": "WOOL:6",
     "price": {
       "amount": 16,
-      "buy": 576,
-      "sell": 2304
+      "buy": 1840,
+      "sell": 7360
     },
     "loc": {
       "world": "world",
@@ -647,8 +647,8 @@
     "material": "WOOL:9",
     "price": {
       "amount": 16,
-      "buy": 576,
-      "sell": 2304
+      "buy": 1840,
+      "sell": 7360
     },
     "loc": {
       "world": "world",
@@ -664,13 +664,13 @@
     "itemstack": {
       "type": "WOOL",
       "damage": 4,
-      "amount": 1
+      "amount": 16
     },
     "material": "WOOL:4",
     "price": {
       "amount": 16,
-      "buy": 576,
-      "sell": 2304
+      "buy": 1840,
+      "sell": 7360
     },
     "loc": {
       "world": "world",
@@ -686,13 +686,13 @@
     "itemstack": {
       "type": "WOOL",
       "damage": 8,
-      "amount": 1
+      "amount": 16
     },
     "material": "WOOL:8",
     "price": {
       "amount": 16,
-      "buy": 576,
-      "sell": 2304
+      "buy": 1840,
+      "sell": 7360
     },
     "loc": {
       "world": "world",
@@ -713,8 +713,8 @@
     "material": "STAINED_GLASS_PANE:6",
     "price": {
       "amount": 16,
-      "buy": 314,
-      "sell": 1257
+      "buy": 173,
+      "sell": 693
     },
     "loc": {
       "world": "world",
@@ -735,8 +735,8 @@
     "material": "STAINED_GLASS_PANE:9",
     "price": {
       "amount": 16,
-      "buy": 314,
-      "sell": 1257
+      "buy": 173,
+      "sell": 693
     },
     "loc": {
       "world": "world",
@@ -757,8 +757,8 @@
     "material": "STAINED_GLASS_PANE:4",
     "price": {
       "amount": 16,
-      "buy": 314,
-      "sell": 1257
+      "buy": 173,
+      "sell": 693
     },
     "loc": {
       "world": "world",
@@ -779,8 +779,8 @@
     "material": "STAINED_GLASS_PANE:8",
     "price": {
       "amount": 16,
-      "buy": 314,
-      "sell": 1257
+      "buy": 173,
+      "sell": 693
     },
     "loc": {
       "world": "world",
@@ -801,8 +801,8 @@
     "material": "STAINED_GLASS:6",
     "price": {
       "amount": 16,
-      "buy": 698,
-      "sell": 2793
+      "buy": 462,
+      "sell": 1848
     },
     "loc": {
       "world": "world",
@@ -823,8 +823,8 @@
     "material": "WOOL:2",
     "price": {
       "amount": 16,
-      "buy": 576,
-      "sell": 2304
+      "buy": 1840,
+      "sell": 7360
     },
     "loc": {
       "world": "world",
@@ -840,13 +840,13 @@
     "itemstack": {
       "type": "WOOL",
       "damage": 11,
-      "amount": 1
+      "amount": 16
     },
     "material": "WOOL:11",
     "price": {
       "amount": 16,
-      "buy": 576,
-      "sell": 2304
+      "buy": 1840,
+      "sell": 7360
     },
     "loc": {
       "world": "world",
@@ -862,13 +862,13 @@
     "itemstack": {
       "type": "WOOL",
       "damage": 5,
-      "amount": 1
+      "amount": 16
     },
     "material": "WOOL:5",
     "price": {
       "amount": 16,
-      "buy": 576,
-      "sell": 2304
+      "buy": 1840,
+      "sell": 7360
     },
     "loc": {
       "world": "world",
@@ -884,13 +884,13 @@
     "itemstack": {
       "type": "WOOL",
       "damage": 7,
-      "amount": 1
+      "amount": 16
     },
     "material": "WOOL:7",
     "price": {
       "amount": 16,
-      "buy": 576,
-      "sell": 2304
+      "buy": 1840,
+      "sell": 7360
     },
     "loc": {
       "world": "world",
@@ -911,8 +911,8 @@
     "material": "STAINED_GLASS_PANE:2",
     "price": {
       "amount": 16,
-      "buy": 314,
-      "sell": 1257
+      "buy": 173,
+      "sell": 693
     },
     "loc": {
       "world": "world",
@@ -933,8 +933,8 @@
     "material": "STAINED_GLASS_PANE:11",
     "price": {
       "amount": 16,
-      "buy": 314,
-      "sell": 1257
+      "buy": 173,
+      "sell": 693
     },
     "loc": {
       "world": "world",
@@ -955,8 +955,8 @@
     "material": "STAINED_GLASS_PANE:5",
     "price": {
       "amount": 16,
-      "buy": 314,
-      "sell": 1257
+      "buy": 173,
+      "sell": 693
     },
     "loc": {
       "world": "world",
@@ -977,8 +977,8 @@
     "material": "STAINED_GLASS_PANE:7",
     "price": {
       "amount": 16,
-      "buy": 314,
-      "sell": 1257
+      "buy": 173,
+      "sell": 693
     },
     "loc": {
       "world": "world",
@@ -999,8 +999,8 @@
     "material": "STAINED_GLASS:2",
     "price": {
       "amount": 16,
-      "buy": 698,
-      "sell": 2793
+      "buy": 462,
+      "sell": 1848
     },
     "loc": {
       "world": "world",
@@ -1021,8 +1021,8 @@
     "material": "WOOL:10",
     "price": {
       "amount": 16,
-      "buy": 576,
-      "sell": 2304
+      "buy": 1840,
+      "sell": 7360
     },
     "loc": {
       "world": "world",
@@ -1038,13 +1038,13 @@
     "itemstack": {
       "type": "WOOL",
       "damage": 12,
-      "amount": 1
+      "amount": 16
     },
     "material": "WOOL:12",
     "price": {
       "amount": 16,
-      "buy": 576,
-      "sell": 2304
+      "buy": 1840,
+      "sell": 7360
     },
     "loc": {
       "world": "world",
@@ -1060,13 +1060,13 @@
     "itemstack": {
       "type": "WOOL",
       "damage": 13,
-      "amount": 1
+      "amount": 16
     },
     "material": "WOOL:13",
     "price": {
       "amount": 16,
-      "buy": 576,
-      "sell": 2304
+      "buy": 1840,
+      "sell": 7360
     },
     "loc": {
       "world": "world",
@@ -1082,13 +1082,13 @@
     "itemstack": {
       "type": "WOOL",
       "damage": 15,
-      "amount": 1
+      "amount": 16
     },
     "material": "WOOL:15",
     "price": {
       "amount": 16,
-      "buy": 576,
-      "sell": 2304
+      "buy": 1840,
+      "sell": 7360
     },
     "loc": {
       "world": "world",
@@ -1109,8 +1109,8 @@
     "material": "STAINED_GLASS_PANE:10",
     "price": {
       "amount": 16,
-      "buy": 314,
-      "sell": 1257
+      "buy": 173,
+      "sell": 693
     },
     "loc": {
       "world": "world",
@@ -1131,8 +1131,8 @@
     "material": "STAINED_GLASS_PANE:12",
     "price": {
       "amount": 16,
-      "buy": 314,
-      "sell": 1257
+      "buy": 173,
+      "sell": 693
     },
     "loc": {
       "world": "world",
@@ -1153,8 +1153,8 @@
     "material": "STAINED_GLASS_PANE:13",
     "price": {
       "amount": 16,
-      "buy": 314,
-      "sell": 1257
+      "buy": 173,
+      "sell": 693
     },
     "loc": {
       "world": "world",
@@ -1170,13 +1170,13 @@
     "itemstack": {
       "type": "STAINED_GLASS_PANE",
       "damage": 15,
-      "amount": 1
+      "amount": 16
     },
     "material": "STAINED_GLASS_PANE:15",
     "price": {
       "amount": 16,
-      "buy": 314,
-      "sell": 1257
+      "buy": 173,
+      "sell": 693
     },
     "loc": {
       "world": "world",
@@ -1197,8 +1197,8 @@
     "material": "STAINED_GLASS:10",
     "price": {
       "amount": 16,
-      "buy": 698,
-      "sell": 2793
+      "buy": 462,
+      "sell": 1848
     },
     "loc": {
       "world": "world",
@@ -1219,8 +1219,8 @@
     "material": "STAINED_GLASS:3",
     "price": {
       "amount": 16,
-      "buy": 698,
-      "sell": 2793
+      "buy": 462,
+      "sell": 1848
     },
     "loc": {
       "world": "world",
@@ -1236,13 +1236,13 @@
     "itemstack": {
       "type": "STAINED_GLASS",
       "damage": 9,
-      "amount": 1
+      "amount": 16
     },
     "material": "STAINED_GLASS:9",
     "price": {
       "amount": 16,
-      "buy": 698,
-      "sell": 2793
+      "buy": 462,
+      "sell": 1848
     },
     "loc": {
       "world": "world",
@@ -1258,13 +1258,13 @@
     "itemstack": {
       "type": "STAINED_GLASS",
       "damage": 11,
-      "amount": 1
+      "amount": 16
     },
     "material": "STAINED_GLASS:11",
     "price": {
       "amount": 16,
-      "buy": 698,
-      "sell": 2793
+      "buy": 462,
+      "sell": 1848
     },
     "loc": {
       "world": "world",
@@ -1285,8 +1285,8 @@
     "material": "STAINED_GLASS:12",
     "price": {
       "amount": 16,
-      "buy": 698,
-      "sell": 2793
+      "buy": 462,
+      "sell": 1848
     },
     "loc": {
       "world": "world",
@@ -1307,8 +1307,8 @@
     "material": "STAINED_GLASS:1",
     "price": {
       "amount": 16,
-      "buy": 698,
-      "sell": 2793
+      "buy": 462,
+      "sell": 1848
     },
     "loc": {
       "world": "world",
@@ -1329,8 +1329,8 @@
     "material": "STAINED_GLASS:4",
     "price": {
       "amount": 16,
-      "buy": 698,
-      "sell": 2793
+      "buy": 462,
+      "sell": 1848
     },
     "loc": {
       "world": "world",
@@ -1351,8 +1351,8 @@
     "material": "STAINED_GLASS:5",
     "price": {
       "amount": 16,
-      "buy": 698,
-      "sell": 2793
+      "buy": 462,
+      "sell": 1848
     },
     "loc": {
       "world": "world",
@@ -1373,8 +1373,8 @@
     "material": "STAINED_GLASS:13",
     "price": {
       "amount": 16,
-      "buy": 698,
-      "sell": 2793
+      "buy": 462,
+      "sell": 1848
     },
     "loc": {
       "world": "world",
@@ -1395,8 +1395,8 @@
     "material": "STAINED_GLASS",
     "price": {
       "amount": 16,
-      "buy": 698,
-      "sell": 2793
+      "buy": 462,
+      "sell": 1848
     },
     "loc": {
       "world": "world",
@@ -1417,8 +1417,8 @@
     "material": "STAINED_GLASS:8",
     "price": {
       "amount": 16,
-      "buy": 698,
-      "sell": 2793
+      "buy": 462,
+      "sell": 1848
     },
     "loc": {
       "world": "world",
@@ -1439,8 +1439,8 @@
     "material": "STAINED_GLASS:7",
     "price": {
       "amount": 16,
-      "buy": 698,
-      "sell": 2793
+      "buy": 462,
+      "sell": 1848
     },
     "loc": {
       "world": "world",
@@ -1456,13 +1456,13 @@
     "itemstack": {
       "type": "STAINED_GLASS",
       "damage": 15,
-      "amount": 1
+      "amount": 16
     },
     "material": "STAINED_GLASS:15",
     "price": {
       "amount": 16,
-      "buy": 698,
-      "sell": 2793
+      "buy": 462,
+      "sell": 1848
     },
     "loc": {
       "world": "world",
@@ -1483,8 +1483,8 @@
     "material": "THIN_GLASS",
     "price": {
       "amount": 16,
-      "buy": 194,
-      "sell": 777
+      "buy": 162,
+      "sell": 648
     },
     "loc": {
       "world": "world",
@@ -1505,8 +1505,8 @@
     "material": "GLASS",
     "price": {
       "amount": 16,
-      "buy": 571,
-      "sell": 2284
+      "buy": 432,
+      "sell": 1728
     },
     "loc": {
       "world": "world",
@@ -1527,8 +1527,8 @@
     "material": "SAND:1",
     "price": {
       "amount": 16,
-      "buy": 328,
-      "sell": 1314
+      "buy": 280,
+      "sell": 1120
     },
     "loc": {
       "world": "world",
@@ -1549,8 +1549,8 @@
     "material": "SAND",
     "price": {
       "amount": 16,
-      "buy": 328,
-      "sell": 1314
+      "buy": 280,
+      "sell": 1120
     },
     "loc": {
       "world": "world",
@@ -1571,8 +1571,8 @@
     "material": "PISTON_STICKY_BASE",
     "price": {
       "amount": 1,
-      "buy": 1255,
-      "sell": 5020
+      "buy": 688,
+      "sell": 2754
     },
     "loc": {
       "world": "world",
@@ -1593,8 +1593,8 @@
     "material": "JUKEBOX",
     "price": {
       "amount": 1,
-      "buy": 3172,
-      "sell": 12691
+      "buy": 600,
+      "sell": 2400
     },
     "loc": {
       "world": "world",
@@ -1615,8 +1615,8 @@
     "material": "DAYLIGHT_DETECTOR",
     "price": {
       "amount": 1,
-      "buy": 316,
-      "sell": 1264
+      "buy": 249,
+      "sell": 999
     },
     "loc": {
       "world": "world",
@@ -1637,8 +1637,8 @@
     "material": "WOOD_BUTTON",
     "price": {
       "amount": 1,
-      "buy": 21,
-      "sell": 86
+      "buy": 12,
+      "sell": 50
     },
     "loc": {
       "world": "world",
@@ -1681,8 +1681,8 @@
     "material": "PISTON_BASE",
     "price": {
       "amount": 1,
-      "buy": 546,
-      "sell": 2184
+      "buy": 438,
+      "sell": 1754
     },
     "loc": {
       "world": "world",
@@ -1703,8 +1703,8 @@
     "material": "NOTE_BLOCK",
     "price": {
       "amount": 1,
-      "buy": 322,
-      "sell": 1291
+      "buy": 225,
+      "sell": 900
     },
     "loc": {
       "world": "world",
@@ -1725,8 +1725,8 @@
     "material": "LEVER",
     "price": {
       "amount": 1,
-      "buy": 31,
-      "sell": 124
+      "buy": 21,
+      "sell": 85
     },
     "loc": {
       "world": "world",
@@ -1747,8 +1747,8 @@
     "material": "STONE_BUTTON",
     "price": {
       "amount": 1,
-      "buy": 28,
-      "sell": 115
+      "buy": 24,
+      "sell": 96
     },
     "loc": {
       "world": "world",
@@ -1769,8 +1769,8 @@
     "material": "REDSTONE_BLOCK",
     "price": {
       "amount": 1,
-      "buy": 1128,
-      "sell": 4514
+      "buy": 1125,
+      "sell": 4500
     },
     "loc": {
       "world": "world",
@@ -1791,8 +1791,8 @@
     "material": "RAILS",
     "price": {
       "amount": 1,
-      "buy": 98,
-      "sell": 393
+      "buy": 81,
+      "sell": 325
     },
     "loc": {
       "world": "world",
@@ -1813,8 +1813,8 @@
     "material": "DISPENSER",
     "price": {
       "amount": 1,
-      "buy": 665,
-      "sell": 2662
+      "buy": 323,
+      "sell": 1295
     },
     "loc": {
       "world": "world",
@@ -1835,8 +1835,8 @@
     "material": "TRIPWIRE_HOOK",
     "price": {
       "amount": 1,
-      "buy": 294,
-      "sell": 1176
+      "buy": 117,
+      "sell": 469
     },
     "loc": {
       "world": "world",
@@ -1857,8 +1857,8 @@
     "material": "WOOD_PLATE",
     "price": {
       "amount": 1,
-      "buy": 43,
-      "sell": 172
+      "buy": 25,
+      "sell": 100
     },
     "loc": {
       "world": "world",
@@ -1879,8 +1879,8 @@
     "material": "REDSTONE_TORCH_ON",
     "price": {
       "amount": 1,
-      "buy": 163,
-      "sell": 653
+      "buy": 131,
+      "sell": 525
     },
     "loc": {
       "world": "world",
@@ -1901,8 +1901,8 @@
     "material": "POWERED_RAIL",
     "price": {
       "amount": 1,
-      "buy": 466,
-      "sell": 1865
+      "buy": 471,
+      "sell": 1887
     },
     "loc": {
       "world": "world",
@@ -1923,8 +1923,8 @@
     "material": "DROPPER",
     "price": {
       "amount": 1,
-      "buy": 276,
-      "sell": 1104
+      "buy": 230,
+      "sell": 920
     },
     "loc": {
       "world": "world",
@@ -1945,8 +1945,8 @@
     "material": "IRON_TRAPDOOR",
     "price": {
       "amount": 1,
-      "buy": 1036,
-      "sell": 4147
+      "buy": 864,
+      "sell": 3456
     },
     "loc": {
       "world": "world",
@@ -1967,8 +1967,8 @@
     "material": "STONE_PLATE",
     "price": {
       "amount": 1,
-      "buy": 57,
-      "sell": 230
+      "buy": 48,
+      "sell": 192
     },
     "loc": {
       "world": "world",
@@ -1989,8 +1989,8 @@
     "material": "DIODE",
     "price": {
       "amount": 1,
-      "buy": 628,
-      "sell": 2514
+      "buy": 459,
+      "sell": 1838
     },
     "loc": {
       "world": "world",
@@ -2011,8 +2011,8 @@
     "material": "ACTIVATOR_RAIL",
     "price": {
       "amount": 1,
-      "buy": 1025,
-      "sell": 4100
+      "buy": 239,
+      "sell": 959
     },
     "loc": {
       "world": "world",
@@ -2033,8 +2033,8 @@
     "material": "REDSTONE_LAMP_OFF",
     "price": {
       "amount": 1,
-      "buy": 1176,
-      "sell": 4704
+      "buy": 900,
+      "sell": 3600
     },
     "loc": {
       "world": "world",
@@ -2055,8 +2055,8 @@
     "material": "IRON_DOOR",
     "price": {
       "amount": 1,
-      "buy": 518,
-      "sell": 2073
+      "buy": 432,
+      "sell": 1728
     },
     "loc": {
       "world": "world",
@@ -2077,8 +2077,8 @@
     "material": "IRON_PLATE",
     "price": {
       "amount": 1,
-      "buy": 518,
-      "sell": 2073
+      "buy": 432,
+      "sell": 1728
     },
     "loc": {
       "world": "world",
@@ -2099,8 +2099,8 @@
     "material": "REDSTONE_COMPARATOR",
     "price": {
       "amount": 1,
-      "buy": 734,
-      "sell": 2938
+      "buy": 515,
+      "sell": 2063
     },
     "loc": {
       "world": "world",
@@ -2121,8 +2121,8 @@
     "material": "DETECTOR_RAIL",
     "price": {
       "amount": 1,
-      "buy": 295,
-      "sell": 1182
+      "buy": 244,
+      "sell": 979
     },
     "loc": {
       "world": "world",
@@ -2143,8 +2143,8 @@
     "material": "OBSERVER",
     "price": {
       "amount": 1,
-      "buy": 50000,
-      "sell": 200000
+      "buy": 390,
+      "sell": 1560
     },
     "loc": {
       "world": "world",
@@ -2165,8 +2165,8 @@
     "material": "HOPPER",
     "price": {
       "amount": 1,
-      "buy": 1514,
-      "sell": 6056
+      "buy": 1180,
+      "sell": 4720
     },
     "loc": {
       "world": "world",
@@ -2187,8 +2187,8 @@
     "material": "GOLD_PLATE",
     "price": {
       "amount": 1,
-      "buy": 878,
-      "sell": 3513
+      "buy": 900,
+      "sell": 3600
     },
     "loc": {
       "world": "world",
@@ -2209,8 +2209,8 @@
     "material": "TRAPPED_CHEST",
     "price": {
       "amount": 1,
-      "buy": 560,
-      "sell": 2240
+      "buy": 217,
+      "sell": 869
     },
     "loc": {
       "world": "world",
@@ -2231,8 +2231,8 @@
     "material": "MINECART",
     "price": {
       "amount": 1,
-      "buy": 1296,
-      "sell": 5184
+      "buy": 1080,
+      "sell": 4320
     },
     "loc": {
       "world": "world",
@@ -2253,8 +2253,8 @@
     "material": "STORAGE_MINECART",
     "price": {
       "amount": 1,
-      "buy": 1762,
-      "sell": 7050
+      "buy": 1180,
+      "sell": 4720
     },
     "loc": {
       "world": "world",
@@ -2275,8 +2275,8 @@
     "material": "POWERED_MINECART",
     "price": {
       "amount": 1,
-      "buy": 1728,
-      "sell": 6912
+      "buy": 1200,
+      "sell": 4800
     },
     "loc": {
       "world": "world",
@@ -2297,8 +2297,8 @@
     "material": "HOPPER_MINECART",
     "price": {
       "amount": 1,
-      "buy": 3375,
-      "sell": 13501
+      "buy": 2260,
+      "sell": 9040
     },
     "loc": {
       "world": "world",
@@ -2319,8 +2319,8 @@
     "material": "EXPLOSIVE_MINECART",
     "price": {
       "amount": 1,
-      "buy": 5106,
-      "sell": 20425
+      "buy": 1450,
+      "sell": 5800
     },
     "loc": {
       "world": "world",
@@ -2341,8 +2341,8 @@
     "material": "SKULL_ITEM:5",
     "price": {
       "amount": 1,
-      "buy": 40000,
-      "sell": 160000
+      "buy": 50000,
+      "sell": 200000
     },
     "loc": {
       "world": "world",
@@ -2363,8 +2363,8 @@
     "material": "GRILLED_PORK",
     "price": {
       "amount": 16,
-      "buy": 480,
-      "sell": 1920
+      "buy": 320,
+      "sell": 1280
     },
     "loc": {
       "world": "world",
@@ -2385,8 +2385,8 @@
     "material": "PORK",
     "price": {
       "amount": 16,
-      "buy": 320,
-      "sell": 1280
+      "buy": 240,
+      "sell": 960
     },
     "loc": {
       "world": "world",
@@ -2407,8 +2407,8 @@
     "material": "COOKED_CHICKEN",
     "price": {
       "amount": 16,
-      "buy": 576,
-      "sell": 2304
+      "buy": 320,
+      "sell": 1280
     },
     "loc": {
       "world": "world",
@@ -2429,8 +2429,8 @@
     "material": "RAW_CHICKEN",
     "price": {
       "amount": 16,
-      "buy": 400,
-      "sell": 1600
+      "buy": 240,
+      "sell": 960
     },
     "loc": {
       "world": "world",
@@ -2451,8 +2451,8 @@
     "material": "COOKED_FISH",
     "price": {
       "amount": 16,
-      "buy": 384,
-      "sell": 1536
+      "buy": 320,
+      "sell": 1280
     },
     "loc": {
       "world": "world",
@@ -2489,14 +2489,14 @@
     "type": "adminshop",
     "itemstack": {
       "type": "COOKED_BEEF",
-      "amount": 1,
+      "amount": 16,
       "damage": 0
     },
     "material": "COOKED_BEEF",
     "price": {
       "amount": 16,
-      "buy": 576,
-      "sell": 2304
+      "buy": 320,
+      "sell": 1280
     },
     "loc": {
       "world": "world",
@@ -2517,8 +2517,8 @@
     "material": "RAW_BEEF",
     "price": {
       "amount": 16,
-      "buy": 400,
-      "sell": 1600
+      "buy": 240,
+      "sell": 960
     },
     "loc": {
       "world": "world",
@@ -2539,8 +2539,8 @@
     "material": "COOKED_RABBIT",
     "price": {
       "amount": 16,
-      "buy": 384,
-      "sell": 1536
+      "buy": 320,
+      "sell": 1280
     },
     "loc": {
       "world": "world",
@@ -2583,8 +2583,8 @@
     "material": "COOKED_FISH:1",
     "price": {
       "amount": 16,
-      "buy": 384,
-      "sell": 1536
+      "buy": 320,
+      "sell": 1280
     },
     "loc": {
       "world": "world",
@@ -2627,8 +2627,8 @@
     "material": "COOKED_MUTTON",
     "price": {
       "amount": 16,
-      "buy": 528,
-      "sell": 2112
+      "buy": 320,
+      "sell": 1280
     },
     "loc": {
       "world": "world",
@@ -2643,14 +2643,14 @@
     "type": "adminshop",
     "itemstack": {
       "type": "MUTTON",
-      "amount": 1,
+      "amount": 16,
       "damage": 0
     },
     "material": "MUTTON",
     "price": {
       "amount": 16,
-      "buy": 360,
-      "sell": 1440
+      "buy": 240,
+      "sell": 960
     },
     "loc": {
       "world": "world",
@@ -2693,8 +2693,8 @@
     "material": "POTATO_ITEM",
     "price": {
       "amount": 16,
-      "buy": 400,
-      "sell": 1600
+      "buy": 240,
+      "sell": 960
     },
     "loc": {
       "world": "world",
@@ -2715,8 +2715,8 @@
     "material": "CHORUS_FRUIT_POPPED",
     "price": {
       "amount": 16,
-      "buy": 4896,
-      "sell": 19584
+      "buy": 1600,
+      "sell": 6400
     },
     "loc": {
       "world": "world",
@@ -2737,8 +2737,8 @@
     "material": "CHORUS_FRUIT",
     "price": {
       "amount": 16,
-      "buy": 4000,
-      "sell": 16000
+      "buy": 800,
+      "sell": 3200
     },
     "loc": {
       "world": "world",
@@ -2759,8 +2759,8 @@
     "material": "BOAT",
     "price": {
       "amount": 1,
-      "buy": 108,
-      "sell": 432
+      "buy": 62,
+      "sell": 250
     },
     "loc": {
       "world": "world",
@@ -2781,8 +2781,8 @@
     "material": "BOAT_DARK_OAK",
     "price": {
       "amount": 1,
-      "buy": 108,
-      "sell": 432
+      "buy": 62,
+      "sell": 250
     },
     "loc": {
       "world": "world",
@@ -2803,8 +2803,8 @@
     "material": "BOAT_SPRUCE",
     "price": {
       "amount": 1,
-      "buy": 108,
-      "sell": 432
+      "buy": 62,
+      "sell": 250
     },
     "loc": {
       "world": "world",
@@ -2825,8 +2825,8 @@
     "material": "BOAT_JUNGLE",
     "price": {
       "amount": 1,
-      "buy": 108,
-      "sell": 432
+      "buy": 62,
+      "sell": 250
     },
     "loc": {
       "world": "world",
@@ -2847,8 +2847,8 @@
     "material": "BOAT_ACACIA",
     "price": {
       "amount": 1,
-      "buy": 108,
-      "sell": 432
+      "buy": 62,
+      "sell": 250
     },
     "loc": {
       "world": "world",
@@ -2869,8 +2869,8 @@
     "material": "BOAT_BIRCH",
     "price": {
       "amount": 1,
-      "buy": 108,
-      "sell": 432
+      "buy": 62,
+      "sell": 250
     },
     "loc": {
       "world": "world",
@@ -2891,8 +2891,8 @@
     "material": "WOOD_DOOR",
     "price": {
       "amount": 1,
-      "buy": 43,
-      "sell": 172
+      "buy": 25,
+      "sell": 100
     },
     "loc": {
       "world": "world",
@@ -2913,8 +2913,8 @@
     "material": "DARK_OAK_DOOR_ITEM",
     "price": {
       "amount": 1,
-      "buy": 43,
-      "sell": 172
+      "buy": 25,
+      "sell": 100
     },
     "loc": {
       "world": "world",
@@ -2935,8 +2935,8 @@
     "material": "SPRUCE_DOOR_ITEM",
     "price": {
       "amount": 1,
-      "buy": 43,
-      "sell": 172
+      "buy": 25,
+      "sell": 100
     },
     "loc": {
       "world": "world",
@@ -2957,8 +2957,8 @@
     "material": "JUNGLE_DOOR_ITEM",
     "price": {
       "amount": 1,
-      "buy": 43,
-      "sell": 172
+      "buy": 25,
+      "sell": 100
     },
     "loc": {
       "world": "world",
@@ -2979,8 +2979,8 @@
     "material": "ACACIA_DOOR_ITEM",
     "price": {
       "amount": 1,
-      "buy": 43,
-      "sell": 172
+      "buy": 25,
+      "sell": 100
     },
     "loc": {
       "world": "world",
@@ -3001,8 +3001,8 @@
     "material": "BIRCH_DOOR_ITEM",
     "price": {
       "amount": 1,
-      "buy": 43,
-      "sell": 172
+      "buy": 25,
+      "sell": 100
     },
     "loc": {
       "world": "world",
@@ -3023,8 +3023,8 @@
     "material": "FENCE",
     "price": {
       "amount": 16,
-      "buy": 1804,
-      "sell": 7219
+      "buy": 333,
+      "sell": 1333
     },
     "loc": {
       "world": "world",
@@ -3045,8 +3045,8 @@
     "material": "DARK_OAK_FENCE",
     "price": {
       "amount": 16,
-      "buy": 1804,
-      "sell": 7219
+      "buy": 333,
+      "sell": 1333
     },
     "loc": {
       "world": "world",
@@ -3067,8 +3067,8 @@
     "material": "SPRUCE_FENCE",
     "price": {
       "amount": 16,
-      "buy": 1804,
-      "sell": 7219
+      "buy": 333,
+      "sell": 1333
     },
     "loc": {
       "world": "world",
@@ -3089,8 +3089,8 @@
     "material": "JUNGLE_FENCE",
     "price": {
       "amount": 16,
-      "buy": 1804,
-      "sell": 7219
+      "buy": 333,
+      "sell": 1333
     },
     "loc": {
       "world": "world",
@@ -3111,8 +3111,8 @@
     "material": "ACACIA_FENCE",
     "price": {
       "amount": 16,
-      "buy": 1804,
-      "sell": 7219
+      "buy": 333,
+      "sell": 1333
     },
     "loc": {
       "world": "world",
@@ -3133,8 +3133,8 @@
     "material": "BIRCH_FENCE",
     "price": {
       "amount": 16,
-      "buy": 1804,
-      "sell": 7219
+      "buy": 333,
+      "sell": 1333
     },
     "loc": {
       "world": "world",
@@ -3155,8 +3155,8 @@
     "material": "FENCE_GATE",
     "price": {
       "amount": 16,
-      "buy": 1536,
-      "sell": 6144
+      "buy": 800,
+      "sell": 3200
     },
     "loc": {
       "world": "world",
@@ -3177,8 +3177,8 @@
     "material": "DARK_OAK_FENCE_GATE",
     "price": {
       "amount": 16,
-      "buy": 1536,
-      "sell": 6144
+      "buy": 800,
+      "sell": 3200
     },
     "loc": {
       "world": "world",
@@ -3199,8 +3199,8 @@
     "material": "SPRUCE_FENCE_GATE",
     "price": {
       "amount": 16,
-      "buy": 1536,
-      "sell": 6144
+      "buy": 800,
+      "sell": 3200
     },
     "loc": {
       "world": "world",
@@ -3221,8 +3221,8 @@
     "material": "JUNGLE_FENCE_GATE",
     "price": {
       "amount": 16,
-      "buy": 1536,
-      "sell": 6144
+      "buy": 800,
+      "sell": 3200
     },
     "loc": {
       "world": "world",
@@ -3243,8 +3243,8 @@
     "material": "ACACIA_FENCE_GATE",
     "price": {
       "amount": 16,
-      "buy": 1536,
-      "sell": 6144
+      "buy": 800,
+      "sell": 3200
     },
     "loc": {
       "world": "world",
@@ -3265,8 +3265,8 @@
     "material": "BIRCH_FENCE_GATE",
     "price": {
       "amount": 16,
-      "buy": 1536,
-      "sell": 6144
+      "buy": 800,
+      "sell": 3200
     },
     "loc": {
       "world": "world",
@@ -3287,8 +3287,8 @@
     "material": "PRISMARINE",
     "price": {
       "amount": 64,
-      "buy": 4608,
-      "sell": 18432
+      "buy": 8640,
+      "sell": 34560
     },
     "loc": {
       "world": "world",
@@ -3309,8 +3309,8 @@
     "material": "PRISMARINE:1",
     "price": {
       "amount": 64,
-      "buy": 4608,
-      "sell": 18432
+      "buy": 8640,
+      "sell": 34560
     },
     "loc": {
       "world": "world",
@@ -3331,8 +3331,8 @@
     "material": "PRISMARINE:2",
     "price": {
       "amount": 64,
-      "buy": 4608,
-      "sell": 18432
+      "buy": 8640,
+      "sell": 34560
     },
     "loc": {
       "world": "world",
@@ -3353,8 +3353,8 @@
     "material": "SEA_LANTERN",
     "price": {
       "amount": 64,
-      "buy": 45740,
-      "sell": 182960
+      "buy": 19840,
+      "sell": 79360
     },
     "loc": {
       "world": "world",
@@ -3392,7 +3392,7 @@
     "itemstack": {
       "type": "STONE",
       "damage": 5,
-      "amount": 1
+      "amount": 64
     },
     "material": "STONE:5",
     "price": {
@@ -3436,7 +3436,7 @@
     "itemstack": {
       "type": "STONE",
       "damage": 3,
-      "amount": 1
+      "amount": 64
     },
     "material": "STONE:3",
     "price": {
@@ -3485,8 +3485,8 @@
     "material": "NETHER_WART_BLOCK",
     "price": {
       "amount": 64,
-      "buy": 34560,
-      "sell": 138240
+      "buy": 28800,
+      "sell": 115200
     },
     "loc": {
       "world": "world",
@@ -3595,8 +3595,8 @@
     "material": "END_BRICKS",
     "price": {
       "amount": 64,
-      "buy": 1920,
-      "sell": 7680
+      "buy": 1600,
+      "sell": 6400
     },
     "loc": {
       "world": "world",
@@ -3617,8 +3617,8 @@
     "material": "RED_NETHER_BRICK",
     "price": {
       "amount": 64,
-      "buy": 1536,
-      "sell": 6144
+      "buy": 8960,
+      "sell": 35840
     },
     "loc": {
       "world": "world",
@@ -3639,8 +3639,8 @@
     "material": "GLOWSTONE",
     "price": {
       "amount": 64,
-      "buy": 30720,
-      "sell": 122880
+      "buy": 25600,
+      "sell": 102400
     },
     "loc": {
       "world": "world",
@@ -3661,8 +3661,8 @@
     "material": "STEP:6",
     "price": {
       "amount": 64,
-      "buy": 3686,
-      "sell": 14745
+      "buy": 768,
+      "sell": 3072
     },
     "loc": {
       "world": "world",
@@ -3683,8 +3683,8 @@
     "material": "NETHER_BRICK_STAIRS",
     "price": {
       "amount": 64,
-      "buy": 13271,
-      "sell": 53084
+      "buy": 7680,
+      "sell": 30720
     },
     "loc": {
       "world": "world",
@@ -3705,8 +3705,8 @@
     "material": "NETHER_BRICK",
     "price": {
       "amount": 64,
-      "buy": 7372,
-      "sell": 29491
+      "buy": 5120,
+      "sell": 20480
     },
     "loc": {
       "world": "world",
@@ -3727,8 +3727,8 @@
     "material": "STEP:4",
     "price": {
       "amount": 64,
-      "buy": 3686,
-      "sell": 14745
+      "buy": 768,
+      "sell": 3072
     },
     "loc": {
       "world": "world",
@@ -3749,8 +3749,8 @@
     "material": "BRICK_STAIRS",
     "price": {
       "amount": 64,
-      "buy": 69672,
-      "sell": 278691
+      "buy": 48000,
+      "sell": 192000
     },
     "loc": {
       "world": "world",
@@ -3771,8 +3771,8 @@
     "material": "BRICK",
     "price": {
       "amount": 64,
-      "buy": 38707,
-      "sell": 154828
+      "buy": 32000,
+      "sell": 128000
     },
     "loc": {
       "world": "world",
@@ -3793,8 +3793,8 @@
     "material": "PURPUR_SLAB",
     "price": {
       "amount": 64,
-      "buy": 56401,
-      "sell": 225607
+      "buy": 3200,
+      "sell": 12800
     },
     "loc": {
       "world": "world",
@@ -3815,8 +3815,8 @@
     "material": "PURPUR_STAIRS",
     "price": {
       "amount": 64,
-      "buy": 169205,
-      "sell": 676823
+      "buy": 9600,
+      "sell": 38400
     },
     "loc": {
       "world": "world",
@@ -3837,8 +3837,8 @@
     "material": "PURPUR_BLOCK",
     "price": {
       "amount": 64,
-      "buy": 94003,
-      "sell": 376012
+      "buy": 6400,
+      "sell": 25600
     },
     "loc": {
       "world": "world",
@@ -3859,8 +3859,8 @@
     "material": "PURPUR_PILLAR",
     "price": {
       "amount": 64,
-      "buy": 135364,
-      "sell": 541458
+      "buy": 6400,
+      "sell": 25600
     },
     "loc": {
       "world": "world",
@@ -3881,8 +3881,8 @@
     "material": "NETHER_FENCE",
     "price": {
       "amount": 64,
-      "buy": 8847,
-      "sell": 35389
+      "buy": 5120,
+      "sell": 20480
     },
     "loc": {
       "world": "world",
@@ -3903,8 +3903,8 @@
     "material": "STEP",
     "price": {
       "amount": 64,
-      "buy": 3686,
-      "sell": 14745
+      "buy": 768,
+      "sell": 3072
     },
     "loc": {
       "world": "world",
@@ -3925,8 +3925,8 @@
     "material": "STEP:3",
     "price": {
       "amount": 64,
-      "buy": 3686,
-      "sell": 14745
+      "buy": 768,
+      "sell": 3072
     },
     "loc": {
       "world": "world",
@@ -3947,8 +3947,8 @@
     "material": "COBBLESTONE_STAIRS",
     "price": {
       "amount": 64,
-      "buy": 1728,
-      "sell": 6912
+      "buy": 1440,
+      "sell": 5760
     },
     "loc": {
       "world": "world",
@@ -3985,14 +3985,14 @@
     "type": "adminshop",
     "itemstack": {
       "type": "MOSSY_COBBLESTONE",
-      "amount": 1,
+      "amount": 64,
       "damage": 0
     },
     "material": "MOSSY_COBBLESTONE",
     "price": {
       "amount": 64,
-      "buy": 1920,
-      "sell": 7680
+      "buy": 3520,
+      "sell": 14080
     },
     "loc": {
       "world": "world",
@@ -4013,8 +4013,8 @@
     "material": "COBBLE_WALL",
     "price": {
       "amount": 64,
-      "buy": 1152,
-      "sell": 4608
+      "buy": 960,
+      "sell": 3840
     },
     "loc": {
       "world": "world",
@@ -4035,8 +4035,8 @@
     "material": "COBBLE_WALL:1",
     "price": {
       "amount": 64,
-      "buy": 1152,
-      "sell": 4608
+      "buy": 960,
+      "sell": 3840
     },
     "loc": {
       "world": "world",
@@ -4057,8 +4057,8 @@
     "material": "STEP:5",
     "price": {
       "amount": 64,
-      "buy": 3686,
-      "sell": 14745
+      "buy": 768,
+      "sell": 3072
     },
     "loc": {
       "world": "world",
@@ -4079,8 +4079,8 @@
     "material": "SMOOTH_STAIRS",
     "price": {
       "amount": 64,
-      "buy": 13271,
-      "sell": 53084
+      "buy": 2304,
+      "sell": 9216
     },
     "loc": {
       "world": "world",
@@ -4101,8 +4101,8 @@
     "material": "SMOOTH_BRICK",
     "price": {
       "amount": 64,
-      "buy": 19,
-      "sell": 77
+      "buy": 4096,
+      "sell": 16384
     },
     "loc": {
       "world": "world",
@@ -4123,8 +4123,8 @@
     "material": "SMOOTH_BRICK:2",
     "price": {
       "amount": 64,
-      "buy": 19,
-      "sell": 77
+      "buy": 4096,
+      "sell": 16384
     },
     "loc": {
       "world": "world",
@@ -4145,8 +4145,8 @@
     "material": "SMOOTH_BRICK:3",
     "price": {
       "amount": 64,
-      "buy": 19,
-      "sell": 77
+      "buy": 4096,
+      "sell": 16384
     },
     "loc": {
       "world": "world",
@@ -4167,8 +4167,8 @@
     "material": "SMOOTH_BRICK:1",
     "price": {
       "amount": 64,
-      "buy": 19,
-      "sell": 77
+      "buy": 4096,
+      "sell": 16384
     },
     "loc": {
       "world": "world",
@@ -4189,8 +4189,8 @@
     "material": "STONE_SLAB2",
     "price": {
       "amount": 64,
-      "buy": 3686,
-      "sell": 14745
+      "buy": 768,
+      "sell": 3072
     },
     "loc": {
       "world": "world",
@@ -4211,8 +4211,8 @@
     "material": "STEP:1",
     "price": {
       "amount": 64,
-      "buy": 3686,
-      "sell": 14745
+      "buy": 768,
+      "sell": 3072
     },
     "loc": {
       "world": "world",
@@ -4233,8 +4233,8 @@
     "material": "STEP:7",
     "price": {
       "amount": 64,
-      "buy": 3686,
-      "sell": 14745
+      "buy": 768,
+      "sell": 3072
     },
     "loc": {
       "world": "world",
@@ -4255,8 +4255,8 @@
     "material": "RED_SANDSTONE_STAIRS",
     "price": {
       "amount": 64,
-      "buy": 9676,
-      "sell": 38707
+      "buy": 6720,
+      "sell": 26880
     },
     "loc": {
       "world": "world",
@@ -4277,8 +4277,8 @@
     "material": "SANDSTONE_STAIRS",
     "price": {
       "amount": 64,
-      "buy": 9676,
-      "sell": 38707
+      "buy": 6720,
+      "sell": 26880
     },
     "loc": {
       "world": "world",
@@ -4299,8 +4299,8 @@
     "material": "QUARTZ_STAIRS",
     "price": {
       "amount": 64,
-      "buy": 27648,
-      "sell": 110592
+      "buy": 19200,
+      "sell": 76800
     },
     "loc": {
       "world": "world",
@@ -4321,8 +4321,8 @@
     "material": "RED_SANDSTONE",
     "price": {
       "amount": 64,
-      "buy": 5376,
-      "sell": 21504
+      "buy": 4480,
+      "sell": 17920
     },
     "loc": {
       "world": "world",
@@ -4343,8 +4343,8 @@
     "material": "SANDSTONE",
     "price": {
       "amount": 64,
-      "buy": 5376,
-      "sell": 21504
+      "buy": 4480,
+      "sell": 17920
     },
     "loc": {
       "world": "world",
@@ -4365,8 +4365,8 @@
     "material": "QUARTZ_BLOCK",
     "price": {
       "amount": 64,
-      "buy": 15360,
-      "sell": 61440
+      "buy": 12800,
+      "sell": 51200
     },
     "loc": {
       "world": "world",
@@ -4387,8 +4387,8 @@
     "material": "RED_SANDSTONE:2",
     "price": {
       "amount": 64,
-      "buy": 5376,
-      "sell": 21504
+      "buy": 4480,
+      "sell": 17920
     },
     "loc": {
       "world": "world",
@@ -4409,8 +4409,8 @@
     "material": "SANDSTONE:2",
     "price": {
       "amount": 64,
-      "buy": 5376,
-      "sell": 21504
+      "buy": 4480,
+      "sell": 17920
     },
     "loc": {
       "world": "world",
@@ -4431,8 +4431,8 @@
     "material": "QUARTZ_BLOCK:2",
     "price": {
       "amount": 64,
-      "buy": 15360,
-      "sell": 61440
+      "buy": 12800,
+      "sell": 51200
     },
     "loc": {
       "world": "world",
@@ -4453,8 +4453,8 @@
     "material": "RED_SANDSTONE:1",
     "price": {
       "amount": 64,
-      "buy": 5376,
-      "sell": 21504
+      "buy": 4480,
+      "sell": 17920
     },
     "loc": {
       "world": "world",
@@ -4475,8 +4475,8 @@
     "material": "SANDSTONE:1",
     "price": {
       "amount": 64,
-      "buy": 5376,
-      "sell": 21504
+      "buy": 4480,
+      "sell": 17920
     },
     "loc": {
       "world": "world",
@@ -4497,8 +4497,8 @@
     "material": "QUARTZ_BLOCK:1",
     "price": {
       "amount": 64,
-      "buy": 15360,
-      "sell": 61440
+      "buy": 12800,
+      "sell": 51200
     },
     "loc": {
       "world": "world",
@@ -4563,8 +4563,8 @@
     "material": "BONE_BLOCK",
     "price": {
       "amount": 64,
-      "buy": 42510,
-      "sell": 170040
+      "buy": 8640,
+      "sell": 34560
     },
     "loc": {
       "world": "world",
@@ -4585,8 +4585,8 @@
     "material": "SAPLING:2",
     "price": {
       "amount": 8,
-      "buy": 338,
-      "sell": 1352
+      "buy": 400,
+      "sell": 1600
     },
     "loc": {
       "world": "world",
@@ -4607,8 +4607,8 @@
     "material": "SAPLING:4",
     "price": {
       "amount": 8,
-      "buy": 338,
-      "sell": 1352
+      "buy": 400,
+      "sell": 1600
     },
     "loc": {
       "world": "world",
@@ -4629,8 +4629,8 @@
     "material": "SAPLING:3",
     "price": {
       "amount": 8,
-      "buy": 338,
-      "sell": 1352
+      "buy": 400,
+      "sell": 1600
     },
     "loc": {
       "world": "world",
@@ -4651,8 +4651,8 @@
     "material": "SAPLING:1",
     "price": {
       "amount": 8,
-      "buy": 338,
-      "sell": 1352
+      "buy": 400,
+      "sell": 1600
     },
     "loc": {
       "world": "world",
@@ -4673,8 +4673,8 @@
     "material": "SAPLING:5",
     "price": {
       "amount": 8,
-      "buy": 338,
-      "sell": 1352
+      "buy": 400,
+      "sell": 1600
     },
     "loc": {
       "world": "world",
@@ -4695,8 +4695,8 @@
     "material": "SAPLING",
     "price": {
       "amount": 8,
-      "buy": 338,
-      "sell": 1352
+      "buy": 400,
+      "sell": 1600
     },
     "loc": {
       "world": "world",
@@ -4712,13 +4712,13 @@
     "itemstack": {
       "type": "LOG",
       "damage": 2,
-      "amount": 1
+      "amount": 64
     },
     "material": "LOG:2",
     "price": {
       "amount": 64,
-      "buy": 5947,
-      "sell": 23788
+      "buy": 3200,
+      "sell": 12800
     },
     "loc": {
       "world": "world",
@@ -4739,8 +4739,8 @@
     "material": "LOG_2",
     "price": {
       "amount": 64,
-      "buy": 5947,
-      "sell": 23788
+      "buy": 3200,
+      "sell": 12800
     },
     "loc": {
       "world": "world",
@@ -4761,8 +4761,8 @@
     "material": "LOG:3",
     "price": {
       "amount": 64,
-      "buy": 5947,
-      "sell": 23788
+      "buy": 3200,
+      "sell": 12800
     },
     "loc": {
       "world": "world",
@@ -4783,8 +4783,8 @@
     "material": "LOG:1",
     "price": {
       "amount": 64,
-      "buy": 5947,
-      "sell": 23788
+      "buy": 3200,
+      "sell": 12800
     },
     "loc": {
       "world": "world",
@@ -4805,8 +4805,8 @@
     "material": "LOG_2:1",
     "price": {
       "amount": 64,
-      "buy": 5947,
-      "sell": 23788
+      "buy": 3200,
+      "sell": 12800
     },
     "loc": {
       "world": "world",
@@ -4827,8 +4827,8 @@
     "material": "LOG",
     "price": {
       "amount": 64,
-      "buy": 5947,
-      "sell": 23788
+      "buy": 3200,
+      "sell": 12800
     },
     "loc": {
       "world": "world",
@@ -4849,8 +4849,8 @@
     "material": "WOOD:2",
     "price": {
       "amount": 64,
-      "buy": 1152,
-      "sell": 4608
+      "buy": 800,
+      "sell": 3200
     },
     "loc": {
       "world": "world",
@@ -4871,8 +4871,8 @@
     "material": "WOOD:4",
     "price": {
       "amount": 64,
-      "buy": 1152,
-      "sell": 4608
+      "buy": 800,
+      "sell": 3200
     },
     "loc": {
       "world": "world",
@@ -4888,13 +4888,13 @@
     "itemstack": {
       "type": "WOOD",
       "damage": 3,
-      "amount": 1
+      "amount": 64
     },
     "material": "WOOD:3",
     "price": {
       "amount": 64,
-      "buy": 1152,
-      "sell": 4608
+      "buy": 800,
+      "sell": 3200
     },
     "loc": {
       "world": "world",
@@ -4915,8 +4915,8 @@
     "material": "WOOD:1",
     "price": {
       "amount": 64,
-      "buy": 1152,
-      "sell": 4608
+      "buy": 800,
+      "sell": 3200
     },
     "loc": {
       "world": "world",
@@ -4937,8 +4937,8 @@
     "material": "WOOD:5",
     "price": {
       "amount": 64,
-      "buy": 1152,
-      "sell": 4608
+      "buy": 800,
+      "sell": 3200
     },
     "loc": {
       "world": "world",
@@ -4959,8 +4959,8 @@
     "material": "WOOD",
     "price": {
       "amount": 64,
-      "buy": 1152,
-      "sell": 4608
+      "buy": 800,
+      "sell": 3200
     },
     "loc": {
       "world": "world",
@@ -4981,8 +4981,8 @@
     "material": "BIRCH_WOOD_STAIRS",
     "price": {
       "amount": 32,
-      "buy": 1036,
-      "sell": 4147
+      "buy": 600,
+      "sell": 2400
     },
     "loc": {
       "world": "world",
@@ -5003,8 +5003,8 @@
     "material": "ACACIA_STAIRS",
     "price": {
       "amount": 32,
-      "buy": 1036,
-      "sell": 4147
+      "buy": 600,
+      "sell": 2400
     },
     "loc": {
       "world": "world",
@@ -5025,8 +5025,8 @@
     "material": "JUNGLE_WOOD_STAIRS",
     "price": {
       "amount": 32,
-      "buy": 1036,
-      "sell": 4147
+      "buy": 600,
+      "sell": 2400
     },
     "loc": {
       "world": "world",
@@ -5047,8 +5047,8 @@
     "material": "SPRUCE_WOOD_STAIRS",
     "price": {
       "amount": 32,
-      "buy": 1036,
-      "sell": 4147
+      "buy": 600,
+      "sell": 2400
     },
     "loc": {
       "world": "world",
@@ -5063,14 +5063,14 @@
     "type": "adminshop",
     "itemstack": {
       "type": "DARK_OAK_STAIRS",
-      "amount": 1,
+      "amount": 32,
       "damage": 0
     },
     "material": "DARK_OAK_STAIRS",
     "price": {
       "amount": 32,
-      "buy": 1036,
-      "sell": 4147
+      "buy": 600,
+      "sell": 2400
     },
     "loc": {
       "world": "world",
@@ -5091,8 +5091,8 @@
     "material": "WOOD_STAIRS",
     "price": {
       "amount": 32,
-      "buy": 1036,
-      "sell": 4147
+      "buy": 600,
+      "sell": 2400
     },
     "loc": {
       "world": "world",
@@ -5113,8 +5113,8 @@
     "material": "WOOD_STEP:2",
     "price": {
       "amount": 32,
-      "buy": 345,
-      "sell": 1382
+      "buy": 200,
+      "sell": 800
     },
     "loc": {
       "world": "world",
@@ -5135,8 +5135,8 @@
     "material": "WOOD_STEP:4",
     "price": {
       "amount": 32,
-      "buy": 345,
-      "sell": 1382
+      "buy": 200,
+      "sell": 800
     },
     "loc": {
       "world": "world",
@@ -5157,8 +5157,8 @@
     "material": "WOOD_STEP:3",
     "price": {
       "amount": 32,
-      "buy": 345,
-      "sell": 1382
+      "buy": 200,
+      "sell": 800
     },
     "loc": {
       "world": "world",
@@ -5179,8 +5179,8 @@
     "material": "WOOD_STEP:1",
     "price": {
       "amount": 32,
-      "buy": 345,
-      "sell": 1382
+      "buy": 200,
+      "sell": 800
     },
     "loc": {
       "world": "world",
@@ -5201,8 +5201,8 @@
     "material": "WOOD_STEP:5",
     "price": {
       "amount": 32,
-      "buy": 345,
-      "sell": 1382
+      "buy": 200,
+      "sell": 800
     },
     "loc": {
       "world": "world",
@@ -5223,8 +5223,8 @@
     "material": "WOOD_STEP",
     "price": {
       "amount": 32,
-      "buy": 345,
-      "sell": 1382
+      "buy": 200,
+      "sell": 800
     },
     "loc": {
       "world": "world",
@@ -5245,8 +5245,8 @@
     "material": "LEAVES:2",
     "price": {
       "amount": 32,
-      "buy": 112,
-      "sell": 448
+      "buy": 160,
+      "sell": 640
     },
     "loc": {
       "world": "world",
@@ -5267,8 +5267,8 @@
     "material": "LEAVES_2",
     "price": {
       "amount": 32,
-      "buy": 112,
-      "sell": 448
+      "buy": 160,
+      "sell": 640
     },
     "loc": {
       "world": "world",
@@ -5284,13 +5284,13 @@
     "itemstack": {
       "type": "LEAVES",
       "damage": 3,
-      "amount": 1
+      "amount": 32
     },
     "material": "LEAVES:3",
     "price": {
       "amount": 32,
-      "buy": 112,
-      "sell": 448
+      "buy": 160,
+      "sell": 640
     },
     "loc": {
       "world": "world",
@@ -5311,8 +5311,8 @@
     "material": "LEAVES:1",
     "price": {
       "amount": 32,
-      "buy": 112,
-      "sell": 448
+      "buy": 160,
+      "sell": 640
     },
     "loc": {
       "world": "world",
@@ -5333,8 +5333,8 @@
     "material": "LEAVES_2:1",
     "price": {
       "amount": 32,
-      "buy": 112,
-      "sell": 448
+      "buy": 160,
+      "sell": 640
     },
     "loc": {
       "world": "world",
@@ -5355,8 +5355,8 @@
     "material": "LEAVES",
     "price": {
       "amount": 32,
-      "buy": 112,
-      "sell": 448
+      "buy": 160,
+      "sell": 640
     },
     "loc": {
       "world": "world",
@@ -5377,8 +5377,8 @@
     "material": "DIAMOND_SWORD",
     "price": {
       "amount": 1,
-      "buy": 6013,
-      "sell": 24052
+      "buy": 1006,
+      "sell": 4025
     },
     "loc": {
       "world": "world",
@@ -5399,8 +5399,8 @@
     "material": "DIAMOND_BOOTS",
     "price": {
       "amount": 1,
-      "buy": 12000,
-      "sell": 48000
+      "buy": 2000,
+      "sell": 8000
     },
     "loc": {
       "world": "world",
@@ -5421,8 +5421,8 @@
     "material": "DIAMOND_PICKAXE",
     "price": {
       "amount": 1,
-      "buy": 9028,
-      "sell": 36112
+      "buy": 1512,
+      "sell": 6050
     },
     "loc": {
       "world": "world",
@@ -5443,8 +5443,8 @@
     "material": "DIAMOND_LEGGINGS",
     "price": {
       "amount": 1,
-      "buy": 21000,
-      "sell": 84000
+      "buy": 3500,
+      "sell": 14000
     },
     "loc": {
       "world": "world",
@@ -5465,8 +5465,8 @@
     "material": "DIAMOND_SPADE",
     "price": {
       "amount": 1,
-      "buy": 3026,
-      "sell": 12105
+      "buy": 512,
+      "sell": 2050
     },
     "loc": {
       "world": "world",
@@ -5487,8 +5487,8 @@
     "material": "DIAMOND_CHESTPLATE",
     "price": {
       "amount": 1,
-      "buy": 24000,
-      "sell": 96000
+      "buy": 4000,
+      "sell": 16000
     },
     "loc": {
       "world": "world",
@@ -5509,8 +5509,8 @@
     "material": "DIAMOND_AXE",
     "price": {
       "amount": 1,
-      "buy": 9026,
-      "sell": 36105
+      "buy": 1512,
+      "sell": 6050
     },
     "loc": {
       "world": "world",
@@ -5531,8 +5531,8 @@
     "material": "DIAMOND_HELMET",
     "price": {
       "amount": 1,
-      "buy": 15000,
-      "sell": 60000
+      "buy": 2500,
+      "sell": 10000
     },
     "loc": {
       "world": "world",
@@ -5553,8 +5553,8 @@
     "material": "DIAMOND",
     "price": {
       "amount": 1,
-      "buy": 2500,
-      "sell": 10000
+      "buy": 500,
+      "sell": 2000
     },
     "loc": {
       "world": "world",
@@ -5597,8 +5597,8 @@
     "material": "DIAMOND_BLOCK",
     "price": {
       "amount": 1,
-      "buy": 27000,
-      "sell": 108000
+      "buy": 4500,
+      "sell": 18000
     },
     "loc": {
       "world": "world",
@@ -5641,8 +5641,8 @@
     "material": "EMERALD_ORE",
     "price": {
       "amount": 1,
-      "buy": 900,
-      "sell": 3600
+      "buy": 5000,
+      "sell": 20000
     },
     "loc": {
       "world": "world",
@@ -5663,8 +5663,8 @@
     "material": "EMERALD_BLOCK",
     "price": {
       "amount": 1,
-      "buy": 6480,
-      "sell": 25920
+      "buy": 5400,
+      "sell": 21600
     },
     "loc": {
       "world": "world",
@@ -5685,8 +5685,8 @@
     "material": "GOLD_INGOT",
     "price": {
       "amount": 4,
-      "buy": 1464,
-      "sell": 5856
+      "buy": 1800,
+      "sell": 7200
     },
     "loc": {
       "world": "world",
@@ -5729,8 +5729,8 @@
     "material": "GOLD_BLOCK",
     "price": {
       "amount": 4,
-      "buy": 15811,
-      "sell": 63244
+      "buy": 16200,
+      "sell": 64800
     },
     "loc": {
       "world": "world",
@@ -5767,7 +5767,7 @@
     "type": "adminshop",
     "itemstack": {
       "type": "IRON_ORE",
-      "amount": 1,
+      "amount": 8,
       "damage": 0
     },
     "material": "IRON_ORE",
@@ -5789,14 +5789,14 @@
     "type": "adminshop",
     "itemstack": {
       "type": "IRON_BLOCK",
-      "amount": 1,
+      "amount": 8,
       "damage": 0
     },
     "material": "IRON_BLOCK",
     "price": {
       "amount": 8,
-      "buy": 1917,
-      "sell": 7670
+      "buy": 15552,
+      "sell": 62208
     },
     "loc": {
       "world": "world",
@@ -5861,8 +5861,8 @@
     "material": "COAL_BLOCK",
     "price": {
       "amount": 16,
-      "buy": 6912,
-      "sell": 27648
+      "buy": 5760,
+      "sell": 23040
     },
     "loc": {
       "world": "world",
@@ -5905,8 +5905,8 @@
     "material": "REDSTONE_ORE",
     "price": {
       "amount": 16,
-      "buy": 3269,
-      "sell": 13079
+      "buy": 3000,
+      "sell": 12000
     },
     "loc": {
       "world": "world",
@@ -5927,8 +5927,8 @@
     "material": "REDSTONE_BLOCK",
     "price": {
       "amount": 16,
-      "buy": 18057,
-      "sell": 72229
+      "buy": 18000,
+      "sell": 72000
     },
     "loc": {
       "world": "world",
@@ -5949,8 +5949,8 @@
     "material": "INK_SACK:4",
     "price": {
       "amount": 16,
-      "buy": 1200,
-      "sell": 4800
+      "buy": 240,
+      "sell": 960
     },
     "loc": {
       "world": "world",
@@ -5971,8 +5971,8 @@
     "material": "LAPIS_ORE",
     "price": {
       "amount": 16,
-      "buy": 420,
-      "sell": 1680
+      "buy": 1600,
+      "sell": 6400
     },
     "loc": {
       "world": "world",
@@ -5987,14 +5987,14 @@
     "type": "adminshop",
     "itemstack": {
       "type": "LAPIS_BLOCK",
-      "amount": 1,
+      "amount": 16,
       "damage": 0
     },
     "material": "LAPIS_BLOCK",
     "price": {
       "amount": 16,
-      "buy": 2520,
-      "sell": 10080
+      "buy": 2160,
+      "sell": 8640
     },
     "loc": {
       "world": "world",
@@ -6031,14 +6031,14 @@
     "type": "adminshop",
     "itemstack": {
       "type": "QUARTZ_ORE",
-      "amount": 1,
+      "amount": 16,
       "damage": 0
     },
     "material": "QUARTZ_ORE",
     "price": {
       "amount": 16,
-      "buy": 1200,
-      "sell": 4800
+      "buy": 2400,
+      "sell": 9600
     },
     "loc": {
       "world": "world",
@@ -6059,8 +6059,8 @@
     "material": "QUARTZ_BLOCK",
     "price": {
       "amount": 16,
-      "buy": 3840,
-      "sell": 15360
+      "buy": 3200,
+      "sell": 12800
     },
     "loc": {
       "world": "world",

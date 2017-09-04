@@ -45,8 +45,164 @@
  * //   регистрируем команду {/youcomand data set <username> <number> } и ее обрабочтик как команду для чата клиента
  *      command_data.addComplete('get').addComplete('@user').addComplete('@re/\d+/',function (...){...});
  * // теперь команда /youcomand со всеми ее параметрами будет доступна как глобальная, и будет автодополнятся по нажатию TAB
+ * 
+ * // В данном примере будет рассммотрено как зарегестрировать команды:
+ * // /description help
+ * // /description set {username} {you description}
+ * // /description set {username} {email}
+ * // /description delete {username}
+ * // /description list 
+ * 
+ * // где:
+ * // {username} - имя онлайн или офлайн игрока (онлайн игроки автодополняются по TAB)
+ * // {you description} - произвольный текст
+ * 
+ * // Подключаем модуль регистрации и автодополнения команд
+ * var  completer = require('last/completer');
+ * 
+ * // Создаем/загружаем хранилище данных для description
+ * var store = persist('description', {} );
+ * 
+ * // Создаем массив с командами и их описаниями
+ * var help_messages = [
+ * "/description help - эта справка\n",
+ * "/description set {username} {you description} - запомнить для игрока {username} описание {you description}\n",
+ * "/description set {username} {email} - запомнить для игрока {username} адрес электронной почты {email}\n",
+ * "/description delete {username} - удалить описание игрока {username}\n",
+ * "/description list - показать список игроков и их описания\n"
+ * ];
+ * 
+ * //  Регистрируем команду `/description` без обработчика
+ * var point = completer.addPlayerCommand( 'description' );
+ * 
+ * //  Регистрируем команду `/description help` и ее обрабочтик как команду для чата клиента
+ * point.addComplete('help', cmd_help );
+ * 
+ * //  Регистрируем команду `/description list` и ее обрабочтик как команду для чата клиента
+ * point.addComplete('list', cmd_list );
+ * 
+ * 
+ * //  Регистрируем команду `/description set {username}` без обработчика.
+ * //  Заметьте, что третим аргументом передана функция, userlist_to_autocomlete. 
+ * //  Она возвращает ассоциативный массив, ключи которого будут внесены в список автозавершения для команды `/description set`
+ * //  Не рационально выводить всех онлайн и офлайн игроков как автодополнение команды `/description set`.
+ * //  Но мы делаем это для демонстрации возможностей модуля `last/completer`.
+ * // Тег `@any` сопаставится с любым вводом после команды `/description` добавив в список автодополнений уже введенные символы.
+ * // В нашем случае он будет сопоставлятся с введенными именами пользователей, включая пользователей оффлайн.
+ * var point_set = point.addComplete('set', undefined, userlist_to_autocomlete )
+ *            .addComplete('@any');
+ * 
+ * 
+ *   // Регистрируем команду `/description set {username} {email}` и устанавливаем для нее обработчик. 
+ *   point_set.addComplete('@re/(\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*)/', cmd_set_email);
+ *   //point_set.addComplete('@re/test\@gmail\.com/', cmd_set_email);
+ * 
+ *   // Регистрируем команду `/description set {username} {description}` и устанавливаем для нее обработчик. 
+ *   point_set.addComplete('@any', cmd_set_description);
+ * 
+ * 
+ * 
+ * //  Регистрируем команду `/description delete {username}`. 
+ * //  Мы могли зарегестрировать обработчики команды `/description delete {username}` так, как это сделано для команды `/description set {username} ...`.
+ * //  Но для демонстрации возможностей я сделал это так:
+ * var point_delete = point.addComplete('delete');
+ * 
+ *   // тег `@user` добавит в список автодополнений для команды `/description delete` всех пользователей онлайн.
+ *   point_delete.addComplete('@user',cmd_delete); 
+ *     // Для возможности указать ники офлайн игроков после команды `/description delete` используем тег `@any`.
+ *     // Обратите внимание, на то, что ники офлайн игроков не будут автодополнятся. 
+ *     // А так же на то, что что тег `@any` сопоставляется с любым вводом.
+ *     // Поэтому используем его последним в цепочке автодополнений для команды `/description delete`.
+ *   point_delete.addComplete('@any',cmd_delete);
+ * 
+ * 
+ * 
+ * 
+ * // функция-обработчик для команд `/description` и `/description help`
+ * // в `params[0]` будет `description`
+ * // в `params[1]` будет `help`
+ * function cmd_help(params, sender){
+ *   echo(sender, help_messages);
+ * }
+ * 
+ * // функция-обработчик для команды `/description list`
+ * // в `params[0]` будет `description`
+ * // в `params[1]` будет `list`
+ * function cmd_list(params, sender){
+ *   var description_msg = ["Список пользователей для которых есть description:"];
+ *   for(var name in store ){
+ *     str = name + " - ";
+ *     if( store[name].email )
+ *       str += "<"+store[name].email+"> ";
+ *     if( store[name].info )
+ *       str += store[name].info;
+ *     str+="\n";
+ *     description_msg.push(str);
+ *   }
+ * 
+ *   echo(sender, description_msg);
+ * }
+ * 
+ * // функция-обработчик для команды `/description set {username} {email}`
+ * // в `params[0]` будет `description`
+ * // в `params[1]` будет `{set}`
+ * // в `params[2]` будет `{username}`
+ * // в `params[3]` будет `{email}`
+ * function cmd_set_email(params, sender){
+ *   var name = params[2];
+ *   var email = params[3];
+ *   if( !store[name] )
+ *     store[name] = {};
+ *   store[name].email = email;
+ *   echo(sender, "адрес электронной почты <"+email+"> успешно внесен в описание пользователя "+name);
+ * }
+ * 
+ * // функция-обработчик для команды `/description set {username} {you description}`
+ * // в `params[0]` будет `description`
+ * // в `params[1]` будет `{set}`
+ * // в `params[2]` будет `{username}`
+ * // в `params[3]` будет `{you description}`
+ * function cmd_set_description(params, sender){
+ *   params.shift();
+ *   params.shift();
+ *   var name = params.shift();
+ *   var info = params.join(" ");
+ *   if( !store[name] )
+ *     store[name] = {};
+ *   store[name].info = info;
+ *   echo(sender, "информация успешно внесена в описание пользователя "+name);
+ * }
+ * 
+ * // функция-обработчик для команды `/description delete {username}`
+ * // в `params[0]` будет `description`
+ * // в `params[1]` будет `delete`
+ * // в `params[2]` будет `username`
+ * function cmd_delete(params, sender){
+ *   var name = params[2];
+ *   if( store[name] ){
+ *     delete store[name];
+ *     echo(sender, "описание для пользователя "+name+" успешно удалено");
+ *   }else{
+ *     echo(sender, "отсутствует описание для пользователя "+name);  
+ *   }
+ *   
+ * }
+ * 
+ * // функция возвращает ассоциативный массив, ключи - ники всех зарегестрированных на сервере пользователей
+ * function userlist_to_autocomlete(sender,patern){
+ *   var result = {};
+ *   var users = org.bukkit.Bukkit.getOfflinePlayers();
+ *   for(var user in users){
+ *     var name = users[user].name;
+ *     result[name] = true;
+ *   }
+ *   return result;
+ * }
+ *  
  *
  */
+
+
 
 'use strict';
 
@@ -401,6 +557,7 @@ function _tabComplete(event){
  * @return {object} одноуровневый ассоциативный массив, ключами которого являются совпавшие с шаблоном варианты автодополнений
  */
 function _findCompletions(patern,hashArray,prefix,sender){
+  console.log("_findCompletions");
   prefix=prefix||'';
   var result = {};
   var re_patern = new RegExp('^'+patern,'i');
@@ -418,12 +575,13 @@ function _findCompletions(patern,hashArray,prefix,sender){
       if ( !permission.isPermission(point.permission) )
         continue;
 
-    var re_test = new RegExp('\^@re\/(.*?)\/');
+    var re_test = new RegExp('\^@re\/(.*)\/');
     if( c == '@user' ){
         result = _collect(result,_get_users_completions(re_patern));
     }else if( re_test.test(c) ){
       var res = c.match(re_test);
       if( res && res[1] ){
+        // console.log("_findCompletions REGEXP: /"+res[1]+"/");
         var re_cmd = new RegExp(res[1]);
         if( re_cmd.test(patern) )
           result[patern] = true;
@@ -503,8 +661,10 @@ function _compare_user(user){
  * @return {string} строка содержащяя пепрвый совравший с шаблоном вариант автодополнения
  */
 function _compare_patern(patern, list){
+  console.log("_compare_patern");
   var result = false;
   for( var c in list){
+    var re_test = new RegExp('\^@re\/(.*)\/');
     if( c == patern ){
       result = c;
       break;
@@ -513,21 +673,20 @@ function _compare_patern(patern, list){
         result = c;
         break;
       }
+    }else if( re_test.test(c) ){
+      var res = c.match(re_test);
+      if( res[1] ){
+        // console.log("_compare_patern REGEXP: /"+res[1]+"/ "+patern);
+        var re_patern = new RegExp(res[1]);
+        if( re_patern.test(patern) ){
+          result = c;
+          // console.log("_compare_patern REGEXP: /"+res[1]+"/ "+patern+" OK");
+          break;
+        }
+      }
     }else if( c == "@any" ){
       result = c;
       break;
-    }else{
-      var re_test = new RegExp('\^@re\/(.*?)\/');
-      var res = c.match(re_test);
-      if( res ){
-        if( res[1] ){
-          var re_patern = new RegExp(res[1]);
-          if( re_patern.test(patern) ){
-            result = c;
-            break;
-          }
-        }
-      }
     }
   }
   return result;

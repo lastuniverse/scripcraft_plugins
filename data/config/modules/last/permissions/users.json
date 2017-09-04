@@ -1,4 +1,19 @@
 {
+
+  "AlexeyMG": {
+    "name": "AlexeyMG",
+    "groups": {
+      "vip": true,
+      "player": true,
+      "holder": true,
+      "безопасно": true,
+      "лентяивымогатели": true      
+    },
+    "permissions": {},
+    "options": {
+      "last_warp.max":2
+    }
+  },
   "eddd148a-2e89-45f3-bc33-071ffac51198": {
     "name": "xxxGenaxxx",
     "groups": {
@@ -110,6 +125,7 @@
       "vip": true,
       "player": true,
       "holder": true,
+      "безопасно": true,
       "лентяивымогатели": true
     },
     "permissions": {
@@ -126,6 +142,7 @@
       "vip": true,
       "player": true,
       "holder": true,
+      "безопасно": true,
       "лентяивымогатели": true
     },
     "permissions": {},
@@ -137,6 +154,7 @@
       "vip": true,
       "player": true,
       "holder": true,
+      "безопасно": true,
       "лентяивымогатели": true
     },
     "permissions": {},
@@ -150,6 +168,7 @@
       "vip": true,
       "player": true,
       "holder": true,
+      "безопасно": true,
       "лентяивымогатели": true
     },
     "permissions": {},
@@ -172,6 +191,7 @@
       //"holder": true,
       "vip": true,
       "player": true
+      //"безопасно": true,
       //"лентяивымогатели": true
     },
     "permissions": {},
@@ -187,6 +207,7 @@
       "vip": true,
       "player": true,
       "holder": true,
+      "безопасно": true,
       "лентяивымогатели": true
     },
     "permissions": {},
@@ -197,8 +218,8 @@
     "groups": {
       "vip": true,
       "player": true,
-      "holder": true,
-      "лентяивымогатели": false
+      "holder": true
+      // "лентяивымогатели": true
     },
     "permissions": {},
     "options": {}
@@ -206,10 +227,10 @@
   "dff08f73-6469-46fa-b323-e409a1986786": {
     "name": "DarkDaiver",
     "groups": {
-      "vip": true,
       "player": true,
-      "holder": true,
-      "лентяивымогатели": false
+      "vip": true,
+      "holder": true
+      // "лентяивымогатели": true
     },
     "permissions": {},
     "options": {}
@@ -217,6 +238,9 @@
   "37ddefbb-f14f-424e-8dee-908b522dc7fb": {
     "name": "lastuniverse",
     "groups": {
+      "player": true,
+      "vip": true,
+      "holder": true,
       "admin": true
     },
     "permissions": {

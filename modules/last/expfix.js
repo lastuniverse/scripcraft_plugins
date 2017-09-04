@@ -1,3 +1,5 @@
+var offset = 1;
+
 exports.substractTotalExperience = substractTotalExperience;
 function substractTotalExperience(player, exp){
 	var curexp = getTotalExperience(player);
@@ -19,7 +21,7 @@ function addTotalExperience(player, exp){
 
 exports.setTotalExperience = setTotalExperience;
 function setTotalExperience(player, exp){
-	exp=exp<<3;
+	exp=exp<<offset;
 
 
 	//This method is used to update both the recorded total experience and displayed total experience.
@@ -99,7 +101,7 @@ function getTotalExperience(player){
 	if (exp < 0)
 		exp = 0; //Integer.MAX_VALUE;
 
-	return exp>>>3;
+	return exp>>>offset;
 }
 	
 exports.getExpUntilNextLevel = getExpUntilNextLevel;

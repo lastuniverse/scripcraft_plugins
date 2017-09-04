@@ -62,8 +62,8 @@
       "last_warp.sign.place": true,
       //"last_warp.manage": true,
       "last_warp.access": true,
-      "skills.use": true,
-
+      "last_usershop.set": true,
+      "skills.use": true
     },
     "options": {
       "last_chat.group": { "icon":"Ⓟ", "color": "gray" }
@@ -117,7 +117,15 @@
     "options": {
       "last_chat.group": { "icon":"Ⓛ", "color": "white" },
       "last_warp.max":1,
-      "last_teleport.cost": 1,
+      "last_teleport.cost": 1
+    }
+  },
+  "безопасно": {
+    "isEnable": true,
+    "priotity": 40,
+    "permissions": {
+    },
+    "options": {
       "last_mobterror.max": 1,
       "last_mobterror.q": 50,
       "last_mobterror.offset": 200,
@@ -128,6 +136,6 @@
         "world_the_end": []
       }
     }
-  }
+  }  
 }
 

@@ -58,64 +58,47 @@ var FAKE = 1000;
 
 
 
-// initProductList();
-// function initProductList(){
-//   for( var i in match_table ){
-//     var key = match_table[i];
-//     if( !store.products[key] ){
-//       store.products[key] = [];
-//       var cost = config.basecost*(cost_table[key].cost/1000);
-//       for( var d = 0; d < CALC_DAYS; d++){
-//         store.products[key].push({
-//           buy: 0,
-//           sell: 0,
-//           cost: cost          
-//         })
-//       }
-//     }
+
+// testNextDay();
+// function testNextDay(){
+//   var date = new Date();
+//   date = date.toDateString();
+//   if( store.date !== date ){
+//     store.date = date;
+//     costReInit();
+//   }
+//   //costReInit();
+// }
+
+// function costReInit(){
+//   for(var key in store.products){
+//     var cost = store.products[key][0].cost;
+//     if( store.products[key].length >= CALC_DAYS )
+//       store.products[key].pop();
+//     store.products[key].unshift({
+//       buy: 0,
+//       sell: 0,
+//       cost: cost
+//     });
+//     //costReCalc(store.products[key]);
 //   }
 // }
 
-testNextDay();
-function testNextDay(){
-  var date = new Date();
-  date = date.toDateString();
-  if( store.date !== date ){
-    store.date = date;
-    costReInit();
-  }
-  //costReInit();
-}
+// function costReCalc(product){
+//   var buy =0;
+//   var sell =0;
+//   var cost = product[0].cost;
+//   for(var i in product){
+//     buy += product[i].buy;
+//     sell += product[i].sell;
+//   }
+//   var Qs = sell + FAKE;
+//   var Qb = buy + FAKE;
 
-function costReInit(){
-  for(var key in store.products){
-    var cost = store.products[key][0].cost;
-    if( store.products[key].length >= CALC_DAYS )
-      store.products[key].pop();
-    store.products[key].unshift({
-      buy: 0,
-      sell: 0,
-      cost: cost
-    });
-    costReCalc(store.products[key]);
-  }
-}
+//   var Q = (1-(Qs/Qb))*0.2;
 
-function costReCalc(product){
-  var buy =0;
-  var sell =0;
-  var cost = product[0].cost;
-  for(var i in product){
-    buy += product[i].buy;
-    sell += product[i].sell;
-  }
-  var Qs = sell + FAKE;
-  var Qb = buy + FAKE;
-
-  var Q = (1-(Qs/Qb))*0.2;
-
-  product[0].cost = cost + cost*Q;
-}
+//   product[0].cost = cost + cost*Q;
+// }
 
 exports.coinsDecline = coinsDecline;
 function coinsDecline(player,number){
@@ -126,24 +109,22 @@ function coinsDecline(player,number){
 
 exports.addBuy = addBuy;
 function addBuy(itemstack, amount){
-  //testNextDay();
-  var key = match_table[itemstack.type]; //inventory.getItemStackHash(itemstack);
-  if( !key )
-    return;
+  // var key = match_table[itemstack.type]; //inventory.getItemStackHash(itemstack);
+  // if( !key )
+  //   return;
 
-  var product = store.products[key][0];
-  product.buy+=amount;
+  // var product = store.products[key][0];
+  // product.buy+=amount;
 }
 
 exports.addSell = addSell;
 function addSell(itemstack, amount){
-  //testNextDay();
-  var key = match_table[itemstack.type]; //inventory.getItemStackHash(itemstack);
-  if( !key )
-    return;
+  // var key = match_table[itemstack.type]; //inventory.getItemStackHash(itemstack);
+  // if( !key )
+  //   return;
 
-  var product = store.products[key][0];
-  product.sell+=amount;
+  // var product = store.products[key][0];
+  // product.sell+=amount;
 }
 
 
@@ -337,27 +318,61 @@ exports.getTop = function(sender,number){
 
 
 
+var craft_table = scload("./scriptcraft/data/config/modules/last/cost/craft_list.json");
+var base_table = scload("./scriptcraft/data/config/modules/last/cost/base_list.json");
+
+
 exports.getPrice = function(item,amount){
+  
   //console.log("item: "+JSON.stringify(item) );
   if( !item || !item.type )
     return false;
 
-  var key = match_table[item.type];
-  if( !key )
+  var name = match_table[item.type];
+  if( !name )
     return false;
 
-  var data = cost_table[key];
-  if( !data )
+  var cost = get_cost(name.minecraft_name);
+  if( !cost )
     return false;
 
   var amount = amount||1;
-  var base = amount*store.products[key][0].cost;
+  var base = amount*cost;
   var price = {
     amount: amount,
     buy: Math.floor( base/2 )||1,
     sell: Math.floor( base*2 )||4
   }
-  
   return price;
+}
+
+exports.getCost = function(item){
+  
+  //console.log("item: "+JSON.stringify(item) );
+  if( !item || !item.type )
+    return false;
+
+  var name = match_table[item.type];
+  if( !name )
+    return false;
+
+  var cost = get_cost(name.minecraft_name);
+  if( !cost )
+    return false;
+
+  return cost;
+}
+
+function get_cost(name){
+  var cost = base_table[name];
+  if( !cost ){
+    var recipie = craft_table[name];
+    cost = 0;
+    for( var item in recipie ){
+      //console.log("ITEM: "+item);
+      cost += get_cost(item)*recipie[item];
+    }
+  }
+  return cost;
 }
 
