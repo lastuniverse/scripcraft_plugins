@@ -2,11 +2,10 @@
 
 /* Global requires */
 var utils = require('utils');
-var color =  require('last/color').color;
 var eventex =  require('last/eventex');
 var permissions = require('last/permissions');
 
-var redtext = color('red','');
+var redtext = red.""();
 
 
 var users = persist('data/modules/last/users', {

@@ -1,0 +1,35 @@
+{	
+	"locale":"ru_ru",
+	"enable": true,
+	"type": "active",
+	"group": ["healing","voice"],
+	"max": 100,
+	"speed": 1000,	
+	"meta":{
+		"name": "Перевязка",
+		"desc": "Позволяет игроку перевязывать раны и вылечивать незначительные повреждения",
+		"padeg":{
+			"i": "перевязка",
+			"r": "перевязки",
+			"d": "перевязке",
+			"v": "перевязку",
+			"t": "перевязкой",
+			"p": "перевязке"
+		}
+	},			
+	"data":	{
+		"WOOL":{
+			"isEnable": true,
+			"maxLevel": 10,
+			"text":		"шерсть",
+			"sound":	"BLOCK_CLOTH_HIT"
+		},
+		"STRING":{
+			"isEnable": true,
+			"maxLevel": 10,
+			"text":		"нить",
+			"sound":	"BLOCK_CLOTH_HIT"
+		}
+	}
+			
+}

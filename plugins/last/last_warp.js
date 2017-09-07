@@ -58,7 +58,6 @@
  * - modules/last/permissions - модуль управления правами доступа к функционалц прагинов для пользователей и групп пользователей
  * - modules/last/locales     - модуль локализации
  * - modules/last/eventex     - экземпляр класса EventEmmiter созданный для межмодульного взаимодействия через вызовы событий
- * - modules/last/color       - модуль цвета
  * 
  * @module plugins/last/last_warp
  */
@@ -80,14 +79,13 @@ var eventex = require('last/eventex');
 
 var permissions = require('last/permissions');
 var completer = require('last/completer');
-var color =  require('last/color').color;
 
 var store = persist('data/plugins/last/warps', {
     warps: { },
     players: { }
 });
 
-var redtext = color('red','');
+var redtext = "".red();
 /*
 */
 

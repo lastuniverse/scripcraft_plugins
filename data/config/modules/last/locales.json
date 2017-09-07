@@ -1,0 +1,11 @@
+{
+	"enable": true,
+    "locale": "ru_ru",
+    "default": "en_us",
+    "colors":{
+    	"event":"brightgreen",
+    	"echo":"darkgreen",
+    	"warn":"red",
+    	"help":"aqua"
+    }
+}

@@ -11,10 +11,9 @@ var sounds = require('sounds');
 
 var permissions = require('last/permissions');
 var completer = require('last/completer');
-var color =  require('last/color').color;
 var expfix = require('last/expfix');
 
-var redtext = color('red','');
+var redtext = "".red();
 
 
 

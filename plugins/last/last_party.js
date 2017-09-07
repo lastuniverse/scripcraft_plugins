@@ -51,7 +51,6 @@
  * 
  * ## зависимости:
  * > - utils - стандартный модуль ScriptCraft
- * > - modules/last/color       - модуль цвета.
  * > - modules/last/party       - модуль управления пати. Пердставляет из себя программный API.
  * > - modules/last/locales     - модуль локализации.
  * > - modules/last/completer   - модуль регистрации команд /jsp commandname как глобальных команд /commandname с возможностью автодополнения.
@@ -67,7 +66,6 @@
 'use strict';
 
 var utils = require('utils');
-var color = require('last/color').color;
 var party = require('last/party');
 var locales = require('last/locales');
 var completer = require('last/completer');
@@ -82,11 +80,11 @@ chat.registerChat("party", "#", "Чат для пати",
 	function(msg){
 	console.log("!!!!!!!!!! registerChat #");
 
-	//msg.player.color = color("indigo","");
-	msg.message.color = color("gray","");
+	//msg.player.color = "".indigo();
+	msg.message.color = "".gray();
 	msg.chat = {
 		icon: "●",//➟
-		color: color("indigo","")
+		color: "".indigo()
 	}
 
 	var p = party.getPartyForUser(msg.sender);

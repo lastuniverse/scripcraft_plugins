@@ -109,7 +109,6 @@
 
 var utils = require('utils');
 var users = require('last/users');
-var color = require('last/color').color;
 var locales = require('last/locales');
 var economy = require('last/economy');
 var eventex = require('last/eventex');
@@ -128,9 +127,9 @@ var locale = locales.init("./scriptcraft/data/locales/plugins/last/", "last_chat
 
 
 
-var name_color = color(config.colors.name,"");
-var msg_color = color(config.colors.message,"");
-var none_color = color(config.colors.none,"");
+var name_color = ""[config.colors.name]();
+var msg_color = ""[config.colors.message]();
+var none_color = ""[config.colors.none]();
 
 var chats = {
   byKey: {},
@@ -160,7 +159,7 @@ events.playerChat(function(event){
   
   var msg = {
     icons: [
-      {icon: group_icon.icon, color: color(group_icon.color,"") },
+      {icon: group_icon.icon, color: ""[group_icon.color]() },
       {icon: config.icons.none, color: none_color},
       {icon: config.icons.none, color: none_color}
       //✖✕
@@ -270,11 +269,11 @@ registerChat("trade", config.chats.trade.prefix, "торговый чат", func
     return locale.warn( msg.sender, "${msg.no_money_trade}",{"cost": conf.cost });
 
 
-  //msg.player.color = color("indigo","");
-  msg.message.color = color("gray","");
+  //msg.player.color = "".indigo();
+  msg.message.color = "".gray();
   msg.chat = {
     icon: "●",//➟
-    color: color(conf.icon_color,"")
+    color: ""[conf.icon_color]()
   }
   broadcastMsg(msg);
 });
@@ -300,11 +299,11 @@ registerChat("admin", config.chats.admin.prefix, "административны
     return;
 
 
-  //msg.player.color = color("indigo","");
-  msg.message.color = color("gray","");
+  //msg.player.color = "".indigo();
+  msg.message.color = "".gray();
   msg.chat = {
     icon: "●",//➟
-    color: color(conf.icon_color,"")
+    color: ""[conf.icon_color]()
   }
 
 
@@ -330,7 +329,7 @@ registerChat("far", config.chats.far.prefix, "Общий чат дальнего
   if( !money )
     return locale.warn( msg.sender, "${msg.no_money}",{"cost": conf.cost });
 
-  msg.message.color = color(conf.text_color,"");
+  msg.message.color = ""[conf.text_color]();
 
   broadcastMsg(msg);
 });
@@ -339,7 +338,7 @@ registerChat("near", config.chats.near.prefix, "Общий чат ближнег
   //console.log("!!!!!!!!!! registerChat ~");
 
   var conf = config.chats.near;
-  msg.message.color = color(conf.text_color,"");
+  msg.message.color = ""[conf.text_color]();
 
 
   var loc = utils.locationToJSON( msg.sender.location );

@@ -27,7 +27,6 @@
  * - modules/last/completer   - модуль регистрации команд /jsp commandname как глобальных команд /commandname с возможностью автодополнения
  * - modules/last/teleport    - модуль обеспечивающий единый интерфейс телепортации, имееб настройки цены телепортации
  * - modules/last/locales     - модуль локализации
- * - modules/last/color       - модуль цвета
  * 
  * @module plugins/last/last_spawn
  */
@@ -49,10 +48,9 @@ var signs = require('last/signs');
 var permissions = require('last/permissions');
 var teleport = require('last/teleport');
 var completer = require('last/completer');
-var color =  require('last/color').color;
 
 var store = persist('data/plugins/last/spawn', {});
-var redtext = color('red','');
+var redtext = "".red();
 
 
 signs.events.onBeforeClickSign(function(event){

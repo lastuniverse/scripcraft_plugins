@@ -4,65 +4,111 @@
  */
 
 /**
- * ### Интерфейс для работы с локалями
+ * ### Interface for working with locales
  *
- * Данный модуль содержит в себе основные функции загрузки локализаций.
- *
- * **зависимости:**
+ * This module contains the basic functions of downloading localizations and sending localized messages to users
  *
  * @module last/locales
  *
  * @example
+ * configuration file for the module locales.js: data/config/modules/locales.json
+ * {
+ * 	"enable": true,
+ *     "default": "ru_ru", // default locale.
+ *     "colors":{
+ *     	"event":"brightgreen",	// the color of messages sent by the event function
+ *     	"warn":"darkgreen",		// the color of messages sent by the warn function
+ *     	"warn":"red",			// the color of messages sent by the warn function
+ *     	"help":"aqua"			// the color of messages sent by the help function
+ *     }
+ * }
+ * 
+ * file with messages in English: data/locales/plugin/test/en_us.json
+ * {
+ * 	"msg":{
+ * 		"test1": "test1 message",
+ * 		"test2": "test3 message",
+ * 	},
+ * 	"help" [
+ * 		"help1 message",
+ * 		"help2 message"
+ * 	],
+ * 	"test": "test message ${key1} ${key2}"
+ * }
+ * 
+ * file with messages in Russian: data/locales/plugins/test/ru_ru.json
+ * {
+ * 	"msg":{
+ * 		"test1": "тест1 сообщение",
+ * 		"test2": "тест2 сообщение",
+ * 	},
+ * 	"help" [
+ * 		"хелп1 сообщение",
+ * 		"хелп2 сообщение"
+ * 	],
+ * 	"test": "тест сообщение ${key1} ${key2}"
+ * }
  *
- * //   подключаем модуль
+ * // example of a plugin using locales.js: plugins/test.js
+ *  
+ * // connect the module
  * var  locales = require('last/locales');
  *
- * // загружаем локаль. первый параметр - путь, второй - название модуля, третий - язык модуля по умолчанию
- * var locale = locales.init("./scriptcraft/data/locales/plugins/skills/", "growl_skill", Skill.locale);
+ * // load the locale. The first parameter is the path, the second is the module name, the third is the default language of the plug-in
+ * var locale = locales.init("./scriptcraft/data/locales/plugins/", "test", "ru_ru");
  *
- * // отправка сообщений
- * // предположим что в файле локализации значение для ключа "msg.key" будет "123"
- * locale.print(sender, "bla-bla ${msg.key} bla-bla" ); // выведет игроку sender сообщение "bla-bla 123 bla-bla"
- * locale.print(sender, ["bla-bla","${msg.key}","bla-bla"] ); // выведет игроку sender сообщение "bla-bla 123 bla-bla"
+ * ...
+ * 
+ * // !!! suppose that the default locale of the plugin is "ru_ru". And the user in his minecraft client exposed English
+ * locale.help(player,"${help}"); 
+ * // output to chat:
+ *    <playername> help1 message
+ *    <playername> help2 message
  *
- * locale.print(sender, "bla-bla ${msg.key} bla-bla ${msg.key}" ); // выведет игроку sender сообщение "bla-bla 123 bla-bla 123"
- * locale.print(sender, ["bla-bla","${msg.key}","bla-bla","${msg.key}"] ); // выведет игроку sender сообщение "bla-bla 123 bla-bla 123"
+ * locale.echo(player,"${msg.test1}"); 
+ * // output to chat:
+ *    <playername> test1 message
  *
- * locale.print(sender, "bla-bla ${msg.key} bla-bla" ); // выведет игроку sender сообщение "bla-bla 123 bla-bla"
- * locale.print([sender], "bla-bla ${msg.key} bla-bla" ); // выведет игроку sender сообщение "bla-bla 123 bla-bla"
- * locale.print({"1":sender}, "bla-bla ${msg.key} bla-bla" ); // выведет игроку sender сообщение "bla-bla 123 bla-bla"
- * locale.print("sender_nickname", "bla-bla ${msg.key} bla-bla" ); // выведет игроку sender_nickname сообщение "bla-bla 123 bla-bla" (если он онлайн)
+ * locale.echo(player,"${msg.test2}"); 
+ * // output to chat:
+ *    <playername> test2 message
  *
- * // более подробно ознакомится с возможностями модуля вы можете прочитав описание его функций.
+ * locale.echo(player,"${test}",{"key1": 11111, "key2": "abcdef" }); 
+ * // output to chat:
+ *    <playername> test message 11111 abcdef
+ * 
+ * locale.warn(player,"${help.0}"); 
+ * // output to chat:
+ *    <playername> help1 message
+ *
+ * // if there is no localization file for the player's language, the messages will be displayed in the language specified when calling locales.init(...)
+ * // locale.warn(...), locale.help(...), locale.echo(...) and locale.event(...) differ only in text messages, otherwise their functionality is identical.
+ * // more details on the capabilities of the module, you can read the description of its functions.
  *
  */
 
 
  'use strict';
-/*
- * Зависимости этого модуля:
- * - modiles/utils
- */
 
 var utils = require('utils');
 var find = require('find');
-var color = require('last/color').color;
 
-// назначем цвета для типов сообщений
-var event_color = color("brightgreen","");
-var echo_color = color("darkgreen","");
-var warn_color = color("red","");
-var help_color = color("aqua","");
+// Loading config
+var config = scload("./scriptcraft/data/config/modules/last/locales.json");
+if(!config.enable)
+  return console.log("modules/last/locales  DISABLED");;
+
 
 /**
- * Функция создает объект с локалью
- * @param {string} path   путь к папке с локалями
- * @param {string} module имя модуля
- * @param {string} lang   язык по умолчанию
- * @return  {object}    Экземпляр класа Locales содержащий методы для работы со скилом
+ * The function creates an object with a locales
+ * @param {string} path    path to the folder with locales
+ * @param {string} module  module name
+ * @param {string} lang    default language
+ * @return {object} A sample of the Locales class containing methods for working with skill 
  */
 exports.init = init;
 function init(path, module, lang) {
+	lang=lang||config.default;
 	path = path.replace(/\/*$/,'/');
 	module = module.replace(/\/+$/,'').replace(/^\/+/,'');
 
@@ -73,11 +119,11 @@ function init(path, module, lang) {
 
 
 /**
- * Конструктор класса Locales. Инициализирует экземпляр класса загружая в него нужную локаль для указаного модуля
+ * Constructor of class Locales. Initializes an instance of the class by loading all the locales for the specified module into it.
  * @constructor
- * @param {string} path   путь к папке с локалями
- * @param {string} module имя модуля
- * @param {string} lang   язык по умолчанию
+ * @param {string} path    path to the folder with locales
+ * @param {string} module  module name
+ * @param {string} lang    default language
  */
 function Locales(path, module, lang) {
 	// далее пересохраняем в объект данные о локали
@@ -91,8 +137,8 @@ function Locales(path, module, lang) {
 }
 
 /**
- * Функция устанавливает режим отладки. В этом режиме при отсутствии ключей будут вставлятся специальные уведомления
- * @param {boolean} value  true или false
+ * The function sets the debugging mode. In this mode, if there are no keys, special notifications will be inserted
+ * @param {boolean} value  true/false
  */
 Locales.prototype.setDebugMode = function(value) {
 	this.debug = value||false;
@@ -100,17 +146,15 @@ Locales.prototype.setDebugMode = function(value) {
 
 
 /**
- * Функция загружает указанную локаль
- * @param {string} path   путь к папке с локалями
- * @param {string} module имя модуля
+ * The function loads all available locales
+ * @param {string} path     path to the folder with locales
+ * @param {string} module   module name
  */
 Locales.prototype.load = function(path, module) {
 
 	this.fullpath = path+module+"/";
-	//console.log("!!!!!!!! Locales load path: " + this.fullpath);
 	var jsFiles = find(this.fullpath, function(dir,name){
 	    return name.match(/\.json$/);
-	    //return "1",name.replace(/^.*?\/(\w+)\.json$/,"$1");
 	});
 	var locales = {};
 	for(var i in jsFiles){
@@ -118,16 +162,15 @@ Locales.prototype.load = function(path, module) {
 		var data = scload(this.fullpath+key+".json");
 		locales[key] = data;
 	}
-	//console.log("\n\n\n!!!!!!!! Locales load files " + JSON.stringify(locales) );
 	return locales;
 };
 
 
 
 /**
- * Функция ищет фразу по ключу для указанного языка, если язык не указан или остутствует локализация, используется язык указанный в this.lang
- * @param {string} key 	комплексный ключ к нужной фразе
- * @param {string} lang язык по умолчанию
+ * The function searches for a phrase by key for the specified language, if the language is not specified or there is no localization, the language specified in this.lang is used
+ * @param {string} key  complex key to the desired phrase
+ * @param {string} lang default language
  */
 Locales.prototype.findMsg = function(msgkey, lang, keys) {
 	if(!lang) lang = this.lang;
@@ -209,57 +252,9 @@ Locales.prototype.findKey = function(key,point){
 }
 
 /**
- * Функция определяет локализацию игрока(игроков) и отправляет им сообщение в родной для игрока локализации
- * @param  {object} player  строка с именем или объект игрока, или массив строк или объектов, или ассоциатывный массив строк или объектов
- * @param  {string} message строка или массив строк, может содержать спец вставки типа"${комплексный.ключ}" которые будут заменены на значения из файла локализации
- */
-Locales.prototype.print = function(player,message) {
-	var users = {};
-	if(typeof player === 'string'){
-		var user = utils.player(player);
-		users[user.name] = user;
-	}
-	if(typeof player === 'object'){
-		if( player.name ){
-			users[player.name] = player;
-		}else{
-			for(var i in player){
-				var p = player[i];
-				if( typeof p === 'string' )
-					p = utils.player(p);
-				if(p && p.name )
-					users[p.name] = p;
-			}
-		}
-	}
-
-	var messages = [];
-	if(typeof message === 'string'){
-		messages.push(message);
-	}
-	if(typeof message === 'object'){
-		if( Array.isArray(message) ){
-			messages = message;
-		}else{
-			for(var i in message){
-				messages.push(message[i]);
-			}
-		}
-	}
-	message = messages.join(" ");
-
-	for(var i in users){
-		this.sendMsg(users[i], message);
-	}
-
-
-
-};
-/**
- * функция .....
- * @param  {[type]} player  [description]
- * @param  {[type]} message [description]
- * @return {[type]}         [description]
+ * the function sends a message message to the user {player} if it is online.
+ * @param {object} player	Object containing player data, including the selected localization.
+ * @param {string} message	message text.
  */
 Locales.prototype.sendMsg = function(player,message) {
 	if(!player || !player["name"] )
@@ -268,39 +263,26 @@ Locales.prototype.sendMsg = function(player,message) {
 	if(!message || typeof message !== 'string' )
 		return;
 
-	var sender_lang = this.lang;
-	if( player.spigot ){
-	   sender_lang = player.spigot().getLocale().toString();
-	}else{
-		//console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! "+player.name);
-	}
-	// заменить каждое вхождение "ой" на результат вызова функции
-    var self = this;
-	var msg = message.replace(/\$\{(.*?)\}/g, function(str,key) {
-  		return self.findMsg(key,sender_lang);
-	});
 	if( player.sendMessage )
-		echo(player,msg);
-
+		echo(player,message);
 }
 
 /**
- * функция .....
- * @param  {[type]} player  [description]
- * @param  {[type]} message [description]
- * @return {[type]}         [description]
+ * the function returns a message in the user's language (if there is a localization file for this language)
+ * @param {object} player    Object containing player data, including the selected localization
+ * @param {string} message   text, can contain special inserts of type "$ {complex .key}" which will be replaced with values from the localization file
+ * @param {object} keys      associative array with values
+ * @return {string} message in the user's language.
  */
 Locales.prototype.getMessage = function(player, message, keys) {
 	if(!message || typeof message !== 'string' )
 		return "";
 
-	var args = Array.prototype.slice.call(arguments, 2);
-
 	var sender_lang = this.lang;
 	if( player.spigot )
 	   sender_lang = player.spigot().getLocale().toString();
 
-	// заменить каждое вхождение "ой" на результат вызова функции
+	// заменить каждое вхождение ${key} на результат вызова функции
     var self = this;
 	var msg = message.replace(/\$\{(.*?)\}/g, function(str,key) {
   		return self.findMsg(key, sender_lang, keys);
@@ -308,6 +290,14 @@ Locales.prototype.getMessage = function(player, message, keys) {
 	return msg;
 }
 
+
+/**
+ * This function sends a message message to the user (users) player, after replacing all lines of the form $ {name} with values ​​of the associative array keys.
+ * @param {string/object/array} player A string containing the user name or array of such strings (normal or associative) or an object containing the name property with the user name
+ * @param {string} color color. See scriptcraft/modules/utils/string-exts.js
+ * @param {string/object/array} message is a string, an array or an associative array containing strings that can contain special inserts of type "$ {complex .key}" that will be replaced with values ​​from the localization file
+ * @param {object} keys associative array with values
+ */
 Locales.prototype.printf = function(player, color, message, keys) {
 	if( !player && !player["name"] )
 		return;
@@ -351,21 +341,48 @@ Locales.prototype.printf = function(player, color, message, keys) {
 
 	for(var i in users){
 		var msg = this.getMessage(users[i], message, keys);
-		this.sendMsg(users[i], color + msg);
+		this.sendMsg(users[i], ""[color]() + msg);
 	}
 }
 
+/**
+ * This function sends a message message to the user(users) {player}, after replacing all lines of the form ${complex.key} with values ​​of the associative array keys.
+ * @param {string/object/array} player A string containing the user name or array of such strings (normal or associative) or an object containing the name property with the user name.
+ * @param {string/object/array} message is a string, an array or an associative array containing strings that can contain special inserts of type "${complex.key}" that will be replaced with values ​​from the localization file.
+ * @param {object} keys associative array with values.
+ */
 Locales.prototype.echo = function(player, message, keys) {
-	this.printf(player,echo_color,message, keys);
+	this.printf(player,config.colors.echo,message, keys);
 }
+
+/**
+ * This function sends a message message to the user(users) {player}, after replacing all lines of the form ${complex.key} with values ​​of the associative array keys.
+ * @param {string/object/array} player A string containing the user name or array of such strings (normal or associative) or an object containing the name property with the user name.
+ * @param {string/object/array} message is a string, an array or an associative array containing strings that can contain special inserts of type "${complex.key}" that will be replaced with values ​​from the localization file.
+ * @param {object} keys associative array with values.
+ */
 Locales.prototype.warn = function(player, message, keys) {
-	this.printf(player,warn_color,message, keys);
+	this.printf(player,config.colors.warn,message, keys);
 }
+
+/**
+ * This function sends a message message to the user(users) {player}, after replacing all lines of the form ${complex.key} with values ​​of the associative array keys.
+ * @param {string/object/array} player A string containing the user name or array of such strings (normal or associative) or an object containing the name property with the user name.
+ * @param {string/object/array} message is a string, an array or an associative array containing strings that can contain special inserts of type "${complex.key}" that will be replaced with values ​​from the localization file.
+ * @param {object} keys associative array with values.
+ */
 Locales.prototype.event = function(player, message, keys) {
-	this.printf(player,event_color,message, keys);
+	this.printf(player,config.colors.event,message, keys);
 }
+
+/**
+ * This function sends a message message to the user(users) {player}, after replacing all lines of the form ${complex.key} with values ​​of the associative array keys.
+ * @param {string/object/array} player A string containing the user name or array of such strings (normal or associative) or an object containing the name property with the user name.
+ * @param {string/object/array} message is a string, an array or an associative array containing strings that can contain special inserts of type "${complex.key}" that will be replaced with values ​​from the localization file.
+ * @param {object} keys associative array with values.
+ */
 Locales.prototype.help = function(player, message, keys) {
-	this.printf(player,help_color,message, keys);
+	this.printf(player,config.colors.help,message, keys);
 }
 
 

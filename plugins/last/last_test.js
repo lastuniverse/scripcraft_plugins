@@ -1,6 +1,5 @@
 var completer = require('last/completer');
 var permissions = require('last/permissions');
-var color =  require('last/color').color;
 var slash = require('slash');
 
 // загружаем конфиг
