@@ -46,6 +46,7 @@
 }
 
 пример плагина использующего locales.js: plugins/test.js
+
 //   подключаем модуль
 var  locales = require('last/locales');
 
@@ -55,26 +56,35 @@ var locale = locales.init("./scriptcraft/data/locales/plugins/", "test", "ru_ru"
 ...
 
 // !!! предположим что по умолчанию локаль плагина "ru_ru". А пользователь в своем клиенте майнкрафта выставил английский язык
+
 locale.help(player,"${help}"); 
 // вывод в чат:
    <playername> help1 message
-   <playername> help2 message
+//   <playername> help2 message
 
 locale.echo(player,"${msg.test1}"); 
 // вывод в чат:
-   <playername> test1 message
+//   <playername> test1 message
 
 locale.echo(player,"${msg.test2}"); 
 // вывод в чат:
-   <playername> test2 message
+//   <playername> test2 message
 
 locale.echo(player,"${test}",{"key1": 11111, "key2": "abcdef" }); 
 // вывод в чат:
-   <playername> test message 11111 abcdef
+//   <playername> test message 11111 abcdef
 
 locale.warn(player,"${help.0}"); 
 // вывод в чат:
-   <playername> help1 message
+//   <playername> help1 message
+
+locale.warn(player,"aaa ${help.0} bbb ${msg.test1} ccc"); 
+// вывод в чат:
+//   <playername> aaa help1 message bbb test1 message ccc
+
+locale.warn(player,"aaa ${help.0} bbb ${msg.test1} ccc ${test} ddd",{"key1": 11111, "key2": "value of key2" }); 
+// вывод в чат:
+//   <playername> aaa help1 message bbb test1 message ccc test message 11111 value of key2 ddd
 
 // если файл с локализацией для языка игрока отсутствует, то сообщения будут выводится на языке, указанном при вызове locales.init(...)
 // locale.warn(...), locale.help(...), locale.echo(...) и locale.event(...) отличаются только цыетом сообщений, в остальном их функционал идентичен.

@@ -49,7 +49,8 @@
  * 	"test": "тест сообщение ${key1} ${key2}"
  * }
  *
- * // example of a plugin using locales.js: plugins/test.js
+ * 
+ * example of a plugin using locales.js: plugins/test.js
  *  
  * // connect the module
  * var  locales = require('last/locales');
@@ -62,24 +63,32 @@
  * // !!! suppose that the default locale of the plugin is "ru_ru". And the user in his minecraft client exposed English
  * locale.help(player,"${help}"); 
  * // output to chat:
- *    <playername> help1 message
- *    <playername> help2 message
+ * //   <playername> help1 message
+ * //   <playername> help2 message
  *
  * locale.echo(player,"${msg.test1}"); 
  * // output to chat:
- *    <playername> test1 message
+ * //   <playername> test1 message
  *
  * locale.echo(player,"${msg.test2}"); 
  * // output to chat:
- *    <playername> test2 message
+ * //   <playername> test2 message
  *
  * locale.echo(player,"${test}",{"key1": 11111, "key2": "abcdef" }); 
  * // output to chat:
- *    <playername> test message 11111 abcdef
+ * //   <playername> test message 11111 abcdef
  * 
  * locale.warn(player,"${help.0}"); 
  * // output to chat:
- *    <playername> help1 message
+ * //   <playername> help1 message
+ *
+ * locale.warn(player,"aaa ${help.0} bbb ${msg.test1} ccc"); 
+ * // output to chat:
+ * //   <playername> aaa help1 message bbb test1 message ccc
+ *
+ * locale.warn(player,"aaa ${help.0} bbb ${msg.test1} ccc ${test} ddd",{"key1": 11111, "key2": "value of key2" }); 
+ * // output to chat:
+ * //   <playername> aaa help1 message bbb test1 message ccc test message 11111 value of key2 ddd
  *
  * // if there is no localization file for the player's language, the messages will be displayed in the language specified when calling locales.init(...)
  * // locale.warn(...), locale.help(...), locale.echo(...) and locale.event(...) differ only in text messages, otherwise their functionality is identical.
