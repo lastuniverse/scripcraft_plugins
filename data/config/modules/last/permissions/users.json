@@ -1,33 +1,76 @@
 {
-  "c807d39e-e4f9-471e-9b1e-61da7700ae73": {
-    "name": "AlexeyMG",
+  "6b4fd503-3619-3711-90d0-cad3434ac2e2": {
+    "name": "lastuniverse",
     "groups": {
-      "vip": true,
       "player": true,
       "holder": true,
-      "безопасно": true,
-      "лентяивымогатели": true      
+      "vip": true,
+      "admin": true
+    },
+    "permissions": {
+      "*": true
+    },
+    "options": {
+      "last_chat.group": {
+        "icon": "Ⓖ",
+        "color": "darkgray"
+      },
+      "last_farm.max": 100,
+      "last_warp.max": 20
+    }
+  },
+  "e5ccc663-a2ef-3d34-9225-d69cbcfcf4aa": {
+    "name": "ZZzhakonya",
+    "groups": {
+      "player": true,
+      "лайтово": true
     },
     "permissions": {},
+    "options": {}
+  },
+  "5229ed71-41aa-3730-adb6-82d88a046a7c": {
+    "name": "libbar",
+    "groups": {
+      "moderator": true,
+      "player": true,
+      "holder": true,
+      "vip": true,
+      "лайтово": true
+    },
+    "permissions": {
+      "last_test.use": true
+    },
     "options": {
-      "last_warp.max":2
+      "last_chat.group": {
+        "icon": "☬§0.",
+        "color": "darkgreen"
+      }
     }
+  },
+  "b8771b8b-e401-4003-b839-cb533ce94e1c": {
+    "name": "XDeNzl",
+    "groups": {
+      "player": true,
+      "holder": true,
+      "vip": true
+    },
+    "permissions": {},
+    "options": {}
   },
   "eddd148a-2e89-45f3-bc33-071ffac51198": {
     "name": "xxxGenaxxx",
     "groups": {
-      "vip": true,
       "player": true,
       "holder": true,
-      "moderator": true
+      "vip": true
     },
     "permissions": {},
     "options": {
-      "last_warp.max":2
+      "last_warp.max": 2
     }
   },
-  "59b3e6ed-82f7-4cd8-9344-7e91d8fdf5c3": {
-    "name": "zzz_SOFI_zzz",
+  "40d96884-4528-455e-91df-e3ab1d77266e": {
+    "name": "parisc74",
     "groups": {
       "player": true,
       "vip": true
@@ -35,12 +78,26 @@
     "permissions": {},
     "options": {}
   },
+  "c807d39e-e4f9-471e-9b1e-61da7700ae73": {
+    "name": "AlexeyMG",
+    "groups": {
+      "player": true
+    },
+    "permissions": {},
+    "options": {}
+  },
+  "59b3e6ed-82f7-4cd8-9344-7e91d8fdf5c3": {
+    "name": "zzz_SOFI_zzz",
+    "groups": {
+      "player": true
+    },
+    "permissions": {},
+    "options": {}
+  },
   "9325b0a2-2d22-4d84-9842-58e833196107": {
     "name": "Slimson",
     "groups": {
-      "vip": true,
-      "player": true,
-      "holder": true
+      "player": true
     },
     "permissions": {},
     "options": {}
@@ -48,34 +105,14 @@
   "e5db92f9-1821-48a8-a4c8-2278db941fad": {
     "name": "sulik666",
     "groups": {
-      "vip": true,
-      "player": true,
-      "holder": true
+      "player": true
     },
-    "permissions": {
-      "skills.*": true
-    },
+    "permissions": {},
     "options": {}
-  },
-  "65419976-13af-4de7-9554-299b2e597e6a": {
-    "name": "libbar",
-    "groups": {
-      "moderator": true,
-      "vip": true,
-      "player": true,
-      "holder": true
-    },
-    "permissions": {
-      "last_test.use": true
-    },
-    "options": {
-      "last_chat.group": { "icon":"☬\u00a70.", "color": "darkgreen" }
-    }
   },
   "2f8a6ef2-e971-4b9a-90b9-f54db65dc4b7": {
     "name": "Serrgy",
     "groups": {
-      "vip": true,
       "player": true
     },
     "permissions": {},
@@ -84,18 +121,7 @@
   "3325a983-1653-4632-8336-3d4e3241d6b9": {
     "name": "Dinamic21",
     "groups": {
-      "vip": true,
       "player": true
-    },
-    "permissions": {},
-    "options": {}
-  },
-  "b8771b8b-e401-4003-b839-cb533ce94e1c": {
-    "name": "XDeNzl",
-    "groups": {
-      "vip": true,
-      "player": true,
-      "holder": true
     },
     "permissions": {},
     "options": {}
@@ -103,7 +129,6 @@
   "40efc7e9-1bd9-485f-b062-44c6cdc30476": {
     "name": "el_mecanico",
     "groups": {
-      "vip": true,
       "player": true
     },
     "permissions": {},
@@ -112,7 +137,6 @@
   "d5022e2e-a4d2-48db-8896-692f3f6a42a6": {
     "name": "KomacloS",
     "groups": {
-      "vip": true,
       "player": true
     },
     "permissions": {},
@@ -121,28 +145,7 @@
   "6f2d5cf3-f319-4cf1-92a8-df3c90b27586": {
     "name": "MrGray",
     "groups": {
-      "vip": true,
-      "player": true,
-      "holder": true,
-      "безопасно": true,
-      "лентяивымогатели": true
-    },
-    "permissions": {
-      "last_warp.warp":true,
-      "last_teleport.cost": 1
-    },
-    "options": {
-    }
-  },
-  "505ef96e-5a4d-4f0b-b193-3117c3799a13": {
-    "name": "ZZzhakonya",
-    "groups": {
-      "admin": true,
-      "vip": true,
-      "player": true,
-      "holder": true,
-      "безопасно": true,
-      "лентяивымогатели": true
+      "player": true
     },
     "permissions": {},
     "options": {}
@@ -150,64 +153,39 @@
   "a51f9023-6b93-4266-927f-08bcb4a772c9": {
     "name": "emexajt",
     "groups": {
-      "vip": true,
-      "player": true,
-      "holder": true,
-      "безопасно": true,
-      "лентяивымогатели": true
-    },
-    "permissions": {},
-    "options": {
-      "last_farm.max":4
-    }
-  },
-  "fb2532ca-e24c-4baa-9ab9-284ef30216d0": {
-    "name": "Fufl1k",
-    "groups": {
-      "vip": true,
-      "player": true,
-      "holder": true,
-      "безопасно": true,
-      "лентяивымогатели": true
-    },
-    "permissions": {},
-    "options": {
-      "last_farm.max":2
-    }
-  },
-  "d6c01d31-01a7-40ad-bf5d-86864df3542d": {
-    "name": "CoolFun5",
-    "groups": {
-      "player": true,
-      "holder": true
+      "player": true
     },
     "permissions": {},
     "options": {}
   },
-  "85bf7e4e-e321-4839-b3ee-def203984faf": {
-    "name": "Oboltus",
+  "5b54862e-d99d-4957-9832-09980a7e4366": {
+    "name": "_Redclif_",
     "groups": {
-      //"holder": true,
-      "vip": true,
       "player": true
-      //"безопасно": true,
-      //"лентяивымогатели": true
     },
     "permissions": {},
-    "options": {
-      "last_farm.max":4,
-      "last_warp.max":4,
-      "last_teleport.cost": 1
-    }
+    "options": {}
+  },
+  "fb2532ca-e24c-4baa-9ab9-284ef30216d0": {
+    "name": "Fufl1k",
+    "groups": {
+      "player": true
+    },
+    "permissions": {},
+    "options": {}
+  },
+  "d6c01d31-01a7-40ad-bf5d-86864df3542d": {
+    "name": "CoolFun5",
+    "groups": {
+      "player": true
+    },
+    "permissions": {},
+    "options": {}
   },
   "4894b515-9c3e-42f7-be17-06a7067720bc": {
     "name": "Andsoon",
     "groups": {
-      "vip": true,
-      "player": true,
-      "holder": true,
-      "безопасно": true,
-      "лентяивымогатели": true
+      "player": true
     },
     "permissions": {},
     "options": {}
@@ -215,10 +193,7 @@
   "b4fe1b16-1335-496e-be85-61e9e796f1e8": {
     "name": "SchokkER",
     "groups": {
-      "vip": true,
-      "player": true,
-      "holder": true
-      // "лентяивымогатели": true
+      "player": true
     },
     "permissions": {},
     "options": {}
@@ -226,31 +201,54 @@
   "dff08f73-6469-46fa-b323-e409a1986786": {
     "name": "DarkDaiver",
     "groups": {
-      "player": true,
-      "vip": true,
-      "holder": true
-      // "лентяивымогатели": true
+      "player": true
     },
     "permissions": {},
     "options": {}
   },
-  "37ddefbb-f14f-424e-8dee-908b522dc7fb": {
-    "name": "lastuniverse",
+  "72c07956-9401-3982-849b-d5832ba1143e": {
+    "name": "Oboltus",
+    "groups": {
+      "player": true
+    },
+    "permissions": {},
+    "options": {}
+  },
+  "bd05a4b9-e846-3072-bfee-79482f5e6350": {
+    "name": "jontyck",
+    "groups": {
+      "player": true
+    },
+    "permissions": {},
+    "options": {}
+  },
+  "beb8750d-3cfc-304b-8cef-d81083590d30": {
+    "name": "Kockos82",
     "groups": {
       "player": true,
-      "vip": true,
       "holder": true,
-      "admin": true
+      "vip": true
     },
-    "permissions": {
-      "*": true
-    },
+    "permissions": {},
     "options": {
-      "last_chat.group": { "icon":"Ⓖ", "color": "darkgray" },
-      //"last_chat.group": { "icon":"☬\u00a70.", "color": "darkgreen" },
-      "last_mobterror.count": 100,
-      "last_farm.max": 100,
-      "last_warp.max": 20
+      "last_mobterror.max": 0
     }
+  },
+  "c1f0d5f7-b4b9-31ff-b63d-ad499dc23759": {
+    "name": "grigosu",
+    "groups": {
+      "player": true,
+      "vip": true
+    },
+    "permissions": {},
+    "options": {}
+  },
+  "1d3dbee8-4efc-3c17-a1ce-e2c7493bf1ac": {
+    "name": "etozhezauka",
+    "groups": {
+      "player": true
+    },
+    "permissions": {},
+    "options": {}
   }
 }

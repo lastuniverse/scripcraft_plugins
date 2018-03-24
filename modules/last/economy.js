@@ -39,8 +39,10 @@ var store = persist('data/modules/last/economy', {
 });
 
 var match_table = scload("./scriptcraft/data/config/modules/last/economy/match_table.json");
-var cost_table = scload("./scriptcraft/data/config/modules/last/economy/cost_table.json");
-
+//var cost_table = scload("./scriptcraft/data/config/modules/last/economy/cost_table.json");
+var craft_table = scload("./scriptcraft/data/config/modules/last/economy/craft_table.json");
+var base_table = scload("./scriptcraft/data/config/modules/last/economy/base_table.json");
+var enchants_table = scload("./scriptcraft/data/config/modules/last/economy/enchants_table.json");
 
 // загружаем конфиг
 var config = scload("./scriptcraft/data/config/modules/last/economy.json");
@@ -100,13 +102,24 @@ var FAKE = 1000;
 //   product[0].cost = cost + cost*Q;
 // }
 
+
+/**
+ * Преобразовывет число монет в строку с указанием названия монет в правильном падеже и в локализации игрока
+ * @param  {object} player объект игрока, для которого производится преобразование
+ * @param  {number} amount количество монет
+ * @return {string}        строка содержащая количество монет и их название в правильном падеже и в локализации игрока
+ */
 exports.coinsDecline = coinsDecline;
-function coinsDecline(player,number){
-  var n = coins.number(number);
+function coinsDecline(player,amount){
+  var n = coins.number(amount);
   return locale.getMessage(player, "${coins."+n+"}");
 }
 
-
+/**
+ * Забыл уже для чего нужна
+ * @param {[type]} itemstack [description]
+ * @param {[type]} amount    [description]
+ */
 exports.addBuy = addBuy;
 function addBuy(itemstack, amount){
   // var key = match_table[itemstack.type]; //inventory.getItemStackHash(itemstack);
@@ -117,6 +130,11 @@ function addBuy(itemstack, amount){
   // product.buy+=amount;
 }
 
+/**
+ * Забыл уже для чего нужна
+ * @param {[type]} itemstack [description]
+ * @param {[type]} amount    [description]
+ */
 exports.addSell = addSell;
 function addSell(itemstack, amount){
   // var key = match_table[itemstack.type]; //inventory.getItemStackHash(itemstack);
@@ -128,6 +146,11 @@ function addSell(itemstack, amount){
 }
 
 
+/**
+ * Преобразовывает строку или число к целому числу
+ * @param  {number|string} number число или строка содержащая число
+ * @return {number}        целое число
+ */
 exports.toInt = _toInt;
 function _toInt(number){
   //var result = Math.floor(Number(number));
@@ -136,6 +159,11 @@ function _toInt(number){
   return result;
 }
 
+/**
+ * Возвращает количество монет у игрока
+ * @param  {object} player объект игрока, для которого смотрим количество монет
+ * @return {number}        количество монет
+ */
 exports.getMoney = function(player){
   var User = users.getPlayer(player);
 
@@ -149,8 +177,14 @@ exports.getMoney = function(player){
 };
 
 
-exports.setMoney = function(player,number){
-  var money = _toInt(number);
+/**
+ * Устанавливает игроку новое количество монет
+ * @param  {object} player объект игрока, для которого производится финансовая операция
+ * @param  {number} amount количество монет
+ * @return {number}        если операция не удалась, возвращает false, в остальных случаях возвращает количество монет у игрока
+ */
+exports.setMoney = function(player,amount){
+  var money = _toInt(amount);
   if( money < 0 ) money = 0;
 
   var User = users.getPlayer(player);
@@ -164,6 +198,12 @@ exports.setMoney = function(player,number){
 };
 
 
+/**
+ * Добавляет игроку некоторое количество игровых монет к уже имеющимся. Возможно добавлять отрицательное количество игровых монет, но при этом результат не должен быть меньше нуля.
+ * @param  {object} player объект игрока, для которого производится финансовая операция
+ * @param  {number} amount количество игровых монет
+ * @return {number}        если операция не удалась, возвращает false, в остальных случаях возвращает количество игровых монет у игрока
+ */
 exports.addMoney = function(player,number){
   var money = _toInt(number);
   //if( money < 0 ) money = 0;
@@ -185,6 +225,11 @@ exports.addMoney = function(player,number){
 };
 
 
+/**
+ * Запрос о выводе в консоль чата финансовой информации об игроке.
+ * @param  {object} sender объект игрока, который производит запрос. Нужен для определения локализации и адресата выводимого сообщения.
+ * @param  {object} player объект игрока, для которого производится запрос финансовой информации
+ */
 exports.howMuchMoney = function(sender, player){
   var User = users.getPlayer(player);
   var Sender = users.getPlayer(sender);
@@ -211,9 +256,14 @@ exports.howMuchMoney = function(sender, player){
   return User.data.coins;
 };
 
-
-exports.payMoney = function(sender,reciver,number){
-  var money = _toInt(number);
+/**
+ * Запрос на перевод игровых монет от одного игрока другому. Нельзя запросить перевод отрицательной суммы. Нельзя перевести монет больше, чем их имеется у игрока инициировавшего запрос. Результат выполнения запроса будет выведен в консоль чата у обоих участников финансовой транзакции.
+ * @param  {object} sender объект игрока, который производит запрос на перевод игровых монет.
+ * @param  {object} player объект игрока, которому будет произведен перевод игровых монет.
+ * @param  {number} amount количество игровых монет
+ */
+exports.payMoney = function(sender,reciver,amount){
+  var money = _toInt(amount);
   if( money < 0 ) money = 0;
 
   var Sender = users.getPlayer(sender);
@@ -250,9 +300,15 @@ exports.payMoney = function(sender,reciver,number){
 };
 
 
-
-function giveMoney(sender,reciver,number){
-  var money = _toInt(number);
+/**
+ * Запрос на дарение игроку игровых монет. Допускается запросить дарение отрицательной суммы. Результат выполнения запроса будет выведен в консоль чата у обоих участников запроса.
+ * @param  {object} sender объект игрока, который производит запрос на дарение игровых монет.
+ * @param  {object} player объект игрока, которому будет произведено дарение игровых монет.
+ * @param  {number} amount количество игровых монет
+ */
+exports.giveMoney = giveMoney;
+function giveMoney(sender,reciver,amount){
+  var money = _toInt(amount);
 
   var Sender = users.getPlayer(sender);
 
@@ -275,10 +331,15 @@ function giveMoney(sender,reciver,number){
   });
 
 };
-exports.giveMoney = giveMoney;
 
-exports.giveAll = function(sender,number){
-  var money = _toInt(number);
+
+/**
+ * Запрос на дарение игровых монет всем игрокам находящимся в игре (в онлайне). Допускается запросить дарение отрицательной суммы. Результат выполнения запроса будет выведен в консоль чата у всех участников запроса.
+ * @param  {object} sender объект игрока, который производит запрос на дарение игровых монет.
+ * @param  {number} amount количество игровых монет
+ */
+exports.giveAll = function(sender,amount){
+  var money = _toInt(amount);
   var Sender = users.getPlayer(sender);
   var user_list = users.getAllUsers();
   for(var key in user_list){
@@ -293,8 +354,12 @@ exports.giveAll = function(sender,number){
   });
 };
 
-exports.getTop = function(sender,number){
-
+/**
+ * Запрос на вывод в консоль чата финансового топа
+ * @param  {object} sender объект игрока, который производит запрос на вывод финансового топа.
+ * @param  {number} top размерность топа
+ */
+exports.getTop = function(sender,top){
   var hash = users.getAllUsers();
   var list = [];
   for(var i in hash ){
@@ -306,7 +371,7 @@ exports.getTop = function(sender,number){
     if (a.coins < b.coins) return 1;
   });
 
-  var msg = "" + number + ":\n";
+  var msg = "" + top + ":\n";
   for(var i in list ){
       var user = list[i];
       msg += i + ". " + user.name + " (" + user.coins + " " + coinsDecline(sender, user.coins) + ")\n";
@@ -315,15 +380,15 @@ exports.getTop = function(sender,number){
 };
 
 
-
-
-
-var craft_table = scload("./scriptcraft/data/config/modules/last/cost/craft_list.json");
-var base_table = scload("./scriptcraft/data/config/modules/last/cost/base_list.json");
-
-
+/**
+ * Запрос на расчет базовой цены блоков или предметов
+ * @param  {object} item объект блока или предмета, для которого будет производится расчет цены.
+ * @param  {number} amount количество предметов
+ * @return {object}        ассоциативный массив, содержащий поля:
+ *  - cost с расчитанной базовой ценой блока или предмета в количестве amount
+ *  - amount количество блоков или предметов
+ */
 exports.getPrice = function(item,amount){
-  
   //console.log("item: "+JSON.stringify(item) );
   if( !item || !item.type )
     return false;
@@ -336,34 +401,47 @@ exports.getPrice = function(item,amount){
   if( !cost )
     return false;
 
+  cost += get_enchants_cost(item);
+
   var amount = amount||1;
   var base = amount*cost;
   var price = {
     amount: amount,
+    cost: base,
     buy: Math.floor( base/2 )||1,
     sell: Math.floor( base*2 )||4
   }
   return price;
 }
 
+
+/**
+ * Запрос на расчет базовой цены блока или предмета
+ * @param  {object} item объект блока или предмета, для которого будет производится расчет цены.
+ * @return {number}        false если  расчет невозможен, в противном случае расчитанная базовая ценой блока или предмета 
+ */
 exports.getCost = function(item){
-  
-  //console.log("item: "+JSON.stringify(item) );
+  //console.log("getCost 01 "+JSON.stringify(item));
   if( !item || !item.type )
     return false;
 
+  //console.log("getCost 02");
   var name = match_table[item.type];
   if( !name )
     return false;
 
+  //console.log("getCost 03");
   var cost = get_cost(name.minecraft_name);
   if( !cost )
     return false;
 
+  //console.log("getCost 04");
+  cost += get_enchants_cost(item);
   return cost;
 }
 
 function get_cost(name){
+  //console.log("get_cost 01 "+name);
   var cost = base_table[name];
   if( !cost ){
     var recipie = craft_table[name];
@@ -372,6 +450,40 @@ function get_cost(name){
       //console.log("ITEM: "+item);
       cost += get_cost(item)*recipie[item];
     }
+  }
+  return cost;
+}
+
+function get_enchants_cost(item){
+  //console.log("get_enchants_cost 01");
+  var cost = 0;
+  if( typeof item !== "object" )
+    return cost;
+
+  //console.log("get_enchants_cost 02");
+  if( !item.meta || typeof item.meta !== "object" )
+    return cost;
+
+  //console.log("get_enchants_cost 03");
+  var enchants = undefined;
+  if( item.meta.enchants && typeof item.meta.enchants === "object" )
+    enchants = item.meta.enchants;
+
+  if( item.meta["stored-enchants"] && typeof item.meta["stored-enchants"] === "object" )
+    enchants = item.meta["stored-enchants"];
+
+  //console.log("get_enchants_cost 04");
+  if( !enchants )
+    return cost;
+
+  //console.log("get_enchants_cost 05");
+  for(var e in enchants){
+    var enchant = enchants_table[e];
+    var lvl = enchants[e];
+    if( lvl<1 ) lvl=1;
+    var ecost = enchant.cost * Math.pow(2,lvl-1);
+    //console.log("enchant\t\tcost: "+enchant.cost+"\t\tlvl: "+lvl+"\t\tcost: "+ecost);
+    cost+=ecost;
   }
   return cost;
 }

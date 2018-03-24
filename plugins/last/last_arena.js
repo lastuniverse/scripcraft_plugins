@@ -33,7 +33,7 @@ var completer = require('last/completer');
 // загружаем config
 var config = scload("./scriptcraft/data/config/plugins/last/arena.json");
 if(!config.enable)
-	return console.log("plugins/last/last_party DISABLED");;
+	return console.log("plugins/last/last_arena DISABLED");;
 
 
 // загружаем локаль

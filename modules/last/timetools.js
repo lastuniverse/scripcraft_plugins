@@ -14,7 +14,7 @@
  * - modules/last/eventemmiter - собственно eventemmiter
  *      
  * 
- * @module last/timetools
+ * @module modules/last/timetools
  *
  * @example
  * //   подключаем модуль
@@ -25,8 +25,8 @@
  'use strict';
 
 var utils = require('utils');
-var eventex =  require('last/eventex');
-var Eventemitter =  require('last/eventemmiter');
+//var eventex =  require('last/eventex');
+//var Eventemitter =  require('last/eventemmiter');
 
 // Глобальный для всех скилов евент эмиттер
 // var Events = new Eventemitter();
@@ -43,7 +43,7 @@ function now(){
 /**
  * Функция позволяет вызвать callback с задержкой указанной в time
  * @param  {Function} callback функция обработчик обратного вызова 
- * @param  {[type]}   time     задержка вызова в мс
+ * @param  {Number}   time     задержка вызова в мс
  */
 exports.callAfterTime = callAfterTime;
 function callAfterTime(callback,time){

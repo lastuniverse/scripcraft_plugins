@@ -5,7 +5,7 @@ var utils = require('utils');
 var eventex =  require('last/eventex');
 var permissions = require('last/permissions');
 
-var redtext = red.""();
+var redtext = "".red();
 
 
 var users = persist('data/modules/last/users', {

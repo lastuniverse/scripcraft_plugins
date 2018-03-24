@@ -14,7 +14,6 @@ var bkEnchantment = Packages.org.bukkit.enchantments.Enchantment;
 var bkMaterial = Packages.org.bukkit.Material;
 var bkMaterialData = Packages.org.bukkit.material.MaterialData;
 
-
 // загружаем config
 var config = scload("./scriptcraft/data/config/modules/last/inventory.json");
 

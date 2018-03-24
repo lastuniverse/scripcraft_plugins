@@ -10,12 +10,11 @@
  * - Создание произвольных чатов (програмный API).
  * - Переключение между чатами.
  * - Настройка иконок идентифицирующих членство игроков в группах, пати, профессиях, кланах.
- *
  * ## Доступные чаты:
- * - Общий чат. Префикс `!`. Сообщения отсылаются игрокам на всем сервере. (не реализовано будет сниматся опыт)
- * - Ближний чат. Без префикса. Сообщения отсылаются игрокам находящимся не далее 500 блоков от вас. (сейчас отправляет сообщения всем игрокам)
- * - Администраторский чат. Префикс `@`. Сообщения принимаются и отсылаются только членам административных групп.
- * - Торговый чат. Префикс `$`. Сообщения принимаются и отсылаются всем игрокам на сервере. (допускаются только сообщения соответствующие правилам сервера)
+ * - `!` - Общий чат. Сообщения отсылаются игрокам на всем сервере. За сообщения взымается плата в размере указанном в файле настроек `chats.far.cost`.
+ * - `~` - Ближний чат. Сообщения отсылаются игрокам находящимся не далее количества блоков от вас, указанного в файле настроек `chats.near.distance`.
+ * - `@` - Администраторский чат. Сообщения принимаются и отсылаются только членам административных групп.
+ * - `$` - Торговый чат. Сообщения принимаются и отсылаются всем игрокам на сервере. За сообщения взымается плата в размере указанном в файле настроек `trade.cost`.
  * - Другие чаты, добавляемые плагинами, такие как:
  *   - `#` - party (чат для Пати)
  *   - `%` - guild (Гильдейские чаты)
@@ -30,59 +29,85 @@
  * - `/chat unmute {name}` : Включить показ сообщений из чата `{name}`
  * - `/mute {playername} {time} {reason}` : лишить игрока с ником `{playername}` возможности писать в чат на `{time}` минут. Игроку будет отправлена причина мута указанная в `{reason}`. (только администраторы).
  * - `/unmute {playername}` : вернуть игроку с ником `{playername}` возможность писать в чат (только администраторы).
+ * - `/trade set {repeat} {you message}` : установить рекламное сообщение `{you message}`, автоматически отправляемое в торговый чат раз в `{repeat}` минут.
+ * - `/trade del` : удалить рекламное сообщение, автоматически отправляемое в торговый чат.
  * 
  * ## Файл конфигурации data/config/plugins/last/chat.json
- * - `locale` : Язык по умолчанию `ru_ru`
- * - `enable` : Включить/выключить плагин `true`/`false`
- * - `colors` : Настройка цветового оформления чата. Включает подпункты:
- *   - `name` : Цвет ника игроков. По умолчанию `gray`
- *   - `message` : Цвет сообщений. По умолчанию `white`
- *   - `none` : Цвет иконок статус которых не определен. По умолчанию `black`
- *   - `group` : Цвет иконок групповой принадлежности. По умолчанию `darkgray` если не переопределен в групповых настройках модуля `modules/last/permissions`
- * - `icons` : Настройка иконок по умолчанию. Включает подпункты:
- *   - `none` : Иконки статус которых не определен. По умолчанию `✖`
- * - `chats` : Натройки встроеных чатов:
- *   - `admin` : Админский чат:
- *     - `prefix` : Все сообщения начинающиеся с префикса будут отправлятся в админский чат. По умолчаню `@`
- *     - `icon_color` : Цвет иконки указывающей вид чата, По умолчанию `gold`
- *     - `groups` : Список групп, члены которых имеют доступ к этому чату. По умолчанию `{ "admin": true, "moderator": true }`
- *   - `trade` : Торговый чат:
- *     - `prefix` : Все сообщения начинающиеся с префикса будут отправлятся в админский чат. По умолчаню `$`
- *     - `icon_color` : Цвет иконки указывающей вид чата, По умолчанию `darkred`
- *   - `near` : Общий чат ближнего действия:
- *     - `text_color` : Цвет сообщений этого чата. По умолчанию `white`
- *     - `distance` : Максимальная дистанция до игроков, которым будут отправлятся сообщения этого чата. По умолчанию `500`.
- *   - `far` : Общий чат дальнего действия:
- *     - `prefix` : Все сообщения начинающиеся с префикса будут отправлятся в админский чат. По умолчаню `!`
- *     - `text_color` : Цвет сообщений этого чата. По умолчанию `darkgray`
- *     - `cost` : Стоимость сообщений в коинах. По умолчанию `30`
+ * ```js
+ * {
+ *     "locale": "ru_ru",                // Язык по умолчанию `ru_ru`
+ *     "enable": true,                   // Включить/выключить плагин `true`/`false`
+ *     "mute": {
+ *         "max": 60
+ *     },
+ *     "colors":{                        // Настройка цветового оформления чата. Включает подпункты:
+ *         "name":    "gray",            // Цвет ника игроков. По умолчанию `gray`
+ *         "message": "white",           // Цвет сообщений. По умолчанию `white`
+ *         "none":    "black",           // Цвет иконок статус которых не определен. По умолчанию `black`
+ *         "group":   "darkgray"         // Цвет иконок групповой принадлежности. По умолчанию `darkgray` если не переопределен в групповых настройках модуля `modules/last/permissions`
+ *     },
+ *     "icons":{                         // Настройка иконок по умолчанию. Включает подпункты:
+ *         "none":    "✖"                // Иконки статус которых не определен. По умолчанию `✖`
+ *     },
+ *     "chats": {                        // Натройки встроеных чатов:
+ *         "admin": {                    // Админский чат:
+ *             "prefix":     "@",        // Все сообщения начинающиеся с префикса будут отправлятся в админский чат. По умолчаню `@`
+ *             "icon_color": "gold",     // Цвет иконки указывающей вид чата, По умолчанию `gold`
+ *             "groups": {               // Список групп, члены которых имеют доступ к этому чату. По умолчанию `{ "admin": true, "moderator": true }`
+ *                 "admin":     true,
+ *                 "moderator": true
+ *             }
+ *         },
+ *         "trade": {                    // Торговый чат:
+ *             "prefix":     "$",        // Все сообщения начинающиеся с префикса будут отправлятся в админский чат. По умолчаню `$`
+ *             "icon_color": "darkred",  // Цвет иконки указывающей вид чата, По умолчанию `darkred`
+ *             "cost":       30          // Стоимость сообщений в коинах.
+ *         },
+ *         "near": {                     // Общий чат ближнего действия:
+ *             "prefix":     "~",        // Все сообщения начинающиеся с префикса будут отправлятся в админский чат. По умолчаню `~`
+ *             "text_color": "white",    // Цвет сообщений этого чата. По умолчанию `white`
+ *             "distance":   20000       // Максимальная дистанция до игроков, которым будут отправлятся сообщения этого чата. По умолчанию `500`.
+ *         },
+ *         "far": {                      // Общий чат дальнего действия:
+ *             "prefix":     "!",        // Все сообщения начинающиеся с префикса будут отправлятся в админский чат. По умолчаню `!`
+ *             "text_color": "darkgray", // Цвет сообщений этого чата. По умолчанию `darkgray`
+ *             "cost":       1           // Стоимость сообщений в коинах. По умолчанию `30`
+ *         }
+ *     },
+ *     "trade":{                         // Настройки торгового чата
+ *         "cost": 30000,                // Стоимость 1 рекламного сообщения повторяющегося через промежутки времени равные `last_chat.trade.min`. По умолчанию `30000`.
+ *         "min":  10                    // Минимальное время повторения рекламного сообщения. По умолчанию `10`.
+ *     }
+ * }
+ * ```
  * 
  * ## Настройки модуля modules/last/permissions
  * 
- * **Права доступа:**
- * - `last_chat.admin` : разрешение на использование таких команд как /mute и /unmute
+ * **Права доступа:** *могут быть выставленны персонально для разных групп и отдельных пользователей*
+ * ```js
+ * ...
+ * "permissions": {
+ *     "last_chat.admin":     false,     // разрешение на использование таких команд как /mute и /unmute
+ *     "last_chat.trade.set": false      // разрешение на размещение рекламы в торговом чате с помощью команды `/trade set ...`
+ * }
+ * ...
+ * ```
  * 
  * **Параметры:** *могут быть выставленны персонально для разных групп и отдельных пользователей*
- * - `last_chat.mute.maxtime` : максимальное время на которое можно лишить игрока право писать в чат.
- * - `last_chat.group` : Настройка иконки для группы. Включает подпункты:
- *   - `icon` : Иконка для группы.
- *   - `color` : Цвет иконки. Может принимать следующие значения:
- *     - `black`
- *     - `blue`
- *     - `darkgreen`
- *     - `darkaqua`
- *     - `darkred`
- *     - `purple`
- *     - `gold`
- *     - `gray`
- *     - `darkgray`
- *     - `indigo`
- *     - `brightgreen`
- *     - `aqua`
- *     - `red`
- *     - `pink`
- *     - `yellow`
- *     - `white`
+ * ```js
+ * ...
+ * "options": {
+ *     "last_chat.mute.maxtime": 60,     // максимальное время в минутах на которое можно лишить игрока право писать в чат.
+ *     "last_chat.group": {              // Настройка иконки для группы. Включает подпункты:
+ *         "icon":  "Ⓐ",                 // Иконка для группы.
+ *         "color": "gold"               // Цвет иконки. Может принимать следующие значения:  
+ *                                       // black, blue, darkgreen, darkaqua, darkred, purple, gold, gray, darkgray, indigo, brightgreen, aqua, red, pink, yellow, white
+ *     },
+ *     "last_chat.trade.min":  30,       // Минимальное время повторения рекламного сообщения в минутах.
+ *     "last_chat.trade.cost": 3000      // Стоимость 1 рекламного сообщения повторяющегося через промежутки времени равные last_chat.trade.min.
+ * }
+ * ...
+ * ```
  * 
  * ## Важно
  * Плагин имеет програмный API для регистрации новых чатов. Новые чаты автоматически будут доступны в команде `/chat select {chatname}`.
@@ -96,10 +121,9 @@
  * > - modules/last/locales     - модуль локализации
  * > - modules/last/completer   - модуль регистрации команд /jsp commandname как глобальных команд /commandname с возможностью автодополнения
  * > - modules/last/permissions - модуль управления правами доступа к функционалц прагинов для пользователей и групп пользователей
- * > - modules/last/time_tools  - библиотека функций для работы со временем
- * @module last/last_chat
- *
- * @example
+ * > - modules/last/timetools   - библиотека функций для работы со временем
+ * 
+ * @module last/last_chat *
  *
  */
 
@@ -120,11 +144,12 @@ var permissions = require('last/permissions');
 // загружаем config
 var config = scload("./scriptcraft/data/config/plugins/last/chat.json");
 if(!config.enable)
-  return console.log("plugins/last/last_party DISABLED");;
+  return console.log("plugins/last/last_chat DISABLED");;
 
 // загружаем локаль
 var locale = locales.init("./scriptcraft/data/locales/plugins/last/", "last_chat", config.locale||"ru_ru");
 
+var trade_store = persist('data/plugins/last/trade', {});
 
 
 var name_color = ""[config.colors.name]();
@@ -147,15 +172,15 @@ function registerChat(name, key, description, callback){
   chats.byName[name] = chats.byKey[key];
 }
 
-events.playerChat(function(event){
+
+events.playerChat(playerChatHundler);
+function playerChatHundler(event){
   var player = event.getPlayer();
   var message = event.getMessage();
   var permission = permissions.getUserPermissions(player);
   var group_icon = permission.getParam("last_chat.group")||{};
   group_icon.color = group_icon.color||config.colors.group;
   group_icon.icon = group_icon.icon||config.icons.none;  
-  
-
   
   var msg = {
     icons: [
@@ -165,7 +190,7 @@ events.playerChat(function(event){
       //✖✕
     ],
     player: {
-      name: player.name,
+      name: player.name||player,
       color: name_color
     },
     message: {
@@ -176,6 +201,10 @@ events.playerChat(function(event){
     sender: player,
     current: "near"
   };
+
+  var test = utils.player(player);
+  if( !test ) 
+    msg.player.name = "offline|"+msg.player.name;
 
 
   if( event.isAsynchronous() )
@@ -214,7 +243,7 @@ events.playerChat(function(event){
   var chat = chats.byName[chatname];
   msg.current = chatname;
   return chat.callback(msg);
-});
+}
 
 
 exports.broadcastMsg = broadcastMsg;
@@ -255,6 +284,8 @@ function broadcastMsg(msg, players){
     if( !muted[msg.current] )
       echo (player, text );
   });
+  var prefix = config.chats[msg.current].prefix;
+  console.log( "<" + msg.player.name + "> " + (msg.chat?msg.chat.icon:"") + prefix+" " + msg.message.text );
 }
 
 
@@ -364,7 +395,7 @@ registerChat("near", config.chats.near.prefix, "Общий чат ближнег
 
 
 /**
- * Добавляет раздел "last_chestshop" в data игрока
+ * Добавляет раздел "last_chat" в data игрока
  * в data/last_users-store.json  
  */
 eventex.events.on("onPlayerJoin", function ( event ) {
@@ -586,4 +617,81 @@ var point_unmute = completer.addPlayerCommand('unmute',undefined,undefined,"last
 
 
 
+var point_trade = completer.addPlayerCommand('trade');
+    point_trade.addComplete('set')
+               .addComplete('@re/\\d+/',cmd_trade_set);
+    point_trade.addComplete('del',cmd_trade_del);
 
+
+function cmd_trade_set( params, sender ) {
+  var permission = permissions.getUserPermissions(sender);
+  if ( !permission.isPermission("last_chat.trade.set") )
+    return locale.warn(sender, "${msg.no_trade_cmd}" );
+
+  // var user = users.getPlayer(sender);
+  // if( !user || !user.data || !user.data["last_chat"])
+  //   return locale.warn( player, "${msg.no_userdata}");
+  // var data = user.data["last_chat"];
+
+  params.shift();
+  params.shift();
+  var min = permission.getParam("last_chat.trade.min")||config.trade.min||10;
+  var time = Math.abs(economy.toInt( params.shift()||min ))||min;
+  if( time<min )
+    time = min;
+
+  var msg = params.join(" ");
+  var cost = permission.getParam("last_chat.trade.cost")||config.trade.cost;
+  
+  var calc = Math.round(cost*min/time)||1;
+  var UUID = ''+sender.getUniqueId();
+  
+  trade_store[UUID] = {
+    player: sender.name,
+    UUID: UUID,
+    msg: msg,
+    time: time,
+    count: 1,
+    cost: calc
+  };
+  locale.warn(sender, "${msg.trade_msg_success}", trade_store[UUID] );
+}
+
+function cmd_trade_del( params, sender ) {
+  var UUID = ''+sender.getUniqueId();
+  
+  delete trade_store[UUID];
+  locale.warn(sender, "${msg.trade_del_msg_success}");
+}
+
+function trade_handler( ) {
+  //console.log("!!!!!!!!!!!!!!!!!!! trade_handler");
+  for( var UUID in trade_store ){
+    var trade = trade_store[UUID];
+    trade.count--;
+
+    if(trade.count>0)
+      continue;
+
+    trade.count = trade.time;
+
+    var money = economy.getMoney(trade.player);
+    if( money < trade.cost )
+      continue;
+
+
+    var isSuccess = economy.addMoney(trade.player,0-trade.cost);
+    if(!isSuccess)
+      continue;
+
+    var event = {};
+    event.getPlayer = function(){return trade.player };
+    event.getMessage = function(){return "$"+trade.msg};
+    event.isAsynchronous = function(){return false};
+    event.setCancelled = function(){};
+    playerChatHundler(event);
+  }
+}
+
+setInterval(trade_handler,60000);
+//timetools.repeatCallAfterTime();

@@ -29,7 +29,7 @@
  * > - modules/last/locales     - модуль локализации
  * > - modules/last/permissions - модуль управления правами доступа к функционалц прагинов для пользователей и групп пользователей
  *
- * @module last/completer
+ * @module modules/last/completer
  *
  * @example
  * //   подключаем модуль регистрации и автодополнения команд
@@ -240,7 +240,7 @@ exports.addGlobalCommand = function(comandName,handler,completer,permission) {
 };
 
 /**
- * Функция производит регистрацию псевдонима команды как клиентской (работает из чата игры).
+ * Функция производит регистрацию псевдонима команды как серверной (работает из консоли сервера).
  * @param   {string}    comandName  название псевдонима. например "/warp"/.
  * @param   {function}  handler     функция-обработчик для данного участка команды (необязательный параметр)
  * @param   {function}  completer   функция формирующая дополнительный список автодополнений для следующего участка команды (необязательный параметр)
@@ -254,7 +254,7 @@ exports.addConsoleCommand = function(comandName,handler,completer,permission) {
 };
 
 /**
- * Функция производит регистрацию псевдонима команды как серверной (работает из консоли сервера).
+ * Функция производит регистрацию псевдонима команды как клиентской (работает из чата игры).
  * @param   {string}    comandName  название псевдонима. например "/warp"/.
  * @param   {function}  handler     функция-обработчик для данного участка команды (необязательный параметр)
  * @param   {function}  completer   функция формирующая дополнительный список автодополнений для следующего участка команды (необязательный параметр)
@@ -332,14 +332,14 @@ Completer.prototype.setCompleter = function(completer) {
  * @param  {array}  patern_list список шаблонов содержащий строковые значения, которые будут проверены на совпадение с вводимыми символами.
  * @return {object} ассоциативный массив содержащий в качестве ключей возможные значения для автодополнения.
  */
-Completer.prototype.getCompletions = function(sender, patern_list,parent_patern) {
+Completer.prototype.getCompletions = function(sender, all_paterns, patern_list, parent_patern) {
   var patern = patern_list.shift();
   var result = {};
   if(patern_list.length){
     var key = _compare_patern(patern, this.completes);
     //console.log("!!!!!!!!!!! key "+key);
     if( key ){
-      var completions = this.completes[key].getCompletions(sender,patern_list,patern);
+      var completions = this.completes[key].getCompletions(sender, all_paterns, patern_list , patern );
       result = _collect(result,completions);
     }
   }else{
@@ -347,7 +347,7 @@ Completer.prototype.getCompletions = function(sender, patern_list,parent_patern)
     result = this.findCompletions(sender, patern);
     if(this.findCustomCompletions){
       var player = utils.player( sender );
-      var custom_list = this.findCustomCompletions(player,parent_patern);
+      var custom_list = this.findCustomCompletions(player, parent_patern, all_paterns);
       result = _collect( result, _findCompletions(patern, custom_list,'',sender) );
     }
   }
@@ -514,6 +514,7 @@ function _tabComplete(event){
   var cmd_list = (''+buffer).split(/\s+/);
   if( !cmd_list.length )
      return;
+  var all_paterns = cmd_list.slice();
 
   var prefix = '';
 
@@ -531,7 +532,7 @@ function _tabComplete(event){
   }else{
     if( !commands[patern] )
       return;
-    completions_list = commands[patern].getCompletions(sender,cmd_list);
+    completions_list = commands[patern].getCompletions(sender, all_paterns, cmd_list);
   }
 
 
@@ -557,7 +558,7 @@ function _tabComplete(event){
  * @return {object} одноуровневый ассоциативный массив, ключами которого являются совпавшие с шаблоном варианты автодополнений
  */
 function _findCompletions(patern,hashArray,prefix,sender){
-  console.log("_findCompletions");
+  //console.log("_findCompletions");
   prefix=prefix||'';
   var result = {};
   var re_patern = new RegExp('^'+patern,'i');
@@ -661,7 +662,7 @@ function _compare_user(user){
  * @return {string} строка содержащяя пепрвый совравший с шаблоном вариант автодополнения
  */
 function _compare_patern(patern, list){
-  console.log("_compare_patern");
+  //console.log("_compare_patern");
   var result = false;
   for( var c in list){
     var re_test = new RegExp('\^@re\/(.*)\/');

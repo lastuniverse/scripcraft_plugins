@@ -12,11 +12,8 @@
  * - modules/last/users - модуль для централизованного хранения данных пользователя с кэшированием для более быстрого доступа
  * - modules/last/locales     - модуль локализации
  *
- * @module last/paty
+ * @module modules/last/paty
  *
- * @example
- * //   подключаем модуль
- * var  containers = require('last/party');
  *
  */
 
@@ -33,7 +30,7 @@ var locales = require('last/locales');
 // загружаем config
 var config = scload("./scriptcraft/data/config/modules/last/party.json");
 if(!config.enable)
-  return console.log("plugins/last/last_chestshop  DISABLED");;
+  return console.log("plugins/last/last_party DISABLED");;
 
 
 // загружаем локаль

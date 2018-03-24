@@ -79,6 +79,17 @@ var eventex = require('last/eventex');
 
 var permissions = require('last/permissions');
 var completer = require('last/completer');
+var locales = require('last/locales');
+
+// загружаем config
+var config = scload("./scriptcraft/data/config/plugins/last/warp.json");
+if(!config.enable)
+  return console.log("plugins/last/last_warp DISABLED");;
+
+
+// загружаем локаль
+var locale = locales.init("./scriptcraft/data/locales/plugins/last/", "last_warp", config.locale||"ru_ru");
+
 
 var store = persist('data/plugins/last/warps', {
     warps: { },
@@ -144,9 +155,9 @@ signs.events.onClickSignEvent("onClickWarp",function (event){
   if( action == 'RIGHT_CLICK_BLOCK'){
     var permission = permissions.getUserPermissions(player);
     if ( !permission.isPermission("last_warp.sign.use") ){
-      echo( player, redtext + "вам не разрешено перемещятся на варпы через таблички!");
+      locale.warn(player, "${msg.sign_deny}" );
       if ( permission.isPermission("last_warp.warp") )
-        echo( player, redtext + "Но вы все еще можете перемещятся командой /warp {warpname}!");
+        locale.warn(player, "${msg.warp_allow}" );
       return;
     }
     warps.go( event.info.signTarget, player);
@@ -176,17 +187,17 @@ signs.events.onSignPlace(function(event){
 var test = {
   warp: function( warpname, sender ) {
     if( !warpname ){
-      echo( sender, redtext + warpname + " не допустимое имя варпа 1");
+      locale.warn(sender, "${msg.warp_name_error} 1", {name: "undefined"});
       return false;
     }
 
     if( typeof warpname != 'string'){
-      echo( sender, redtext + warpname + " не допустимое имя варпа 2 "+typeof warpname);
+      locale.warn(sender, "${msg.warp_name_error} 2", {name: typeof warpname});
       return false;
     }
 
     if( warpname.length < 2){
-      echo( sender, redtext + warpname + " не допустимое имя варпа 3");
+      locale.warn(sender, "${msg.warp_name_error} 3", {name: warpname});
       return false;
     }
 
@@ -195,7 +206,7 @@ var test = {
 
   warp_present: function( warpname, sender) {
     if( store.warps[warpname] ){
-      echo( sender, redtext + "варп " + warpname + " уже существует");
+      locale.warn(sender, "${msg.warp_name_exist}", {name: warpname});
       return false;
     }
 
@@ -204,7 +215,7 @@ var test = {
 
   warp_notpresent: function( warpname, sender) {
     if( !store.warps[warpname] ){
-      echo( sender, redtext + "варп " + warpname + " не существует");
+      locale.warn(sender, "${msg.warp_name_epsent}", {name: warpname});
       return false;
     }
 
@@ -213,7 +224,7 @@ var test = {
 
   warp_public: function( warpname, sender) {
     if( !store.warps[warpname].public ){
-      echo( sender, redtext + "варп " + warpname + " закрыт для посещений");
+      locale.warn(sender, "${msg.warp_name_closed}", {name: warpname});
       return false;
     }
 
@@ -222,7 +233,7 @@ var test = {
 
   player: function( sender ) {
     if( !sender ){
-      console.log( "эту команду может использовать только игрок");
+      locale.warn(sender, "${msg.not_player}");
       return false;
     }
     return true;
@@ -231,7 +242,7 @@ var test = {
   owner: function( warpname, sender ) {
     var UUID = sender.getUniqueId();
     if( store.warps[warpname].UUID != UUID ){
-      echo( sender, redtext + "варп " + warpname + " вам не принадлежит");
+      locale.warn(sender, "${msg.not_owner}", {name: warpname});
       return false;
     }
     return true;
@@ -241,22 +252,6 @@ var test = {
 
 
 var warps = { 
-  help: function( ) {
-    return [
-      /* basic functions */
-      '/warp set {warpname} : установить точку варпа с именем {warpname}',
-      '/warp {warpname} : переместится на варп с именем {warpname}',
-      '/warp public {warpname}: дать разрешение посещать ваш варп с именем {warpname}',
-      '/warp private {warpname}: запретить всем посещать ваш варп с именем {warpname}',
-
-      /* информационные команды */
-      '/warp : показать список доступных варпов',
-
-      /* команды администраторов */
-      '/warp listall : показать список всех варпов',
-      '/warp remove {warpname} : удалить точку варпа с именем {warpname}'
-    ];
-  },
   /* ========================================================================
    basic functions
    ======================================================================== */
@@ -283,7 +278,7 @@ var warps = {
     loc = store.warps[warpname].loc;
 
     if ( !loc )
-      return echo( sender, redtext + "данные о варпе " + warpname + " повреждены");
+      return locale.warn(sender, "${msg.warp_data_error}", {name: warpname});
 
     var warpLoc = utils.locationFromJSON( loc );
 
@@ -297,6 +292,7 @@ var warps = {
   },
 
   set: function( warpname, sender ) {
+    var permission = permissions.getUserPermissions(sender);
     if( !test.player(sender) )
       return;
 
@@ -318,13 +314,12 @@ var warps = {
       }
 
 
-    var permission = permissions.getUserPermissions(sender);
+    
+    
     var warp_max = permission.getParam("last_warp.max")
-    if( store.players[UUID].count >= warp_max  ){
-      echo( sender, redtext + sender.name + " вы уже зарегестрировали мацсимально допустимое количество варпов. Вам доступно всего "+warp_max+" варпов для установки");
-      return;
-    }
-
+    if( store.players[UUID].count >= warp_max  )
+      return locale.warn(sender, "${msg.warp_reg_limit}", {limit: warp_max});
+   
     store.warps[warpname] = {}
     store.warps[warpname].UUID = ''+UUID;
     store.warps[warpname].owner = sender.name;
@@ -332,8 +327,7 @@ var warps = {
     store.warps[warpname].loc = utils.locationToJSON( loc );
 
     store.players[UUID].count += 1;
-
-    echo( sender, redtext + "варп " + warpname + " успешно зарегестрирован");
+    locale.warn(sender, "${msg.warp_reg_success}", {name: warpname});
   },
 
   remove: function( warpname, sender ) {
@@ -343,15 +337,15 @@ var warps = {
     var loc = sender.location;
 
     if( !test.warp(warpname, sender) )
-      return;
+      return locale.warn(sender, "${msg.warp_name_epsent}", {name: warpname});
 
     warpname = warpname.toLowerCase();
 
     if( !test.warp_notpresent(warpname, sender) )
-      return;
+      return locale.warn(sender, "${msg.warp_name_epsent}", {name: warpname});
 
     if( !test.owner(warpname, sender) )
-      return;
+      return locale.warn(sender, "${msg.not_owner}", {name: warpname});
 
     var UUID = sender.getUniqueId();
 
@@ -371,7 +365,7 @@ var warps = {
 
     delete store.warps[warpname];
 
-    echo( sender, redtext + "варп " + warpname + " успешно удален");
+    locale.warn(sender, "${msg.warp_del_success}", {name: warpname});
   },
 
   /* ========================================================================
@@ -396,8 +390,7 @@ var warps = {
       return;
 
     store.warps[warpname].public = true;
-
-    echo( sender, redtext + "варп " + warpname + " открыт для публичного доступа");
+    locale.warn(sender, "${msg.warp_now_opened}", {name: warpname});
   },
 
   close: function( warpname, sender ) {
@@ -418,8 +411,7 @@ var warps = {
       return;
 
     store.warps[warpname].public = false;
-    
-    echo( sender, redtext + "варп " + warpname + " теперь закрыт для публичного доступа");
+    locale.warn(sender, "${msg.warp_now_closed}", {name: warpname});
   },
   
   /* 
@@ -471,10 +463,11 @@ var optionList = [];
 // permission: last_warp.warp
 function cmd_warp( params , sender) {
   var permission = permissions.getUserPermissions(sender);
-  if ( !permission.isPermission("last_warp.warp") ){
-    echo( sender, redtext + "вам не разрешено использовать эту команду");
-    if ( permission.isPermission("last_warp.sign.use") )
-      echo( sender, redtext + "Но вы все еще можете перемещятся на варпы через таблички!");
+
+  if ( !permission || !permission.isPermission || !permission.isPermission("last_warp.warp") ){
+    locale.warn(sender, "${msg.warp_deny}");
+    if ( permission && permission.isPermission && permission.isPermission("last_warp.sign.use") )
+      locale.warn(sender, "${msg.sign_allow}");
     return;
   }
   warps.go( params[1], sender );
@@ -482,17 +475,18 @@ function cmd_warp( params , sender) {
 
 // обработчик команды /warp help
 function cmd_warp_help(params , sender){
-  echo( sender,  redtext + warps.help().join("/n") );
+  locale.help( sender,  "${help}" );
 };
 
 // обработчик команды /warp set
 // permission: last_warp.manage
 function cmd_warp_set(params , sender){
   var permission = permissions.getUserPermissions(sender);
-  if ( !permission.isPermission("last_warp.manage") )
-    return echo( sender, redtext + "вам не разрешено использовать эту команду");
 
-  warps.set( params[2], sender ); 
+  if ( !permission.isPermission("last_warp.manage") )
+    return locale.warn(sender, "${msg.warp_cmd_deny}");
+
+  warps.set( params[2], sender );
 };
 
 // обработчик команды /warp remove
@@ -500,7 +494,7 @@ function cmd_warp_set(params , sender){
 function cmd_warp_remove(params , sender){
   var permission = permissions.getUserPermissions(sender);
   if ( !permission.isPermission("last_warp.manage") )
-    return echo( sender, redtext + "вам не разрешено использовать эту команду");
+    return locale.warn(sender, "${msg.warp_cmd_deny}");
 
   warps.remove( params[2], sender );
 };
@@ -510,7 +504,7 @@ function cmd_warp_remove(params , sender){
 function cmd_warp_public(params , sender){
   var permission = permissions.getUserPermissions(sender);
   if ( !permission.isPermission("last_warp.access") )
-    return echo( sender, redtext + "вам не разрешено использовать эту команду");
+    return locale.warn(sender, "${msg.warp_cmd_deny}");
 
   warps.open( params[2], sender );
 };
@@ -520,7 +514,7 @@ function cmd_warp_public(params , sender){
 function cmd_warp_private(params , sender){
   var permission = permissions.getUserPermissions(sender);
   if ( !permission.isPermission("last_warp.access") )
-    return echo( sender, redtext + "вам не разрешено использовать эту команду");
+    return locale.warn(sender, "${msg.warp_cmd_deny}");
 
   warps.close( params[2], sender );
 };
@@ -530,15 +524,12 @@ function cmd_warp_private(params , sender){
 function cmd_warp_list(params , sender){
   var permission = permissions.getUserPermissions(sender);
   if ( !permission.isPermission("last_warp.warp") && !permission.isPermission("last_warp.sign.place"))
-    return echo( sender, redtext + "вам не разрешено использовать эту команду");
+    return locale.warn(sender, "${msg.warp_cmd_deny}");
 
   var opened = Object.keys(warps.list(sender)).sort();
-  if ( opened.length == 0 ) {
-    echo( sender, redtext + "в настоящее время нет ни одного варпа открытого для посещений");
-    return;
-  } else {
-    echo( sender, redtext + "вы можете посетить эти варпы: " + opened.join(" "));
-  }
+  if ( opened.length == 0 )
+    return locale.warn(sender, "${msg.warp_epsent_opened}");
+  locale.warn(sender, "${msg.warp_opened}" + opened.join(" "));
 };
 
 
@@ -547,15 +538,12 @@ function cmd_warp_list(params , sender){
 function cmd_warp_listall(params , sender){
   var permission = permissions.getUserPermissions(sender);
   if ( !permission.isPermission("last_warp.moderator") )
-    return echo( sender, redtext + "вам не разрешено использовать эту команду");
+    return locale.warn(sender, "${msg.warp_cmd_deny}");
 
   var opened = Object.keys(warps.listall(sender)).sort();
-  if ( opened.length == 0 ) {
-    echo( sender, redtext + "в настоящее время не зарегестрированно ни одного варпа");
-    return;
-  } else {
-    echo( sender, redtext + "зарегестрированние варпы: " + opened.join(" "));
-  }
+  if ( opened.length == 0 )
+    return locale.warn(sender, "${msg.warp_epsent_registered}");
+  locale.warn(sender, "${msg.warp_registered}" + opened.join(" "));
 }
 
 

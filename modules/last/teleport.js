@@ -73,6 +73,23 @@ function teleport(player,target_loc,sender){
     return true;
 }
 
+// обработчик всех видов телепортации кроме системных
+// permission: last_teleport.teleport (пока отсутствутет)
+// permission param: last_teleport.cost 
+exports.freeTeleport = freeTeleport;
+function freeTeleport(player,target_loc,sender){
+    if(!sender)
+        sender = player;
+
+    player = utils.player(player);
+
+    // var ploc = utils.locationToJSON( player.location );
+    // var tloc = utils.locationToJSON( target_loc );
+
+   
+    player.teleport(target_loc, bkTeleportCause.PLUGIN);
+    return true;
+}
 
 
 // var permission = permissions.getUserPermissions(player);
@@ -103,7 +120,8 @@ function teleportToUser(params,sender){
     source = utils.player(source);
     target = utils.player(target);
 
-
+    if(!target )
+        return;
 
     teleport(source,target.location,sender);
 }

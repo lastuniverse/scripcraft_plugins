@@ -4,7 +4,7 @@
  */
 
 /**
- * ### Модуль для создания различных разрешений для пользователей и групп, и отслеживания за их выполнением
+ * ### Модуль для создания различных разрешений и настроек для пользователей и групп, и отслеживания их выполнения
  * 
  * Данный модуль содержит в себе основные функции для проверки предустановленных в файлах концигурации разрещений и получения заданных тамже параметров для плагинов.
  * По сути не в полной мере дублирует функционал плагина PermissionEx. Разработана из-за невозможности получить доступ к данным PermissionEx.
@@ -12,8 +12,8 @@
  * В целях ускорения работы при первом вызове, модуль загружает данные из файлов конфигурации и разворативает их в удобный для машинной обработки формат.
  * 
  * **Файлы конфигурации:**
- * - minecraft_server_folder/scriptcraft/config/last_groups.json - настройки групп пользователей.
- * - minecraft_server_folder/scriptcraft/config/last_users.json - индивидуальные настройки пользователей.
+ * - minecraft_server_folder/scriptcraft/data/config/modules/last/permissions/groups.json - настройки групп пользователей.
+ * - minecraft_server_folder/scriptcraft/data/config/modules/last/permissions/users.json - индивидуальные настройки пользователей.
  *
  * **секции и параметры фала конфигурации групп:**
  * - isEnable [true|false] - если установленно в false, модуль игнорирует эту группу как будто ее нет в файле коныигурации.
@@ -80,7 +80,7 @@
  *      utils - стандартный модуль ScriptCraft
  *      
  * 
- * @module last/permission
+ * @module modules/last/permission
  */
 
 
@@ -130,21 +130,37 @@ function addUser(user){
 		};
 		data.groups[DEFAULT_GROUP_NAME] = true;
 		users[UUID] = data;
-		scsave(users,"./scriptcraft/config/modules/last/permissions/last_users.json");
+		scsave(users,"./scriptcraft/data/config/modules/last/permissions/users.json");
 	}
 }
 
+/**
+ * Функция возвращает объект класса Permission, содержащий разрешения и параметры пользователя (групповые и индивидуальные), а также функции их проверки и получения
+ * @param  {object} user объект, содержащий данные пользователя
+ * @return {object}      возвращает объект класса Permission, содержащий разрешения и параметры пользователя (групповые и индивидуальные), а также функции их проверки и получения
+ */
 exports.getUserPermissions = getUserPermissions;
 function getUserPermissions(user){
 	var player = utils.player(user);
-	var UUID = player.getUniqueId();
+	var UUID = "";
+
+	if(player)
+		UUID = player.getUniqueId();
+
+	if(!player)
+		player = user;
+
+	if( !UUID )
+		Users.getUUIDByName(user);
+
 	if( !permissions.players[UUID] )
 		permissions.players[UUID] = {
-			permissions: calcUserPermissions(player),
-			options: calcUserOptions(player)
+			permissions: calcUserPermissions(UUID),
+			options: calcUserOptions(UUID)
 		};
+	//console.log("getUserPermissions:\n" + JSON.stringify(permissions.players[UUID]) );
 
-	//scsave(permissions.players[UUID], './scriptcraft/config/test_last_permissions.json');
+	//scsave(permissions.players[UUID], './scriptcraft/data/config/modules/last/permissions/test.json);
 
 	//return permissions.players[UUID];
 	var result = {};
@@ -212,7 +228,7 @@ function getUserPriority(username){
 
 
 function exptractPermissions(){
-	console.log("**********************************************************");
+	//console.log("**********************************************************");
 	for(var group_name in groups){
 		if( groups[group_name].isEnable ){
 			if( groups[group_name].default ) DEFAULT_GROUP_NAME = group_name;
@@ -220,7 +236,7 @@ function exptractPermissions(){
 		}
 
 	}	
-	//scsave(permissions.groups, './scriptcraft/config/last_permissions.json');
+	//scsave(permissions.groups, './scriptcraft/data/config/modules/last/permissions/groups.json');
 	
 };
 
@@ -267,9 +283,7 @@ function getUserParam(UUID,param_name){
 	return 0;
 };
 
-function calcUserOptions(player){
-	var UUID = player.getUniqueId();
-
+function calcUserOptions(UUID){
 	if( !users[UUID] )
 		return groups[DEFAULT_GROUP_NAME].options;
 
@@ -341,8 +355,8 @@ function getUserPermission(UUID,permission){
 	return result;
 };
 
-function calcUserPermissions(player){
-	var UUID = player.getUniqueId();
+function calcUserPermissions(UUID){
+
 	var user_permissions = {};
 	
 	user_permissions = _merge(user_permissions, permissions.groups[DEFAULT_GROUP_NAME]);

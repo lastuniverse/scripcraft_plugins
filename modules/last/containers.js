@@ -1,9 +1,13 @@
 /**
- * @author Surmanidze Roman aka lastuniverse
+ * @author Surmanidze Roman aka lastuniverse <lastuniverse@mail.ru>
+ * 
+ * @copyright Surmanidze Roman 2017
+ * 
  * @license MIT
- */
-
-/**
+ * 
+ * @external Player
+ * @see http://example.org/docs/security
+ * 
  * ### Интерфейс для регистрации скилов и управления ими
  * 
  * Данный модуль содержит в себе класс для объектов контейнеров и класс для объектов добавляемых в контейнер. 
@@ -15,7 +19,7 @@
  * - modules/last/eventemmiter - собственно eventemmiter
  *      
  * 
- * @module last/containers
+ * @module modules/last/containers
  *
  * @example
  * //   подключаем модуль
@@ -139,11 +143,12 @@ eventex.events.on("onPlayerJoin", function ( event ) {
 
 /**
  * Конструктор класса Baseclass.
+ * @type Baseclass
  * @constructor
+ * @classdesc Это базовый класс для классов Container и Subobject
  * @param   {string}  containerName  название создаваемого контейнера
  * от этого класса наследуются классы Container и Subobject
  */
-
 function Baseclass() {
 	this.name = "unnamed";
 	this.class = "baseclass";
@@ -172,14 +177,12 @@ Baseclass.prototype.setMethod = function(methodName,callback) {
 
 		// вызываем все зарегестрированные обработчики события вызова метода с названием переданном в methodName
 		self.events.emit(evenName, event);
-
-		return result;
 	}
 };
 
 /**
  * Функция делает ссылки на методы прараметры к себе в this
- * @param   {object}  skillMethods  объект содержащий необходимые методы и параметры
+ * @param   {Subobject}  skillMethods  объект содержащий необходимые методы и параметры
  */
 Baseclass.prototype.mergeFrom = function(methods) {
 	// Добавляем методы если были переданы
@@ -198,8 +201,8 @@ Baseclass.prototype.mergeFrom = function(methods) {
 
 /**
  * Функция еммитирует событие для слушателей контейнера и объекта
- * @param   {string|array}	eventName	Имя события
- * @param   {object} 		event  		Данные о событии
+ * @param   {(string|string[])}	eventName	Имя события
+ * @param   {Event} 		event  		Данные о событии
  */
 Baseclass.prototype.emit = function( eventName, event ){
 	var eventList = eventName;
@@ -246,23 +249,23 @@ var containers = {};
 /**
  * Функция производит создание контейнера и его регистрацию 
  * @param   {string}    containerName  название контейнера
- * @return  {object}    Экземпляр класа Container содержащий методы для работы с ...
+ * @return  {Container}    Экземпляр класа Container содержащий методы для работы с ...
  */
-exports.CreateContainer = CreateContainer;
 function CreateContainer(containerName) {
 	var container = new Container(containerName);
 	containers[containerName] = container;
 	return container;
 };
+exports.CreateContainer = CreateContainer;
 
 
 /**
  * Конструктор класса Container.
+ * @type Container
  * @constructor
+ * @augments Baseclass
  * @param   {string}  containerName  название создаваемого контейнера
  */
-
-exports.Container = Container;
 function Container(containerName) {
 	// далее пересохраняем в объект данные о названии контейнера
 	this.name = containerName;
@@ -275,6 +278,7 @@ function Container(containerName) {
 
 	this.events = new Eventemitter();
 };
+exports.Container = Container;
 
 // наследуемся от Baseclass
 Container.prototype = new Baseclass();
@@ -282,7 +286,7 @@ Container.prototype = new Baseclass();
 /**
  * Функция регистрации подобъекта
  * @param   {string}  subObjName Название регистрируемого объекта
- * @param   {object}  subObject  Регистрируемый в контейнере объект
+ * @param   {Subobject}  subObject  Регистрируемый в контейнере объект
  * @return  {boolean}      Возвращает результат выполнения, или false если обработчик не был определен методом setMethod(...)
  */
 Container.prototype.register = function(subObjName, subObject) {
@@ -296,7 +300,7 @@ Container.prototype.register = function(subObjName, subObject) {
 /**
  * Функция производит поиск подобъекта по его имени
  * @param   {string}  subObjName Название регистрируемого объекта
- * @return  {boolean|object}     Возвращает объект соответствующий subObjName, или false если объекта с таким именем не зарегестрировано
+ * @return  {(boolean|Subobject)}     Возвращает объект соответствующий subObjName, или false если объекта с таким именем не зарегестрировано
  */
 Container.prototype.getObjectByName = function( subObjName ){
 	if( !this.list[subObjName] )
@@ -307,7 +311,7 @@ Container.prototype.getObjectByName = function( subObjName ){
 /**
  * Функция производит поиск подобъекта по его имени и удаляет его
  * @param   {string}  subObjName Название регистрируемого объекта
- * @return  {boolean|object}     Возвращает true если объект удален, или false если объекта с таким именем не зарегестрировано
+ * @return  {boolean}     Возвращает true если объект удален, или false если объекта с таким именем не зарегестрировано
  */
 Container.prototype.removeObjectByName = function( subObjName ){
 	if( !this.list[subObjName] )
@@ -319,8 +323,8 @@ Container.prototype.removeObjectByName = function( subObjName ){
 
 /**
  * Функция производит поиск всех подобъектов, примененных к пользователю
- * @param   {string|object}  user  	Имя пользователя или объект содержащий пользователя
- * @return  {boolean|object}  		Возвращает ассоциативный массив найденых объектов, или false если объектов не найдено
+ * @param   {(string|Player)}  user  	Имя пользователя или объект содержащий пользователя
+ * @return  {(boolean|Subobject[])}  		Возвращает ассоциативный массив найденых объектов, или false если объектов не найдено
  */
 Container.prototype.getObjectsForUser = function( user ){
 	var result = {};
@@ -339,8 +343,8 @@ Container.prototype.getObjectsForUser = function( user ){
 
 /**
  * Функция возвращает ассоциативный массив содержащий все включенные зарегестрированные подобъекты
- * @param   {string|object}  user  	Имя пользователя или объект содержащий пользователя
- * @return  {boolean|object}  		Возвращает ассоциативный массив найденых объектов, или false если объектов не найдено
+ * @param   {(string|Player)}  user  	Имя пользователя или объект содержащий пользователя
+ * @return  {(boolean|Subobject[])}  		Возвращает ассоциативный массив найденых объектов, или false если объектов не найдено
  */
 Container.prototype.getAllObjects = function(){
 	var result = {};
@@ -354,8 +358,8 @@ Container.prototype.getAllObjects = function(){
 
 /**
  * Функция производит поиск всех онлайн игроков, к котороым примененн объект
- * @param   {string|object}  subObject	Название объекта или сам объект
- * @return  {boolean|object}    		Возвращает ассоциативный массив найденых онлайн пользователей, или false если пользователей не найдено
+ * @param   {(string|Player)}  subObject	Название объекта или сам объект
+ * @return  {(boolean|Player[])}    		Возвращает ассоциативный массив найденых онлайн пользователей, или false если пользователей не найдено
  */
 Container.prototype.getUsersForObject = function( subObject ){
 	var obj = subObject;
@@ -379,10 +383,9 @@ Container.prototype.getUsersForObject = function( subObject ){
 
 /**
  * Функция производит создание контейнера и его регистрацию 
- * @param   {string|object}    containerName  название контейнера или объект контейнера
- * @return  {object}    Экземпляр класа Container содержащий методы для работы с ...
+ * @param   {(string|Container)}    containerName  название контейнера или объект контейнера
+ * @return  {(boolean|Container)}    Экземпляр класа Container содержащий методы для работы с ...
  */
-exports.CreateSubObject = CreateSubObject;
 function CreateSubObject(containerName,subObjectName) {
 	container = containerName;
 	if( typeof container === "string" )
@@ -394,16 +397,17 @@ function CreateSubObject(containerName,subObjectName) {
 	// containers[containerName] = container;
 	// return container;
 };
+exports.CreateSubObject = CreateSubObject;
 
 
 
 /**
  * Конструктор класса Subobject.
+ * @type Subobject
  * @constructor
+ * @augments Baseclass
  * @param   {string}  containerName  название создаваемого контейнера
  */
-
-exports.Subobject = Subobject;
 function Subobject(SubObjectName) {
 	// далее пересохраняем в объект данные о названии объекта
 	this.name = SubObjectName
@@ -413,7 +417,7 @@ function Subobject(SubObjectName) {
 	this.enable = true;
 
 }
-
+exports.Subobject = Subobject;
 
 // наследуемся от Baseclass
 Subobject.prototype = new Baseclass();
@@ -421,8 +425,8 @@ Subobject.prototype = new Baseclass();
 
 /**
  * Функция проверяет, применен ли данный объект к пользователю
- * @param   {string|object}  username  	Имя пользователя или объект содержащий пользователя
- * @return  {boolean|object}			Возвращает false если не применен, или JSON со статусом применения и данными про привязке объекта к пользователю
+ * @param   {(string|Player)}  username  	Имя пользователя или объект содержащий пользователя
+ * @return  {(boolean|object)}			Возвращает false если не применен, или JSON со статусом применения и данными про привязке объекта к пользователю
  */
 Subobject.prototype.hasUser = function( username ){
 	var user = utils.player(username);
@@ -441,8 +445,8 @@ Subobject.prototype.hasUser = function( username ){
 
 /**
  * Функция проверяет, статус применения данного объекта к пользователю
- * @param   {string|object}  user  	Имя пользователя или объект содержащий пользователя
- * @return  {boolean|object}		Возвращает false если не применен, или JSON со статусом применения
+ * @param   {(string|Player)}  user  	Имя пользователя или объект содержащий пользователя
+ * @return  {(boolean|object)}		Возвращает false если не применен, или JSON со статусом применения
  */
 Subobject.prototype.hasUserStatus = function( username ){
 	// тут пока ХЗ что должно быть (время действия, сила действия, хз откуда это должно приходить, пока не ясно)
@@ -456,8 +460,8 @@ Subobject.prototype.hasUserStatus = function( username ){
 
 /**
  * Функция связывает объект и пользователя
- * @param   {string|object} username  	Имя пользователя или объект содержащий пользователя
- * @param   {object}  		params  	JSON с параметрами
+ * @param   {(string|Player)} username  	Имя пользователя или объект содержащий пользователя
+ * @param   {(boolean|object)}  		params  	JSON с параметрами
  */
 Subobject.prototype.attachForUser = function( username, params ){
 	var player = users.getPlayer(username);
@@ -474,7 +478,7 @@ Subobject.prototype.attachForUser = function( username, params ){
 
 /**
  * Функция связывает объект и пользователя
- * @param   {string|object} username  	Имя пользователя или объект содержащий пользователя
+ * @param   {(string|Player)} username  	Имя пользователя или объект содержащий пользователя
  */
 Subobject.prototype.detachFromUser = function( username ){
 	var player = users.getPlayer(username);
@@ -515,7 +519,7 @@ Subobject.prototype.Enable = function( value ){
 
 /**
  * Функция проверяет включен ли подобъект
- * @return  {boolean|object} Возвращает true если подобъект включен, false если выключен
+ * @return  {boolean} Возвращает true если подобъект включен, false если выключен
  */
 Subobject.prototype.isEnabled = function(){
 	return this.enable;
@@ -524,7 +528,7 @@ Subobject.prototype.isEnabled = function(){
 
 /**
  * Функция включает или выключает скилл для которого вызвана (действует на указанного пользователя)
- * @param   {string|object}	username	Имя пользователя или ссылка на объект пользователя
+ * @param   {(string|Player)}	username	Имя пользователя или ссылка на объект пользователя
  * @param   {boolean}  		value  		Если true то скил будет включен, если false отключен
  */
 Subobject.prototype.enableForUser = function(username, value) {
@@ -560,7 +564,7 @@ Subobject.prototype.enableForUser = function(username, value) {
 
 /**
  * Функция проверяет наличие данного скила у пользователя и возвращает объект с данными скила у пользователя если у него такой скил есть и скил включен
- * @param   {string}  user  Имя пользователя или ссылка на объект пользователя
+ * @param   {(string|Player)}  user  Имя пользователя или ссылка на объект пользователя
  * @return {boolean}        Возвращает возвращает true если у пользователя такой скил есть и включен иначе false
  */
 
@@ -587,7 +591,7 @@ Subobject.prototype.isEnabledForUser = function(user) {
 /**
  * Функция ставит объект на паузу
  * @param   {number}  time  время паузы в милисекундах
- * @param   {object}  params  	Дополнительные параметрыЮ которые будут переданы в евент
+ * @param   {object}  params  	Дополнительные параметры которые будут переданы в евент
  */
 Subobject.prototype.pause = function( time, params ){
 	this.paused = timetools.now()+time;
@@ -614,6 +618,7 @@ Subobject.prototype.pause = function( time, params ){
 
 /**
  * Функция проверяет стоит ли объект на паузе
+ * @return {boolean}        Возвращает true/false
  */
 Subobject.prototype.isGlobalPaused = function(){
 	var time = timetools.now()
@@ -625,9 +630,9 @@ Subobject.prototype.isGlobalPaused = function(){
 
 /**
  * Функция ставит объект на паузу
- * @param   {string|object}  username  	Имя пользователя или объект содержащий пользователя
+ * @param   {(string|Player)}  username  	Имя пользователя или объект содержащий пользователя
  * @param   {int}     time  	Время блокировки в миллисекундах
- * @param   {object}  params  	Дополнительные параметрыЮ которые будут переданы в евент
+ * @param   {object}  params  	Дополнительные параметры которые будут переданы в евент
  * @param   {number}  time  время паузы в милисекундах
  */
 Subobject.prototype.pauseForUser = function( username, time, params){
@@ -663,7 +668,7 @@ Subobject.prototype.pauseForUser = function( username, time, params){
 
 /**
  * Функция проверяет стоит ли объект на паузе для конкретного игрока
- * @param   {string|object}  username  	Имя пользователя или объект содержащий пользователя
+ * @param   {(string|Player)}  username  	Имя пользователя или объект содержащий пользователя
  */
 Subobject.prototype.isPausedForUser = function(username){
 	var userdata = this.isEnabledForUser(username);
@@ -688,7 +693,7 @@ Subobject.prototype.isPausedForUser = function(username){
  * @param   {function} callback функция обратного вызова
  * @param   {number}   time  	время паузы в милисекундах
  * @param   {object}   params  	Дополнительные параметры которые будут переданы в евент
- * @param   {string|object}  username  	Имя пользователя или объект содержащий пользователя
+ * @param   {(string|Player)}  username  	Имя пользователя или объект содержащий пользователя
  */
 Subobject.prototype.repeat = function( callback, time, params, username ){
 	time = this.toInt(time);

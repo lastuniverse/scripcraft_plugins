@@ -328,7 +328,7 @@ function setMobTerrorHandler(event){
 	callAfterTime(function(){
 		eventex.events.emit('onMobTerror',event); 
 	}, event.time * 500 + next_time );
-console.log("!!!!! next STATR after " + event.player.name + " - " + (event.time * 500 + next_time) );
+//console.log("!!!!! next STATR after " + event.player.name + " - " + (event.time * 500 + next_time) );
 }
 
 

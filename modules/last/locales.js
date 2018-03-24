@@ -5,11 +5,8 @@
 
 /**
  * ### Interface for working with locales
- *
  * This module contains the basic functions of downloading localizations and sending localized messages to users
- *
- * @module last/locales
- *
+ * @module modules/last/locales
  * @example
  * configuration file for the module locales.js: data/config/modules/locales.json
  * {
@@ -48,16 +45,13 @@
  * 	],
  * 	"test": "тест сообщение ${key1} ${key2}"
  * }
- *
  * 
  * example of a plugin using locales.js: plugins/test.js
  *  
  * // connect the module
  * var  locales = require('last/locales');
- *
  * // load the locale. The first parameter is the path, the second is the module name, the third is the default language of the plug-in
  * var locale = locales.init("./scriptcraft/data/locales/plugins/", "test", "ru_ru");
- *
  * ...
  * 
  * // !!! suppose that the default locale of the plugin is "ru_ru". And the user in his minecraft client exposed English
@@ -65,15 +59,12 @@
  * // output to chat:
  * //   <playername> help1 message
  * //   <playername> help2 message
- *
  * locale.echo(player,"${msg.test1}"); 
  * // output to chat:
  * //   <playername> test1 message
- *
  * locale.echo(player,"${msg.test2}"); 
  * // output to chat:
  * //   <playername> test2 message
- *
  * locale.echo(player,"${test}",{"key1": 11111, "key2": "abcdef" }); 
  * // output to chat:
  * //   <playername> test message 11111 abcdef
@@ -81,19 +72,15 @@
  * locale.warn(player,"${help.0}"); 
  * // output to chat:
  * //   <playername> help1 message
- *
  * locale.warn(player,"aaa ${help.0} bbb ${msg.test1} ccc"); 
  * // output to chat:
  * //   <playername> aaa help1 message bbb test1 message ccc
- *
  * locale.warn(player,"aaa ${help.0} bbb ${msg.test1} ccc ${test} ddd",{"key1": 11111, "key2": "value of key2" }); 
  * // output to chat:
  * //   <playername> aaa help1 message bbb test1 message ccc test message 11111 value of key2 ddd
- *
  * // if there is no localization file for the player's language, the messages will be displayed in the language specified when calling locales.init(...)
  * // locale.warn(...), locale.help(...), locale.echo(...) and locale.event(...) differ only in text messages, otherwise their functionality is identical.
  * // more details on the capabilities of the module, you can read the description of its functions.
- *
  */
 
 
@@ -288,7 +275,7 @@ Locales.prototype.getMessage = function(player, message, keys) {
 		return "";
 
 	var sender_lang = this.lang;
-	if( player.spigot )
+	if( player && player["spigot"] )
 	   sender_lang = player.spigot().getLocale().toString();
 
 	// заменить каждое вхождение ${key} на результат вызова функции
@@ -308,7 +295,9 @@ Locales.prototype.getMessage = function(player, message, keys) {
  * @param {object} keys associative array with values
  */
 Locales.prototype.printf = function(player, color, message, keys) {
-	if( !player && !player["name"] )
+	//console.log("printf:\t"+(typeof player) + "\t" + message + "\t" + (keys||"undef") );
+	
+	if( !player || (typeof player !== "object") || !player["name"] )
 		return;
 
 	var users = {};

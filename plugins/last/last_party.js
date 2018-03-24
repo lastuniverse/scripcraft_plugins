@@ -78,7 +78,7 @@ var chat = require('./scriptcraft/plugins/last/last_chat.js');
 
 chat.registerChat("party", "#", "Чат для пати",
 	function(msg){
-	console.log("!!!!!!!!!! registerChat #");
+	//console.log("!!!!!!!!!! registerChat #");
 
 	//msg.player.color = "".indigo();
 	msg.message.color = "".gray();
@@ -105,7 +105,7 @@ chat.registerChat("party", "#", "Чат для пати",
 // загружаем config
 var config = scload("./scriptcraft/data/config/plugins/last/party.json");
 if(!config.enable)
-	return console.log("plugins/last/last_party DISABLED");;
+	return; // console.log("plugins/last/last_party DISABLED");;
 
 
 // загружаем локаль
@@ -198,7 +198,7 @@ var point_leader  = point_party.addComplete('leader', undefined, function(sender
 						return partyForOwner(sender);
 					})
 					.addComplete('@any', undefined, function(sender,patern){
-						console.log("!!! patern "+patern);
+						//console.log("!!! patern "+patern);
 						return party.getPartyMembers(patern);
 					})
 					.addComplete('@any', cmd_party_leader);

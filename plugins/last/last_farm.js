@@ -54,7 +54,7 @@
  * - modules/last/users       - модуль доступа к персональному хранилищу данных пользователей
  * - modules/last/eventex     - модуль заглушка для последовательного вызова слушателей события onJoin
  * 
- * @module plugins/last/last_warp
+ * @module plugins/last/last_farm
  */
 
 

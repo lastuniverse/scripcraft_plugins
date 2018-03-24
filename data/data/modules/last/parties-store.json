@@ -1,67 +1,5 @@
 {
   "list": {
-    "isle": {
-      "owner": "sulik666",
-      "UUID": "e5db92f9-1821-48a8-a4c8-2278db941fad",
-      "status": "opened",
-      "name": "isle",
-      "description": "undescription",
-      "maxplayers": "libbar",
-      "password": "09078",
-      "players": {
-        "sulik666": {
-          "name": "sulik666",
-          "UUID": "e5db92f9-1821-48a8-a4c8-2278db941fad",
-          "kills": 0,
-          "score": 0
-        }
-      }
-    },
-    "home": {
-      "owner": "libbar",
-      "UUID": "65419976-13af-4de7-9554-299b2e597e6a",
-      "status": "opened",
-      "name": "home",
-      "description": "undescription",
-      "maxplayers": "10",
-      "password": "72272",
-      "players": {
-        "libbar": {
-          "name": "libbar",
-          "UUID": "65419976-13af-4de7-9554-299b2e597e6a",
-          "kills": 0,
-          "score": 0
-        },
-        "xxxGenaxxx": {
-          "name": "xxxGenaxxx",
-          "UUID": "eddd148a-2e89-45f3-bc33-071ffac51198",
-          "kills": 0,
-          "score": 0
-        }
-      }
-    },
-    "test": {
-      "owner": "Oboltus",
-      "UUID": "85bf7e4e-e321-4839-b3ee-def203984faf",
-      "status": "opened",
-      "name": "test",
-      "description": "тестовая пати",
-      "maxplayers": "2",
-      "players": {
-        "Oboltus": {
-          "name": "Oboltus",
-          "UUID": "85bf7e4e-e321-4839-b3ee-def203984faf",
-          "kills": 0,
-          "score": 0
-        },
-        "ZZzhakonya": {
-          "name": "ZZzhakonya",
-          "UUID": "505ef96e-5a4d-4f0b-b193-3117c3799a13",
-          "kills": 0,
-          "score": 0
-        }
-      }
-    },
     "danj": {
       "owner": "lastuniverse",
       "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
@@ -77,9 +15,55 @@
           "kills": 0,
           "score": 0
         },
+        "libbar": {
+          "name": "libbar",
+          "UUID": "65419976-13af-4de7-9554-299b2e597e6a",
+          "kills": 0,
+          "score": 0
+        },
         "XDeNzl": {
           "name": "XDeNzl",
           "UUID": "b8771b8b-e401-4003-b839-cb533ce94e1c",
+          "kills": 0,
+          "score": 0
+        }
+      }
+    },
+    "ToT": {
+      "owner": "Kockos82",
+      "UUID": "b9bb38ca-2264-4318-884a-96a1f3e5c3a1",
+      "status": "opened",
+      "name": "ToT",
+      "description": "Prosto paty",
+      "maxplayers": "5",
+      "password": "50190",
+      "players": {
+        "Kockos82": {
+          "name": "Kockos82",
+          "UUID": "b9bb38ca-2264-4318-884a-96a1f3e5c3a1",
+          "kills": 0,
+          "score": 0
+        },
+        "Oboltus": {
+          "name": "Oboltus",
+          "UUID": "85bf7e4e-e321-4839-b3ee-def203984faf",
+          "kills": 0,
+          "score": 0
+        }
+      }
+    },
+    "qqq": {
+      "owner": "lastuniverse",
+      "UUID": "6b4fd503-3619-3711-90d0-cad3434ac2e2",
+      "status": "opened",
+      "name": "qqq",
+      "description": "123 456",
+      "maxplayers": "2",
+      "password": "92210",
+      "players": {
+        "lastuniverse": {
+          "name": "lastuniverse",
+          "UUID": "6b4fd503-3619-3711-90d0-cad3434ac2e2",
           "kills": 0,
           "score": 0
         }

@@ -42,42 +42,14 @@
  * - modules/last/economy     - модуль экономики
  * - modules/last/signs       - модуль событий связанных с табличками
  * - modules/last/users       - модуль для централизованного хранения данных пользователя с кэшированием для более быстрого доступа
+ * - modules/last/timetools   - модуль для работы со таймером
  * - modules/last/locales     - модуль локализации
  * - modules/last/inventory   - модуль работы с инвентарем и материалами
  * 
- * @module plugins/last/last_chestshop
+ * @module plugins/last/last_adminshop
  */
 
- 
- /*   =================================================================
-                  TODEV
 
-    3. добавить permissions
-       - разрешения:
-         - last_chestshop.set.shop   - разрешение ставить магазины типа типа "shop"
-         - last_chestshop.set.store  - разрешение ставить магазины типа типа "store"
-         - last_chestshop.set.hyper  - разрешение ставить магазины типа типа "hyper"
-         - last_chestshop.set.*      - разрешение ставить магазины любого типа
-       - опции
-         - last_chestshop.max.all   - максимальное количество всех видов магазов разрешенное для установки
-         - last_chestshop.max.shop  - максимальное количество магазов типа "shop" разрешенное для установки
-         - last_chestshop.max.store - максимальное количество магазов типа "store" разрешенное для установки
-         - last_chestshop.max.hyper - максимальное количество магазов типа "hyper" разрешенное для установки
-         - last_chestshop.distance  - максимальная дистанция удаления магазов типа "hyper" от соответствующих им "store"
-
-    4. добавить локализацию
-
-    6. добавить проверку наличия коинов
-
-    7. добавить защиту на сундуки
-
-    8. исправить баг с двойным кликом ЛКМ
-      а. готово. добавлено ограничение на ЛКМ по табличкам с функционалом. срабатывает не чаще чем раз в 300 мс.
-
-    10. Навесить на ПКМ топором событие идентификации
-
-    =================================================================
- */
 
 if (__plugin.canary){
   console.warn('last_elitre not yet supported in CanaryMod');
@@ -110,7 +82,7 @@ var shops = persist('data/plugins/last/adminshop', {});
 timetools.callAfterTime(adminShopRevision,5000);
 
 
-/* Функции производяд отчистку shops */
+/* Функции производяд отчистку shops и изменение цен в оставшихся магазинах*/
 function adminShopRevision(){
   utils.foreach (Object.keys(shops), function( key ) {
     var shop = shops[key];
@@ -141,6 +113,8 @@ function correctShop(sign, shop){
   if( !price )
     return console.log("1 товара нет в базе "+item.type);
 
+  price.buy = Math.floor(price.cost*config.price.buy/100);
+  price.sell = Math.floor(price.cost*config.price.sell/100);
   shop.price = price;
   
   var mat = item.type + (item.damage?":"+item.damage:"");
@@ -355,8 +329,12 @@ function cmd_shop_set(params, sender){
   var item = inventory.itemStackToJSON(itemstack,1,true);
   var amount = economy.toInt(params[2])||1;
   var price = economy.getPrice(item,amount);
+
   if( !price )
     return locale.warn(sender, "2 товара нет в базе "+item.type);
+
+  price.buy = Math.floor(price.cost*config.price.buy/100);
+  price.sell = Math.floor(price.cost*config.price.sell/100);
 
   // получаем координаты таблички
   var loc = utils.locationToJSON( sign.getLocation() );
@@ -421,94 +399,97 @@ var point_shop_amount = point_shop.addComplete('amount');
 
 
 
-function searchChest(location){
-    var loc = utils.locationFromJSON(location);
-    var chest = loc.subtract(1,0,0).getBlock();    
+// function searchChest(location){
+//     var loc = utils.locationFromJSON(location);
+//     var chest = loc.subtract(1,0,0).getBlock();    
     
-    loc = utils.locationFromJSON(location);
-    if( chest.getType() != "CHEST" && chest.getType() != "TRAPPED_CHEST" )
-      chest = loc.subtract(0,0,1).getBlock();
+//     loc = utils.locationFromJSON(location);
+//     if( chest.getType() != "CHEST" && chest.getType() != "TRAPPED_CHEST" )
+//       chest = loc.subtract(0,0,1).getBlock();
 
-    loc = utils.locationFromJSON(location);
-    if( chest.getType() != "CHEST" && chest.getType() != "TRAPPED_CHEST" )
-      chest = loc.add(1,0,0).getBlock();
+//     loc = utils.locationFromJSON(location);
+//     if( chest.getType() != "CHEST" && chest.getType() != "TRAPPED_CHEST" )
+//       chest = loc.add(1,0,0).getBlock();
 
-    loc = utils.locationFromJSON(location);
-    if( chest.getType() != "CHEST" && chest.getType() != "TRAPPED_CHEST" )
-      chest = loc.add(0,0,1).getBlock();
+//     loc = utils.locationFromJSON(location);
+//     if( chest.getType() != "CHEST" && chest.getType() != "TRAPPED_CHEST" )
+//       chest = loc.add(0,0,1).getBlock();
 
-    if( chest.getType() != "CHEST" && chest.getType() != "TRAPPED_CHEST" ){
-      console.log("type: "+chest.getType());
-      return false;
-    }
+//     if( chest.getType() != "CHEST" && chest.getType() != "TRAPPED_CHEST" ){
+//       console.log("type: "+chest.getType());
+//       return false;
+//     }
 
-    return chest.getState();
-    // sign.setLine(0,"");
-    // sign.update();
+//     return chest.getState();
+//     // sign.setLine(0,"");
+//     // sign.update();
 
-}
+// }
 
 
-function searchShops(x1,y1,z1,x2,y2,z2,amount){
-  for (var x = x1; x <= x2; x++) {
-  for (var y = y1; y <= y2; y++) {
-  for (var z = z1; z <= z2; z++) {
-    var location = {
-      world: "world",
-      x: x,
-      y: y,
-      z: z,
-      yaw: 0,
-      pitch: 0      
-    };
-    var key = createKey(location);
-    var loc = utils.locationFromJSON(location);
-    var block = utils.blockAt( loc );
-    var sign = syssigns.hasSign(block);
-    if( !sign )
-      continue;
+// function searchShops(x1,y1,z1,x2,y2,z2,amount){
+//   for (var x = x1; x <= x2; x++) {
+//   for (var y = y1; y <= y2; y++) {
+//   for (var z = z1; z <= z2; z++) {
+//     var location = {
+//       world: "world",
+//       x: x,
+//       y: y,
+//       z: z,
+//       yaw: 0,
+//       pitch: 0      
+//     };
+//     var key = createKey(location);
+//     var loc = utils.locationFromJSON(location);
+//     var block = utils.blockAt( loc );
+//     var sign = syssigns.hasSign(block);
+//     if( !sign )
+//       continue;
 
-    // if( sign.getLine(0) !== "" || sign.getLine(1) !== "" || sign.getLine(2) !== "" || sign.getLine(3) !== "" )
-    //   continue;
+//     // if( sign.getLine(0) !== "" || sign.getLine(1) !== "" || sign.getLine(2) !== "" || sign.getLine(3) !== "" )
+//     //   continue;
 
-    var chest = searchChest(location); 
-    if(!chest)
-      continue;
+//     var chest = searchChest(location); 
+//     if(!chest)
+//       continue;
 
-    var inv = chest.getBlockInventory();
-    var invent = chest.getInventory();
-    var itemstack = invent.getItem(0);
+//     var inv = chest.getBlockInventory();
+//     var invent = chest.getInventory();
+//     var itemstack = invent.getItem(0);
 
-    if( !itemstack )
-      continue;
+//     if( !itemstack )
+//       continue;
     
-    var item = inventory.itemStackToJSON(itemstack,1,true);
-    var price = economy.getPrice(item,amount);
-    if( !price )
-      continue;
+//     var item = inventory.itemStackToJSON(itemstack,1,true);
+//     var price = economy.getPrice(item,amount);
+//     if( !price )
+//       continue;
 
-    console.log("+++++++++");
+//     price.buy = Math.floor(price.cost*config.price.buy/100);
+//     price.sell = Math.floor(price.cost*config.price.sell/100);
 
-    var mat = item.type + (item.damage?":"+item.damage:"");
-    // устанавливаем нужные надписи в 1-й и 4-й строках
-    sign.setLine(0,"adminshop");
-    sign.setLine(1,""+price.buy+" < "+price.amount+" > "+price.sell);
-    sign.setLine(2,"");
-    sign.setLine(3,mat);
-    sign.update();
+//     console.log("+++++++++");
 
-    // формируем данные для сохранения в хранилище гипермагазинов игрока
-    shops[key] = {
-      type: "adminshop",
-      itemstack: item,
-      material: mat,
-      price: price,
-      loc: location
-    };
+//     var mat = item.type + (item.damage?":"+item.damage:"");
+//     // устанавливаем нужные надписи в 1-й и 4-й строках
+//     sign.setLine(0,"adminshop");
+//     sign.setLine(1,""+price.buy+" < "+price.amount+" > "+price.sell);
+//     sign.setLine(2,"");
+//     sign.setLine(3,mat);
+//     sign.update();
+
+//     // формируем данные для сохранения в хранилище гипермагазинов игрока
+//     shops[key] = {
+//       type: "adminshop",
+//       itemstack: item,
+//       material: mat,
+//       price: price,
+//       loc: location
+//     };
 
 
-  }}}
-}
+//   }}}
+// }
 
 // searchShops(13,27,-22,22,30,-22,16);
 // searchShops(3,27,-41,11,30,-22,16);

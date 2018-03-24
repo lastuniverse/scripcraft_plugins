@@ -290,6 +290,11 @@
     "minecraft:blaze_powder": 0.3333333333333333,
     "minecraft:coal": 0.3333333333333333
   },
+  "minecraft:fireworks": {
+    "minecraft:gunpowder": 1,
+    "minecraft:fire_charge": 1,
+    "minecraft:paper": 1
+  },  
   "minecraft:fishing_rod": {
     "minecraft:log": 0.375,
     "minecraft:string": 2

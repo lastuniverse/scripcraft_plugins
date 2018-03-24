@@ -1,0 +1,45 @@
+{
+  "37ddefbb-f14f-424e-8dee-908b522dc7fb": {
+    "src_grass": {
+      "GRASS": 1,
+      "DIRT": 1,
+      "SAND": 1
+    },
+    "dst_stone": {
+      "STONE": 2,
+      "COAL_ORE": 1,
+      "COBBLESTONE": 2,
+      "COBBLESTONE_STAIRS": 1,
+      "GRAVEL": 2,
+      "SMOOTH_BRICK": 2,
+      "MOSSY_COBBLESTONE": 1,
+      "SMOOTH_STAIRS": 1
+    },
+    "dst_tropka": {
+      "GRASS_PATH": 1
+    }
+  },
+  "6b4fd503-3619-3711-90d0-cad3434ac2e2": {
+    "road": {
+      "COBBLESTONE": 1,
+      "COBBLESTONE_STAIRS": 1,
+      "GRASS": 1,
+      "GRASS_PATH": 1,
+      "SAND": 1,
+      "SMOOTH_BRICK": 1,
+      "SMOOTH_STAIRS": 1
+    },
+    "grunt": {
+      "DIRT": 1,
+      "GRASS": 1,
+      "GRASS_PATH": 1,
+      "GRAVEL": 1,
+      "SAND": 1,
+      "SANDSTONE": 1,
+      "STONE": 1,
+      "COBBLESTONE": 1,
+      "STAINED_CLAY": 1,
+      "WATER": 1
+    }
+  }
+}

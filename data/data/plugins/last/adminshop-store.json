@@ -1,5527 +1,51 @@
 {
-  "world.13.27.-22": {
+  "world.-131.78.168": {
     "type": "adminshop",
     "itemstack": {
-      "type": "STAINED_CLAY",
-      "damage": 4,
-      "amount": 16
-    },
-    "material": "STAINED_CLAY:4",
-    "price": {
-      "amount": 16,
-      "buy": 1230,
-      "sell": 4920
-    },
-    "loc": {
-      "world": "world",
-      "x": 13,
-      "y": 27,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.13.28.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_CLAY",
-      "damage": 1,
-      "amount": 1
-    },
-    "material": "STAINED_CLAY:1",
-    "price": {
-      "amount": 16,
-      "buy": 1230,
-      "sell": 4920
-    },
-    "loc": {
-      "world": "world",
-      "x": 13,
-      "y": 28,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.13.29.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_CLAY",
-      "damage": 6,
-      "amount": 16
-    },
-    "material": "STAINED_CLAY:6",
-    "price": {
-      "amount": 16,
-      "buy": 1230,
-      "sell": 4920
-    },
-    "loc": {
-      "world": "world",
-      "x": 13,
-      "y": 29,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.15.27.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_CLAY",
-      "damage": 3,
-      "amount": 16
-    },
-    "material": "STAINED_CLAY:3",
-    "price": {
-      "amount": 16,
-      "buy": 1230,
-      "sell": 4920
-    },
-    "loc": {
-      "world": "world",
-      "x": 15,
-      "y": 27,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.15.28.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_CLAY",
-      "damage": 11,
-      "amount": 1
-    },
-    "material": "STAINED_CLAY:11",
-    "price": {
-      "amount": 16,
-      "buy": 1230,
-      "sell": 4920
-    },
-    "loc": {
-      "world": "world",
-      "x": 15,
-      "y": 28,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.15.29.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_CLAY",
-      "damage": 2,
-      "amount": 1
-    },
-    "material": "STAINED_CLAY:2",
-    "price": {
-      "amount": 16,
-      "buy": 1230,
-      "sell": 4920
-    },
-    "loc": {
-      "world": "world",
-      "x": 15,
-      "y": 29,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.17.27.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_CLAY",
-      "damage": 5,
-      "amount": 16
-    },
-    "material": "STAINED_CLAY:5",
-    "price": {
-      "amount": 16,
-      "buy": 1230,
-      "sell": 4920
-    },
-    "loc": {
-      "world": "world",
-      "x": 17,
-      "y": 27,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.17.28.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_CLAY",
-      "damage": 13,
-      "amount": 1
-    },
-    "material": "STAINED_CLAY:13",
-    "price": {
-      "amount": 16,
-      "buy": 1230,
-      "sell": 4920
-    },
-    "loc": {
-      "world": "world",
-      "x": 17,
-      "y": 28,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.17.29.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_CLAY",
-      "damage": 9,
-      "amount": 16
-    },
-    "material": "STAINED_CLAY:9",
-    "price": {
-      "amount": 16,
-      "buy": 1230,
-      "sell": 4920
-    },
-    "loc": {
-      "world": "world",
-      "x": 17,
-      "y": 29,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.19.27.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_CLAY",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "STAINED_CLAY",
-    "price": {
-      "amount": 16,
-      "buy": 1230,
-      "sell": 4920
-    },
-    "loc": {
-      "world": "world",
-      "x": 19,
-      "y": 27,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.19.28.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_CLAY",
-      "damage": 8,
-      "amount": 16
-    },
-    "material": "STAINED_CLAY:8",
-    "price": {
-      "amount": 16,
-      "buy": 1230,
-      "sell": 4920
-    },
-    "loc": {
-      "world": "world",
-      "x": 19,
-      "y": 28,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.19.29.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_CLAY",
-      "damage": 7,
-      "amount": 1
-    },
-    "material": "STAINED_CLAY:7",
-    "price": {
-      "amount": 16,
-      "buy": 1230,
-      "sell": 4920
-    },
-    "loc": {
-      "world": "world",
-      "x": 19,
-      "y": 29,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.21.28.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "HARD_CLAY",
-      "amount": 16,
-      "damage": 0
-    },
-    "material": "HARD_CLAY",
-    "price": {
-      "amount": 16,
-      "buy": 1200,
-      "sell": 4800
-    },
-    "loc": {
-      "world": "world",
-      "x": 21,
-      "y": 28,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.21.29.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "CLAY",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "CLAY",
-    "price": {
-      "amount": 16,
-      "buy": 6400,
-      "sell": 25600
-    },
-    "loc": {
-      "world": "world",
-      "x": 21,
-      "y": 29,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.13.30.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_CLAY",
-      "damage": 14,
-      "amount": 1
-    },
-    "material": "STAINED_CLAY:14",
-    "price": {
-      "amount": 16,
-      "buy": 1230,
-      "sell": 4920
-    },
-    "loc": {
-      "world": "world",
-      "x": 13,
-      "y": 30,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.15.30.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_CLAY",
-      "damage": 10,
-      "amount": 1
-    },
-    "material": "STAINED_CLAY:10",
-    "price": {
-      "amount": 16,
-      "buy": 1230,
-      "sell": 4920
-    },
-    "loc": {
-      "world": "world",
-      "x": 15,
-      "y": 30,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.17.30.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_CLAY",
-      "damage": 12,
-      "amount": 1
-    },
-    "material": "STAINED_CLAY:12",
-    "price": {
-      "amount": 16,
-      "buy": 1230,
-      "sell": 4920
-    },
-    "loc": {
-      "world": "world",
-      "x": 17,
-      "y": 30,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.19.30.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_CLAY",
-      "damage": 15,
-      "amount": 1
-    },
-    "material": "STAINED_CLAY:15",
-    "price": {
-      "amount": 16,
-      "buy": 1230,
-      "sell": 4920
-    },
-    "loc": {
-      "world": "world",
-      "x": 19,
-      "y": 30,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.21.30.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "CLAY_BALL",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "CLAY_BALL",
-    "price": {
-      "amount": 16,
-      "buy": 1600,
-      "sell": 6400
-    },
-    "loc": {
-      "world": "world",
-      "x": 21,
-      "y": 30,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.27.-41": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOL",
-      "damage": 14,
-      "amount": 16
-    },
-    "material": "WOOL:14",
-    "price": {
-      "amount": 16,
-      "buy": 1840,
-      "sell": 7360
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 27,
-      "z": -41,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.27.-39": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOL",
-      "damage": 3,
-      "amount": 16
-    },
-    "material": "WOOL:3",
-    "price": {
-      "amount": 16,
-      "buy": 1840,
-      "sell": 7360
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 27,
-      "z": -39,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.27.-37": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOL",
-      "damage": 1,
-      "amount": 16
-    },
-    "material": "WOOL:1",
-    "price": {
-      "amount": 16,
-      "buy": 1840,
-      "sell": 7360
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 27,
-      "z": -37,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.27.-35": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOL",
-      "amount": 16,
-      "damage": 0
-    },
-    "material": "WOOL",
-    "price": {
-      "amount": 16,
-      "buy": 1840,
-      "sell": 7360
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 27,
-      "z": -35,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.27.-31": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS_PANE",
-      "damage": 14,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS_PANE:14",
-    "price": {
-      "amount": 16,
-      "buy": 173,
-      "sell": 693
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 27,
-      "z": -31,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.27.-29": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS_PANE",
-      "damage": 3,
-      "amount": 16
-    },
-    "material": "STAINED_GLASS_PANE:3",
-    "price": {
-      "amount": 16,
-      "buy": 173,
-      "sell": 693
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 27,
-      "z": -29,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.27.-27": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS_PANE",
-      "damage": 1,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS_PANE:1",
-    "price": {
-      "amount": 16,
-      "buy": 173,
-      "sell": 693
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 27,
-      "z": -27,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.27.-25": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS_PANE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "STAINED_GLASS_PANE",
-    "price": {
-      "amount": 16,
-      "buy": 173,
-      "sell": 693
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 27,
-      "z": -25,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.27.-23": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS",
-      "damage": 14,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS:14",
-    "price": {
-      "amount": 16,
-      "buy": 462,
-      "sell": 1848
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 27,
-      "z": -23,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.28.-41": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOL",
-      "damage": 6,
-      "amount": 16
-    },
-    "material": "WOOL:6",
-    "price": {
-      "amount": 16,
-      "buy": 1840,
-      "sell": 7360
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 28,
-      "z": -41,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.28.-39": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOL",
-      "damage": 9,
-      "amount": 16
-    },
-    "material": "WOOL:9",
-    "price": {
-      "amount": 16,
-      "buy": 1840,
-      "sell": 7360
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 28,
-      "z": -39,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.28.-37": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOL",
-      "damage": 4,
-      "amount": 16
-    },
-    "material": "WOOL:4",
-    "price": {
-      "amount": 16,
-      "buy": 1840,
-      "sell": 7360
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 28,
-      "z": -37,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.28.-35": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOL",
-      "damage": 8,
-      "amount": 16
-    },
-    "material": "WOOL:8",
-    "price": {
-      "amount": 16,
-      "buy": 1840,
-      "sell": 7360
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 28,
-      "z": -35,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.28.-31": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS_PANE",
-      "damage": 6,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS_PANE:6",
-    "price": {
-      "amount": 16,
-      "buy": 173,
-      "sell": 693
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 28,
-      "z": -31,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.28.-29": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS_PANE",
-      "damage": 9,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS_PANE:9",
-    "price": {
-      "amount": 16,
-      "buy": 173,
-      "sell": 693
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 28,
-      "z": -29,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.28.-27": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS_PANE",
-      "damage": 4,
-      "amount": 16
-    },
-    "material": "STAINED_GLASS_PANE:4",
-    "price": {
-      "amount": 16,
-      "buy": 173,
-      "sell": 693
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 28,
-      "z": -27,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.28.-25": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS_PANE",
-      "damage": 8,
-      "amount": 16
-    },
-    "material": "STAINED_GLASS_PANE:8",
-    "price": {
-      "amount": 16,
-      "buy": 173,
-      "sell": 693
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 28,
-      "z": -25,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.28.-23": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS",
-      "damage": 6,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS:6",
-    "price": {
-      "amount": 16,
-      "buy": 462,
-      "sell": 1848
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 28,
-      "z": -23,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.29.-41": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOL",
-      "damage": 2,
-      "amount": 1
-    },
-    "material": "WOOL:2",
-    "price": {
-      "amount": 16,
-      "buy": 1840,
-      "sell": 7360
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 29,
-      "z": -41,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.29.-39": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOL",
-      "damage": 11,
-      "amount": 16
-    },
-    "material": "WOOL:11",
-    "price": {
-      "amount": 16,
-      "buy": 1840,
-      "sell": 7360
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 29,
-      "z": -39,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.29.-37": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOL",
-      "damage": 5,
-      "amount": 16
-    },
-    "material": "WOOL:5",
-    "price": {
-      "amount": 16,
-      "buy": 1840,
-      "sell": 7360
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 29,
-      "z": -37,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.29.-35": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOL",
-      "damage": 7,
-      "amount": 16
-    },
-    "material": "WOOL:7",
-    "price": {
-      "amount": 16,
-      "buy": 1840,
-      "sell": 7360
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 29,
-      "z": -35,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.29.-31": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS_PANE",
-      "damage": 2,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS_PANE:2",
-    "price": {
-      "amount": 16,
-      "buy": 173,
-      "sell": 693
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 29,
-      "z": -31,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.29.-29": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS_PANE",
-      "damage": 11,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS_PANE:11",
-    "price": {
-      "amount": 16,
-      "buy": 173,
-      "sell": 693
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 29,
-      "z": -29,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.29.-27": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS_PANE",
-      "damage": 5,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS_PANE:5",
-    "price": {
-      "amount": 16,
-      "buy": 173,
-      "sell": 693
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 29,
-      "z": -27,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.29.-25": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS_PANE",
-      "damage": 7,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS_PANE:7",
-    "price": {
-      "amount": 16,
-      "buy": 173,
-      "sell": 693
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 29,
-      "z": -25,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.29.-23": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS",
-      "damage": 2,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS:2",
-    "price": {
-      "amount": 16,
-      "buy": 462,
-      "sell": 1848
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 29,
-      "z": -23,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.30.-41": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOL",
-      "damage": 10,
-      "amount": 1
-    },
-    "material": "WOOL:10",
-    "price": {
-      "amount": 16,
-      "buy": 1840,
-      "sell": 7360
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 30,
-      "z": -41,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.30.-39": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOL",
-      "damage": 12,
-      "amount": 16
-    },
-    "material": "WOOL:12",
-    "price": {
-      "amount": 16,
-      "buy": 1840,
-      "sell": 7360
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 30,
-      "z": -39,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.30.-37": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOL",
-      "damage": 13,
-      "amount": 16
-    },
-    "material": "WOOL:13",
-    "price": {
-      "amount": 16,
-      "buy": 1840,
-      "sell": 7360
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 30,
-      "z": -37,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.30.-35": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOL",
-      "damage": 15,
-      "amount": 16
-    },
-    "material": "WOOL:15",
-    "price": {
-      "amount": 16,
-      "buy": 1840,
-      "sell": 7360
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 30,
-      "z": -35,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.30.-31": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS_PANE",
-      "damage": 10,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS_PANE:10",
-    "price": {
-      "amount": 16,
-      "buy": 173,
-      "sell": 693
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 30,
-      "z": -31,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.30.-29": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS_PANE",
-      "damage": 12,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS_PANE:12",
-    "price": {
-      "amount": 16,
-      "buy": 173,
-      "sell": 693
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 30,
-      "z": -29,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.30.-27": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS_PANE",
-      "damage": 13,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS_PANE:13",
-    "price": {
-      "amount": 16,
-      "buy": 173,
-      "sell": 693
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 30,
-      "z": -27,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.30.-25": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS_PANE",
-      "damage": 15,
-      "amount": 16
-    },
-    "material": "STAINED_GLASS_PANE:15",
-    "price": {
-      "amount": 16,
-      "buy": 173,
-      "sell": 693
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 30,
-      "z": -25,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.30.-23": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS",
-      "damage": 10,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS:10",
-    "price": {
-      "amount": 16,
-      "buy": 462,
-      "sell": 1848
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 30,
-      "z": -23,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.4.27.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS",
-      "damage": 3,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS:3",
-    "price": {
-      "amount": 16,
-      "buy": 462,
-      "sell": 1848
-    },
-    "loc": {
-      "world": "world",
-      "x": 4,
-      "y": 27,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.4.28.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS",
-      "damage": 9,
-      "amount": 16
-    },
-    "material": "STAINED_GLASS:9",
-    "price": {
-      "amount": 16,
-      "buy": 462,
-      "sell": 1848
-    },
-    "loc": {
-      "world": "world",
-      "x": 4,
-      "y": 28,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.4.29.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS",
-      "damage": 11,
-      "amount": 16
-    },
-    "material": "STAINED_GLASS:11",
-    "price": {
-      "amount": 16,
-      "buy": 462,
-      "sell": 1848
-    },
-    "loc": {
-      "world": "world",
-      "x": 4,
-      "y": 29,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.4.30.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS",
-      "damage": 12,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS:12",
-    "price": {
-      "amount": 16,
-      "buy": 462,
-      "sell": 1848
-    },
-    "loc": {
-      "world": "world",
-      "x": 4,
-      "y": 30,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.6.27.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS",
-      "damage": 1,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS:1",
-    "price": {
-      "amount": 16,
-      "buy": 462,
-      "sell": 1848
-    },
-    "loc": {
-      "world": "world",
-      "x": 6,
-      "y": 27,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.6.28.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS",
-      "damage": 4,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS:4",
-    "price": {
-      "amount": 16,
-      "buy": 462,
-      "sell": 1848
-    },
-    "loc": {
-      "world": "world",
-      "x": 6,
-      "y": 28,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.6.29.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS",
-      "damage": 5,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS:5",
-    "price": {
-      "amount": 16,
-      "buy": 462,
-      "sell": 1848
-    },
-    "loc": {
-      "world": "world",
-      "x": 6,
-      "y": 29,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.6.30.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS",
-      "damage": 13,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS:13",
-    "price": {
-      "amount": 16,
-      "buy": 462,
-      "sell": 1848
-    },
-    "loc": {
-      "world": "world",
-      "x": 6,
-      "y": 30,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.8.27.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "STAINED_GLASS",
-    "price": {
-      "amount": 16,
-      "buy": 462,
-      "sell": 1848
-    },
-    "loc": {
-      "world": "world",
-      "x": 8,
-      "y": 27,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.8.28.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS",
-      "damage": 8,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS:8",
-    "price": {
-      "amount": 16,
-      "buy": 462,
-      "sell": 1848
-    },
-    "loc": {
-      "world": "world",
-      "x": 8,
-      "y": 28,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.8.29.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS",
-      "damage": 7,
-      "amount": 1
-    },
-    "material": "STAINED_GLASS:7",
-    "price": {
-      "amount": 16,
-      "buy": 462,
-      "sell": 1848
-    },
-    "loc": {
-      "world": "world",
-      "x": 8,
-      "y": 29,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.8.30.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STAINED_GLASS",
-      "damage": 15,
-      "amount": 16
-    },
-    "material": "STAINED_GLASS:15",
-    "price": {
-      "amount": 16,
-      "buy": 462,
-      "sell": 1848
-    },
-    "loc": {
-      "world": "world",
-      "x": 8,
-      "y": 30,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.10.27.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "THIN_GLASS",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "THIN_GLASS",
-    "price": {
-      "amount": 16,
-      "buy": 162,
-      "sell": 648
-    },
-    "loc": {
-      "world": "world",
-      "x": 10,
-      "y": 27,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.10.28.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "GLASS",
-      "amount": 16,
-      "damage": 0
-    },
-    "material": "GLASS",
-    "price": {
-      "amount": 16,
-      "buy": 432,
-      "sell": 1728
-    },
-    "loc": {
-      "world": "world",
-      "x": 10,
-      "y": 28,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.10.29.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SAND",
-      "damage": 1,
-      "amount": 1
-    },
-    "material": "SAND:1",
-    "price": {
-      "amount": 16,
-      "buy": 280,
-      "sell": 1120
-    },
-    "loc": {
-      "world": "world",
-      "x": 10,
-      "y": 29,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.10.30.-22": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SAND",
-      "amount": 16,
-      "damage": 0
-    },
-    "material": "SAND",
-    "price": {
-      "amount": 16,
-      "buy": 280,
-      "sell": 1120
-    },
-    "loc": {
-      "world": "world",
-      "x": 10,
-      "y": 30,
-      "z": -22,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.27.-54": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "PISTON_STICKY_BASE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "PISTON_STICKY_BASE",
-    "price": {
-      "amount": 1,
-      "buy": 688,
-      "sell": 2754
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 27,
-      "z": -54,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.27.-52": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "JUKEBOX",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "JUKEBOX",
-    "price": {
-      "amount": 1,
-      "buy": 600,
-      "sell": 2400
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 27,
-      "z": -52,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.27.-50": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "DAYLIGHT_DETECTOR",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "DAYLIGHT_DETECTOR",
-    "price": {
-      "amount": 1,
-      "buy": 249,
-      "sell": 999
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 27,
-      "z": -50,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.27.-48": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOD_BUTTON",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "WOOD_BUTTON",
-    "price": {
-      "amount": 1,
-      "buy": 12,
-      "sell": 50
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 27,
-      "z": -48,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.27.-46": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "REDSTONE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "REDSTONE",
-    "price": {
-      "amount": 1,
-      "buy": 125,
-      "sell": 500
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 27,
-      "z": -46,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.28.-54": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "PISTON_BASE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "PISTON_BASE",
-    "price": {
-      "amount": 1,
-      "buy": 438,
-      "sell": 1754
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 28,
-      "z": -54,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.28.-52": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "NOTE_BLOCK",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "NOTE_BLOCK",
-    "price": {
-      "amount": 1,
-      "buy": 225,
-      "sell": 900
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 28,
-      "z": -52,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.28.-50": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "LEVER",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "LEVER",
-    "price": {
-      "amount": 1,
-      "buy": 21,
-      "sell": 85
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 28,
-      "z": -50,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.28.-48": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STONE_BUTTON",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "STONE_BUTTON",
-    "price": {
-      "amount": 1,
-      "buy": 24,
-      "sell": 96
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 28,
-      "z": -48,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.28.-46": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "REDSTONE_BLOCK",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "REDSTONE_BLOCK",
-    "price": {
-      "amount": 1,
-      "buy": 1125,
-      "sell": 4500
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 28,
-      "z": -46,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.29.-54": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "RAILS",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "RAILS",
-    "price": {
-      "amount": 1,
-      "buy": 81,
-      "sell": 325
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 29,
-      "z": -54,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.29.-52": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "DISPENSER",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "DISPENSER",
-    "price": {
-      "amount": 1,
-      "buy": 323,
-      "sell": 1295
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 29,
-      "z": -52,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.29.-50": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "TRIPWIRE_HOOK",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "TRIPWIRE_HOOK",
-    "price": {
-      "amount": 1,
-      "buy": 117,
-      "sell": 469
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 29,
-      "z": -50,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.29.-48": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOD_PLATE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "WOOD_PLATE",
-    "price": {
-      "amount": 1,
-      "buy": 25,
-      "sell": 100
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 29,
-      "z": -48,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.29.-46": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "REDSTONE_TORCH_ON",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "REDSTONE_TORCH_ON",
-    "price": {
-      "amount": 1,
-      "buy": 131,
-      "sell": 525
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 29,
-      "z": -46,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.30.-54": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "POWERED_RAIL",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "POWERED_RAIL",
-    "price": {
-      "amount": 1,
-      "buy": 471,
-      "sell": 1887
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 30,
-      "z": -54,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.30.-52": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "DROPPER",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "DROPPER",
-    "price": {
-      "amount": 1,
-      "buy": 230,
-      "sell": 920
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 30,
-      "z": -52,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.30.-50": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "IRON_TRAPDOOR",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "IRON_TRAPDOOR",
-    "price": {
-      "amount": 1,
-      "buy": 864,
-      "sell": 3456
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 30,
-      "z": -50,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.30.-48": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STONE_PLATE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "STONE_PLATE",
-    "price": {
-      "amount": 1,
-      "buy": 48,
-      "sell": 192
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 30,
-      "z": -48,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.30.-46": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "DIODE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "DIODE",
-    "price": {
-      "amount": 1,
-      "buy": 459,
-      "sell": 1838
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 30,
-      "z": -46,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.31.-54": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "ACTIVATOR_RAIL",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "ACTIVATOR_RAIL",
-    "price": {
-      "amount": 1,
-      "buy": 239,
-      "sell": 959
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 31,
-      "z": -54,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.31.-52": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "REDSTONE_LAMP_OFF",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "REDSTONE_LAMP_OFF",
-    "price": {
-      "amount": 1,
-      "buy": 900,
-      "sell": 3600
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 31,
-      "z": -52,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.31.-50": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "IRON_DOOR",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "IRON_DOOR",
-    "price": {
-      "amount": 1,
-      "buy": 432,
-      "sell": 1728
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 31,
-      "z": -50,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.31.-48": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "IRON_PLATE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "IRON_PLATE",
-    "price": {
-      "amount": 1,
-      "buy": 432,
-      "sell": 1728
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 31,
-      "z": -48,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.31.-46": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "REDSTONE_COMPARATOR",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "REDSTONE_COMPARATOR",
-    "price": {
-      "amount": 1,
-      "buy": 515,
-      "sell": 2063
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 31,
-      "z": -46,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.32.-54": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "DETECTOR_RAIL",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "DETECTOR_RAIL",
-    "price": {
-      "amount": 1,
-      "buy": 244,
-      "sell": 979
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 32,
-      "z": -54,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.32.-52": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "OBSERVER",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "OBSERVER",
-    "price": {
-      "amount": 1,
-      "buy": 390,
-      "sell": 1560
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 32,
-      "z": -52,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.32.-50": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "HOPPER",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "HOPPER",
-    "price": {
-      "amount": 1,
-      "buy": 1180,
-      "sell": 4720
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 32,
-      "z": -50,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.32.-48": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "GOLD_PLATE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "GOLD_PLATE",
-    "price": {
-      "amount": 1,
-      "buy": 900,
-      "sell": 3600
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 32,
-      "z": -48,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.32.-46": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "TRAPPED_CHEST",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "TRAPPED_CHEST",
-    "price": {
-      "amount": 1,
-      "buy": 217,
-      "sell": 869
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 32,
-      "z": -46,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.27.-56": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "MINECART",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "MINECART",
-    "price": {
-      "amount": 1,
-      "buy": 1080,
-      "sell": 4320
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 27,
-      "z": -56,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.28.-56": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STORAGE_MINECART",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "STORAGE_MINECART",
-    "price": {
-      "amount": 1,
-      "buy": 1180,
-      "sell": 4720
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 28,
-      "z": -56,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.29.-56": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "POWERED_MINECART",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "POWERED_MINECART",
-    "price": {
-      "amount": 1,
-      "buy": 1200,
-      "sell": 4800
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 29,
-      "z": -56,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.30.-56": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "HOPPER_MINECART",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "HOPPER_MINECART",
-    "price": {
-      "amount": 1,
-      "buy": 2260,
-      "sell": 9040
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 30,
-      "z": -56,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.31.-56": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "EXPLOSIVE_MINECART",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "EXPLOSIVE_MINECART",
-    "price": {
-      "amount": 1,
-      "buy": 1450,
-      "sell": 5800
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 31,
-      "z": -56,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.3.32.-56": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SKULL_ITEM",
-      "damage": 5,
-      "amount": 1
-    },
-    "material": "SKULL_ITEM:5",
-    "price": {
-      "amount": 1,
-      "buy": 50000,
-      "sell": 200000
-    },
-    "loc": {
-      "world": "world",
-      "x": 3,
-      "y": 32,
-      "z": -56,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.27.27.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "GRILLED_PORK",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "GRILLED_PORK",
-    "price": {
-      "amount": 16,
-      "buy": 320,
-      "sell": 1280
-    },
-    "loc": {
-      "world": "world",
-      "x": 27,
-      "y": 27,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.27.28.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "PORK",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "PORK",
-    "price": {
-      "amount": 16,
-      "buy": 240,
-      "sell": 960
-    },
-    "loc": {
-      "world": "world",
-      "x": 27,
-      "y": 28,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.27.29.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "COOKED_CHICKEN",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "COOKED_CHICKEN",
-    "price": {
-      "amount": 16,
-      "buy": 320,
-      "sell": 1280
-    },
-    "loc": {
-      "world": "world",
-      "x": 27,
-      "y": 29,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.27.30.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "RAW_CHICKEN",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "RAW_CHICKEN",
-    "price": {
-      "amount": 16,
-      "buy": 240,
-      "sell": 960
-    },
-    "loc": {
-      "world": "world",
-      "x": 27,
-      "y": 30,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.27.31.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "COOKED_FISH",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "COOKED_FISH",
-    "price": {
-      "amount": 16,
-      "buy": 320,
-      "sell": 1280
-    },
-    "loc": {
-      "world": "world",
-      "x": 27,
-      "y": 31,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.27.32.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "RAW_FISH",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "RAW_FISH",
-    "price": {
-      "amount": 16,
-      "buy": 240,
-      "sell": 960
-    },
-    "loc": {
-      "world": "world",
-      "x": 27,
-      "y": 32,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.29.27.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "COOKED_BEEF",
-      "amount": 16,
-      "damage": 0
-    },
-    "material": "COOKED_BEEF",
-    "price": {
-      "amount": 16,
-      "buy": 320,
-      "sell": 1280
-    },
-    "loc": {
-      "world": "world",
-      "x": 29,
-      "y": 27,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.29.28.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "RAW_BEEF",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "RAW_BEEF",
-    "price": {
-      "amount": 16,
-      "buy": 240,
-      "sell": 960
-    },
-    "loc": {
-      "world": "world",
-      "x": 29,
-      "y": 28,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.29.29.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "COOKED_RABBIT",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "COOKED_RABBIT",
-    "price": {
-      "amount": 16,
-      "buy": 320,
-      "sell": 1280
-    },
-    "loc": {
-      "world": "world",
-      "x": 29,
-      "y": 29,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.29.30.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "RABBIT",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "RABBIT",
-    "price": {
-      "amount": 16,
-      "buy": 240,
-      "sell": 960
-    },
-    "loc": {
-      "world": "world",
-      "x": 29,
-      "y": 30,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.29.31.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "COOKED_FISH",
-      "damage": 1,
-      "amount": 1
-    },
-    "material": "COOKED_FISH:1",
-    "price": {
-      "amount": 16,
-      "buy": 320,
-      "sell": 1280
-    },
-    "loc": {
-      "world": "world",
-      "x": 29,
-      "y": 31,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.29.32.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "RAW_FISH",
-      "damage": 1,
-      "amount": 1
-    },
-    "material": "RAW_FISH:1",
-    "price": {
-      "amount": 16,
-      "buy": 240,
-      "sell": 960
-    },
-    "loc": {
-      "world": "world",
-      "x": 29,
-      "y": 32,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.31.27.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "COOKED_MUTTON",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "COOKED_MUTTON",
-    "price": {
-      "amount": 16,
-      "buy": 320,
-      "sell": 1280
-    },
-    "loc": {
-      "world": "world",
-      "x": 31,
-      "y": 27,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.31.28.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "MUTTON",
-      "amount": 16,
-      "damage": 0
-    },
-    "material": "MUTTON",
-    "price": {
-      "amount": 16,
-      "buy": 240,
-      "sell": 960
-    },
-    "loc": {
-      "world": "world",
-      "x": 31,
-      "y": 28,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.31.29.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "BAKED_POTATO",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "BAKED_POTATO",
-    "price": {
-      "amount": 16,
-      "buy": 576,
-      "sell": 2304
-    },
-    "loc": {
-      "world": "world",
-      "x": 31,
-      "y": 29,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.31.30.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "POTATO_ITEM",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "POTATO_ITEM",
-    "price": {
-      "amount": 16,
-      "buy": 240,
-      "sell": 960
-    },
-    "loc": {
-      "world": "world",
-      "x": 31,
-      "y": 30,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.31.31.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "CHORUS_FRUIT_POPPED",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "CHORUS_FRUIT_POPPED",
-    "price": {
-      "amount": 16,
-      "buy": 1600,
-      "sell": 6400
-    },
-    "loc": {
-      "world": "world",
-      "x": 31,
-      "y": 31,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.31.32.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "CHORUS_FRUIT",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "CHORUS_FRUIT",
-    "price": {
-      "amount": 16,
-      "buy": 800,
-      "sell": 3200
-    },
-    "loc": {
-      "world": "world",
-      "x": 31,
-      "y": 32,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.34.27.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "BOAT",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "BOAT",
-    "price": {
-      "amount": 1,
-      "buy": 62,
-      "sell": 250
-    },
-    "loc": {
-      "world": "world",
-      "x": 34,
-      "y": 27,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.34.28.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "BOAT_DARK_OAK",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "BOAT_DARK_OAK",
-    "price": {
-      "amount": 1,
-      "buy": 62,
-      "sell": 250
-    },
-    "loc": {
-      "world": "world",
-      "x": 34,
-      "y": 28,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.34.29.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "BOAT_SPRUCE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "BOAT_SPRUCE",
-    "price": {
-      "amount": 1,
-      "buy": 62,
-      "sell": 250
-    },
-    "loc": {
-      "world": "world",
-      "x": 34,
-      "y": 29,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.34.30.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "BOAT_JUNGLE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "BOAT_JUNGLE",
-    "price": {
-      "amount": 1,
-      "buy": 62,
-      "sell": 250
-    },
-    "loc": {
-      "world": "world",
-      "x": 34,
-      "y": 30,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.34.31.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "BOAT_ACACIA",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "BOAT_ACACIA",
-    "price": {
-      "amount": 1,
-      "buy": 62,
-      "sell": 250
-    },
-    "loc": {
-      "world": "world",
-      "x": 34,
-      "y": 31,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.34.32.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "BOAT_BIRCH",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "BOAT_BIRCH",
-    "price": {
-      "amount": 1,
-      "buy": 62,
-      "sell": 250
-    },
-    "loc": {
-      "world": "world",
-      "x": 34,
-      "y": 32,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.36.27.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOD_DOOR",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "WOOD_DOOR",
-    "price": {
-      "amount": 1,
-      "buy": 25,
-      "sell": 100
-    },
-    "loc": {
-      "world": "world",
-      "x": 36,
-      "y": 27,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.36.28.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "DARK_OAK_DOOR_ITEM",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "DARK_OAK_DOOR_ITEM",
-    "price": {
-      "amount": 1,
-      "buy": 25,
-      "sell": 100
-    },
-    "loc": {
-      "world": "world",
-      "x": 36,
-      "y": 28,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.36.29.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SPRUCE_DOOR_ITEM",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "SPRUCE_DOOR_ITEM",
-    "price": {
-      "amount": 1,
-      "buy": 25,
-      "sell": 100
-    },
-    "loc": {
-      "world": "world",
-      "x": 36,
-      "y": 29,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.36.30.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "JUNGLE_DOOR_ITEM",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "JUNGLE_DOOR_ITEM",
-    "price": {
-      "amount": 1,
-      "buy": 25,
-      "sell": 100
-    },
-    "loc": {
-      "world": "world",
-      "x": 36,
-      "y": 30,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.36.31.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "ACACIA_DOOR_ITEM",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "ACACIA_DOOR_ITEM",
-    "price": {
-      "amount": 1,
-      "buy": 25,
-      "sell": 100
-    },
-    "loc": {
-      "world": "world",
-      "x": 36,
-      "y": 31,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.36.32.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "BIRCH_DOOR_ITEM",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "BIRCH_DOOR_ITEM",
-    "price": {
-      "amount": 1,
-      "buy": 25,
-      "sell": 100
-    },
-    "loc": {
-      "world": "world",
-      "x": 36,
-      "y": 32,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.41.27.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "FENCE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "FENCE",
-    "price": {
-      "amount": 16,
-      "buy": 333,
-      "sell": 1333
-    },
-    "loc": {
-      "world": "world",
-      "x": 41,
-      "y": 27,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.41.28.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "DARK_OAK_FENCE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "DARK_OAK_FENCE",
-    "price": {
-      "amount": 16,
-      "buy": 333,
-      "sell": 1333
-    },
-    "loc": {
-      "world": "world",
-      "x": 41,
-      "y": 28,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.41.29.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SPRUCE_FENCE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "SPRUCE_FENCE",
-    "price": {
-      "amount": 16,
-      "buy": 333,
-      "sell": 1333
-    },
-    "loc": {
-      "world": "world",
-      "x": 41,
-      "y": 29,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.41.30.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "JUNGLE_FENCE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "JUNGLE_FENCE",
-    "price": {
-      "amount": 16,
-      "buy": 333,
-      "sell": 1333
-    },
-    "loc": {
-      "world": "world",
-      "x": 41,
-      "y": 30,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.41.31.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "ACACIA_FENCE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "ACACIA_FENCE",
-    "price": {
-      "amount": 16,
-      "buy": 333,
-      "sell": 1333
-    },
-    "loc": {
-      "world": "world",
-      "x": 41,
-      "y": 31,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.41.32.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "BIRCH_FENCE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "BIRCH_FENCE",
-    "price": {
-      "amount": 16,
-      "buy": 333,
-      "sell": 1333
-    },
-    "loc": {
-      "world": "world",
-      "x": 41,
-      "y": 32,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.43.27.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "FENCE_GATE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "FENCE_GATE",
-    "price": {
-      "amount": 16,
-      "buy": 800,
-      "sell": 3200
-    },
-    "loc": {
-      "world": "world",
-      "x": 43,
-      "y": 27,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.43.28.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "DARK_OAK_FENCE_GATE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "DARK_OAK_FENCE_GATE",
-    "price": {
-      "amount": 16,
-      "buy": 800,
-      "sell": 3200
-    },
-    "loc": {
-      "world": "world",
-      "x": 43,
-      "y": 28,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.43.29.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SPRUCE_FENCE_GATE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "SPRUCE_FENCE_GATE",
-    "price": {
-      "amount": 16,
-      "buy": 800,
-      "sell": 3200
-    },
-    "loc": {
-      "world": "world",
-      "x": 43,
-      "y": 29,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.43.30.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "JUNGLE_FENCE_GATE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "JUNGLE_FENCE_GATE",
-    "price": {
-      "amount": 16,
-      "buy": 800,
-      "sell": 3200
-    },
-    "loc": {
-      "world": "world",
-      "x": 43,
-      "y": 30,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.43.31.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "ACACIA_FENCE_GATE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "ACACIA_FENCE_GATE",
-    "price": {
-      "amount": 16,
-      "buy": 800,
-      "sell": 3200
-    },
-    "loc": {
-      "world": "world",
-      "x": 43,
-      "y": 31,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.43.32.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "BIRCH_FENCE_GATE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "BIRCH_FENCE_GATE",
-    "price": {
-      "amount": 16,
-      "buy": 800,
-      "sell": 3200
-    },
-    "loc": {
-      "world": "world",
-      "x": 43,
-      "y": 32,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.46.27.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "PRISMARINE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "PRISMARINE",
-    "price": {
-      "amount": 64,
-      "buy": 8640,
-      "sell": 34560
-    },
-    "loc": {
-      "world": "world",
-      "x": 46,
-      "y": 27,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.46.28.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "PRISMARINE",
-      "damage": 1,
-      "amount": 1
-    },
-    "material": "PRISMARINE:1",
-    "price": {
-      "amount": 64,
-      "buy": 8640,
-      "sell": 34560
-    },
-    "loc": {
-      "world": "world",
-      "x": 46,
-      "y": 28,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.46.29.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "PRISMARINE",
-      "damage": 2,
-      "amount": 1
-    },
-    "material": "PRISMARINE:2",
-    "price": {
-      "amount": 64,
-      "buy": 8640,
-      "sell": 34560
-    },
-    "loc": {
-      "world": "world",
-      "x": 46,
-      "y": 29,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.46.30.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SEA_LANTERN",
-      "amount": 64,
-      "damage": 0
-    },
-    "material": "SEA_LANTERN",
-    "price": {
-      "amount": 64,
-      "buy": 19840,
-      "sell": 79360
-    },
-    "loc": {
-      "world": "world",
-      "x": 46,
-      "y": 30,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.46.32.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SOUL_SAND",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "SOUL_SAND",
-    "price": {
-      "amount": 64,
-      "buy": 6400,
-      "sell": 25600
-    },
-    "loc": {
-      "world": "world",
-      "x": 46,
-      "y": 32,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.48.27.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STONE",
-      "damage": 5,
-      "amount": 64
-    },
-    "material": "STONE:5",
-    "price": {
-      "amount": 64,
-      "buy": 1536,
-      "sell": 6144
-    },
-    "loc": {
-      "world": "world",
-      "x": 48,
-      "y": 27,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.48.28.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STONE",
-      "damage": 1,
-      "amount": 1
-    },
-    "material": "STONE:1",
-    "price": {
-      "amount": 64,
-      "buy": 1536,
-      "sell": 6144
-    },
-    "loc": {
-      "world": "world",
-      "x": 48,
-      "y": 28,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.48.29.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STONE",
-      "damage": 3,
-      "amount": 64
-    },
-    "material": "STONE:3",
-    "price": {
-      "amount": 64,
-      "buy": 1536,
-      "sell": 6144
-    },
-    "loc": {
-      "world": "world",
-      "x": 48,
-      "y": 29,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.48.30.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "ENDER_STONE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "ENDER_STONE",
-    "price": {
-      "amount": 64,
-      "buy": 1600,
-      "sell": 6400
-    },
-    "loc": {
-      "world": "world",
-      "x": 48,
-      "y": 30,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.48.31.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "NETHER_WART_BLOCK",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "NETHER_WART_BLOCK",
-    "price": {
-      "amount": 64,
-      "buy": 28800,
-      "sell": 115200
-    },
-    "loc": {
-      "world": "world",
-      "x": 48,
-      "y": 31,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.48.32.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "NETHERRACK",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "NETHERRACK",
-    "price": {
-      "amount": 64,
-      "buy": 960,
-      "sell": 3840
-    },
-    "loc": {
-      "world": "world",
-      "x": 48,
-      "y": 32,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.50.27.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STONE",
-      "damage": 6,
-      "amount": 1
-    },
-    "material": "STONE:6",
-    "price": {
-      "amount": 64,
-      "buy": 1536,
-      "sell": 6144
-    },
-    "loc": {
-      "world": "world",
-      "x": 50,
-      "y": 27,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.50.28.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STONE",
-      "damage": 2,
-      "amount": 1
-    },
-    "material": "STONE:2",
-    "price": {
-      "amount": 64,
-      "buy": 1536,
-      "sell": 6144
-    },
-    "loc": {
-      "world": "world",
-      "x": 50,
-      "y": 28,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.50.29.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STONE",
-      "damage": 4,
-      "amount": 1
-    },
-    "material": "STONE:4",
-    "price": {
-      "amount": 64,
-      "buy": 1536,
-      "sell": 6144
-    },
-    "loc": {
-      "world": "world",
-      "x": 50,
-      "y": 29,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.50.30.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "END_BRICKS",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "END_BRICKS",
-    "price": {
-      "amount": 64,
-      "buy": 1600,
-      "sell": 6400
-    },
-    "loc": {
-      "world": "world",
-      "x": 50,
-      "y": 30,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.50.31.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "RED_NETHER_BRICK",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "RED_NETHER_BRICK",
-    "price": {
-      "amount": 64,
-      "buy": 8960,
-      "sell": 35840
-    },
-    "loc": {
-      "world": "world",
-      "x": 50,
-      "y": 31,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.50.32.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "GLOWSTONE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "GLOWSTONE",
-    "price": {
-      "amount": 64,
-      "buy": 25600,
-      "sell": 102400
-    },
-    "loc": {
-      "world": "world",
-      "x": 50,
-      "y": 32,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.52.27.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STEP",
-      "damage": 6,
-      "amount": 1
-    },
-    "material": "STEP:6",
-    "price": {
-      "amount": 64,
-      "buy": 768,
-      "sell": 3072
-    },
-    "loc": {
-      "world": "world",
-      "x": 52,
-      "y": 27,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.52.28.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "NETHER_BRICK_STAIRS",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "NETHER_BRICK_STAIRS",
-    "price": {
-      "amount": 64,
-      "buy": 7680,
-      "sell": 30720
-    },
-    "loc": {
-      "world": "world",
-      "x": 52,
-      "y": 28,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.52.29.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "NETHER_BRICK",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "NETHER_BRICK",
-    "price": {
-      "amount": 64,
-      "buy": 5120,
-      "sell": 20480
-    },
-    "loc": {
-      "world": "world",
-      "x": 52,
-      "y": 29,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.52.30.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STEP",
-      "damage": 4,
-      "amount": 1
-    },
-    "material": "STEP:4",
-    "price": {
-      "amount": 64,
-      "buy": 768,
-      "sell": 3072
-    },
-    "loc": {
-      "world": "world",
-      "x": 52,
-      "y": 30,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.52.31.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "BRICK_STAIRS",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "BRICK_STAIRS",
-    "price": {
-      "amount": 64,
-      "buy": 48000,
-      "sell": 192000
-    },
-    "loc": {
-      "world": "world",
-      "x": 52,
-      "y": 31,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.52.32.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "BRICK",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "BRICK",
-    "price": {
-      "amount": 64,
-      "buy": 32000,
-      "sell": 128000
-    },
-    "loc": {
-      "world": "world",
-      "x": 52,
-      "y": 32,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.54.27.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "PURPUR_SLAB",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "PURPUR_SLAB",
-    "price": {
-      "amount": 64,
-      "buy": 3200,
-      "sell": 12800
-    },
-    "loc": {
-      "world": "world",
-      "x": 54,
-      "y": 27,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.54.28.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "PURPUR_STAIRS",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "PURPUR_STAIRS",
-    "price": {
-      "amount": 64,
-      "buy": 9600,
-      "sell": 38400
-    },
-    "loc": {
-      "world": "world",
-      "x": 54,
-      "y": 28,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.54.29.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "PURPUR_BLOCK",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "PURPUR_BLOCK",
-    "price": {
-      "amount": 64,
-      "buy": 6400,
-      "sell": 25600
-    },
-    "loc": {
-      "world": "world",
-      "x": 54,
-      "y": 29,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.54.30.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "PURPUR_PILLAR",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "PURPUR_PILLAR",
-    "price": {
-      "amount": 64,
-      "buy": 6400,
-      "sell": 25600
-    },
-    "loc": {
-      "world": "world",
-      "x": 54,
-      "y": 30,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.54.31.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "NETHER_FENCE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "NETHER_FENCE",
-    "price": {
-      "amount": 64,
-      "buy": 5120,
-      "sell": 20480
-    },
-    "loc": {
-      "world": "world",
-      "x": 54,
-      "y": 31,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.54.32.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STEP",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "STEP",
-    "price": {
-      "amount": 64,
-      "buy": 768,
-      "sell": 3072
-    },
-    "loc": {
-      "world": "world",
-      "x": 54,
-      "y": 32,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.56.27.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STEP",
-      "damage": 3,
-      "amount": 1
-    },
-    "material": "STEP:3",
-    "price": {
-      "amount": 64,
-      "buy": 768,
-      "sell": 3072
-    },
-    "loc": {
-      "world": "world",
-      "x": 56,
-      "y": 27,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.56.28.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "COBBLESTONE_STAIRS",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "COBBLESTONE_STAIRS",
-    "price": {
-      "amount": 64,
-      "buy": 1440,
-      "sell": 5760
-    },
-    "loc": {
-      "world": "world",
-      "x": 56,
-      "y": 28,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.56.29.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "COBBLESTONE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "COBBLESTONE",
-    "price": {
-      "amount": 64,
-      "buy": 960,
-      "sell": 3840
-    },
-    "loc": {
-      "world": "world",
-      "x": 56,
-      "y": 29,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.56.30.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "MOSSY_COBBLESTONE",
-      "amount": 64,
-      "damage": 0
-    },
-    "material": "MOSSY_COBBLESTONE",
-    "price": {
-      "amount": 64,
-      "buy": 3520,
-      "sell": 14080
-    },
-    "loc": {
-      "world": "world",
-      "x": 56,
-      "y": 30,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.56.31.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "COBBLE_WALL",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "COBBLE_WALL",
-    "price": {
-      "amount": 64,
-      "buy": 960,
-      "sell": 3840
-    },
-    "loc": {
-      "world": "world",
-      "x": 56,
-      "y": 31,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.56.32.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "COBBLE_WALL",
-      "damage": 1,
-      "amount": 1
-    },
-    "material": "COBBLE_WALL:1",
-    "price": {
-      "amount": 64,
-      "buy": 960,
-      "sell": 3840
-    },
-    "loc": {
-      "world": "world",
-      "x": 56,
-      "y": 32,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.58.27.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STEP",
-      "damage": 5,
-      "amount": 1
-    },
-    "material": "STEP:5",
-    "price": {
-      "amount": 64,
-      "buy": 768,
-      "sell": 3072
-    },
-    "loc": {
-      "world": "world",
-      "x": 58,
-      "y": 27,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.58.28.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SMOOTH_STAIRS",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "SMOOTH_STAIRS",
-    "price": {
-      "amount": 64,
-      "buy": 2304,
-      "sell": 9216
-    },
-    "loc": {
-      "world": "world",
-      "x": 58,
-      "y": 28,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.58.29.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SMOOTH_BRICK",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "SMOOTH_BRICK",
-    "price": {
-      "amount": 64,
-      "buy": 4096,
-      "sell": 16384
-    },
-    "loc": {
-      "world": "world",
-      "x": 58,
-      "y": 29,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.58.30.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SMOOTH_BRICK",
-      "damage": 2,
-      "amount": 1
-    },
-    "material": "SMOOTH_BRICK:2",
-    "price": {
-      "amount": 64,
-      "buy": 4096,
-      "sell": 16384
-    },
-    "loc": {
-      "world": "world",
-      "x": 58,
-      "y": 30,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.58.31.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SMOOTH_BRICK",
-      "damage": 3,
-      "amount": 1
-    },
-    "material": "SMOOTH_BRICK:3",
-    "price": {
-      "amount": 64,
-      "buy": 4096,
-      "sell": 16384
-    },
-    "loc": {
-      "world": "world",
-      "x": 58,
-      "y": 31,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.58.32.-78": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SMOOTH_BRICK",
-      "damage": 1,
-      "amount": 1
-    },
-    "material": "SMOOTH_BRICK:1",
-    "price": {
-      "amount": 64,
-      "buy": 4096,
-      "sell": 16384
-    },
-    "loc": {
-      "world": "world",
-      "x": 58,
-      "y": 32,
-      "z": -78,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.27.-77": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STONE_SLAB2",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "STONE_SLAB2",
-    "price": {
-      "amount": 64,
-      "buy": 768,
-      "sell": 3072
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 27,
-      "z": -77,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.27.-75": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STEP",
-      "damage": 1,
-      "amount": 1
-    },
-    "material": "STEP:1",
-    "price": {
-      "amount": 64,
-      "buy": 768,
-      "sell": 3072
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 27,
-      "z": -75,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.27.-73": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STEP",
-      "damage": 7,
-      "amount": 1
-    },
-    "material": "STEP:7",
-    "price": {
-      "amount": 64,
-      "buy": 768,
-      "sell": 3072
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 27,
-      "z": -73,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.28.-77": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "RED_SANDSTONE_STAIRS",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "RED_SANDSTONE_STAIRS",
-    "price": {
-      "amount": 64,
-      "buy": 6720,
-      "sell": 26880
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 28,
-      "z": -77,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.28.-75": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SANDSTONE_STAIRS",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "SANDSTONE_STAIRS",
-    "price": {
-      "amount": 64,
-      "buy": 6720,
-      "sell": 26880
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 28,
-      "z": -75,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.28.-73": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "QUARTZ_STAIRS",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "QUARTZ_STAIRS",
-    "price": {
-      "amount": 64,
-      "buy": 19200,
-      "sell": 76800
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 28,
-      "z": -73,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.29.-77": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "RED_SANDSTONE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "RED_SANDSTONE",
-    "price": {
-      "amount": 64,
-      "buy": 4480,
-      "sell": 17920
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 29,
-      "z": -77,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.29.-75": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SANDSTONE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "SANDSTONE",
-    "price": {
-      "amount": 64,
-      "buy": 4480,
-      "sell": 17920
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 29,
-      "z": -75,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.29.-73": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "QUARTZ_BLOCK",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "QUARTZ_BLOCK",
-    "price": {
-      "amount": 64,
-      "buy": 12800,
-      "sell": 51200
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 29,
-      "z": -73,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.30.-77": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "RED_SANDSTONE",
-      "damage": 2,
-      "amount": 1
-    },
-    "material": "RED_SANDSTONE:2",
-    "price": {
-      "amount": 64,
-      "buy": 4480,
-      "sell": 17920
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 30,
-      "z": -77,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.30.-75": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SANDSTONE",
-      "damage": 2,
-      "amount": 1
-    },
-    "material": "SANDSTONE:2",
-    "price": {
-      "amount": 64,
-      "buy": 4480,
-      "sell": 17920
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 30,
-      "z": -75,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.30.-73": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "QUARTZ_BLOCK",
-      "damage": 2,
-      "amount": 1
-    },
-    "material": "QUARTZ_BLOCK:2",
-    "price": {
-      "amount": 64,
-      "buy": 12800,
-      "sell": 51200
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 30,
-      "z": -73,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.31.-77": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "RED_SANDSTONE",
-      "damage": 1,
-      "amount": 1
-    },
-    "material": "RED_SANDSTONE:1",
-    "price": {
-      "amount": 64,
-      "buy": 4480,
-      "sell": 17920
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 31,
-      "z": -77,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.31.-75": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SANDSTONE",
-      "damage": 1,
-      "amount": 1
-    },
-    "material": "SANDSTONE:1",
-    "price": {
-      "amount": 64,
-      "buy": 4480,
-      "sell": 17920
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 31,
-      "z": -75,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.31.-73": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "QUARTZ_BLOCK",
-      "damage": 1,
-      "amount": 1
-    },
-    "material": "QUARTZ_BLOCK:1",
-    "price": {
-      "amount": 64,
-      "buy": 12800,
-      "sell": 51200
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 31,
-      "z": -73,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.32.-77": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "STONE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "STONE",
-    "price": {
-      "amount": 64,
-      "buy": 1536,
-      "sell": 6144
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 32,
-      "z": -77,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.32.-75": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "GRAVEL",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "GRAVEL",
-    "price": {
-      "amount": 64,
-      "buy": 1920,
-      "sell": 7680
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 32,
-      "z": -75,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.32.-73": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "BONE_BLOCK",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "BONE_BLOCK",
-    "price": {
-      "amount": 64,
-      "buy": 8640,
-      "sell": 34560
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 32,
-      "z": -73,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.27.-69": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SAPLING",
-      "damage": 2,
-      "amount": 8
-    },
-    "material": "SAPLING:2",
-    "price": {
-      "amount": 8,
-      "buy": 400,
-      "sell": 1600
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 27,
-      "z": -69,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.27.-67": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SAPLING",
-      "damage": 4,
-      "amount": 1
-    },
-    "material": "SAPLING:4",
-    "price": {
-      "amount": 8,
-      "buy": 400,
-      "sell": 1600
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 27,
-      "z": -67,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.27.-65": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SAPLING",
-      "damage": 3,
-      "amount": 1
-    },
-    "material": "SAPLING:3",
-    "price": {
-      "amount": 8,
-      "buy": 400,
-      "sell": 1600
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 27,
-      "z": -65,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.27.-63": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SAPLING",
-      "damage": 1,
-      "amount": 1
-    },
-    "material": "SAPLING:1",
-    "price": {
-      "amount": 8,
-      "buy": 400,
-      "sell": 1600
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 27,
-      "z": -63,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.27.-61": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SAPLING",
-      "damage": 5,
-      "amount": 1
-    },
-    "material": "SAPLING:5",
-    "price": {
-      "amount": 8,
-      "buy": 400,
-      "sell": 1600
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 27,
-      "z": -61,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.27.-59": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SAPLING",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "SAPLING",
-    "price": {
-      "amount": 8,
-      "buy": 400,
-      "sell": 1600
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 27,
-      "z": -59,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.28.-69": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "LOG",
-      "damage": 2,
-      "amount": 64
-    },
-    "material": "LOG:2",
-    "price": {
-      "amount": 64,
-      "buy": 3200,
-      "sell": 12800
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 28,
-      "z": -69,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.28.-67": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "LOG_2",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "LOG_2",
-    "price": {
-      "amount": 64,
-      "buy": 3200,
-      "sell": 12800
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 28,
-      "z": -67,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.28.-65": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "LOG",
-      "damage": 3,
-      "amount": 1
-    },
-    "material": "LOG:3",
-    "price": {
-      "amount": 64,
-      "buy": 3200,
-      "sell": 12800
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 28,
-      "z": -65,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.28.-63": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "LOG",
-      "damage": 1,
-      "amount": 64
-    },
-    "material": "LOG:1",
-    "price": {
-      "amount": 64,
-      "buy": 3200,
-      "sell": 12800
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 28,
-      "z": -63,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.28.-61": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "LOG_2",
-      "damage": 1,
-      "amount": 64
-    },
-    "material": "LOG_2:1",
-    "price": {
-      "amount": 64,
-      "buy": 3200,
-      "sell": 12800
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 28,
-      "z": -61,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.28.-59": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "LOG",
-      "amount": 64,
-      "damage": 0
-    },
-    "material": "LOG",
-    "price": {
-      "amount": 64,
-      "buy": 3200,
-      "sell": 12800
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 28,
-      "z": -59,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.29.-69": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOD",
-      "damage": 2,
-      "amount": 1
-    },
-    "material": "WOOD:2",
-    "price": {
-      "amount": 64,
-      "buy": 800,
-      "sell": 3200
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 29,
-      "z": -69,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.29.-67": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOD",
-      "damage": 4,
-      "amount": 1
-    },
-    "material": "WOOD:4",
-    "price": {
-      "amount": 64,
-      "buy": 800,
-      "sell": 3200
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 29,
-      "z": -67,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.29.-65": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOD",
-      "damage": 3,
-      "amount": 64
-    },
-    "material": "WOOD:3",
-    "price": {
-      "amount": 64,
-      "buy": 800,
-      "sell": 3200
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 29,
-      "z": -65,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.29.-63": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOD",
-      "damage": 1,
-      "amount": 1
-    },
-    "material": "WOOD:1",
-    "price": {
-      "amount": 64,
-      "buy": 800,
-      "sell": 3200
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 29,
-      "z": -63,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.29.-61": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOD",
-      "damage": 5,
-      "amount": 1
-    },
-    "material": "WOOD:5",
-    "price": {
-      "amount": 64,
-      "buy": 800,
-      "sell": 3200
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 29,
-      "z": -61,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.29.-59": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOD",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "WOOD",
-    "price": {
-      "amount": 64,
-      "buy": 800,
-      "sell": 3200
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 29,
-      "z": -59,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.30.-69": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "BIRCH_WOOD_STAIRS",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "BIRCH_WOOD_STAIRS",
-    "price": {
-      "amount": 32,
-      "buy": 600,
-      "sell": 2400
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 30,
-      "z": -69,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.30.-67": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "ACACIA_STAIRS",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "ACACIA_STAIRS",
-    "price": {
-      "amount": 32,
-      "buy": 600,
-      "sell": 2400
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 30,
-      "z": -67,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.30.-65": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "JUNGLE_WOOD_STAIRS",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "JUNGLE_WOOD_STAIRS",
-    "price": {
-      "amount": 32,
-      "buy": 600,
-      "sell": 2400
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 30,
-      "z": -65,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.30.-63": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "SPRUCE_WOOD_STAIRS",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "SPRUCE_WOOD_STAIRS",
-    "price": {
-      "amount": 32,
-      "buy": 600,
-      "sell": 2400
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 30,
-      "z": -63,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.30.-61": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "DARK_OAK_STAIRS",
-      "amount": 32,
-      "damage": 0
-    },
-    "material": "DARK_OAK_STAIRS",
-    "price": {
-      "amount": 32,
-      "buy": 600,
-      "sell": 2400
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 30,
-      "z": -61,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.30.-59": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOD_STAIRS",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "WOOD_STAIRS",
-    "price": {
-      "amount": 32,
-      "buy": 600,
-      "sell": 2400
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 30,
-      "z": -59,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.31.-69": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOD_STEP",
-      "damage": 2,
-      "amount": 32
-    },
-    "material": "WOOD_STEP:2",
-    "price": {
-      "amount": 32,
-      "buy": 200,
-      "sell": 800
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 31,
-      "z": -69,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.31.-67": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOD_STEP",
-      "damage": 4,
-      "amount": 1
-    },
-    "material": "WOOD_STEP:4",
-    "price": {
-      "amount": 32,
-      "buy": 200,
-      "sell": 800
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 31,
-      "z": -67,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.31.-65": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOD_STEP",
-      "damage": 3,
-      "amount": 1
-    },
-    "material": "WOOD_STEP:3",
-    "price": {
-      "amount": 32,
-      "buy": 200,
-      "sell": 800
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 31,
-      "z": -65,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.31.-63": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOD_STEP",
-      "damage": 1,
-      "amount": 1
-    },
-    "material": "WOOD_STEP:1",
-    "price": {
-      "amount": 32,
-      "buy": 200,
-      "sell": 800
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 31,
-      "z": -63,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.31.-61": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOD_STEP",
-      "damage": 5,
-      "amount": 1
-    },
-    "material": "WOOD_STEP:5",
-    "price": {
-      "amount": 32,
-      "buy": 200,
-      "sell": 800
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 31,
-      "z": -61,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.31.-59": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "WOOD_STEP",
-      "amount": 32,
-      "damage": 0
-    },
-    "material": "WOOD_STEP",
-    "price": {
-      "amount": 32,
-      "buy": 200,
-      "sell": 800
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 31,
-      "z": -59,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.32.-69": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "LEAVES",
-      "damage": 2,
-      "amount": 1
-    },
-    "material": "LEAVES:2",
-    "price": {
-      "amount": 32,
-      "buy": 160,
-      "sell": 640
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 32,
-      "z": -69,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.32.-67": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "LEAVES_2",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "LEAVES_2",
-    "price": {
-      "amount": 32,
-      "buy": 160,
-      "sell": 640
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 32,
-      "z": -67,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.32.-65": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "LEAVES",
-      "damage": 3,
-      "amount": 32
-    },
-    "material": "LEAVES:3",
-    "price": {
-      "amount": 32,
-      "buy": 160,
-      "sell": 640
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 32,
-      "z": -65,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.32.-63": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "LEAVES",
-      "damage": 1,
-      "amount": 1
-    },
-    "material": "LEAVES:1",
-    "price": {
-      "amount": 32,
-      "buy": 160,
-      "sell": 640
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 32,
-      "z": -63,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.32.-61": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "LEAVES_2",
-      "damage": 1,
-      "amount": 1
-    },
-    "material": "LEAVES_2:1",
-    "price": {
-      "amount": 32,
-      "buy": 160,
-      "sell": 640
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 32,
-      "z": -61,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.32.-59": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "LEAVES",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "LEAVES",
-    "price": {
-      "amount": 32,
-      "buy": 160,
-      "sell": 640
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 32,
-      "z": -59,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.27.-54": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "DIAMOND_SWORD",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "DIAMOND_SWORD",
-    "price": {
-      "amount": 1,
-      "buy": 1006,
-      "sell": 4025
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 27,
-      "z": -54,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.27.-52": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "DIAMOND_BOOTS",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "DIAMOND_BOOTS",
-    "price": {
-      "amount": 1,
-      "buy": 2000,
-      "sell": 8000
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 27,
-      "z": -52,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.28.-54": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "DIAMOND_PICKAXE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "DIAMOND_PICKAXE",
-    "price": {
-      "amount": 1,
-      "buy": 1512,
-      "sell": 6050
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 28,
-      "z": -54,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.28.-52": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "DIAMOND_LEGGINGS",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "DIAMOND_LEGGINGS",
-    "price": {
-      "amount": 1,
-      "buy": 3500,
-      "sell": 14000
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 28,
-      "z": -52,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.29.-54": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "DIAMOND_SPADE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "DIAMOND_SPADE",
-    "price": {
-      "amount": 1,
-      "buy": 512,
-      "sell": 2050
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 29,
-      "z": -54,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.29.-52": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "DIAMOND_CHESTPLATE",
+      "type": "ELYTRA",
       "amount": 1,
       "damage": 0
     },
-    "material": "DIAMOND_CHESTPLATE",
+    "material": "ELYTRA",
     "price": {
       "amount": 1,
-      "buy": 4000,
-      "sell": 16000
+      "cost": 50000,
+      "buy": 25000,
+      "sell": 100000
     },
     "loc": {
       "world": "world",
-      "x": 59,
-      "y": 29,
-      "z": -52,
+      "x": -131,
+      "y": 78,
+      "z": 168,
       "yaw": 0,
       "pitch": 0
     }
   },
-  "world.59.30.-54": {
+  "world.-131.77.168": {
     "type": "adminshop",
     "itemstack": {
-      "type": "DIAMOND_AXE",
-      "amount": 1,
+      "type": "FIREWORK",
+      "amount": 64,
       "damage": 0
     },
-    "material": "DIAMOND_AXE",
+    "material": "FIREWORK",
     "price": {
-      "amount": 1,
-      "buy": 1512,
-      "sell": 6050
+      "amount": 64,
+      "cost": 16426.666666666664,
+      "buy": 8213,
+      "sell": 32853
     },
     "loc": {
       "world": "world",
-      "x": 59,
-      "y": 30,
-      "z": -54,
+      "x": -131,
+      "y": 77,
+      "z": 168,
       "yaw": 0,
       "pitch": 0
     }
   },
-  "world.59.30.-52": {
+  "world.-120.53.157": {
     "type": "adminshop",
     "itemstack": {
       "type": "DIAMOND_HELMET",
@@ -5531,542 +55,614 @@
     "material": "DIAMOND_HELMET",
     "price": {
       "amount": 1,
+      "cost": 5000,
       "buy": 2500,
       "sell": 10000
     },
     "loc": {
       "world": "world",
-      "x": 59,
-      "y": 30,
-      "z": -52,
+      "x": -120,
+      "y": 53,
+      "z": 157,
       "yaw": 0,
       "pitch": 0
     }
   },
-  "world.59.27.-49": {
+  "world.-120.52.157": {
     "type": "adminshop",
     "itemstack": {
-      "type": "DIAMOND",
+      "type": "DIAMOND_CHESTPLATE",
       "amount": 1,
       "damage": 0
     },
-    "material": "DIAMOND",
+    "material": "DIAMOND_CHESTPLATE",
     "price": {
       "amount": 1,
-      "buy": 500,
-      "sell": 2000
+      "cost": 8000,
+      "buy": 4000,
+      "sell": 16000
     },
     "loc": {
       "world": "world",
-      "x": 59,
-      "y": 27,
-      "z": -49,
+      "x": -120,
+      "y": 52,
+      "z": 157,
       "yaw": 0,
       "pitch": 0
     }
   },
-  "world.59.27.-47": {
+  "world.-120.51.157": {
     "type": "adminshop",
     "itemstack": {
-      "type": "DIAMOND_ORE",
+      "type": "DIAMOND_LEGGINGS",
       "amount": 1,
       "damage": 0
     },
-    "material": "DIAMOND_ORE",
+    "material": "DIAMOND_LEGGINGS",
     "price": {
       "amount": 1,
-      "buy": 3750,
-      "sell": 15000
+      "cost": 7000,
+      "buy": 3500,
+      "sell": 14000
     },
     "loc": {
       "world": "world",
-      "x": 59,
-      "y": 27,
-      "z": -47,
+      "x": -120,
+      "y": 51,
+      "z": 157,
       "yaw": 0,
       "pitch": 0
     }
   },
-  "world.59.27.-45": {
+  "world.-118.51.157": {
     "type": "adminshop",
     "itemstack": {
-      "type": "DIAMOND_BLOCK",
+      "type": "DIAMOND_BOOTS",
       "amount": 1,
       "damage": 0
     },
-    "material": "DIAMOND_BLOCK",
+    "material": "DIAMOND_BOOTS",
     "price": {
       "amount": 1,
-      "buy": 4500,
-      "sell": 18000
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 27,
-      "z": -45,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.28.-49": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "EMERALD",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "EMERALD",
-    "price": {
-      "amount": 1,
-      "buy": 600,
-      "sell": 2400
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 28,
-      "z": -49,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.28.-47": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "EMERALD_ORE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "EMERALD_ORE",
-    "price": {
-      "amount": 1,
-      "buy": 5000,
-      "sell": 20000
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 28,
-      "z": -47,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.28.-45": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "EMERALD_BLOCK",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "EMERALD_BLOCK",
-    "price": {
-      "amount": 1,
-      "buy": 5400,
-      "sell": 21600
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 28,
-      "z": -45,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.29.-49": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "GOLD_INGOT",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "GOLD_INGOT",
-    "price": {
-      "amount": 4,
-      "buy": 1800,
-      "sell": 7200
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 29,
-      "z": -49,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.29.-47": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "GOLD_ORE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "GOLD_ORE",
-    "price": {
-      "amount": 4,
-      "buy": 1200,
-      "sell": 4800
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 29,
-      "z": -47,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.29.-45": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "GOLD_BLOCK",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "GOLD_BLOCK",
-    "price": {
-      "amount": 4,
-      "buy": 16200,
-      "sell": 64800
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 29,
-      "z": -45,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.30.-49": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "IRON_INGOT",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "IRON_INGOT",
-    "price": {
-      "amount": 8,
-      "buy": 1728,
-      "sell": 6912
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 30,
-      "z": -49,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.30.-47": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "IRON_ORE",
-      "amount": 8,
-      "damage": 0
-    },
-    "material": "IRON_ORE",
-    "price": {
-      "amount": 8,
-      "buy": 1400,
-      "sell": 5600
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 30,
-      "z": -47,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.30.-45": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "IRON_BLOCK",
-      "amount": 8,
-      "damage": 0
-    },
-    "material": "IRON_BLOCK",
-    "price": {
-      "amount": 8,
-      "buy": 15552,
-      "sell": 62208
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 30,
-      "z": -45,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.27.-40": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "COAL",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "COAL",
-    "price": {
-      "amount": 16,
-      "buy": 640,
-      "sell": 2560
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 27,
-      "z": -40,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.27.-38": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "COAL_ORE",
-      "amount": 16,
-      "damage": 0
-    },
-    "material": "COAL_ORE",
-    "price": {
-      "amount": 16,
-      "buy": 960,
-      "sell": 3840
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 27,
-      "z": -38,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.27.-36": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "COAL_BLOCK",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "COAL_BLOCK",
-    "price": {
-      "amount": 16,
-      "buy": 5760,
-      "sell": 23040
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 27,
-      "z": -36,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.28.-40": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "REDSTONE",
-      "amount": 1,
-      "damage": 0
-    },
-    "material": "REDSTONE",
-    "price": {
-      "amount": 16,
+      "cost": 4000,
       "buy": 2000,
       "sell": 8000
     },
     "loc": {
       "world": "world",
-      "x": 59,
-      "y": 28,
-      "z": -40,
+      "x": -118,
+      "y": 51,
+      "z": 157,
       "yaw": 0,
       "pitch": 0
     }
   },
-  "world.59.28.-38": {
+  "world.-118.52.157": {
     "type": "adminshop",
     "itemstack": {
-      "type": "REDSTONE_ORE",
-      "amount": 16,
-      "damage": 0
-    },
-    "material": "REDSTONE_ORE",
-    "price": {
-      "amount": 16,
-      "buy": 3000,
-      "sell": 12000
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 28,
-      "z": -38,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.28.-36": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "REDSTONE_BLOCK",
+      "type": "DIAMOND_SWORD",
       "amount": 1,
       "damage": 0
     },
-    "material": "REDSTONE_BLOCK",
+    "material": "DIAMOND_SWORD",
     "price": {
-      "amount": 16,
-      "buy": 18000,
-      "sell": 72000
+      "amount": 1,
+      "cost": 2012.5,
+      "buy": 1006,
+      "sell": 4025
     },
     "loc": {
       "world": "world",
-      "x": 59,
-      "y": 28,
-      "z": -36,
+      "x": -118,
+      "y": 52,
+      "z": 157,
       "yaw": 0,
       "pitch": 0
     }
   },
-  "world.59.29.-40": {
+  "world.-118.53.157": {
     "type": "adminshop",
     "itemstack": {
-      "type": "INK_SACK",
+      "type": "BOW",
+      "amount": 1,
+      "damage": 0
+    },
+    "material": "BOW",
+    "price": {
+      "amount": 1,
+      "cost": 187.5,
+      "buy": 93,
+      "sell": 375
+    },
+    "loc": {
+      "world": "world",
+      "x": -118,
+      "y": 53,
+      "z": 157,
+      "yaw": 0,
+      "pitch": 0
+    }
+  },
+  "world.-116.53.157": {
+    "type": "adminshop",
+    "itemstack": {
+      "type": "DIAMOND_PICKAXE",
+      "amount": 1,
+      "damage": 0
+    },
+    "material": "DIAMOND_PICKAXE",
+    "price": {
+      "amount": 1,
+      "cost": 3025,
+      "buy": 1512,
+      "sell": 6050
+    },
+    "loc": {
+      "world": "world",
+      "x": -116,
+      "y": 53,
+      "z": 157,
+      "yaw": 0,
+      "pitch": 0
+    }
+  },
+  "world.-116.52.157": {
+    "type": "adminshop",
+    "itemstack": {
+      "type": "DIAMOND_AXE",
+      "amount": 1,
+      "damage": 0
+    },
+    "material": "DIAMOND_AXE",
+    "price": {
+      "amount": 1,
+      "cost": 3025,
+      "buy": 1512,
+      "sell": 6050
+    },
+    "loc": {
+      "world": "world",
+      "x": -116,
+      "y": 52,
+      "z": 157,
+      "yaw": 0,
+      "pitch": 0
+    }
+  },
+  "world.-116.51.157": {
+    "type": "adminshop",
+    "itemstack": {
+      "type": "DIAMOND_SPADE",
+      "amount": 1,
+      "damage": 0
+    },
+    "material": "DIAMOND_SPADE",
+    "price": {
+      "amount": 1,
+      "cost": 1025,
+      "buy": 512,
+      "sell": 2050
+    },
+    "loc": {
+      "world": "world",
+      "x": -116,
+      "y": 51,
+      "z": 157,
+      "yaw": 0,
+      "pitch": 0
+    }
+  },
+  "world.-114.51.157": {
+    "type": "adminshop",
+    "itemstack": {
+      "type": "SHIELD",
+      "amount": 1,
+      "damage": 0
+    },
+    "material": "SHIELD",
+    "price": {
+      "amount": 1,
+      "cost": 582,
+      "buy": 291,
+      "sell": 1164
+    },
+    "loc": {
+      "world": "world",
+      "x": -114,
+      "y": 51,
+      "z": 157,
+      "yaw": 0,
+      "pitch": 0
+    }
+  },
+  "world.-114.52.157": {
+    "type": "adminshop",
+    "itemstack": {
+      "type": "TOTEM",
+      "amount": 1,
+      "damage": 0
+    },
+    "material": "TOTEM",
+    "price": {
+      "amount": 1,
+      "cost": 100000,
+      "buy": 50000,
+      "sell": 200000
+    },
+    "loc": {
+      "world": "world",
+      "x": -114,
+      "y": 52,
+      "z": 157,
+      "yaw": 0,
+      "pitch": 0
+    }
+  },
+  "world.-114.53.157": {
+    "type": "adminshop",
+    "itemstack": {
+      "type": "ENCHANTED_BOOK",
+      "meta": {
+        "meta-type": "ENCHANTED",
+        "stored-enchants": {
+          "MENDING": 1
+        }
+      },
+      "amount": 1,
+      "damage": 0
+    },
+    "material": "ENCHANTED_BOOK",
+    "price": {
+      "amount": 1,
+      "cost": 50270,
+      "buy": 25135,
+      "sell": 100540
+    },
+    "loc": {
+      "world": "world",
+      "x": -114,
+      "y": 53,
+      "z": 157,
+      "yaw": 0,
+      "pitch": 0
+    }
+  },
+  "world.-112.53.157": {
+    "type": "adminshop",
+    "itemstack": {
+      "type": "PURPLE_SHULKER_BOX",
+      "amount": 1,
+      "damage": 0
+    },
+    "material": "PURPLE_SHULKER_BOX",
+    "price": {
+      "amount": 1,
+      "cost": 20200,
+      "buy": 10100,
+      "sell": 40400
+    },
+    "loc": {
+      "world": "world",
+      "x": -112,
+      "y": 53,
+      "z": 157,
+      "yaw": 0,
+      "pitch": 0
+    }
+  },
+  "world.-112.52.157": {
+    "type": "adminshop",
+    "itemstack": {
+      "type": "ENDER_CHEST",
+      "amount": 1,
+      "damage": 0
+    },
+    "material": "ENDER_CHEST",
+    "price": {
+      "amount": 1,
+      "cost": 4120,
+      "buy": 2060,
+      "sell": 8240
+    },
+    "loc": {
+      "world": "world",
+      "x": -112,
+      "y": 52,
+      "z": 157,
+      "yaw": 0,
+      "pitch": 0
+    }
+  },
+  "world.-112.51.157": {
+    "type": "adminshop",
+    "itemstack": {
+      "type": "ENCHANTMENT_TABLE",
+      "amount": 1,
+      "damage": 0
+    },
+    "material": "ENCHANTMENT_TABLE",
+    "price": {
+      "amount": 1,
+      "cost": 4270,
+      "buy": 2135,
+      "sell": 8540
+    },
+    "loc": {
+      "world": "world",
+      "x": -112,
+      "y": 51,
+      "z": 157,
+      "yaw": 0,
+      "pitch": 0
+    }
+  },
+  "world.-110.53.157": {
+    "type": "adminshop",
+    "itemstack": {
+      "type": "STICK",
+      "meta": {
+        "meta-type": "UNSPECIFIC",
+        "display-name": "StickOfGOD",
+        "enchants": {
+          "DAMAGE_ALL": 10,
+          "DAMAGE_UNDEAD": 10,
+          "DURABILITY": 10,
+          "DAMAGE_ARTHROPODS": 10,
+          "KNOCKBACK": 10,
+          "FIRE_ASPECT": 10,
+          "LOOT_BONUS_MOBS": 10,
+          "MENDING": 1
+        }
+      },
+      "amount": 1,
+      "damage": 0
+    },
+    "material": "STICK",
+    "price": {
+      "amount": 1,
+      "cost": 741212.5,
+      "buy": 370606,
+      "sell": 1482425
+    },
+    "loc": {
+      "world": "world",
+      "x": -110,
+      "y": 53,
+      "z": 157,
+      "yaw": 0,
+      "pitch": 0
+    }
+  },
+  "world.-105.53.168": {
+    "type": "adminshop",
+    "itemstack": {
+      "type": "CONCRETE",
+      "damage": 1,
+      "amount": 16
+    },
+    "material": "CONCRETE:1",
+    "price": {
+      "amount": 16,
+      "cost": 1640,
+      "buy": 820,
+      "sell": 3280
+    },
+    "loc": {
+      "world": "world",
+      "x": -105,
+      "y": 53,
+      "z": 168,
+      "yaw": 0,
+      "pitch": 0
+    }
+  },
+  "world.-107.53.168": {
+    "type": "adminshop",
+    "itemstack": {
+      "type": "SKULL_ITEM",
       "damage": 4,
       "amount": 1
     },
-    "material": "INK_SACK:4",
+    "material": "SKULL_ITEM:4",
     "price": {
-      "amount": 16,
-      "buy": 240,
-      "sell": 960
+      "amount": 1,
+      "cost": 100000,
+      "buy": 50000,
+      "sell": 200000
     },
     "loc": {
       "world": "world",
-      "x": 59,
-      "y": 29,
-      "z": -40,
+      "x": -107,
+      "y": 53,
+      "z": 168,
       "yaw": 0,
       "pitch": 0
     }
   },
-  "world.59.29.-38": {
+  "world.-109.53.168": {
     "type": "adminshop",
     "itemstack": {
-      "type": "LAPIS_ORE",
+      "type": "ENCHANTED_BOOK",
+      "meta": {
+        "meta-type": "ENCHANTED",
+        "stored-enchants": {
+          "VANISHING_CURSE": 1
+        }
+      },
       "amount": 1,
       "damage": 0
     },
-    "material": "LAPIS_ORE",
+    "material": "ENCHANTED_BOOK",
     "price": {
-      "amount": 16,
-      "buy": 1600,
-      "sell": 6400
+      "amount": 1,
+      "cost": 1270,
+      "buy": 635,
+      "sell": 2540
     },
     "loc": {
       "world": "world",
-      "x": 59,
-      "y": 29,
-      "z": -38,
+      "x": -109,
+      "y": 53,
+      "z": 168,
       "yaw": 0,
       "pitch": 0
     }
   },
-  "world.59.29.-36": {
+  "world.-111.53.168": {
     "type": "adminshop",
     "itemstack": {
-      "type": "LAPIS_BLOCK",
-      "amount": 16,
-      "damage": 0
-    },
-    "material": "LAPIS_BLOCK",
-    "price": {
-      "amount": 16,
-      "buy": 2160,
-      "sell": 8640
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 29,
-      "z": -36,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.30.-40": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "QUARTZ",
+      "type": "ENCHANTED_BOOK",
+      "meta": {
+        "meta-type": "ENCHANTED",
+        "stored-enchants": {
+          "DURABILITY": 3
+        }
+      },
       "amount": 1,
       "damage": 0
     },
-    "material": "QUARTZ",
+    "material": "ENCHANTED_BOOK",
     "price": {
-      "amount": 16,
-      "buy": 800,
-      "sell": 3200
+      "amount": 1,
+      "cost": 1070,
+      "buy": 535,
+      "sell": 2140
     },
     "loc": {
       "world": "world",
-      "x": 59,
-      "y": 30,
-      "z": -40,
+      "x": -111,
+      "y": 53,
+      "z": 168,
       "yaw": 0,
       "pitch": 0
     }
   },
-  "world.59.30.-38": {
+  "world.-113.53.168": {
     "type": "adminshop",
     "itemstack": {
-      "type": "QUARTZ_ORE",
-      "amount": 16,
-      "damage": 0
-    },
-    "material": "QUARTZ_ORE",
-    "price": {
-      "amount": 16,
-      "buy": 2400,
-      "sell": 9600
-    },
-    "loc": {
-      "world": "world",
-      "x": 59,
-      "y": 30,
-      "z": -38,
-      "yaw": 0,
-      "pitch": 0
-    }
-  },
-  "world.59.30.-36": {
-    "type": "adminshop",
-    "itemstack": {
-      "type": "QUARTZ_BLOCK",
+      "type": "ENCHANTED_BOOK",
+      "meta": {
+        "meta-type": "ENCHANTED",
+        "stored-enchants": {
+          "ARROW_DAMAGE": 4
+        }
+      },
       "amount": 1,
       "damage": 0
     },
-    "material": "QUARTZ_BLOCK",
+    "material": "ENCHANTED_BOOK",
     "price": {
-      "amount": 16,
-      "buy": 3200,
-      "sell": 12800
+      "amount": 1,
+      "cost": 670,
+      "buy": 335,
+      "sell": 1340
     },
     "loc": {
       "world": "world",
-      "x": 59,
-      "y": 30,
-      "z": -36,
+      "x": -113,
+      "y": 53,
+      "z": 168,
+      "yaw": 0,
+      "pitch": 0
+    }
+  },
+  "world.-115.53.168": {
+    "type": "adminshop",
+    "itemstack": {
+      "type": "MONSTER_EGG",
+      "meta": {
+        "meta-type": "SPAWN_EGG",
+        "internal": "H4sIAAAAAAAAAONiYOBi4HTNK8ksqQxJTOdgYMpMYRDKzcxLTS5KTCuxKsvMyUlMTy1iYAAAkZYsxCoAAAA=",
+        "id": "villager"
+      },
+      "amount": 1,
+      "damage": 0
+    },
+    "material": "MONSTER_EGG",
+    "price": {
+      "amount": 1,
+      "cost": 100000,
+      "buy": 50000,
+      "sell": 200000
+    },
+    "loc": {
+      "world": "world",
+      "x": -115,
+      "y": 53,
+      "z": 168,
+      "yaw": 0,
+      "pitch": 0
+    }
+  },
+  "world.-117.53.168": {
+    "type": "adminshop",
+    "itemstack": {
+      "type": "POTION",
+      "meta": {
+        "meta-type": "POTION",
+        "potion-type": "minecraft:long_leaping"
+      },
+      "amount": 1,
+      "damage": 0
+    },
+    "material": "POTION",
+    "price": {
+      "amount": 1,
+      "cost": 60,
+      "buy": 30,
+      "sell": 120
+    },
+    "loc": {
+      "world": "world",
+      "x": -117,
+      "y": 53,
+      "z": 168,
+      "yaw": 0,
+      "pitch": 0
+    }
+  },
+  "world.-119.53.168": {
+    "type": "adminshop",
+    "itemstack": {
+      "type": "BED",
+      "damage": 13,
+      "amount": 1
+    },
+    "material": "BED:13",
+    "price": {
+      "amount": 1,
+      "cost": 765,
+      "buy": 382,
+      "sell": 1530
+    },
+    "loc": {
+      "world": "world",
+      "x": -119,
+      "y": 53,
+      "z": 168,
+      "yaw": 0,
+      "pitch": 0
+    }
+  },
+  "world.-121.53.168": {
+    "type": "adminshop",
+    "itemstack": {
+      "type": "SIGN",
+      "amount": 1,
+      "damage": 0
+    },
+    "material": "SIGN",
+    "price": {
+      "amount": 1,
+      "cost": 54.166666666666664,
+      "buy": 27,
+      "sell": 108
+    },
+    "loc": {
+      "world": "world",
+      "x": -121,
+      "y": 53,
+      "z": 168,
       "yaw": 0,
       "pitch": 0
     }

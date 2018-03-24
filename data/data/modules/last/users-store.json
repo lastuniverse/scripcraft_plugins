@@ -1,318 +1,174 @@
 {
   "byName": {
-    "XDeNzl": "b8771b8b-e401-4003-b839-cb533ce94e1c",
-    "libbar": "65419976-13af-4de7-9554-299b2e597e6a",
-    "sulik666": "e5db92f9-1821-48a8-a4c8-2278db941fad",
-    "ZZzhakonya": "505ef96e-5a4d-4f0b-b193-3117c3799a13",
+    "lastuniverse": "6b4fd503-3619-3711-90d0-cad3434ac2e2",
     "xxxGenaxxx": "eddd148a-2e89-45f3-bc33-071ffac51198",
-    "MrGray": "6f2d5cf3-f319-4cf1-92a8-df3c90b27586",
-    "Andsoon": "4894b515-9c3e-42f7-be17-06a7067720bc",
-    "lastuniverse": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-    "emexajt": "a51f9023-6b93-4266-927f-08bcb4a772c9",
-    "CoolFun5": "d6c01d31-01a7-40ad-bf5d-86864df3542d",
-    "Oboltus": "85bf7e4e-e321-4839-b3ee-def203984faf",
-    "SchokkER": "b4fe1b16-1335-496e-be85-61e9e796f1e8",
-    "el_mecanico": "40efc7e9-1bd9-485f-b062-44c6cdc30476",
-    "Dinamic21": "3325a983-1653-4632-8336-3d4e3241d6b9",
-    "Slimson": "9325b0a2-2d22-4d84-9842-58e833196107",
-    "DarkDaiver": "dff08f73-6469-46fa-b323-e409a1986786",
-    "Fufl1k": "fb2532ca-e24c-4baa-9ab9-284ef30216d0"
+    "libbar": "5229ed71-41aa-3730-adb6-82d88a046a7c",
+    "parisc74": "40d96884-4528-455e-91df-e3ab1d77266e",
+    "Kockos82": "beb8750d-3cfc-304b-8cef-d81083590d30",
+    "etozhezauka": "1d3dbee8-4efc-3c17-a1ce-e2c7493bf1ac",
+    "Oboltus": "72c07956-9401-3982-849b-d5832ba1143e",
+    "jontyck": "bd05a4b9-e846-3072-bfee-79482f5e6350",
+    "grigosu": "c1f0d5f7-b4b9-31ff-b63d-ad499dc23759",
+    "ZZzhakonya": "e5ccc663-a2ef-3d34-9225-d69cbcfcf4aa"
   },
   "byUUID": {
-    "b8771b8b-e401-4003-b839-cb533ce94e1c": {
-      "name": "XDeNzl",
-      "coins": 48255,
-      "isFly": true,
-      "isGod": false,
-      "last_farm": {},
-      "containers": {
-        "skills": {},
-        "effects": {}
-      },
-      "last_chat": {
-        "ver": "v.0.1",
-        "select": "near",
-        "mute": {}
-      },
-      "last_usershop": {}
-    },
-    "65419976-13af-4de7-9554-299b2e597e6a": {
-      "name": "libbar",
-      "coins": 68293,
-      "isFly": true,
-      "isGod": false,
+    "6b4fd503-3619-3711-90d0-cad3434ac2e2": {
+      "name": "lastuniverse",
+      "coins": 1375552,
       "last_farm": {
-        "lib": {
-          "type": "WITCH",
-          "hp": 1,
-          "name": "lib",
-          "spawn": {
-            "world": "world",
-            "x": 723.5,
-            "y": 73.5,
-            "z": 5207.5,
-            "yaw": 197,
-            "pitch": 0
-          },
-          "UIID": "65419976-13af-4de7-9554-299b2e597e6a",
-          "owner": "libbar",
-          "isSleep": false,
-          "isStarted": false,
-          "EID": "1185305"
-        }
-      },
-      "containers": {
-        "skills": {},
-        "effects": {}
-      },
-      "last_chat": {
-        "ver": "v.0.1",
-        "select": "near",
-        "mute": {}
-      },
-      "last_usershop": {}
-    },
-    "e5db92f9-1821-48a8-a4c8-2278db941fad": {
-      "name": "sulik666",
-      "coins": 2097925,
-      "isFly": true,
-      "isGod": true,
-      "last_farm": {},
-      "containers": {
-        "skills": {
-          "growl": {
-            "enabled": true,
-            "level": 1000,
-            "usedCount": 0
-          }
-        },
-        "effects": {}
-      },
-      "last_chat": {
-        "ver": "v.0.1",
-        "select": "near",
-        "mute": {}
-      }
-    },
-    "505ef96e-5a4d-4f0b-b193-3117c3799a13": {
-      "name": "ZZzhakonya",
-      "coins": 530271,
-      "isFly": true,
-      "isGod": true,
-      "last_farm": {},
-      "last_chat": {
-        "ver": "v.0.1",
-        "select": "near",
-        "mute": {}
-      },
-      "containers": {
-        "skills": {},
-        "effects": {}
-      },
-      "last_usershop": {}
-    },
-    "eddd148a-2e89-45f3-bc33-071ffac51198": {
-      "name": "xxxGenaxxx",
-      "coins": 56093,
-      "isFly": true,
-      "isGod": true,
-      "last_farm": {
-        "xxxGenaxxx": {
+        "spawn_01": {
           "type": "BLAZE",
           "hp": 1,
-          "name": "xxxGenaxxx",
+          "name": "spawn_01",
           "spawn": {
             "world": "world",
-            "x": 5904.5,
-            "y": 64.5,
-            "z": -93.5,
-            "yaw": -268,
+            "x": -127.5,
+            "y": 77.5,
+            "z": 169.5,
+            "yaw": -181,
             "pitch": 0
           },
-          "UIID": "eddd148a-2e89-45f3-bc33-071ffac51198",
-          "owner": "xxxGenaxxx",
-          "isStarted": false,
-          "EID": "4050",
-          "isSleep": false
-        }
-      },
-      "containers": {
-        "skills": {},
-        "effects": {}
-      },
-      "last_chat": {
-        "ver": "v.0.1",
-        "select": "near",
-        "mute": {},
-        "isMute": 0
-      },
-      "last_usershop": {}
-    },
-    "6f2d5cf3-f319-4cf1-92a8-df3c90b27586": {
-      "name": "MrGray",
-      "coins": 6048374,
-      "isFly": false,
-      "isGod": true,
-      "last_farm": {
-        "farm": {
-          "type": "CREEPER",
-          "hp": 1,
-          "name": "farm",
-          "spawn": {
-            "world": "world",
-            "x": 7241.5,
-            "y": 68.5,
-            "z": -1980.5,
-            "yaw": 271,
-            "pitch": 0
-          },
-          "UIID": "6f2d5cf3-f319-4cf1-92a8-df3c90b27586",
-          "owner": "MrGray",
+          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+          "owner": "lastuniverse",
           "isSleep": false,
           "isStarted": false,
-          "EID": "787508"
-        }
-      },
-      "containers": {
-        "skills": {},
-        "effects": {}
-      },
-      "last_chat": {
-        "ver": "v.0.1",
-        "select": "near",
-        "mute": {}
-      }
-    },
-    "4894b515-9c3e-42f7-be17-06a7067720bc": {
-      "name": "Andsoon",
-      "coins": 41849,
-      "isFly": true,
-      "isGod": true,
-      "last_farm": {}
-    },
-    "37ddefbb-f14f-424e-8dee-908b522dc7fb": {
-      "name": "lastuniverse",
-      "coins": 200106,
-      "isFly": true,
-      "isGod": true,
-      "last_farm": {
-        "last_01": {
+          "EID": "156452"
+        },
+        "spawn_02": {
+          "type": "PIG",
+          "hp": 1,
+          "name": "spawn_02",
+          "spawn": {
+            "world": "world",
+            "x": -127.5,
+            "y": 77.5,
+            "z": 169.5,
+            "yaw": -181,
+            "pitch": 0
+          },
+          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+          "owner": "lastuniverse",
+          "isSleep": false,
+          "isStarted": false,
+          "EID": "17086"
+        },
+        "spawn_03": {
+          "type": "IRON_GOLEM",
+          "hp": 1,
+          "name": "spawn_03",
+          "spawn": {
+            "world": "world",
+            "x": -127.5,
+            "y": 52.5,
+            "z": 155.5,
+            "yaw": 359,
+            "pitch": 0
+          },
+          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+          "owner": "lastuniverse",
+          "isSleep": false,
+          "isStarted": false,
+          "EID": "175237"
+        },
+        "spawn_04": {
+          "type": "WITCH",
+          "hp": 1,
+          "name": "spawn_04",
+          "spawn": {
+            "world": "world",
+            "x": -131.5,
+            "y": 52.5,
+            "z": 156.5,
+            "yaw": 0,
+            "pitch": 0
+          },
+          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+          "owner": "lastuniverse",
+          "isSleep": false,
+          "isStarted": false,
+          "EID": "22822"
+        },
+        "spawn_05": {
           "type": "ZOMBIE",
           "hp": 1,
-          "name": "last_01",
+          "name": "spawn_05",
           "spawn": {
             "world": "world",
-            "x": 820.5,
-            "y": 30.5,
-            "z": 1252.5,
-            "yaw": -90,
-            "pitch": 0
-          },
-          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "owner": "lastuniverse",
-          "isStarted": false,
-          "EID": "800938",
-          "isSleep": false
-        },
-        "last_04": {
-          "type": "WITCH",
-          "hp": 1,
-          "name": "last_04",
-          "spawn": {
-            "world": "world",
-            "x": 827.5,
-            "y": 30.5,
-            "z": 1252.5,
-            "yaw": -275,
-            "pitch": 0
-          },
-          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "owner": "lastuniverse",
-          "isStarted": false,
-          "EID": "795404",
-          "isSleep": false
-        },
-        "last_05": {
-          "type": "PIG",
-          "hp": 1,
-          "name": "last_05",
-          "spawn": {
-            "world": "world",
-            "x": 820.5,
-            "y": 30.5,
-            "z": 1250.5,
-            "yaw": -90,
-            "pitch": 0
-          },
-          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "owner": "lastuniverse",
-          "isStarted": false,
-          "EID": "799699",
-          "isSleep": false
-        },
-        "last_02": {
-          "type": "RABBIT",
-          "hp": 1,
-          "name": "last_02",
-          "spawn": {
-            "world": "world",
-            "x": 820.5,
-            "y": 30.5,
-            "z": 1250.5,
-            "yaw": -90,
+            "x": -123.5,
+            "y": 52.5,
+            "z": 156.5,
+            "yaw": 3,
             "pitch": 0
           },
           "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
           "owner": "lastuniverse",
           "isSleep": false,
           "isStarted": false,
-          "EID": "800216"
+          "EID": "11742"
         },
-        "last_03": {
-          "type": "BLAZE",
-          "hp": 1,
-          "name": "last_03",
-          "spawn": {
-            "world": "world",
-            "x": 827.5,
-            "y": 30.5,
-            "z": 1250.5,
-            "yaw": 91,
-            "pitch": 0
-          },
-          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "owner": "lastuniverse",
-          "isSleep": false,
-          "isStarted": false,
-          "EID": "798590"
-        },
-        "last_06": {
+        "spawn_06": {
           "type": "SKELETON",
           "hp": 1,
-          "name": "last_06",
+          "name": "spawn_06",
           "spawn": {
             "world": "world",
-            "x": 827.5,
-            "y": 30.5,
-            "z": 1250.5,
-            "yaw": 92,
+            "x": -131.5,
+            "y": 52.5,
+            "z": 170.5,
+            "yaw": -183,
+            "pitch": 0
+          },
+          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+          "owner": "lastuniverse",
+          "isStarted": false,
+          "isSleep": false,
+          "EID": "12238"
+        },
+        "spawn_07": {
+          "type": "RABBIT",
+          "hp": 1,
+          "name": "spawn_07",
+          "spawn": {
+            "world": "world",
+            "x": -129.5,
+            "y": 52.5,
+            "z": 170.5,
+            "yaw": 179,
             "pitch": 0
           },
           "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
           "owner": "lastuniverse",
           "isSleep": false,
           "isStarted": false,
-          "EID": "796998"
+          "EID": "12240"
         },
-        "present": {
-          "type": "PIG",
+        "spawn_08": {
+          "type": "COW",
           "hp": 1,
-          "name": "present",
+          "name": "spawn_08",
           "spawn": {
             "world": "world",
-            "x": -1505.5,
-            "y": 65.5,
-            "z": -129.5,
+            "x": -125.5,
+            "y": 52.5,
+            "z": 170.5,
+            "yaw": 181,
+            "pitch": 0
+          },
+          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+          "owner": "lastuniverse",
+          "isSleep": false,
+          "isStarted": false,
+          "EID": "12245"
+        },
+        "spawn_09": {
+          "type": "PIG_ZOMBIE",
+          "hp": 1,
+          "name": "spawn_09",
+          "spawn": {
+            "world": "world",
+            "x": -123.5,
+            "y": 52.5,
+            "z": 170.5,
             "yaw": 182,
             "pitch": 0
           },
@@ -320,1590 +176,67 @@
           "owner": "lastuniverse",
           "isSleep": false,
           "isStarted": false,
-          "EID": "1015203"
+          "EID": "12249"
         },
-        "spawn_01": {
-          "type": "PIG",
-          "hp": 1,
-          "name": "spawn_01",
-          "spawn": {
-            "world": "world",
-            "x": 34.5,
-            "y": 29.5,
-            "z": -18.5,
-            "yaw": 180,
-            "pitch": 0
-          },
-          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "owner": "lastuniverse",
-          "isSleep": false,
-          "isStarted": false,
-          "EID": "5184"
-        },
-        "spawn_02": {
+        "grigosu_01": {
           "type": "ZOMBIE",
           "hp": 1,
-          "name": "spawn_02",
+          "name": "grigosu_01",
           "spawn": {
             "world": "world",
-            "x": 32.5,
-            "y": 28.5,
-            "z": -18.5,
-            "yaw": 177,
+            "x": -455.5,
+            "y": 76.5,
+            "z": 14348.5,
+            "yaw": -91,
             "pitch": 0
           },
-          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
+          "UIID": "6b4fd503-3619-3711-90d0-cad3434ac2e2",
           "owner": "lastuniverse",
           "isSleep": false,
           "isStarted": false,
-          "EID": "5438"
-        },
-        "spawn_03": {
-          "type": "SKELETON",
-          "hp": 1,
-          "name": "spawn_03",
-          "spawn": {
-            "world": "world",
-            "x": 30.5,
-            "y": 28.5,
-            "z": -18.5,
-            "yaw": 181,
-            "pitch": 0
-          },
-          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "owner": "lastuniverse",
-          "isSleep": false,
-          "isStarted": false,
-          "EID": "4913454"
-        },
-        "spawn_04": {
-          "type": "RABBIT",
-          "hp": 1,
-          "name": "spawn_04",
-          "spawn": {
-            "world": "world",
-            "x": 28.5,
-            "y": 28.5,
-            "z": -18.5,
-            "yaw": 181,
-            "pitch": 0
-          },
-          "UIID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "owner": "lastuniverse",
-          "isSleep": false,
-          "isStarted": false,
-          "EID": "5730"
-        }
-      },
-      "containers": {
-        "skills": {
-          "growl": {
-            "enabled": true,
-            "level": 99,
-            "usedCount": 0,
-            "paused": 1496282829358
-          },
-          "bandag": {
-            "enabled": true,
-            "level": 99,
-            "usedCount": 0,
-            "paused": 1496282846389
-          }
-        },
-        "effects": {}
-      },
-      "last_chat": {
-        "ver": "v.0.1",
-        "select": "near",
-        "mute": {},
-        "isMute": 0
-      },
-      "last_usershop": {
-        "world.51.28.-20": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "DIAMOND_SWORD",
-            "meta": {
-              "meta-type": "UNSPECIFIC",
-              "display-name": "Sword of GOD",
-              "enchants": {
-                "DAMAGE_ALL": 10,
-                "DAMAGE_UNDEAD": 10,
-                "DURABILITY": 10,
-                "DAMAGE_ARTHROPODS": 10,
-                "KNOCKBACK": 10,
-                "FIRE_ASPECT": 10,
-                "LOOT_BONUS_MOBS": 10
-              }
-            },
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "DIAMOND_SWORD",
-          "price": {
-            "amount": 1,
-            "buy": 1,
-            "sell": 10000,
-            "cost": {
-              "buy": 20,
-              "sell": 201250
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 51,
-            "y": 28,
-            "z": -20,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 51,
-            "y": 28,
-            "z": -19,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.33.1260": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "QUARTZ_BLOCK",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "QUARTZ_BLOCK",
-          "price": {
-            "amount": 64,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 20480,
-              "sell": 30720
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 33,
-            "z": 1260,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 33,
-            "z": 1260,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.32.1260": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "QUARTZ_BLOCK",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "QUARTZ_BLOCK",
-          "price": {
-            "amount": 32,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 10240,
-              "sell": 15360
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 32,
-            "z": 1260,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 32,
-            "z": 1260,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.31.1260": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "QUARTZ_BLOCK",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "QUARTZ_BLOCK",
-          "price": {
-            "amount": 16,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 5120,
-              "sell": 7680
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 31,
-            "z": 1260,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 31,
-            "z": 1260,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.30.1260": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "GLOWSTONE",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "GLOWSTONE",
-          "price": {
-            "amount": 16,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 10240,
-              "sell": 15360
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 30,
-            "z": 1260,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 30,
-            "z": 1260,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.29.1260": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "IRON_BLOCK",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "IRON_BLOCK",
-          "price": {
-            "amount": 4,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 12441,
-              "sell": 18662
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 29,
-            "z": 1260,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 29,
-            "z": 1260,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.29.1262": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "GOLD_BLOCK",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "GOLD_BLOCK",
-          "price": {
-            "amount": 4,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 25920,
-              "sell": 38880
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 29,
-            "z": 1262,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 29,
-            "z": 1262,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.30.1262": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "SEA_LANTERN",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "SEA_LANTERN",
-          "price": {
-            "amount": 16,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 7936,
-              "sell": 11904
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 30,
-            "z": 1262,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 30,
-            "z": 1262,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.31.1262": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "BRICK",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "BRICK",
-          "price": {
-            "amount": 16,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 12800,
-              "sell": 19200
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 31,
-            "z": 1262,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 31,
-            "z": 1262,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.32.1262": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "BRICK",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "BRICK",
-          "price": {
-            "amount": 32,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 25600,
-              "sell": 38400
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 32,
-            "z": 1262,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 32,
-            "z": 1262,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.33.1262": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "BRICK",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "BRICK",
-          "price": {
-            "amount": 64,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 51200,
-              "sell": 76800
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 33,
-            "z": 1262,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 33,
-            "z": 1262,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.33.1264": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "POTION",
-            "meta": {
-              "meta-type": "POTION",
-              "potion-type": "minecraft:healing"
-            },
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "POTION",
-          "price": {
-            "amount": 1,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 48,
-              "sell": 72
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 33,
-            "z": 1264,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 33,
-            "z": 1264,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.32.1264": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "SUGAR",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "SUGAR",
-          "price": {
-            "amount": 32,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 1280,
-              "sell": 1920
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 32,
-            "z": 1264,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 32,
-            "z": 1264,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.31.1264": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "SULPHUR",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "SULPHUR",
-          "price": {
-            "amount": 32,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 3072,
-              "sell": 4608
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 31,
-            "z": 1264,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 31,
-            "z": 1264,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.30.1264": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "REDSTONE",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "REDSTONE",
-          "price": {
-            "amount": 32,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 6400,
-              "sell": 9600
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 30,
-            "z": 1264,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 30,
-            "z": 1264,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.29.1264": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "GLOWSTONE_DUST",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "GLOWSTONE_DUST",
-          "price": {
-            "amount": 32,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 5120,
-              "sell": 7680
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 29,
-            "z": 1264,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 29,
-            "z": 1264,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.33.1266": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "GLASS_BOTTLE",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "GLASS_BOTTLE",
-          "price": {
-            "amount": 8,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 345,
-              "sell": 518
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 33,
-            "z": 1266,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 33,
-            "z": 1266,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.32.1266": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "STICK",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "STICK",
-          "price": {
-            "amount": 64,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 640,
-              "sell": 960
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 32,
-            "z": 1266,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 32,
-            "z": 1266,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.31.1266": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "ARROW",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "ARROW",
-          "price": {
-            "amount": 64,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 928,
-              "sell": 1392
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 31,
-            "z": 1266,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 31,
-            "z": 1266,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.30.1266": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "BONE",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "BONE",
-          "price": {
-            "amount": 8,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 576,
-              "sell": 864
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 30,
-            "z": 1266,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 30,
-            "z": 1266,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.29.1266": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "BLAZE_ROD",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "BLAZE_ROD",
-          "price": {
-            "amount": 8,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 768,
-              "sell": 1152
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 29,
-            "z": 1266,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 29,
-            "z": 1266,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.33.1268": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "PORK",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "PORK",
-          "price": {
-            "amount": 16,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 384,
-              "sell": 576
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 33,
-            "z": 1268,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 33,
-            "z": 1268,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.32.1268": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "GRILLED_PORK",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "GRILLED_PORK",
-          "price": {
-            "amount": 16,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 512,
-              "sell": 768
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 32,
-            "z": 1268,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 32,
-            "z": 1268,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.31.1268": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "RABBIT",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "RABBIT",
-          "price": {
-            "amount": 16,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 384,
-              "sell": 576
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 31,
-            "z": 1268,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 31,
-            "z": 1268,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.30.1268": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "POTATO_ITEM",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "POTATO_ITEM",
-          "price": {
-            "amount": 16,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 384,
-              "sell": 576
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 30,
-            "z": 1268,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 30,
-            "z": 1268,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.29.1268": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "ROTTEN_FLESH",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "ROTTEN_FLESH",
-          "price": {
-            "amount": 16,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 1920,
-              "sell": 2880
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 29,
-            "z": 1268,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 29,
-            "z": 1268,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.33.1270": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "SKULL_ITEM",
-            "damage": 1,
-            "amount": 1
-          },
-          "material": "SKULL_ITEM:1",
-          "price": {
-            "amount": 1,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 80000,
-              "sell": 120000
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 33,
-            "z": 1270,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 33,
-            "z": 1270,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.32.1270": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "RABBIT_FOOT",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "RABBIT_FOOT",
-          "price": {
-            "amount": 4,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 640,
-              "sell": 960
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 32,
-            "z": 1270,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 32,
-            "z": 1270,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.31.1270": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "RABBIT_HIDE",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "RABBIT_HIDE",
-          "price": {
-            "amount": 32,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 768,
-              "sell": 1152
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 31,
-            "z": 1270,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 31,
-            "z": 1270,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.30.1270": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "COAL",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "COAL",
-          "price": {
-            "amount": 16,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 1024,
-              "sell": 1536
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 30,
-            "z": 1270,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 30,
-            "z": 1270,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.29.1270": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "SPIDER_EYE",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "SPIDER_EYE",
-          "price": {
-            "amount": 4,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 384,
-              "sell": 576
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 29,
-            "z": 1270,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 29,
-            "z": 1270,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.33.1272": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "STRING",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "STRING",
-          "price": {
-            "amount": 16,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 640,
-              "sell": 960
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 33,
-            "z": 1272,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 33,
-            "z": 1272,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.32.1272": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "IRON_NUGGET",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "IRON_NUGGET",
-          "price": {
-            "amount": 16,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 614,
-              "sell": 921
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 32,
-            "z": 1272,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 32,
-            "z": 1272,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.31.1272": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "IRON_INGOT",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "IRON_INGOT",
-          "price": {
-            "amount": 16,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 5529,
-              "sell": 8294
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 31,
-            "z": 1272,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 31,
-            "z": 1272,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.30.1272": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "GOLD_NUGGET",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "GOLD_NUGGET",
-          "price": {
-            "amount": 16,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 1280,
-              "sell": 1920
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 30,
-            "z": 1272,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 30,
-            "z": 1272,
-            "yaw": 0,
-            "pitch": 0
-          }
-        },
-        "world.826.29.1272": {
-          "type": "usershop",
-          "owner": "lastuniverse",
-          "UUID": "37ddefbb-f14f-424e-8dee-908b522dc7fb",
-          "itemstack": {
-            "type": "GOLD_INGOT",
-            "amount": 1,
-            "damage": 0
-          },
-          "material": "GOLD_INGOT",
-          "price": {
-            "amount": 16,
-            "buy": 80,
-            "sell": 120,
-            "cost": {
-              "buy": 11520,
-              "sell": 17280
-            }
-          },
-          "loc": {
-            "world": "world",
-            "x": 826,
-            "y": 29,
-            "z": 1272,
-            "yaw": 0,
-            "pitch": 0
-          },
-          "chest": {
-            "world": "world",
-            "x": 827,
-            "y": 29,
-            "z": 1272,
-            "yaw": 0,
-            "pitch": 0
-          }
-        }
-      }
-    },
-    "a51f9023-6b93-4266-927f-08bcb4a772c9": {
-      "name": "emexajt",
-      "coins": 3726,
-      "last_farm": {},
-      "isFly": true,
-      "isGod": false,
-      "containers": {
-        "skills": {},
-        "effects": {}
-      },
-      "last_chat": {
-        "ver": "v.0.1",
-        "select": "near",
-        "mute": {}
-      },
-      "last_usershop": {}
-    },
-    "d6c01d31-01a7-40ad-bf5d-86864df3542d": {
-      "name": "CoolFun5",
-      "coins": 31200,
-      "last_farm": {},
-      "isFly": false,
-      "isGod": false
-    },
-    "85bf7e4e-e321-4839-b3ee-def203984faf": {
-      "name": "Oboltus",
-      "coins": 11840,
-      "last_farm": {
-        "georg": {
-          "type": "WITCH",
-          "hp": 1,
-          "name": "georg",
-          "spawn": {
-            "world": "world",
-            "x": 7796.5,
-            "y": 66.5,
-            "z": -7041.5,
-            "yaw": -181,
-            "pitch": 0
-          },
-          "UIID": "85bf7e4e-e321-4839-b3ee-def203984faf",
-          "owner": "Oboltus",
-          "isSleep": false,
-          "isStarted": false,
-          "EID": "58883"
-        },
-        "georg1": {
-          "type": "PIG",
-          "hp": 1,
-          "name": "georg1",
-          "spawn": {
-            "world": "world",
-            "x": 7796.5,
-            "y": 66.5,
-            "z": -7041.5,
-            "yaw": -181,
-            "pitch": 0
-          },
-          "UIID": "85bf7e4e-e321-4839-b3ee-def203984faf",
-          "owner": "Oboltus",
-          "isSleep": false,
-          "isStarted": false,
-          "EID": "55364"
-        },
-        "maloy1": {
-          "type": "PIG",
-          "hp": 1,
-          "name": "maloy1",
-          "spawn": {
-            "world": "world",
-            "x": 6084.5,
-            "y": 66.5,
-            "z": -6324.5,
-            "yaw": -181,
-            "pitch": 0
-          },
-          "UIID": "85bf7e4e-e321-4839-b3ee-def203984faf",
-          "owner": "Oboltus",
-          "isSleep": false,
-          "isStarted": false,
-          "EID": "642206"
-        },
-        "maloy": {
-          "type": "WITCH",
-          "hp": 1,
-          "name": "maloy",
-          "spawn": {
-            "world": "world",
-            "x": 6084.5,
-            "y": 66.5,
-            "z": -6324.5,
-            "yaw": -181,
-            "pitch": 0
-          },
-          "UIID": "85bf7e4e-e321-4839-b3ee-def203984faf",
-          "owner": "Oboltus",
-          "isSleep": false,
-          "isStarted": false,
-          "EID": "642785"
+          "EID": "105671"
         }
       },
       "isFly": true,
-      "isGod": false,
-      "containers": {
-        "skills": {},
-        "effects": {}
-      },
-      "last_chat": {
-        "ver": "v.0.1",
-        "select": "near",
-        "mute": {}
-      }
-    },
-    "b4fe1b16-1335-496e-be85-61e9e796f1e8": {
-      "name": "SchokkER",
-      "coins": 10000,
-      "last_farm": {},
-      "isFly": false,
       "isGod": true,
+      "last_chat": {
+        "ver": "v.0.1",
+        "select": "trade",
+        "mute": {}
+      },
+      "last_usershop": {},
       "containers": {
         "skills": {},
         "effects": {}
       }
     },
-    "40efc7e9-1bd9-485f-b062-44c6cdc30476": {
-      "name": "el_mecanico",
-      "coins": 30010,
+    "eddd148a-2e89-45f3-bc33-071ffac51198": {
+      "name": "xxxGenaxxx",
+      "coins": 10000,
       "last_farm": {},
       "isFly": true,
       "isGod": true,
-      "containers": {
-        "skills": {},
-        "effects": {}
-      }
-    },
-    "3325a983-1653-4632-8336-3d4e3241d6b9": {
-      "name": "Dinamic21",
-      "coins": 30000,
-      "last_farm": {},
-      "isFly": false,
-      "isGod": false,
-      "containers": {
-        "skills": {},
-        "effects": {}
-      }
-    },
-    "9325b0a2-2d22-4d84-9842-58e833196107": {
-      "name": "Slimson",
-      "coins": 10000,
-      "last_farm": {},
-      "isFly": false,
-      "isGod": false,
-      "containers": {
-        "skills": {},
-        "effects": {}
-      },
       "last_chat": {
-        "select": "all",
+        "ver": "v.0.1",
+        "select": "near",
         "mute": {}
+      },
+      "last_usershop": {},
+      "containers": {
+        "skills": {},
+        "effects": {}
       }
     },
-    "dff08f73-6469-46fa-b323-e409a1986786": {
-      "name": "DarkDaiver",
-      "coins": 504,
+    "40d96884-4528-455e-91df-e3ab1d77266e": {
+      "name": "parisc74",
+      "coins": 10000,
       "last_farm": {},
       "last_chat": {
         "ver": "v.0.1",
         "select": "near",
         "mute": {}
       },
+      "last_usershop": {},
       "containers": {
         "skills": {},
         "effects": {}
@@ -1911,22 +244,91 @@
       "isFly": true,
       "isGod": true
     },
-    "fb2532ca-e24c-4baa-9ab9-284ef30216d0": {
-      "name": "Fufl1k",
-      "coins": 2686,
+    "72c07956-9401-3982-849b-d5832ba1143e": {
+      "name": "Oboltus",
+      "coins": 10000,
       "last_farm": {},
       "last_chat": {
         "ver": "v.0.1",
         "select": "near",
         "mute": {}
       },
-      "containers": {
-        "skills": {},
-        "effects": {}
+      "last_usershop": {
+      }
+    },
+    "bd05a4b9-e846-3072-bfee-79482f5e6350": {
+      "name": "jontyck",
+      "coins": 10000,
+      "last_farm": {},
+      "last_chat": {
+        "ver": "v.0.1",
+        "select": "near",
+        "mute": {}
       },
+      "last_usershop": {
+      }
+    },
+    "beb8750d-3cfc-304b-8cef-d81083590d30": {
+      "name": "Kockos82",
+      "coins": 82791,
+      "last_farm": {},
+      "last_chat": {
+        "ver": "v.0.1",
+        "select": "near",
+        "mute": {}
+      },
+      "last_usershop": {},
+      "isFly": false,
+      "isGod": false
+    },
+    "5229ed71-41aa-3730-adb6-82d88a046a7c": {
+      "name": "libbar",
+      "coins": 10000,
+      "last_farm": {},
+      "last_chat": {
+        "ver": "v.0.1",
+        "select": "near",
+        "mute": {}
+      },
+      "last_usershop": {},
       "isFly": true,
-      "isGod": true,
-      "last_usershop": {}
+      "isGod": true
+    },
+    "c1f0d5f7-b4b9-31ff-b63d-ad499dc23759": {
+      "name": "grigosu",
+      "coins": 10000,
+      "last_farm": {},
+      "last_chat": {
+        "ver": "v.0.1",
+        "select": "near",
+        "mute": {}
+      },
+      "last_usershop": {},
+      "isFly": true
+    },
+    "e5ccc663-a2ef-3d34-9225-d69cbcfcf4aa": {
+      "name": "ZZzhakonya",
+      "coins": 777550,
+      "last_farm": {},
+      "last_chat": {
+        "ver": "v.0.1",
+        "select": "near",
+        "mute": {}
+      },
+      "last_usershop": {
+      }
+    },
+    "1d3dbee8-4efc-3c17-a1ce-e2c7493bf1ac": {
+      "name": "etozhezauka",
+      "coins": 10000,
+      "last_farm": {},
+      "last_chat": {
+        "ver": "v.0.1",
+        "select": "near",
+        "mute": {}
+      },
+      "last_usershop": {
+      }
     }
   }
 }

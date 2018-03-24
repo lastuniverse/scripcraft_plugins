@@ -18,5 +18,9 @@
         "trade": { "prefix":"$", "icon_color": "darkred", "cost": 30 },
         "near": { "prefix":"~", "text_color": "white", "distance": 20000 },
         "far": { "prefix":"!", "text_color": "darkgray", "cost": 1 }
+    },
+    "trade":{
+        "cost": 30000,
+        "min": 10
     }
 }
