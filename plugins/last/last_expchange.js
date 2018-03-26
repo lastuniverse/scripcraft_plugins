@@ -3,6 +3,7 @@ if (__plugin.canary){
   return;
 }
 var utils = require('utils');
+var syssigns = require('signs');
 var signs = require('last/signs');
 var users = require('last/users');
 var economy = require('last/economy');
@@ -27,7 +28,7 @@ signs.events.onBeforeClickSign(function(event){
     return;
 
   //console.log("********* 02");
-  var procent = event.sign.getLine(1).match(/^([0-9]+)\% \(([0-9]+) exp\)$/);
+  var procent = event.sign.getLine(1).match(/^([0-9]+)\% \(([0-9]+)(?: exp|[\$])\)$/);
   if( !procent || !procent[2] )
     return;
   procent[1] = economy.toInt(procent[1]);
@@ -69,18 +70,18 @@ signs.events.onBeforeClickSign(function(event){
 });
 
 signs.events.onClickSignEvent("onClickExpChange",function (event){
-  //console.log("!!! onClickExpChange event.info: ");//+JSON.stringify(event.info));
   var action = event.native.getAction();
-  var data = event.info;
-  var price = data.price;
-  var sender = data.sender;
-  var reciver = data.reciver;
-  var cost1 =  price[1];
-  var cost2 =  price[2];
+  var sender = event.info.sender;
+  var reciver = event.info.reciver;
+  var cost1 =  event.info.price[1];
+  var cost2 =  event.info.price[2];
+
   if( reciver.name === sender.name )
     cost1 = cost2;
+  
   var delta = cost1 - cost2;
-  if( action == 'RIGHT_CLICK_BLOCK'){
+  
+  if( action === 'RIGHT_CLICK_BLOCK'){
     //var exp = sender.player.getTotalExperience();
     var exp = expfix.getTotalExperience(sender.player);
     if( exp < cost1 )
@@ -90,8 +91,6 @@ signs.events.onClickSignEvent("onClickExpChange",function (event){
     economy.addMoney(sender.player,cost2);
     economy.addMoney(reciver.player,delta);
 
-    console.log("!!!!!!! economy.coinsDecline "+(typeof economy.coinsDecline) );
-    
     locale.warn( sender.player,  "${msg.change_coins}", {
       exp: cost1,
       coins: cost2,
@@ -104,7 +103,7 @@ signs.events.onClickSignEvent("onClickExpChange",function (event){
         coins_name: economy.coinsDecline(reciver.player, delta),
         player: sender.name
       });
-  }else if( action ==  'LEFT_CLICK_BLOCK'){
+  }else if( action ===  'LEFT_CLICK_BLOCK'){
     var money = economy.getMoney(sender.player);
     if( money < cost1 )
       return locale.warn( sender.player,  "${msg.none_coins}",{
@@ -131,27 +130,41 @@ signs.events.onClickSignEvent("onClickExpChange",function (event){
   } 
 });
 
-signs.events.onSignPlace(function (event){
-  var lines = event.native.getLines();
-  var shop_type = lines[0].toLowerCase();
-  if( shop_type != 'expchange' )
-    return false;
 
-  var player = utils.player( event.native.getPlayer() );
-  var UUID = ''+player.getUniqueId();
+/**
+ * Функция обработчик команды установки магазина опыта
+ * @param  {array}  params список переданных параметров
+ * @param  {object} sender объект игрока вызвавшего команду
+ */
+function cmd_exp_set(params, sender){
+  // определяем смотрим ли мы на табличку
+  var sign = syssigns.getTargetedBy( sender );
+    if ( !sign )
+      return locale.warn(sender, "${msg.not_sign}");
 
 
-  lines[0] = "exp change";
-  lines[1] = economy.toInt(lines[1]);
-  if( lines[1] < 0 ) lines[1] = 0;
-  if( lines[1] > 50 ) lines[1] = 50;
-  var price = economy.toInt(lines[2]||1);
-  var procentage = Math.floor(price*lines[1]/100);
-  lines[1]=lines[1]+'% ('+procentage+' exp)';
-  lines[2] = ''+price+' < '+(price+procentage)+' > '+price;
-  lines[3] = player.name;
-});
+  // вычисляем количество и стоимость товара
+  var price = economy.toInt(params[2]||100);
+  if( price<0 ) count=0;
 
+  var procent = economy.toInt(params[3]||0);
+  if( procent>50 ) procent=50;
+  if( procent<0 ) procent=0;
+
+  var procentage = Math.floor(price*procent/100);
+
+  // получаем координаты таблички
+  var loc = utils.locationToJSON( sign.getLocation() );
+
+  // устанавливаем нужные надписи в 1-й и 4-й строках
+  sign.setLine(0,"exp change");
+  sign.setLine(1,""+procent+"% ("+procentage+"$)");
+  sign.setLine(2,""+price+" < "+(price+procentage)+" > "+price);
+  sign.setLine(3,sender.name);
+  sign.update();
+
+  return locale.warn(sender, "${msg.create_success}");
+}
 
 
 function cmd_exp_now(params,sender){
@@ -162,19 +175,22 @@ function cmd_exp_reset(params,sender){
   expfix.setTotalExperience(sender,0);
   locale.warn( sender, "${msg.cmd_exp_reset}" );
 }
-function cmd_exp_set(params,sender){
+function cmd_exp_give(params,sender){
   var player = utils.player(params[2]);
   var exp = Number(params[3]);
   expfix.setTotalExperience(player,exp);
-  locale.warn( sender, "${msg.cmd_exp_set}", {exp: exp} );
+  locale.warn( sender, "${msg.cmd_exp_give}", {exp: exp} );
 }
 function cmd_exp_help( params, sender ) {
   locale.help( sender, "${help}" );
 };
-var point_exp = completer.addPlayerCommand('exp',cmd_exp_now,undefined,"last_expchange.use");
-    point_exp.addComplete('now',cmd_exp_now,undefined,"last_expchange.use");
+var point_exp = completer.addPlayerCommand('exp',cmd_exp_now);
+    point_exp.addComplete('now',cmd_exp_now);
     point_exp.addComplete('reset',cmd_exp_reset,undefined,"last_expchange.use");
-    point_exp.addComplete('set',undefined,undefined,"last_expchange.admin")
+    point_exp.addComplete('give',undefined,undefined,"last_expchange.admin")
              .addComplete('@user')
-             .addComplete('@re/[0-9]+/',cmd_exp_set);
+             .addComplete('@re/[0-9]+/',cmd_exp_give);
     point_exp.addComplete('help',cmd_exp_help);
+    point_exp.addComplete('set',undefined,undefined,"last_expchange.set")
+             .addComplete('@re/[0-9]+/')
+             .addComplete('@re/[0-9]+/',cmd_exp_set);

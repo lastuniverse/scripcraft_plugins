@@ -18,8 +18,7 @@
  * - `/money {playername}` : алиас для команды `/economy money {playername}`
  * - `/pay {playername} {money}` : алиас для команды `/economy pay {playername} {money}`
  * - `/give {playername} {money}` : алиас для команды `/economy give {playername} {money}`
- * - `/top {count}` : выводит в чат список богатейших игроков сервера. Не обязательный параметр `{count}` определяет длину списка. Значение по умолчанию: 10. Допустимые значения: 10, 15, 20
- * - `/top {count}` : выводит в чат список богатейших игроков сервера. Не обязательный параметр `{count}` определяет длину списка. Значение по умолчанию: 10. Допустимые значения: 10, 15, 20
+ * - `/top {page}` : выводит в чат список из 10 богатейших игроков сервера. Не обязательный параметр `{page}` позволяет смотреть следующие страницы списка
  * 
  * ### Настройки модуля modules/last/permissions
  * 
@@ -119,25 +118,22 @@ function cmd_money_player( params, sender ) {
 }
 
 function cmd_top( params, sender ) {
-  var number = params[1];
+  var page = params[1];
   if( params[0] === 'economy' )
-    number = params[2];
-  number = economycs.toInt(number);
-  if( number < 11 ){
-    number = 10;
-  }else if( number < 16 ){
-    number = 15;
-  }else{
-    number = 20;
-  }
-  economycs.getTop(sender, number);
+    page = params[2];
+
+  page = economycs.toInt(page);
+  if( !page || page<1 )
+    page=1;
+
+  economycs.getTop(sender, 10, page);
 }
 
 var economy_cmd = completer.addPlayerCommand('economy');
     economy_cmd.addComplete('help',cmd_economy_help);
 
-var etop = economy_cmd.addComplete('top',cmd_top,function(){ return {"10":true,"15":true,"20":true} });
-    etop.addComplete('@re/10|15|20/',cmd_top);
+var etop = economy_cmd.addComplete('top',cmd_top);
+    etop.addComplete('@re/[0-9]+/',cmd_top);
 
 var epay = economy_cmd.addComplete('pay');
     epay.addComplete('@user').addComplete('@re/[0-9]+/',cmd_pay);
@@ -152,8 +148,8 @@ var emoney = economy_cmd.addComplete('money',cmd_money);
     emoney.addComplete('@any',cmd_money_player);
 
 
-var top = completer.addPlayerCommand('top',cmd_top,function(){ return {"10":true,"15":true,"20":true} });
-    top.addComplete('@re/10|15|20/',cmd_top);
+var top = completer.addPlayerCommand('top',cmd_top);
+    top.addComplete('@re/[0-9]+/',cmd_top);
 
 var pay = completer.addPlayerCommand('pay');
     pay.addComplete('@user').addComplete('@re/[0-9]+/',cmd_pay);

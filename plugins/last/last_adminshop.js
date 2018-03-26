@@ -320,7 +320,7 @@ function cmd_shop_set(params, sender){
   // определяем смотрим ли мы на табличку
   var sign = syssigns.getTargetedBy( sender );
     if ( !sign )
-      return locale.warn(sender, "вы смотрите не на табличку");
+      return locale.warn(sender, "${msg.not_sign}");
 
 
   // вычисляем количество и стоимость товара
@@ -331,7 +331,7 @@ function cmd_shop_set(params, sender){
   var price = economy.getPrice(item,amount);
 
   if( !price )
-    return locale.warn(sender, "2 товара нет в базе "+item.type);
+    return locale.warn(sender, "${msg.not_item_in_base}", {item: item.type} );
 
   price.buy = Math.floor(price.cost*config.price.buy/100);
   price.sell = Math.floor(price.cost*config.price.sell/100);
@@ -355,9 +355,8 @@ function cmd_shop_set(params, sender){
     price: price,
     loc: loc
   };
-  return locale.warn(sender, "магазин успешно создан");
+  return locale.warn(sender, "${msg.create_success}");
 }
-
 
 /**
  * Функция обработчик команды изменения количества товара продаваемого магазином
@@ -368,32 +367,32 @@ function cmd_shop_amount(params, sender){
   // определяем смотрим ли мы на табличку
   var sign = syssigns.getTargetedBy( sender );
   if ( !sign )
-    return locale.warn(sender, "вы смотрите не на табличку");
+    return locale.warn(sender, "${msg.not_sign}");
 
   // получаем координаты таблички
   var loc = utils.locationToJSON( sign.getLocation() );
   var key = createKey(loc);
   var shop = shops[key];
   if ( !shop )
-    return locale.warn(sender, "это не админский магазин");
+    return locale.warn(sender, "${msg.not_adminshop}");
 
   var amount = economy.toInt(params[2])||1;
   shop.price.amount = economy.toInt(params[2])||1;
   
   correctShop(sign, shop);
 
-  return locale.warn(sender, "количество товара успешно скоректировано");
+  return locale.warn(sender, "${msg.amount_success}");
 }
 
 
 var point_shop = completer.addPlayerCommand('adminshop',undefined,undefined,"last_adminshop.admin")
     point_shop.addComplete('help',cmd_shop_help);
 
-var point_shop_set = point_shop.addComplete('set');
-    point_shop_set.addComplete('@re/[0-9]+/',cmd_shop_set);
+    point_shop.addComplete('set')
+              .addComplete('@re/[0-9]+/',cmd_shop_set);
 
-var point_shop_amount = point_shop.addComplete('amount');
-    point_shop_amount.addComplete('@re/[0-9]+/',cmd_shop_amount);
+    point_shop.addComplete('amount')
+              .addComplete('@re/[0-9]+/',cmd_shop_amount);
 
 
 

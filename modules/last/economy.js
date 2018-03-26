@@ -358,8 +358,9 @@ exports.giveAll = function(sender,amount){
  * Запрос на вывод в консоль чата финансового топа
  * @param  {object} sender объект игрока, который производит запрос на вывод финансового топа.
  * @param  {number} top размерность топа
+ * @param  {number} page страница топа
  */
-exports.getTop = function(sender,top){
+exports.getTop = function(sender, top, page){
   var hash = users.getAllUsers();
   var list = [];
   for(var i in hash ){
@@ -371,12 +372,19 @@ exports.getTop = function(sender,top){
     if (a.coins < b.coins) return 1;
   });
 
-  var msg = "" + top + ":\n";
+  var offset = top*(page-1);
+  var players = list.length;
+  var pages = Math.ceil(players/top);
+
+  var msg = "";
   for(var i in list ){
+      var count = _toInt(i);
       var user = list[i];
-      msg += i + ". " + user.name + " (" + user.coins + " " + coinsDecline(sender, user.coins) + ")\n";
+      if( count<offset || count>=(offset+top) )
+        continue;
+      msg += (count+1) + ". " + user.name + " (" + user.coins + " " + coinsDecline(sender, user.coins) + ")\n";
   }
-  return locale.warn( sender, "${msg.top} " + msg );
+  return locale.echo( sender, "${msg.top}"+msg, {top: top, page: page, pages: pages} );
 };
 
 
